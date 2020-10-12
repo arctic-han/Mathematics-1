@@ -1,0 +1,87 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 3.3
+%----------------------------------------------------------------------------------------
+
+\section{Continuity.}
+
+In general, we can say that realvalued function $f$ is \textbf{continuous} at  
+$a$ if  $f$ is defined at  $a$, and  $\lim{f(x)}=f(a)$ as  $x \rightarrow a$. We give the 
+formal definition below.
+
+\begin{definition}
+    Let $E \subseteq \R$ be nonemoty, and let  $f:E \rightarrow \R$ be a realvalued 
+    funtion. $f$ is said to be  \textbf{continuous} at a point  $a \in E$, if 
+    given  $\epsilon>0$, there is a  $\delta(\epsilon)>0$ such that  $|x-a|<\delta$, 
+    and $x \in E$ imply  $|f(x)-f(a)|<\epsilon$. $f$ is said to be \textbf{continuous}, on  $E$ \
+    if and only if  $f$ is continuous at  $x$ for all  $x \in E$.
+\end{definition}
+
+\begin{remark} 
+    we have that a realvalued function $f$ is continuous at a point $a$ on its 
+    domain if and only if $\lim{f}=f(a)$ as  $x \rightarrow a$. We see that $\lim{f(x)}=
+    f(\lim{x})=f(a)$ as $x \rightarrow a$. That is to say, if you can commute  $f$ and 
+     $\lim$, then  $f$ is a continuous function.
+\end{remark}
+
+\begin{theorem}\label{3.3.1}
+    Suppose that $E \subseteq \R$ is nonempty, and that  $a \in E$, and  $f:E \rightarrow \R$ 
+    is a realvalued function. THen the following are equivalent:
+         \begin{enumerate}[label=(\arabic*)]
+             \item $f$ is continuous at $a$.
+
+             \item If $x_n \rightarrow a$, and $x_n \in E$, then $f(x_n) \rightarrow f(a)$ as $n \rightarrow a$.
+        \end{enumerate}
+\end{theorem}
+\begin{proof}
+    We apply the sequential characterization of limits of functions.
+\end{proof}
+
+\begin{theorem}\label{3.3.2}
+    Let $E \subseteq \R$ be nonempty, and let  $f : E \rightarrow \R$ and $g:E \rightarrow \R$ be realvalued 
+    functions. If  $f$ and  $g$ are continuous at a point  $a \in \R$, then so 
+    is  $f+g$,  $fg$,  $\alpha f$ for  $\alpha \in \R$. Moreover, $f/g$ is continuous at  
+    $a \in E$  when $g(a) \neq 0$  (specifically, when $g(x) \neq 0$ for all  $a \in E$).
+\end{theorem}
+We omit the proof. What this theorem says algebraically, is the the set of all 
+contnuous functions over a domain $E$ form an algebra. Now consider for realvalued 
+functions continuous at a point $a \in E$, then
+    \begin{align*}
+        f^+(x) &= \frac{f(x)+|f(x)|}{2} = \max\{f(x),0\} \\
+        f^-(x) &= \frac{|f(x)|-f(x)}{2} = \max\{-f(x),0\}	\\
+    \end{align*}
+Then notice that $f=f^+-f^-$, and so any function is the difference of two non
+negative functions, moreover $|f|=f^++f^-$. Moreover, all polynomial functions 
+are continuous over $\R$.
+
+\begin{definition}
+    We define the composition of functions as the binary operation $\circ$ such 
+    that if $f:A \rightarrow B$ are fubctions and  $g: B \rightarrow C$, then $f \circ g: A \rightarrow C$ is 
+    the function defined by  $f \circ g(x)=f(g(x))$.
+\end{definition}
+It is well known that $\circ$ is not commutative, i.e.  $f \circ g \neq g \circ f$.
+
+\begin{theorem}\label{3.3.3}
+    Suppose that $A, B \subseteq \R$ and that $f:A \rightarrow \R$ and $g: B \rightarrow \R$ are realvalued 
+    functions, with $F(A) \subseteq B$. Then if $A=I \backslash \{a\}$ where $I$ is a nondegenerate 
+    interval, that either contains $a$, or has $a$ as one of its endpoints. 
+    If $L=\lim{f}$ as $x \rightarrow a$ for $x \in I$ exists and belongs to $B$, and if  $g$
+    is continuous at $L \in B$, then  $\lim{g \circ f}=g(\lim{f})$ as 
+    $x \rightarrow a$  for $x \in I$.
+\end{theorem}
+\begin{proof}
+    Let $\{x_n\} \subseteq I \backslash \{a\}$, such that $x_n \rightarrow a$ as $n \rightarrow \infty$. Then if $f(A) \subseteq B$ with 
+    $f(x_n) \in B$, then  $L=\lim{f}$ as  $x \rightarrow a$, then by the sequential characterization 
+    of limits of functions, for  $x \in I$, so $f(x_n) \rightarrow L$ as $n \rightarrow \infty$. This implies 
+    that $g(fx_n)) \rightarrow g(L)$ as  $n \rightarrow \infty$, and we are done.
+\end{proof}
+
+\begin{corollary}
+    If $f$ is continuous at $a \in A$, and $g$ is continuous at $f(a) \in B$, 
+    then $g \circ f$ is continuous at $a \in A$.
+\end{corollary}
+
+\begin{definition}
+    Let $E \subseteq \R$ be a nonempty subset of $\R$. A realvalued function $f:E \rightarrow \R$ 
+    is said to be \textbf{bounded} if and only if there is an $M \in \R$ sucht that 
+    $|f| \leq M$ for all  $x \in E$.
+\end{definition}

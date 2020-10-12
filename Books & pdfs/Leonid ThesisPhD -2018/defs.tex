@@ -1,0 +1,165 @@
+% defs.tex
+%==========================================================================
+
+% INICIO- paquetes del articulo-Leonid
+
+
+%\usepackage[inner=1in,outer=1in,bottom=1in,top=1in]{geometry}
+%\usepackage[sort&compress]{natbib}
+%\usepackage[titletoc,toc,title]{appendix}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New definitions	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% AMS article
+%\documentclass{amsart}
+
+%\usepackage{graphicx}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+%\usepackage{color}
+%\usepackage[inner=1in,outer=1in,bottom=1in,top=1in]{geometry}
+%\usepackage[sort&compress]{natbib}
+%\textwidth=6in \textheight=9in \hoffset=-0.375in \voffset=-0.75in
+%% Style definitions and "newtheorems"
+%\numberwithin{equation}{section}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{conjecture}[theorem]{Conjecture}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{theorem}{Theorem}[section]
+%\theoremstyle{definition}
+%\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{observation}[theorem]{Observation}
+%\newtheorem{example}[theorem]{Example}
+%\newtheorem{xca}[theorem]{Exercise}
+%\theoremstyle{remark}
+%\newtheorem{remark}[theorem]{\bf\em Remark}
+
+%\usepackage[titletoc,toc,title]{appendix}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New definitions	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{\X}{\mathbf{X}}
+\newcommand{\xx}{\mathbf{x}}
+\newcommand{\ff}{{\mathbb{ F\!}}}
+\newcommand{\leg}[2]{\left(\frac{#1}{#2}\right)}
+%\newcommand{\Tr}{\mathrm{Tr}}
+%\newcommand{\tr}{{\operatorname{Tr}}}
+\newcommand{\Sym}{\mathrm{Sym}}
+\def\XX{{\bf X}}
+\def\aa{{\bf a}}
+\def\+{{\oplus}}
+
+%\makeatletter
+%\def\Ddots{\mathinner{\mkern1mu\raise\p@
+%\vbox{\kern7\p@\hbox{.}}\mkern2mu
+%\raise4\p@\hbox{.}\mkern2mu\raise7\p@\hbox{.}\mkern1mu}}
+%\makeatother
+
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\CIRC}{circ}
+
+% FIN-  paquetes del articulo-Leonid
+
+
+
+%===================================================
+
+\theoremstyle{plain}
+\newtheorem{definition}[subsection]{Definition}    % This defines the Definition enviroment
+\newtheorem{conjecture}[subsection]{Conjecture}
+\newtheorem{openquestion}[subsection]{Open question}
+\newtheorem{question}[subsection]{Question}																									 % Ver capitulo 5.
+\newtheorem{remark}[subsection]{Remark}
+\newtheorem{example}[subsection]{Example}										 % This is example
+\newtheorem{proposition}[subsection]{Proposition}																									 % Ver capitulo 5.
+\newtheorem{lemma}[subsection]{Lemma}
+\newtheorem{theorem}[subsection]{Theorem}											 % This is the theorem formulation heading
+\newtheorem{corollary}[subsection]{Corollary}																							 % Ver capitulo 5.
+
+\newtheorem*{proofa}{Proof}
+
+\hypersetup{urlcolor=blue}			 % Especifica el azul para los hypervinculos. (pags web)
+
+\newcommand{\qfd}{\hfill $\fbox{}$\vspace{2mm}}
+
+\newcommand{\fn}[1]{\texttt{#1}}						% Estas dos lineas son utiles para el capitulo 4.
+\newcommand{\cn}[1]{\texttt{\char92 #1}}
+
+\newcommand{\nt}{\triangledown_2}
+\newcommand{\dt}{\triangle_2}
+
+
+
+\newcommand{\re}{\mathbb{R}}
+\newcommand{\CCC}{{\mathfrak C}}
+\newcommand{\bR}{\overline{\R}}
+\newcommand{\N}{{\mathbb N}}
+\newcommand{\Z}{{\mathbb Z}}
+
+\newcommand{\Q}{{\mathbb Q}}
+\newcommand{\X}{{\mathbb X}}
+\newcommand{\T}{{\mathbb T}}
+\newcommand{\D}{{\mathbb D}}
+\newcommand{\cB}{{\mathcal B}}
+%\newcommand{\C}{{\mathbb C}}
+\newcommand{\cD}{{\mathcal D}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cC}{{\mathcal C}}
+\newcommand{\cE}{{\mathcal E}}
+\newcommand{\cF}{{\mathcal F}}
+\newcommand{\cL}{{\mathbb L}}
+\newcommand{\bF}{\bar{\mathcal F}}
+\newcommand{\cT}{{\mathbf T}}
+
+\newcommand{\sgn}{{\operatorname{sgn}}}
+\newcommand{\tr}{{\operatorname{Tr}}}
+\newcommand{\nm}{\operatorname{\mathsf N}}
+\newcommand{\inter}{\operatorname{Int}}
+
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cS}{{\mathcal S}}
+\newcommand{\cU}{{\mathcal U}}
+\newcommand{\cV}{{\mathcal V}}
+\newcommand{\cH}{{\mathcal H}}
+\newcommand{\cK}{{\mathcal K}}
+\newcommand{\cM}{{\mathcal M}}
+\newcommand{\cR}{{\mathcal R}}
+\newcommand{\loc}{\rm{loc}}
+
+
+\newcommand{\Capw}{\operatorname{Cap}}
+\newcommand{\Capr}{\operatorname{Cap}_{\Om}}
+\newcommand{\dom}{\operatorname{dom}}
+
+
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\IN}{\mathbb{N}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\ZZ}{\mathds{Z}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Dw}{\mathbb{D}}
+\newcommand{\Qw}{\mathbb{Q}}
+\newcommand{\Om}{\Omega}
+\newcommand{\De}{\Delta}
+\newcommand{\ep}{\epsilon}
+\newcommand{\var}{\varepsilon}
+\newcommand{\si}{\sigma}
+\newcommand{\lla}{\lambda}
+\newcommand{\om}{\omega}
+\newcommand{\al}{\alpha}
+\newcommand{\de}{\delta}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\bOm}{\overline{\Om}}
+\newcommand{\vep}{\varepsilon}
+\newcommand{\pOm}{\partial\Omega}
+\newcommand{\sgnw}{\operatorname{sgn}}
+\newcommand{\op}{\operatorname{Re}}
+

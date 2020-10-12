@@ -1,0 +1,1309 @@
+%% LyX 2.2.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,oneside,english]{amsbook}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{amsbsy}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\numberwithin{section}{chapter}
+\numberwithin{equation}{section}
+\theoremstyle{plain}
+\newtheorem{thm}{\protect\theoremname}
+  \theoremstyle{definition}
+  \newtheorem{example}[thm]{\protect\examplename}
+  \theoremstyle{remark}
+  \newtheorem{rem}[thm]{\protect\remarkname}
+  \theoremstyle{plain}
+  \newtheorem{lem}[thm]{\protect\lemmaname}
+  \theoremstyle{plain}
+  \newtheorem{prop}[thm]{\protect\propositionname}
+  \theoremstyle{definition}
+  \newtheorem{defn}[thm]{\protect\definitionname}
+  \theoremstyle{plain}
+  \newtheorem{cor}[thm]{\protect\corollaryname}
+
+\makeatother
+
+\usepackage{babel}
+  \providecommand{\corollaryname}{Corollary}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\examplename}{Example}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\theoremname}{Theorem}
+
+\begin{document}
+
+\chapter{Introduction}
+
+The experimental and discrete mathematics play a very important role
+in the development of this thesis. It's precisely in these two branches
+of research that the family of symmetric functions defined over Galois
+fields has reached a special interest. Moreover, it could be said
+that in the last decades the family of symmetrical Boolean functions
+has acquired a greater importance in the area of applicable mathematics.
+Thus, over time, the study of these functions have helped to obtain
+great advances in applications, for example, today they are active
+areas of research as the experimental mathematical, combinatorial
+theory, coding theory, cryptography, the theory of error-correcting
+codes, game theory and electrical engineering (see \cite{BCP,cai,cm1,cm3,cusickstanica,dalaimaitrasarkar,hell,stanicamaitra,stanicamaitraclark}). 
+
+Below we present some of the main components of this thesis in a brief
+conceptual framework taking as an example, the Boolean space. That
+is, all the mathematical objects mentioned in this first part of the
+introduction are defined in a similar way for other Galois fields
+($\mathbb{F}_{q}$ with $q$ a power of a prime $p$). similar all
+the results of the research. To begin with, one of the firsts mathematical
+objects used and highlighted in this section is that of a Boolean
+function. A Boolean function is defined as
+\begin{equation}
+F^{*}:\mathbb{F}_{2}^{n}\rightarrow\mathbb{F}_{2}.
+\end{equation}
+For the purpose of this investigation, we frequently use the polynomial
+representation of $F^{*}$ known as algebraic normal form (ANF) of
+$F^{*}$ and we identify it as a function $F$ in $n$ variables over
+$\mathbb{F}_{2}$ \cite{canteaut,licusick1}. In addition it should
+be noted that, within the family of Boolean functions, there are functions
+that fulfill an important property, that of being symmetric. It is
+said that a Boolean function $F$ is symmetric if it is verified that
+\begin{equation}
+F\left(x_{1},\cdots,x_{n}\right)=F\left(x_{\sigma\left(1\right)},\cdots,x_{\sigma\left(n\right)}\right),
+\end{equation}
+where $\sigma$ is any permutation of the symmetric group $S_{n}$.
+In other words, for simplicity it is said that $F$ is symmetric if
+the subindices of $\left(x_{1},\cdots,x_{n}\right)$ can be permuted
+so that the resulting function is invariant. Within the family of
+the symmetric Boolean functions, two important functions that will
+be studied in this investigation are highlighted: the elementary symmetric
+Boolean polynomial and the rotation symmetric Boolean function. The
+symmetric Boolean function can be associated with an exponential sum
+and define as a second main mathematical object. The exponential sum
+of symmetric Boolean function is defined as
+\begin{equation}
+S\left(F\right)=\sum_{X\in\mathbb{F}_{2}^{n}}\left(-1\right)^{F\left(X\right)}.
+\end{equation}
+To continue complementing the mathematical objects used in this thesis,
+especially in Chapter $2$, knowledge of the properties of homogeneous
+linear recurrence sequences with integer coefficients is required
+(see next section). The sequences of exponential sums, such as the
+sequences of exponential sums of elementary symmetric functions and
+rotation symmetric functions are well studied throughout this workt.
+In particular, for research on the sequences of exponential sums of
+symmetric Boolean functions, it is very important to highlight the
+following relation
+\begin{equation}
+wt(F)=\frac{2^{n}-S(F)}{2},\label{eq:4}
+\end{equation}
+where $\text{wt}(F)$ is the weight of Hamming ($\text{wt}(F)$ counts
+the number of non-zero components of the $W_{F}=\left(F\left(X_{1}\right),\ldots,F\left(X_{2^{n}}\right)\right)$)
+\cite{cusick4,cusickArXiv,cusickjohns,cusickstanica}. More precisely,
+the equation (\ref{eq:4}) postulates that, any sequence of exponential
+sums of symmetric Boolean functions satisfying a homogeneous linear
+recurrence with integer coefficients, would lead to the respective
+Hamming weights sequence of these functions, also would satisfy one
+of these homogeneous linear recurrence (see Chapter $2$). In other
+investigations where equation (\ref{eq:4}) \cite{cm1,cusickArXiv}
+is studied, known that this relationship involves two important properties
+over Boolean functions, such properties are the weight of Hamming
+and the exponential sum. In the area of cryptography, in particular,
+the criterion of the balanced of a Boolean function is investigated;
+in this case, equation (\ref{eq:4}) us allows to relate the balancing
+of an elementary symmetric Boolean polynomial $\mathcal{F}$ ($W_{\mathcal{F}}$
+has the same number of zero and one's components) through its exponential
+sum \cite{cm3,cusick2}. For example, a Boolean function $F$ is balanced
+if and only if $S\left(F\right)=0$.
+
+An important aspect in this research and presented in Chapter $3$,
+is the efficiency in the computation of the implementations of the
+closed formulas established in the results of this chapter, that is,
+in this thesis we present closed formulas of efficient calculations.
+For example, the closed formula of exponential sums that generalize
+the result of Cai, Green, and Thierauf \cite{cai}. From the definition
+itself, several of the properties on the mathematical objects mentioned
+previously would be quite expensive to verify them, for example, the
+verification of the balanced of a Boolean function using the Hamming
+weight of a symmetric Boolean function is not very efficient. Moreover,
+the closed formulas of Chapter $3$ corroborate or support the verification
+of the Stanica-Li-Cusick conjecture asymptotically for Galois fields
+\cite{cm1}.
+
+Already on Galois fields, we present an important relationship that
+opens a new approach for future research. In Chapter $3$ we present
+closed formulas that link the exponential sums of symmetric polynomials
+over any Galois field with one related to the problem of the bisecting
+binomial coefficients. A solution $(\delta_{0},\delta_{1},\cdots,\delta_{n})$
+to the equation 
+\begin{equation}
+\sum_{j=0}^{n}\delta_{j}\binom{n}{j}=0,\,\,\,\delta_{j}\in\{-1,1\},
+\end{equation}
+is said to give a {\em bisection of the binomial coefficients}
+$\binom{n}{j}$, $0\leq j\leq n.$ To end this part of the chapter,
+we define next the exponential sum of a symmetric polynomial $P$
+defined over $\mathbb{F}_{q}$ as
+\begin{equation}
+S_{\mathbb{F}_{q}}\left(P\right)=\sum_{x\in\mathbb{F}_{q}^{n}}\zeta_{p}^{Tr_{\mathbb{F}_{q}/\mathbb{F}_{p}}\left(P\left(x\right)\right)}
+\end{equation}
+where $\zeta_{p}=e^{\frac{2\pi i}{p}}$ and $Tr_{\mathbb{F}_{q}/\mathbb{F}_{p}}$
+is the trace function defined from $\mathbb{F}_{q}$ to $\mathbb{F}_{p}$.
+The symmetric polynomial $P$ and its trace (defined over Galois fields),
+is in active research, for example, in the case of balanced of $P$
+are directly related to the study of the trace function \cite{acgmr}.
+In the following sections, we introduce a summary on the theme of
+linear recurrences of symmetric functions, associated recursions of
+special functions and closed formulas of symmetric polynomial over
+Galois fields (Chapters $2$ and $3$ respectively).
+
+\section{Sequence of linear recurrences}
+
+A {\em sequence of linear recurrences\textit{ $s$}} is as infinite
+sequence $s_{0},s_{1},\cdots$ of elements in $\mathbb{Z}\left[\zeta_{p}\right]$
+where $\zeta_{p}=e^{\frac{2\pi i}{p}}$, having the following property:
+there are constant $a_{0},a_{1},\cdots,a_{k-1}$ (con $a_{0}\neq0$)
+such that, for all $n\geq0$,
+\begin{equation}
+s_{n+k}=a_{k-1}s_{n+\left(k-1\right)}+\cdots+a_{1}s_{n+1}+a_{0}s_{n}+a\label{eq:7}
+\end{equation}
+If initial values $s_{0},s_{1},\cdots,s_{k-1}$ of the sequence are
+provided, the recurrence relation defines the rest of the seuqence
+uniquely. Such a sequence es said to order $k$. Also we say that
+the recurrrence (\ref{eq:7}) is homogeneous, if $a=0$ . For example,
+the exponential sums of the Boolean function
+\[
+{\scriptstyle {\scriptstyle F_{n}({\bf X})=X_{1}X_{2}X_{4}+X_{2}X_{3}X_{5}+\cdots+X_{n-3}X_{n-2}X_{n}+X_{n-2}X_{n-1}X_{1}+X_{n-1}X_{n}X_{2}+X_{n}X_{1}X_{3}}}
+\]
+{\small{}satisfies homogeneous linear recurrence with integer coefficients
+of order }$6$ , that is, let $X\in\mathbb{F}_{2}^{n}$, the sequence
+$\left\{ S\left(F_{n}({\bf X})\right)\right\} _{n\geq4}$ satisfies
+\[
+a_{n}=2a_{n-1}+2a_{n-2}-4a_{n-3}+4a_{n-5}-8a_{n-6}
+\]
+where the first integers of recurrence are 
+\[
+8,20,16,56,32,144,144,352,512,832,1600,\cdots,
+\]
+also satisfies homogeneous linear recurrence its weight sequences
+$\left\{ wt\left(F_{n}({\bf X})\right)\right\} $ (see more in the
+Chapter $2$ ) . Other example, the next symmetric function of order
+$3$
+\[
+e_{n,3}=X_{1}X_{2}X_{3}+X_{1}X_{2}X_{4}+\cdots+X_{n-3}X_{n-2}X_{n}
+\]
+also generates the sequence $\left\{ S_{\mathbb{F}_{4}}\left(e_{n,3}\right)\right\} _{n\geq3}$
+{\small{}that satisfies homogeneous linear recurrence with integer
+coefficients of order }$3$ and by theorem $\left(\ref{MoregeneralTHMSymmetric}\right)$
+of Chapter $3$, you have the formula closed
+\begin{eqnarray*}
+S_{\mathbb{F}_{4}}(\boldsymbol{e}_{n,3}) & = & 4^{n-1}+3\cdot2^{n-1}-3\cdot2^{n-1}\cos\left(\frac{n\pi}{2}\right).
+\end{eqnarray*}
+
+The homogeneous sequence that satisfies$\left(\ref{eq:7}\right)$
+can be associated with the following polynomial,
+\[
+P_{k}\left(X\right)=X^{k}-a_{k-1}X^{k-1}-\cdots-a_{1}X-a_{0}
+\]
+known as the {\em polynomial characteristic of $s$} or to the
+linear recurrence sequence$\left\{ s_{n}\right\} _{n\in\mathbb{N}}$.
+In practice, when all the roots $\lambda_{i}$ of the polynomial $P_{k}\left(X\right)$
+are different, then the expression $\sum_{i=1}^{k}a_{i}\lambda_{i}^{n}$
+satisfies linear recurrence sequence of the form $\left(\ref{eq:7}\right)$.
+Moreover, if we denote $s_{n}$ by $\sum_{i=1}^{k}a_{i}\lambda_{i}^{n}$,
+we can say that the sequence $s_{0},s_{1},\cdots$ satisfies a homogeneous
+linear recurrence of the form $\left(\ref{eq:7}\right)$ such that
+\[
+P_{k}\left(X\right)=\prod_{i=1}^{k}\left(X-\lambda_{i}\right)
+\]
+ is its characterist polynomial. 
+\begin{example}
+If we apply a result of Cai, Green, and Thierauf , the theorem $3.2$
+\cite{cai} or the theorem $3.1$ \cite{cm1}, the sequence $\left\{ S(\boldsymbol{e}_{n,2^{l}})\right\} $
+satisfies a homogeneous linear recurrence whose characteristic polynomial
+is
+\begin{equation}
+P_{2^{r}-1}\left(X\right)=\prod_{i=0}^{2^{r}-1}\left(X-\lambda_{i}\right)
+\end{equation}
+where $\lambda_{j}=1+\zeta_{j}$ and $\lambda_{0}=2^{n}$ are the
+roots of the polynomial (all different). In other words, we can for
+a fixed integer $l$, then for all $n\geq2^{l}$
+\begin{equation}
+S(\boldsymbol{e}_{n,2^{l}})=c_{0}(2^{l})2^{n}+\sum_{j=1}^{2^{l+1}-1}c_{j}(2^{l})(1+\zeta_{j})^{n},\label{eq:9}
+\end{equation}
+otras where $\zeta_{j}=e^{\frac{\pi i\,j}{2^{l}}},i=\sqrt{-1}$ and
+\[
+c_{j}(2^{l})=\frac{1}{2^{l+1}}\sum_{t=0}^{2^{l+1}-1}(-1)^{\binom{t}{2^{l}}}\zeta_{j}^{-t}.
+\]
+by the theorem (\ref{MoregeneralTHMSymmetric}) the sequence $\left\{ S(\boldsymbol{e}_{n,2^{l}})\right\} $
+and its exponential sum $S(\boldsymbol{e}_{n,2^{l}})$ expressed as
+a closed formula (see equation \ref{eq:9}) {\small{}satisfies homogeneous
+linear recurrence with integer coefficients }{\small \par}
+\end{example}
+
+
+\section{Recursion associated to some special functions}
+
+In the theorem $\left(\ref{MoregeneralTHMSymmetric}\right)$ of the
+Chapter $2$, establishes that for $n\geq k$, the elementary symmetric
+polynomial $e_{n,k}$ associated with the exponential sum $S\left(\boldsymbol{e}_{n,k}\right)$
+generates a homogeneous recurrent sequence of linear origin and with
+integer coefficients. Similarly by the theorem L of chapter 2 it is
+established in the same way that other two important functions satisfy
+homogeneous linear recurrence, we enumerate them, the first is the
+function initially defined by Pieprzyk an Qu in \cite{piequ} called
+the rotation symmetric Boolean function. Some examples of rotation
+symmetric functions are given by
+\begin{equation}
+R_{2,3,4}({\bf 5})=X_{1}X_{2}X_{3}+X_{2}X_{3}X_{4}+X_{3}X_{4}X_{1}+X_{4}X_{1}X_{2}\label{eq:5}
+\end{equation}
+  and
+\begin{equation}
+R_{2}(n)=X_{1}X_{2}+X_{2}X_{3}+\cdots+X_{n-1}X_{n}+X_{n}X_{1},\label{eq:6}
+\end{equation}
+where the indices are taken modulo n or are variant under circular
+translation of indices (see formal definition chapter 2), and the
+second function is the trapezoidal function. An example of a trapezoidal
+function is given by
+\[
+\tau_{7,3}=X_{1}X_{2}X_{3}+X_{2}X_{3}X_{4}+X_{3}X_{4}X_{5}+X_{4}X_{5}X_{6}+X_{5}X_{6}X_{7}
+\]
+The name trapezoid comes from counting the number of times each variable
+appears in the function $\tau_{n,k}$. For example, consider $\tau_{7,3}$.
+Observe that $X_{1}$ appears 1 time in $\tau_{7,3}$, $X_{2}$ appears
+2 times, $X_{3}$, $X_{4}$ and $X_{5}$ appears 3 times each, $X_{6}$
+appears twice, and $X_{7}$ appears once. Plotting the these values
+and connecting the dots produces the shape of an isosceles trapezoid.
+Figure \ref{trap73} is a graphical representation of this. The Boolean
+variable $X_{i}$ is represented by $i$ in the $x$-axis. The $y$-axis
+corresponds to the number of times the variable appears in $\tau_{7,3}$.
+\begin{figure}[h!]
+\centering \includegraphics[width=3in]{\string"../../Subject on Thesis PHD/About on Thesis/On RotBF submmit Combinatorica - marzo 6 de 2017/Trapezoid73\string".eps}
+\caption{Trapezoid associated to the Boolean function $\tau_{7,3}$}
+\label{trap73} 
+\end{figure}
+. Both $\left\{ \tau_{n,3}\right\} _{n\geq3}$ and $\left\{ R_{2,3,4}\left(n\right)\right\} _{n\geq4}$
+can be shown to satisfy a linear recurrence (see theorems \ref{trapezoidTHM}
+and \ref{RotaBooleanGeneral}) using the following elementary method
+, the $ON$ or $OFF$ method that we define below:
+\begin{description}
+\item [{Method~Boolean~case~($ON$~or~$OFF$)}] This technique consists
+of the simple game of assigning the numeric value to the Boolean variable
+$X_{i}$ a \textquotedbl{}$0$\textquotedbl{} or a \textquotedbl{}$1$\textquotedbl{},
+that is, it is defined {\em $ON$: = turn on,} if the variable
+$X_{i}=1$ and {\em $OFF$: = turn off, } if the variable $X_{i}=0$.
+\end{description}
+Using the assertion that the sequence $\left\{ \tau_{n,3}\right\} _{n\geq3}$
+satisfy a linear recurrence with integer coefficients homogeneous
+with $\tau_{n,3}$ defined over $\mathbb{F}_{3}$ and whose polynomial
+associated with the homogeneous linear sequence of $\left\{ \tau_{n,3}\right\} _{n\geq3}$
+(theorem $\left(\ref{thmtrapgen}\right)$) is given by 
+
+\[
+P_{3}\left(X\right)=X^{3}-3X-6,
+\]
+Now by the equation $\left(\ref{eq:2.3.4}\right)$ of the Chapter
+$2$, the sequence$\left\{ \tau_{n,3}\right\} _{n\geq3}$ satisfies
+the following linear recurrence
+\[
+\tau_{n,3}=3\tau_{n-1,3}+6\tau_{n-2,3}.
+\]
+Also by Theorem $\left(\ref{thmrot2}\right)$ the sequence $\left\{ R_{2}\left(n\right)\right\} _{n\geq2}$
+also satisfies a homogeneous linear recurrence with integer coefficients
+whose characteristic polynomial is
+\[
+P_{4}\left(X\right)=X^{4}-9=\left(x-3^{\frac{1}{2}}\right)\left(x+3^{\frac{1}{2}}\right)\left(x-3^{\frac{1}{2}}i\right)\left(x+3^{\frac{1}{2}}i\right),
+\]
+where $i=\sqrt{-1}$ . For properties of homogeneous linear recurrences,
+there are constants $a_{1},a_{2},a_{3},a_{4}$ such that
+\[
+R_{2}\left(n\right)=a_{1}3^{\frac{n}{2}}+a_{2}\left(-3\right)^{\frac{n}{2}}+a_{3}\left(3^{\frac{1}{2}}i\right)^{n}+a_{4}\left(-3^{\frac{1}{2}}i\right)^{n}
+\]
+To conclude this section with this brief introduction a new concept
+called the recursive generated set for $\left\{ s_{n}\right\} $ (see
+definition $\left(\ref{RecurGenSequence}\right)$) which is based
+the argument of the demonstrations that the sequence
+\begin{equation}
+\{S_{\mathbb{F}_{q}}\left(R_{2,3,\cdots,k}\left(n\right)\right)\}_{n\geq k}\,\mathnormal{\,\,\textnormal{and}\,\,}\,\{S_{\mathbb{F}_{q}}\left(e_{n,k}\right)\}_{n\geq k}
+\end{equation}
+satisfy homogeneous linear recurrences with integer coefficients.
+Some well-known examples of exponential sums are special cases of
+definition (\ref{expsumfq}).
+
+\section{Closed formulas for some special exponential sum}
+
+\chapter{Recursion}
+
+A Boolean function is a function from the vector space $\mathbb{F}_{2}^{n}$
+to $\mathbb{F}_{2}$. Boolean functions are part of a beautiful branch
+of combinatorics with applications to many scientific areas. Some
+particular examples are the areas of theory of error-correcting codes
+and cryptography. Efficient cryptographic implementations of Boolean
+functions with many variables is a challenging problem due to memory
+restrictions of current technology. Because of this, symmetric Boolean
+functions are good candidates for efficient implementations. However,
+symmetry is too special a property and may imply that these implementations
+are vulnerable to attacks.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Preliminaries}
+
+As mentioned in the introduction, Pieprzyk and Qu (\cite{piequ})
+introduced rotation symmetric Boolean functions. A \textit{rotation
+symmetric Boolean function} in $n$ variables is a function which
+is invariant under the action of the cyclic group $C_{n}$ on the
+set $\mathbb{F}_{2}^{n}$. Let us explain this definition in a more
+concrete way. Our explanation is similar to the one presented in \cite{stanicamaitra}.
+
+Let $1<j_{1}<\cdots<j_{s}$ be integers. A rotation symmetric Boolean
+function of the form 
+\begin{equation}
+R_{j_{1},\cdots,j_{s}}(n)=X_{1}X_{j_{1}}\cdots X_{j_{s}}+X_{2}X_{j_{1}+1}\cdots X_{j_{s}+1}+\cdots+X_{n}X_{j_{1}-1}\cdots X_{j_{s}-1},\label{monrot}
+\end{equation}
+where the indices are taken modulo $n$ and the complete system of
+residues is $\{1,2,\cdots,n\}$, is called a \textit{(long cycle)
+monomial rotation symmetric} Boolean function. For example, the rotation
+symmetric Boolean function (\ref{rotex}) is given by 
+\begin{equation}
+R({\bf X})=R_{2,3}(5)+R_{3}(5).
+\end{equation}
+Sometimes the notation $(1,j_{1},\cdots,j_{s})_{n}$ is used to represent
+the monomial rotation Boolean function (\ref{monrot}), see \cite{cusickArXiv}.
+
+As mentioned in the introduction, in this work we present a method
+that could be used to generalize Cusick's result over any Galois field.
+In particular, we show that exponential sums over finite fields of
+some rotation symmetric polynomials are linear recurrent with integer
+coefficients. The \textit{exponential sum} of a function $F:\mathbb{F}_{q}^{n}\to\mathbb{F}_{q}$
+is given by 
+\begin{equation}
+S_{\mathbb{F}_{q}}(F)=\sum_{{\bf x}\in\mathbb{F}_{q}^{n}}e^{\frac{2\pi i}{p}\text{Tr}_{\mathbb{F}_{q}/\mathbb{F}_{p}}(F({\bf x}))}.\label{expsumfq}
+\end{equation}
+Here, $\text{Tr}_{\mathbb{F}_{q}/\mathbb{F}_{p}}$ represents the
+\textit{field trace function} from $\mathbb{F}_{q}$ to $\mathbb{F}_{p}$.
+
+Exponential sums are very rich objects in the area of analytic number
+theory. 
+
+In the next section we provide an introduction to the elementary method
+used in this article to obtain linear recurrences for this type of
+exponential sums. As mentioned before, this introduction is done over
+$\mathbb{F}_{2}$. The reader interested in the generalization is
+invited to skip this section and go directly to section \ref{anyGalois}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Linear recurrences over F2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Linear recurrences over $\mathbb{F}_{2}$}
+
+We start the discussion with the recurrence for exponential sums of
+trapezoid Boolean functions.
+\begin{thm}
+\label{trapezoidTHM} The sequence $\{S(\tau_{n,k})\}_{n=k}^{\infty}$
+satisfies a homogeneous linear recurrence with integer coefficients
+whose characteristic polynomial is given by 
+\begin{equation}
+p_{k}(X)=X^{k}-2(X^{k-2}+X^{k-3}+\cdots+X+1).\label{charpoly}
+\end{equation}
+\end{thm}
+
+\begin{rem}
+We point out that a more general version of Theorem \ref{trapezoidTHM}
+for cubic functions appears in \cite{browncusick}. 
+\end{rem}
+
+the same arguments as in the proof of Theorem \ref{trapezoidTHM}.
+\begin{lem}
+\label{trapezoidplusLemma} Let $\tau_{n,k}$ be the trapezoid Boolean
+function of degree $k$ in $n$ variables. Suppose that $F({\bf X})$
+is a Boolean polynomial in the first $j$ variables with $j<k$. Then,
+the sequences 
+\[
+\{S(\tau_{n,k}+F({\bf X}))\}
+\]
+and 
+\[
+\{S(\tau_{n,k}+F({\bf X})+X_{n}+X_{n}X_{n-1}+X_{n}X_{n-1}X_{n-2}+\cdots+X_{n}X_{n-1}\cdots X_{n-k+2})\}
+\]
+satisfies the linear recurrence whose characteristic polynomial is
+given by $p_{k}(X)$. 
+\end{lem}
+
+Theorem \ref{trapezoidTHM} and Lemma \ref{trapezoidplusLemma} are
+all that is needed to show that the sequence of exponential sums of
+$R_{2,3,\cdots,k}(n)$ satisfies the linear recurrence with characteristic
+polynomial $p_{k}(X)$.
+\begin{thm}
+\label{RotaBooleanGeneral}The sequence $\{S(R_{2,3,\cdots,k}(n))\}$
+satisfies the homogeneous linear recurrence whose characteristic polynomial
+is given by $p_{k}(X)$. 
+\end{thm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Linear recurrences over Fq
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Linear recurrences over $\mathbb{F}_{q}$}
+
+In this section we show that Cuscik's result is not unique to the
+Boolean case. In fact, exponential sums over finite fields of rotation
+polynomials $R_{j_{1},\cdots,j_{s}}(n)$ (and linear combination of
+them) satisfy linear recurrences with constant coefficients. This
+is a generalization of Cusick's result.
+
+Consider the Galois field $\mathbb{F}_{q}=\{0,\alpha_{1},\cdots,\alpha_{q-1}\}$
+where $q=p^{r}$ with $p$ prime and $r\geq1$. The recall that the
+exponential sum of a function $F:\mathbb{F}_{q}^{n}\to\mathbb{F}_{q}$
+is given by 
+\begin{equation}
+S_{\mathbb{F}_{q}}(F)=\sum_{{\bf x}\in\mathbb{F}_{q}^{n}}e^{\frac{2\pi i}{p}\text{Tr}_{\mathbb{F}_{q}/\mathbb{F}_{p}}(F({\bf x}))},
+\end{equation}
+where $\text{Tr}_{\mathbb{F}_{q}/\mathbb{F}_{p}}$ represents the
+field trace function from $\mathbb{F}_{q}$ to $\mathbb{F}_{p}$.
+The same technique used for exponential sums of Boolean functions
+can be used in general. However, instead of having two options for
+the ``switch\textquotedbl{}, we now have $q$ of them. Let $X$ be
+a variable which takes values on $\mathbb{F}_{q}$. As before, we
+say that the variable $X$ can be turned \textit{OFF} or \textit{ON},
+however, this time the term ``turn \textit{OFF}\textquotedbl{} means
+that $X$ assumes the value 0, while the term ``turn \textit{ON}\textquotedbl{}
+means that $X$ assumes all values in $\mathbb{F}_{q}$ that are different
+from zero. Think of this situation as a light switch on which you
+have the option to turn \textit{OFF} the light and the option to turn
+it \textit{ON} to one of $q-1$ different colors.
+
+We consider first sequences of exponential sums of trapezoid functions.
+As in the Boolean case, they satisfy linear recurrences with integer
+coefficients over any Galois field $\mathbb{F}_{q}$. We start with
+the following lemma, which is interesting in its own right.
+\begin{lem}
+\label{generallemma} Let $k,n$ and $j$ be integers with $k>2$,
+$1\leq j<k$ and $n\geq k$. Then, 
+\begin{equation}
+S_{\mathbb{F}_{q}}\left(T_{2,3,\cdots,k}(n)+\sum_{s=1}^{j}\beta_{s}\prod_{l=0}^{k-s-1}X_{n-l}\right)=S_{\mathbb{F}_{q}}\left(T_{2,3,\cdots,k}(n)+\sum_{s=1}^{j}\prod_{l=0}^{k-s-1}X_{n-l}\right)
+\end{equation}
+for any choice of $\beta_{s}\in\mathbb{F}_{q}^{\times}$. 
+\end{lem}
+
+Next is the linear recurrence for exponential sums of trapezoid functions
+over any Galois field.
+\begin{thm}
+\label{thmtrapgen} Let $k\geq2$ be an integer and $q=p^{r}$ with
+$p$ prime. The sequence $\{S_{\mathbb{F}_{q}}(T_{2,3,\cdots,k}(n))\}_{n=k}^{\infty}$
+satisfies a homogeneous linear recurrence with integer coefficients
+whose characteristic polynomial is given by 
+\begin{equation}
+Q_{T,k,\mathbb{F}_{q}}(X)=X^{k}-q\sum_{l=0}^{k-2}(q-1)^{l}X^{k-2-l}.\label{charpolygeneral}
+\end{equation}
+In particular, when $q=2$ we recover Theorem \ref{trapezoidTHM}. 
+\end{thm}
+
+\begin{proof}
+M
+
+\begin{equation}
+a_{n+1}=\sum_{l=0}^{k-2}q(q-1)^{l}a_{n-1-l}\label{eq:2.3.4}
+\end{equation}
+\end{proof}
+m
+\begin{thm}
+Let $f(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}\in\mathbb{Z}[x]$
+be a polynomial. Let $p$ be a prime. Denote the $p$-adic valuation
+of an integer $m$ by $\nu_{p}(m)$ (with $\nu_{p}(0)=+\infty$).
+Suppose that 
+\end{thm}
+
+\begin{enumerate}
+\item $\nu_{p}(a_{n})=0$, 
+\item $\nu_{p}(a_{n-i})/i>\nu_{p}(a_{0})/n$ for $1\leq i\leq n-1$, and 
+\item $\gcd(\nu_{p}(a_{0}),n)=1$. 
+\end{enumerate}
+Then, $f(x)$ is irreducible over $\mathbb{Q}$. 
+\begin{prop}
+Let $q=p^{r}$ with $p$ prime. Suppose that $\gcd(k,r)=1$. Then,
+the polynomial 
+\begin{equation}
+Q_{T,k,\mathbb{F}_{q}}(X)=X^{k}-q\sum_{l=0}^{k-2}(q-1)^{l}X^{k-2-l}
+\end{equation}
+is irreducible over $\mathbb{Q}$. 
+\end{prop}
+
+\begin{thm}
+\label{thmrot2} Suppose that $p>2$ is prime. Then, $\{S_{\mathbb{F}_{p}}(R_{2}(n)\}$
+satisfy the homogeneous linear recurrence with characteristic polynomial
+\begin{equation}
+Q_{R,2,\mathbb{F}_{p}}(X)=X^{4}-p^{2}.
+\end{equation}
+\end{thm}
+
+M
+\begin{thm}
+\label{generalTHM} Let $k\geq2$ be an integer and $q=p^{r}$ with
+$p$ prime and $r\geq1$. The sequence $\{S_{\mathbb{F}_{q}}(R_{2,3,\cdots,k}(n))\}_{n\geq k}$
+satisfies a linear recurrence with integer coefficients. 
+\end{thm}
+
+\begin{defn}
+\label{RecurGenSequence}Let $\{b(n)\}$ be a sequence on an integral
+domain $D$. A set of sequences 
+\[
+\{\{a_{1}(n)\},\{a_{2}(n)\},\cdots,\{a_{s}(n)\}\},
+\]
+where $s$ is some natural number, is called a {\em recursive generating
+set for} $\{b(n)\}$ if 
+\end{defn}
+
+\begin{enumerate}
+\item there is an integer $l$ such that for every $n$, $b(n)$ can be
+written as a linear combination of the form 
+\[
+b(n)=\sum_{j=1}^{s}c_{j}\cdot a_{j}(n-l),
+\]
+where $c_{j}$'s are constants that belong to $D$, and 
+\item for each $1\leq j_{0}\leq s$ and every $n$, $a_{j_{0}}(n)$ can
+be written as a linear combination of the form 
+\[
+a_{j_{0}}(n)=\sum_{j=1}^{s}d_{j}\cdot a_{j}(n-1),
+\]
+where $d_{j}$'s are also constants that belong to $D$. 
+\end{enumerate}
+The sequences $\{a_{j}(n)\}$'s are called \textit{recursive generating
+sequences for} $\{b(n)\}$. 
+\begin{rem}
+It is a well-known result in the theory of recursive sequences that
+a sequence that has a recursive generating set satisfies a linear
+recurrence with constant coefficients. In fact, this technique has
+been used in Theorems \ref{thmrot2} and \ref{generalTHM}. 
+\end{rem}
+
+\begin{thm}
+Let $p$ be prime and $q=p^{r}$. Consider the function 
+\[
+F_{n}=\sum_{t=1}^{N}\beta_{t}R_{j_{t,1},\cdots,j_{t,s_{t}}}(n),
+\]
+where $\beta_{t}\in\mathbb{F}_{q}$ and $1<j_{t,1}<\cdots<j_{t,s_{t}}$
+are integers. The sequence $\{S_{\mathbb{F}_{q}}(F_{n})\}$ satisfies
+a linear recurrence with integer coefficients. 
+\end{thm}
+
+M
+\begin{thm}
+\label{MoregeneralTHMSymmetric} Let $k\geq2$ be an integer and $q=p^{r}$
+with $p$ prime and $r\geq1$. The sequence 
+\begin{equation}
+\left\{ S_{\mathbb{F}_{q}}\left(\sum_{j=0}^{k-1}\beta_{j}\sigma_{n,k-j}\right)\right\} 
+\end{equation}
+satisfies a linear recurrence with constant coefficients, regardless
+of the choice of the $\beta_{j}$'s. 
+\end{thm}
+
+M
+\begin{thm}
+\label{eigenthm} Let $C(p)$ be the set of eigenvalues of $M(p)$.
+Let $\zeta_{p}=e^{2\pi i/p}$. Then, $\lambda\in C(p)$ if and only
+if In particular, $|C(p)|=(p+1)/2$. 
+\end{thm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Concluding remarks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Concluding remarks}
+
+This article is divided as follows. The next section contains some
+preliminaries. In Section \ref{multinomialsums} we provide multinomial
+sum expressions for exponential sums of symmetric polynomials over
+Galois fields. We also include some representations that depend on
+integer partitions. These multinomial sums representations are a computational
+improvement over the formal definition of exponential sums. Moreover,
+as just mentioned, they provide a connection to a problem similar
+to the problem of bisecting binomial coefficients. Section \ref{closedformulas}
+is the core and final section of this article. It is also the section
+where the main results are presented. In particular, we find closed
+formulas for some multinomial sums. This, together with multinomial
+sum representations for our exponential sums, allow us to prove closed
+formulas for exponential sums of linear combinations of elementary
+symmetric polynomials over finite fields. We also provide explicit
+linear recurrences for such exponential sums, showing that the recursive
+nature of these sequences is not special to the binary case. Moreover,
+every multi-variable function over a finite field extension of $\mathbb{F}_{2}$
+can be identified with a Boolean function. Thus, these results also
+provide new families of Boolean functions that might be useful for
+efficient implementations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preliminaries
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Closed formulas for exponential sums of symmetric polynomial}
+
+\section{Preliminaries}
+
+It is a well-established result in the theory of Boolean functions
+that any symmetric Boolean function can be identified with a linear
+combination of elementary symmetric Boolean polynomials. To be more
+precise, let $\boldsymbol{e}_{n,k}$ be the elementary symmetric polynomial
+in $n$ variables of degree $k$. For example, 
+\[
+\boldsymbol{e}_{4,3}=X_{1}X_{2}X_{3}\oplus X_{1}X_{4}X_{3}\oplus X_{2}X_{4}X_{3}\oplus X_{1}X_{2}X_{4},
+\]
+where $\oplus$ represents addition modulo 2. Every symmetric Boolean
+function $F({\bf X})$ can be identified with an expression of the
+form where $0\leq k_{1}<k_{2}<\cdots<k_{s}$ are integers. For the
+sake of simplicity, the notation $\boldsymbol{e}_{n,[k_{1},\ldots,k_{s}]}$
+is used to denote (\ref{genboolsym}). For example, 
+\begin{thm}
+\label{invariant} Let $1\leq k_{1}<\cdots<k_{s}$ be fixed integers
+and $r=\lfloor\log_{2}(k_{s})\rfloor+1$. The value of the exponential
+sum $S(\boldsymbol{e}_{n,[k_{1},\cdots,k_{s}]})$ is given by 
+\begin{eqnarray*}
+S(\boldsymbol{e}_{n,[k_{1},\cdots,k_{s}]}) & = & c_{0}(k_{1},\cdots,k_{s})2^{n}+\sum_{j=1}^{2^{r}-1}c_{j}(k_{1},\cdots,k_{s})(1+\zeta_{j})^{n},
+\end{eqnarray*}
+where $\zeta_{j}=e^{\frac{\pi i\,j}{2^{r-1}}},i=\sqrt{-1}$ and 
+\begin{equation}
+c_{j}(k_{1},\cdots,k_{s})=\frac{1}{2^{r}}\sum_{t=0}^{2^{r}-1}(-1)^{\binom{t}{k_{1}}+\cdots+\binom{t}{k_{s}}}\zeta_{j}^{-t}.\label{coeffs}
+\end{equation}
+\end{thm}
+
+Theorem \ref{invariant} and a closed formula for $c_{0}(k)$ (proved
+in \cite{cm1}) were used by Castro and Medina \cite{cm1} to prove
+asymptotically a conjecture of Cusick, Li and St$\check{\mbox{a}}$nic$\check{\mbox{a}}$
+about the balancedness of elementary symmetric polynomials \cite{cusick2}.
+An adaptation of Theorem \ref{invariant} to perturbations of symmetric
+Boolean functions (see \cite{cm2}) was recently used in \cite{cgm2}
+to prove a generalized conjecture of Canteaut and Videau \cite{canteaut}
+about the existence of balanced perturbations when the number of variables
+grows. The original conjecture, which was stated for symmetric Boolean
+functions, said that only trivially balanced functions exists when
+the number of variables grows. The original conjecture was proved
+by Guo, Gao and Zhao \cite{ggz}. The same behavior holds true for
+perturbations of symmetric Boolean functions.
+
+One of the goals of this article is to generalize Theorem \ref{invariant}
+to the general setting of Galois fields. If $F:\mathbb{F}_{q}^{n}\to\mathbb{F}_{q}$,
+then its \textit{exponential sum over $\mathbb{F}_{q}$} is given
+by 
+\begin{equation}
+S_{\mathbb{F}_{q}}(F)=\sum_{{\bf x}\in\mathbb{F}_{q}^{n}}e^{\frac{2\pi i}{p}\text{Tr}_{\mathbb{F}_{q}/\mathbb{F}_{p}}(F({\bf x}))},\label{expSq}
+\end{equation}
+trace function from $\mathbb{F}_{q}$ to $\mathbb{F}_{p}$. The \textit{field
+trace function} can be explicitly defined as 
+\begin{equation}
+\text{Tr}_{\mathbb{F}_{p^{l}}/\mathbb{F}_{p}}(\alpha)=\sum_{j=0}^{l-1}\alpha^{p^{j}},
+\end{equation}
+with arithmetic done in $\mathbb{F}_{p^{l}}$. Recently in \cite{ccms},
+it was proved that exponential sums over $\mathbb{F}_{q}$ of linear
+combinations of elementary symmetric polynomials are linear recurrent
+with integer coefficients. Thus, the recursive nature of these sequences
+is not restricted to $\mathbb{F}_{2}$. The approach presented in
+\cite{ccms}, however, 
+\begin{thm}
+Suppose that $n$ and $k$ are non-negative integers and let $p$
+be a prime. Suppose that 
+\begin{eqnarray*}
+n & = & n_{0}+n_{1}p+\cdots+n_{l}p^{l}\\
+k & = & k_{0}+k_{1}p+\cdots+k_{l}p^{l},
+\end{eqnarray*}
+with $0\leq n_{j},k_{j}<p$ for $j=1,\cdots,l$. Then, 
+\[
+\binom{n}{k}\equiv\prod_{j=0}^{l}\binom{n_{j}}{k_{j}}\mod p.
+\]
+\end{thm}
+
+Let $D=p^{\lfloor\log_{p}(k)\rfloor+1}$. Observe that one consequence
+of Lucas' Theorem is 
+\begin{equation}
+\binom{n+D}{k}\equiv\binom{n}{k}\mod p.
+\end{equation}
+This will be used throughout the rest of the paper.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A formula for exponential sums in terms of multinomial coefficients
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{A formula for exponential sums in terms of multinomial sums}
+
+\label{multinomialsums}
+
+In this section we prove a formula for $S_{\mathbb{F}_{q}}(\boldsymbol{e}_{n,k})$
+in terms of multinomial coefficients. This formula is a computational
+improvement over (\ref{expSq}). We start by finding a formula, in
+this case, a recursive one, for the value of $\boldsymbol{e}_{n,k}$
+at a vector ${\bf x}$.
+
+Let $n,k$ and $m$ be positive integers and $a_{s}$ be a parameter
+($s$ a positive integer). Let 
+\begin{equation}
+\Lambda_{a_{1}}(k,m)=a_{1}^{k}\binom{m}{k}
+\end{equation}
+and define $\Lambda_{a_{1},\cdots,a_{l}}$ recursively by 
+\begin{equation}
+\Lambda_{a_{1},a_{2},\cdots,a_{l+1}}(k,m_{1},m_{2},\cdots,m_{l+1})=\sum_{j=0}^{m_{l+1}}\binom{m_{l+1}}{j}a_{l+1}^{j}\Lambda_{a_{1},\cdots,a_{l}}(k-j,m_{1},m_{2},\cdots,m_{l}),
+\end{equation}
+The value of $\boldsymbol{e}_{n,k}$ is linked to $\Lambda_{a_{1},\cdots,a_{l}}$.
+\begin{lem}
+\label{lemmaSymm} Let $n$ and $k$ be positive integers. Let $A_{l}=\{0,a_{1},\cdots,a_{l}\}$
+and ${\bf x}\in A_{l}^{n}$. Suppose that $a_{j}$ appears $m_{j}$
+times in ${\bf x}$. Then, 
+\begin{equation}
+\boldsymbol{e}_{n,k}({\bf x})=\Lambda_{a_{1},\cdots,a_{l}}(k,m_{1},\cdots,m_{l}).
+\end{equation}
+\end{lem}
+
+The above lemma can be used to express exponential sums of symmetric
+polynomials as a multi-sum of products of multinomial coefficients.
+\begin{thm}
+\label{expsumformthm} Let $n,k$ be natural numbers such that $k\leq n$,
+$p$ a prime and $q=p^{r}$ for some positive integer $r$. Suppose
+that $\mathbb{F}_{q}=\{0,\alpha_{1},\cdots,\alpha_{q-1}\}$ is the
+Galois field of $q$ elements. Then, where $m_{0}^{*}=n-(m_{1}+\cdots+m_{q-1})$. 
+\end{thm}
+
+An easy adjustment to the proof of Theorem \ref{expsumformthm} leads
+the following corollary.
+\begin{cor}
+\label{expsumformcoro} Let $1\leq k_{1}<k_{2}<\cdots<k_{s}$ and
+$n$ be positive integers, $p$ a prime and $q=p^{r}$ for some positive
+integer $r$. Suppose that $\mathbb{F}_{q}=\{0,\alpha_{1},\cdots,\alpha_{q-1}\}$
+is the Galois field of $q$ elements. Consider the symmetric function
+Then, 
+\end{cor}
+
+Theorem \ref{expsumformthm} and its corollary can be written in terms
+of partitions of $n$. We say that $\boldsymbol{\lambda}=(\lambda_{1},\cdots,\lambda_{r})$
+is a {\em partition} of $n$, and write $\boldsymbol{\lambda}\dashv n$,
+if the $\lambda_{j}$ are integers and 
+\[
+\lambda_{1}\geq\cdots\geq\lambda_{r}\geq1\,\,\text{ and }\,\,n=\lambda_{1}+\cdots+\lambda_{r}.
+\]
+We us to denote the set of all rearrangements of $\boldsymbol{\lambda}$.
+Finally, if $\boldsymbol{\gamma}$ is a non-empty list, then $\boldsymbol{\gamma}^{*}$
+is the list obtained from $\boldsymbol{\gamma}$ by removing the first
+element. For example, if $\boldsymbol{\gamma}=(2,2,1,1)$, then $\boldsymbol{\gamma}^{*}=(2,1,1)$.
+Theorem \ref{expsumformthm} and Corollary \ref{expsumformcoro} can
+be re-stated as follows. 
+\begin{thm}
+\label{thmpart} Let $n,k$ be natural numbers such that $k\leq n$,
+$p$ a prime and $q=p^{r}$ for some positive integer $r$. Suppose
+that $\mathbb{F}_{q}=\{0,\alpha_{1},\cdots,\alpha_{q-1}\}$ is the
+Galois field of $q$ elements. Then, 
+\end{thm}
+
+\begin{cor}
+\label{coropart} Let $1\leq k_{1}<k_{2}<\cdots<k_{s}$ and $n$ be
+positive integers, $p$ a prime and $q=p^{r}$ for some positive integer
+$r$. Suppose that $\mathbb{F}_{q}=\{0,\alpha_{1},\cdots,\alpha_{q-1}\}$
+is the Galois field of $q$ elements. Consider the symmetric function
+\[
+\sum_{j=1}^{s}\beta_{j}\boldsymbol{e}_{n,k_{j}}\,\,\,\text{ where }\beta_{j}\in\mathbb{F}_{q}^{\times}.
+\]
+Then, 
+\end{cor}
+
+For small $q$, Theorem \ref{expsumformthm} and the recursive nature
+of $\Lambda_{a_{1},\cdots,a_{l}}$ can be used to speed up the computation
+of $S_{\mathbb{F}_{q}}(\boldsymbol{e}_{n,k})$. For example, using
+an implementation of Theorem \ref{expsumformthm} and an old computer
+(whose features are not top of the art) from one of the authors, it
+took \textit{Mathematica} 0.008 seconds to calculate where the indices
+run 
+\[
+0\leq m_{0}\leq n,0\leq m_{1}\leq n-m_{0},\cdots,0\leq m_{q-2}\leq n-m_{0}-m_{1}-\cdots-m_{q-3},
+\]
+into $p$ sublists, $l_{j}(n;q),1\leq j\leq p$, such that the sum
+on each sublist is the same. This common sum must be $q^{n-1}$. Observe
+that every time $S_{\mathbb{F}_{q}}(\beta_{1}\boldsymbol{e}_{n,k_{1}}+\cdots+\beta_{s}\boldsymbol{e}_{n,k_{s}})=0$
+we obtain a $(p,q)$-section to of multinomial coefficients. This
+connection generalizes the one that exists between bisections of binomial
+coefficients and symmetric Boolean functions.
+\begin{example}
+The elementary symmetric polynomial $\boldsymbol{e}_{5,3}$ is such
+that $S_{\mathbb{F}_{3}}(\boldsymbol{e}_{5,3})=0$. Observe that 
+\end{example}
+
+M
+\begin{example}
+The symmetric polynomial $\boldsymbol{e}_{6,5}+\boldsymbol{e}_{6,3}$
+also satisfies $S_{\mathbb{F}_{3}}(\boldsymbol{e}_{6,5}+\boldsymbol{e}_{6,3})=0$.
+In this case, 
+\begin{equation}
+\mathcal{L}(6;3)=\{1,6,15,20,15,6,1,6,30,60,60,30,6,15,60,90,60,15,20,60,60,20,15,30,15,6,6,1\}.
+\end{equation}
+The 3-section that corresponds to $\boldsymbol{e}_{6,5}+\boldsymbol{e}_{6,3}$
+over $\mathbb{F}_{3}$ is 
+\begin{eqnarray}
+l_{1}(6;3) & = & \{1,6,6,15,15,20,30,30,30,90\}\label{3sec}\\
+l_{2}(6;3) & = & \{1,6,6,15,15,20,60,60,60\}\nonumber \\
+l_{3}(6;3) & = & \{1,6,6,15,15,20,60,60,60\}.\nonumber 
+\end{eqnarray}
+\end{example}
+
+As in the Boolean case, we may try to define trivial $(p,q)$-sections.
+A possible way to do this is to say that a $(p,q)$-section is trivial
+if $l_{1}(n;k)=l_{2}(n;k)=\cdots=l_{p}(n;k)$. Again, following the
+binary case, we say that a symmetric polynomial $\beta_{1}\boldsymbol{e}_{n,k_{1}}+\cdots+\beta_{s}\boldsymbol{e}_{n,k_{s}}$
+is trivially balanced over $\mathbb{F}_{q}$ if its related $(p,q)$-section
+is trivial. For example, $\boldsymbol{e}_{5,3}$ is trivially balanced,
+while $\boldsymbol{e}_{6,5}+\boldsymbol{e}_{6,3}$ is not. It would
+be interesting to know if some results known for the binary case also
+apply to this problem.
+
+Exponential sums of linear combinations of elementary symmetric polynomials
+are also linked, via Theorem we find a solution to (\ref{diopheq}).
+\begin{example}
+Consider $\mathbb{F}_{4}=\{0,1,\alpha,\alpha+1\}$ where $\alpha^{2}=\alpha+1$.
+The symmetric polynomial 
+\[
+(1+\alpha)\boldsymbol{e}_{n,3}+(1+\alpha)\boldsymbol{e}_{n,2}+\alpha\boldsymbol{e}_{n,1}
+\]
+is such that 
+
+A natural problem to explore is to see how solutions to (\ref{diopheq})
+given by exponential sums of linear combinations of elementary symmetric
+polynomials look like as $n$ grows. Perhaps something similar to
+the study presented in \cite{cgm2} holds true in this case. This
+is part of future research.
+\end{example}
+
+In the next section, we prove closed formulas for exponential sums
+of symmetric polynomials over Galois fields. Moreover, we provide
+explicit linear recurrences with integer coefficients for these exponential
+sums.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Closed formulas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Closed formulas for exponential sums of symmetric polynomials}
+
+\label{closedformulas} In this section we generalize Theorem \ref{invariant},
+that is, we provide closed formulas for the exponential sums considered
+in this article. These formulas, in turn, allow us to find explicit
+recursions for these sequences. Our formulas depend on circulant matrices
+and on periodicity. Thus, we start with a short background on these
+topics.
+
+Let $D$ be a positive integer and $\alpha=\left(c_{0},c_{1},\ldots,c_{D-1}\right)\in\mathbb{C}^{D}$.
+The $D$-{\em circulant matrix} associated to $\alpha$, denoted
+by $\text{circ}(\alpha)$, is defined by
+
+\begin{equation}
+\text{circ}(\alpha):=\left(\begin{array}{ccccc}
+c_{0} & c_{1} & \cdots & c_{D-2} & c_{D-1}\\
+c_{D-1} & c_{0} & \cdots & c_{D-1} & c_{D-2}\\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+c_{2} & c_{3} & \cdots & c_{0} & c_{1}\\
+c_{1} & c_{2} & \cdots & c_{D-1} & c_{0}
+\end{array}\right).
+\end{equation}
+The polynomial $p_{\alpha}(X)=c_{0}+c_{1}X+\cdots+c_{D-1}X^{D-1}$
+is called the {\em associated polynomial} of the circulant matrix.
+In the literature, this polynomial is also called {\em representer
+polynomial}. Observe that if 
+\begin{prop}
+\label{closedformprop} Let $n\in\mathbb{N}$ and $0\leq t\leq D-1$.
+Then, 
+\begin{equation}
+r_{t}(n;a)=\frac{1}{D}\sum_{m=0}^{D-1}\xi_{D}^{tm}\lambda_{m}^{n},
+\end{equation}
+where $\xi_{D}=\exp(2\pi i/D)$ and $\lambda_{m}=1+a\xi_{D}^{-m}$
+are the eigenvalues of 
+\end{prop}
+
+The following results are easy consequences of the above proposition.
+\begin{cor}
+\label{corocloseda} Let $F$ be a periodic function with period $D$.
+Suppose that $\xi^{D}=1$ (not necessarily primitive). Then, 
+\begin{equation}
+\sum_{l=0}^{n}\binom{n}{l}a^{l}\xi^{F(l)}=\frac{1}{D}\sum_{t=0}^{D-1}\xi^{F(t)}\sum_{j=0}^{D-1}\xi_{D}^{tj}\lambda_{j}^{n},
+\end{equation}
+where $\xi_{D}=\exp(2\pi i/D)$ and $\lambda_{j}=1+a\xi_{D}^{-j}$,
+for $0\leq j\leq D-1$, are the eigenvalues of 
+\end{cor}
+
+M
+\begin{cor}
+\label{coroclosed} Let $F$ be a periodic function with period $D$.
+Suppose that $\xi^{D}=1$ (not necessarily primitive). Then, 
+\begin{equation}
+\sum_{l=0}^{n}\binom{n}{l}\xi^{F(l)}=\frac{1}{D}\sum_{t=0}^{D-1}\xi^{F(t)}\sum_{j=0}^{D-1}\xi_{D}^{tj}\left(1+\xi_{D}^{-j}\right)^{n},
+\end{equation}
+where $\xi_{D}=\exp(2\pi i/D)$. 
+\end{cor}
+
+These results can be extended further to obtain closed formulas for
+multinomial sums.
+\begin{thm}
+\label{generalclosed} Let $F(q_{1},\cdots,q_{r})$ be a periodic
+function in each component. Moreover, suppose that $D$ is a period
+for $F$ in each component and that $\xi^{D}=1$ (not necessarily
+primitive). Define, where $\xi_{D}=\exp(2\pi i/D)$ and $\lambda_{j_{1},\cdots,j_{r}}=1+\xi_{D}^{-j_{1}}+\xi_{D}^{-j_{2}}+\cdots+\xi_{D}^{-j_{r}}$.
+\end{thm}
+
+Observe that equation (\ref{nicerep}) can be written as where However,
+note that $\lambda_{t_{1},\cdots,t_{r}}=\lambda_{t'_{1},\cdots,t'_{r}}$
+where $(t'_{1},\cdots,t'_{r})$ is any rearrangement of $(t_{1},\cdots,t_{r})$.
+This means that the coefficient of $\lambda_{t_{1},\cdots,t_{r}}^{n}$
+in (\ref{nicerep}) is the sum of all $d_{t_{1}',\cdots,t_{r}'}(D)$
+where $(t_{1}',\cdots,t_{r}')$ is a rearrangement of $(t_{1},\cdots,t_{r})$.
+rearrangements of $(t_{1},\cdots,t_{r})$. Theorem \ref{generalclosed}
+now can be re-stated as follows.
+\begin{thm}
+\label{generalclosedA} Let $F(q_{1},\cdots,q_{r})$ be a periodic
+function in each component. Moreover, suppose that $D$ is a period
+for $F$ in each component and that $\xi^{D}=1$ (not necessarily
+primitive). Define, and $\xi_{D}=\exp(2\pi i/D)$.
+\end{thm}
+
+A nice consequence of this result is that sequences of the form $\{S(n)\}$,
+with $S(n)$ defined as in (\ref{gensumA}), satisfy linear recurrences
+with integer coefficients. Moreover, we can provide explicit characteristic
+polynomials for such recurrences.
+\begin{cor}
+\label{gencoro} 
+\end{cor}
+
+The linear recurrence given in Corollary \ref{gencoro} is not necessarily
+the minimal linear recurrence with integer coefficients satisfied
+by $\{S(n)\}$. However, the characteristic polynomial of the minimal
+of such recurrences must be a factor of $P_{S}(X)$.
+\begin{example}
+Let $F$ be a $n$-variable Boolean function. The \textit{nega-Hadamard
+transform of F} is defined as the complex valued function given by
+where $\Phi_{n}(X)$ is the $n$-th cyclotomic polynomial.
+\end{example}
+
+We would like to point out that this is not a new result. It was already
+established in \cite{cms}. However, we decided to include it because
+it is a straightforward application of our results. 
+\begin{example}
+Consider the sum The fact that $\mu_{S}(X)|P_{S}(X)$ is now evident. 
+\end{example}
+
+M
+\begin{example}
+Other toy examples can be constructed with previous classical results.
+For example, it is known that $\{f_{n}\mod m\}$, where $f_{n}$ represents
+the $n$-th Fibonacci number and $m$ is a positive integer, is periodic.
+The period is known as the Pisano period mod $m$ and it is usually
+denoted by $\pi(m)$. Let $f_{n}^{(m)}$ represent $f_{n}\mod m$
+and consider the sum This example can be easily generalized to any
+Lucas sequence of the first kind $u_{n}(a,b)$ (the Fibonacci sequence
+is given by $u_{n}(1,-1)$). 
+\end{example}
+
+is of the same type as (\ref{gensum}). It remains to show the periodicity
+of $F_{k;\mathbb{F}_{q}}$.
+
+We start with the following lemma.
+\begin{lem}
+\label{lambdaperiod} Let $p$ be prime and $a_{1},\cdots,a_{l}$
+be some elements in some field extension of $\mathbb{F}_{p}$. Define
+\begin{equation}
+\Lambda_{a_{1},\cdots,a_{l}}^{(p)}(k,m_{1},\cdots,m_{l})=\Lambda_{a_{1},\cdots,a_{l}}(k,m_{1}^{+},\cdots,m_{l}^{+})\mod p,
+\end{equation}
+where Then, $\Lambda_{a_{1},\cdots,a_{l}}^{(p)}(k,m_{1},\cdots,m_{l})$
+is periodic in each of the variables $m_{1},\cdots,m_{l}$ with period
+$D=p^{\lfloor\log_{p}(k)\rfloor+1}$. 
+\end{lem}
+
+We now present our closed formulas for $S_{\mathbb{F}_{q}}(\boldsymbol{e}_{n,k})$.
+This generalizes Cai et al.'s result for the binary case \cite{cai}.
+It also generalizes the recurrence exploited in \cite{cm1,cm2}.
+\begin{thm}
+\label{closedformsSq} Let $n$ and $k>1$ be positive integers and
+$p$ be a prime and $q=p^{r}$ with $r\geq1$. Let $D=p^{\lfloor\log_{p}(k)\rfloor+1}$.
+Then, 
+\[
+S_{\mathbb{F}_{q}}(\boldsymbol{e}_{n,k})=\sum_{j_{1}=0}^{D-1}\sum_{j_{2}=0}^{j_{1}}\cdots\sum_{j_{q-1}=0}^{j_{q-2}}c_{j_{1},\cdots,j_{q-1}}(k)\left(1+\xi_{D}^{-j_{1}}+\cdots+\xi_{D}^{-j_{q-1}}\right)^{n},
+\]
+$\xi_{m}=\exp(2\pi i/m)$, In particular, the sequence $\{S_{\mathbb{F}_{q}}(\boldsymbol{e}_{n,k})\}$
+satisfies the linear recurrence with integer coefficients whose characteristic
+polynomial is given by 
+\[
+P_{q,k}(X)=\prod_{a_{1}=0}^{D-1}\,\prod_{0\leq a_{2}\leq a_{1}}\cdots\prod_{0\leq a_{q-1}\leq a_{q-2}}\left(X-\left(1+\xi_{D}^{a_{1}}+\cdots+\xi_{D}^{a_{q-1}}\right)\right).
+\]
+\end{thm}
+
+Theorem \ref{closedformsSq} also provides a bound for the degree
+of the minimal linear recurrence with integer coefficients satisfied
+by $\{S_{\mathbb{F}_{q}}(\boldsymbol{e}_{n,k})\}$.
+\begin{cor}
+Let $k>1$ be positive integers and $p$ be a prime and $q=p^{r}$
+with $r\geq1$. Let $D=p^{\lfloor\log_{p}(k)\rfloor+1}$. The degree
+of the minimal linear recurrence with integer coefficients that $\{S_{\mathbb{F}_{q}}(\boldsymbol{e}_{n,k})\}$
+satisfies is less than or equal to $(D)_{q}/q!$, where $(a)_{n}=a(a+1)(a+2)\cdots(a+n-1)$
+is the Pochhammer symbol. 
+\end{cor}
+
+\begin{example}
+\label{exF4} Consider the sequence $\{S_{\mathbb{F}_{4}}(\boldsymbol{e}_{n,3})\}$.
+Theorem \ref{closedformsSq} implies that this sequence satisfies
+the linear recurrence whose characteristic is given by 
+\begin{align*}
+F_{8}({\bf X})= & X_{2}X_{3}X_{5}+X_{1}X_{4}X_{5}+X_{2}X_{4}X_{5}+X_{2}X_{7}X_{5}+X_{4}X_{7}X_{5}+X_{1}X_{8}X_{5}+X_{2}X_{8}X_{5}+\\
+ & X_{3}X_{8}X_{5}+X_{4}X_{8}X_{5}+X_{1}X_{3}X_{6}+X_{2}X_{3}X_{6}+X_{1}X_{4}X_{6}+X_{2}X_{3}X_{7}+X_{1}X_{4}X_{7}+\\
+ & X_{2}X_{4}X_{7}+X_{1}X_{6}X_{7}+X_{2}X_{6}X_{7}+X_{3}X_{6}X_{7}+X_{4}X_{6}X_{7}+X_{1}X_{3}X_{8}+X_{2}X_{3}X_{8}+\\
+ & X_{1}X_{4}X_{8}+X_{1}X_{6}X_{8}+X_{3}X_{6}X_{8}.
+\end{align*}
+Observe that $S_{\mathbb{F}_{4}}(\boldsymbol{e}_{4,3})=S_{\mathbb{F}_{2}}(F_{8})=64.$ 
+\end{example}
+
+M
+\begin{example}
+onsider the sequence $\{S_{\mathbb{F}_{8}}(\boldsymbol{e}_{n,3})\}$.
+Theorem \ref{closedformsSq} implies that this sequence satisfies
+the linear recurrence whose characteristic is given by 
+\begin{eqnarray*}
+P_{8,3}(X) & = & \prod_{a_{1}=0}^{3}\prod_{a_{2}=0}^{a_{1}}\prod_{a_{3}=0}^{a_{2}}\prod_{a_{4}=0}^{a_{3}}\prod_{a_{5}=0}^{a_{4}}\prod_{a_{6}=0}^{a_{5}}\prod_{a_{7}=0}^{a_{6}}\left(X-\left(1+i^{a_{1}}+i^{a_{2}}+i^{a_{3}}+i^{a_{4}}+i^{a_{5}}+i^{a_{6}}+i^{a_{7}}\right)\right).
+\end{eqnarray*}
+The minimal linear recurrence with integer coefficients that $\{S_{\mathbb{F}_{8}}(\boldsymbol{e}_{n,3})\}$
+satisfies has characteristic polynomial given by As with the previous
+can be identified with a $3n$-variable Boolean function. 
+\end{example}
+
+These two examples show a big difference between the degrees of the
+polynomials $P_{q,k}(X)$ and $\mu_{q,k}(X)$, where $\mu_{q,k}(X)$
+represents the characteristic polynomial of the minimal linear recurrence
+with integer coefficients satisfied by the sequence $\{S_{\mathbb{F}_{q}}(\boldsymbol{e}_{n,k})\}$.
+In particular, $P_{q,k}(X)$ does not seem to be tight. However, what
+you are seeing here is the fact that when working over $\mathbb{F}_{q}$
+with $q=p^{r}$ and $r>1$, some of the factors of $P_{q,k}(X)$ are
+repeated multiple times. For instance, consider Example \ref{exF4}.
+Observe that when $(a_{1},a_{2},a_{3})=(2,1,0)$ we get the factor
+$X-(1+i)$. However when $(a_{1},a_{2},a_{3})=(3,1,1)$, we also get
+the factor $X-(1+i)$. Therefore, this factor is repeated twice. The
+factor $X-(1-i)$ is also repeated twice. That is why the factor $X^{2}-2X+2$
+appears in $P_{4,3}(X)$ with 2 as exponent. This phenomenon does
+not occur over $\mathbb{F}_{p}$. In fact, there are examples where
+the polynomial $P_{p,k}(X)$ is tight.
+\begin{example}
+Consider the sequence $\{S_{\mathbb{F}_{3}}(\boldsymbol{e}_{n,7})\}$.
+The characteristic polynomial of the minimal linear recurrence with
+integer coefficients satisfied by this sequence is 
+\[
+\mu_{3,7}(X)=\frac{1}{X}P_{3,7}(X).
+\]
+The te
+\end{example}
+
+The repetition of factors can be eliminated by using \textit{least }
+\begin{thm}
+Let $n$ and $k>1$ be positive integers and $p$ be a prime and $q=p^{r}$
+with $r\geq1$. Let $D=p^{\lfloor\log_{p}(k)\rfloor+1}$. Let $M_{a_{1},\cdots,a_{q-1}}(X)$
+be the minimal polynomial for the algebraic integer $1+\xi_{D}^{a_{1}}+\cdots+\xi_{D}^{a_{q-1}}$.
+Then, $\{S_{\mathbb{F}_{q}}(\boldsymbol{e}_{n,k})\}$ satisfies the
+linear recurrence with integer coefficients whose characteristic polynomial
+is given by 
+\end{thm}
+
+\begin{rem}
+As expected, having these recurrences at hand allow us to compute
+exponential sums of elementary symmetric polynomials for big values
+of $n$. For instance, it took \textit{Mathematica} 37.504 seconds
+to calculate $S_{\mathbb{F}_{3}}(\boldsymbol{e}_{100,000,11})$, which
+is a integer with $47,712$ digits.
+\end{rem}
+
+We point out that Theorem \ref{closedformsSq} and other results after
+it can be extended to linear combinations of elementary symmetric
+polynomials without too much effort. For instance, suppose that $0\leq k_{1}<\cdots<k_{s}$
+are integers and $\beta_{1},\cdots,\beta_{s}\in\mathbb{F}_{q}^{\times}$.
+The discussion prior Theorem \ref{closedformsSq} together with Corollary
+\ref{expsumformcoro} implies that The statement of Theorem \ref{closedformsSq}
+can now be written almost verbatim for linear combinations of elementary
+symmetric polynomials. The only differences are that $D$ is now $D=p^{\lfloor\log_{p}(k_{s})\rfloor+1}$
+and Similar adjustments apply to the other results.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preliminaries
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Concluding remarks}
+
+We
+\begin{thebibliography}{10}
+\bibitem{sperber} A. Adolphson and S. Sperber. \newblock $p$-adic
+Estimates for Exponential Sums and the of Chevalley-Warning. \newblock
+\textit{Ann. Sci. Ec. Norm. Super.}, $4^{e}$ série, \textbf{20},
+545\textendash 556, 1987.
+
+\bibitem{acgmr} R. A. Arce-Nazario, F. N. Castro, O. E. González,
+L. A. Medina and I. M. Rubio. \newblock New families of balanced
+symmetric functions and a generalization of Cuscik, Li and P. St$\check{\mbox{a}}$nic$\check{\mbox{a}}$.
+\newblock \textit{Designs, Codes and Cryptography} \textbf{86}, 693\textendash 701,
+2018.
+
+\bibitem{ax} J. Ax. \newblock Zeros of polynomials over finite fields.
+\newblock \textit{Amer. J. Math.}, \textbf{86}, 255\textendash 261,
+1964.
+
+\bibitem{BCP} M. L. Bileschi, T.W. Cusick and D. Padgett. \newblock
+Weights of Boolean cubic monomial rotation symmetric functions. \newblock
+\textit{Cryptogr. Commun.}, \textbf{4}, 105\textendash 130, 2012.
+
+\bibitem{browncusick} A. Brown and T. W. Cusick. \newblock Recursive
+weights for some Boolean functions. \newblock \textit{J. Math. Cryptology},
+\textbf{6(2)}, 105\textendash 135, 2012.
+
+\bibitem{cai} J. Cai, F. Green and T. Thierauf. \newblock On the
+correlation of symmetric functions. \newblock \textit{Math. Systems
+Theory}, \textbf{29}, 245\textendash 258, 1996.
+
+\bibitem{canteaut} A. Canteaut and M. Videau. \newblock Symmetric
+Boolean Functions. \newblock \textit{IEEE Trans. Inf. Theory} \textbf{51(8)},
+2791\textendash 2881, 2005.
+
+\bibitem{Davis} \newblock Philip Davis. Circulant Matrices. \newblock
+Chelsea publishing, Second Edition,1994.
+
+\bibitem{cmg3} F. N. Castro, O. E. González and L. A. Medina. \newblock
+Diophantine Equations With Binomial Coefficients and Perturbations
+of Symmetric Boolean Functions. \newblock \textit{IEEE Trans. Inf.
+Theory}, \textbf{64(2)}, 1347\textendash 1360, 2018.
+
+\bibitem{cm1} F. N. Castro and L. A. Medina. \newblock Linear Recurrences
+and Asymptotic Behavior of Exponential Sums of Symmetric Boolean Functions.
+\newblock \textit{Elec. J. Combinatorics}, 18:\#P8, 2011.
+
+\bibitem{cm2} F. N. Castro and L. A. Medina. \newblock Asymptotic
+Behavior of Perturbations of Symmetric Functions. \newblock \textit{Annals
+of Combinatorics}, 18:397\textendash 417, 2014.
+
+\bibitem{cm3} F. N. Castro and L. A. Medina. \newblock Modular periodicity
+of exponential sums of symmetric Boolean functions. \newblock \textit{Discrete
+Appl. Math.} \textbf{217}, 455\textendash 473, 2017.
+
+\bibitem{cms} F. N. Castro, L. A. Medina and P. St$\check{\mbox{a}}$nic$\check{\mbox{a}}$.
+\newblock Generalized Walsh transforms of symmetric and rotation
+symmetric Boolean functions are linear recurrent. \newblock \textit{Appl.
+Algebra Eng. Commun. Comput.}, DOI 10.1007/s00200-018-0351-5, 2018.
+
+\bibitem{ccms} F. N. Castro, R. Chapman, L. A. Medina, and L. B.
+Sepúlveda. \newblock Recursions associated to trapezoid, symmetric
+and rotation symmetric functions over Galois fields. \newblock to
+appear in Discrete Math.
+
+\bibitem{cusick4} T. W. Cusick. \newblock Hamming weights of symmetric
+Boolean functions. \newblock \textit{Discrete Appl. Math.} \textbf{215},
+14\textendash 19, 2016.
+
+\bibitem{cusickArXiv} T. W. Cusick. \newblock Weight recursions
+for any rotation symmetric Boolean functions. \newblock \textit{IEEE
+Trans. Inf. Theory}, \textbf{64}, 2962 - 2968, 2018.
+
+\bibitem{cusickjohns} T. W. Cusick and B. Johns. \newblock Recursion
+orders for weights of Boolean cubic rotation symmetric functions.
+\newblock \textit{Discr. Appl. Math.}, \textbf{186}, 1\textendash 6,
+2015.
+
+\bibitem{cusick2} T. W. Cusick, Y. Li, and P. St$\check{\mbox{a}}$nic$\check{\mbox{a}}$.
+\newblock Balanced Symmetric Functions over $GF(p)$. \newblock
+\textit{IEEE Trans. Inf. Theory}, \textbf{5}, 1304\textendash 1307,
+2008.
+
+\bibitem{cusickstanica} T.W. Cusick and P. St$\check{\mbox{a}}$nic$\check{\mbox{a}}$.
+\newblock Fast evaluation, weights and nonlinearity of rotation symmetric
+functions. \newblock \textit{Discr. Math.}, \textbf{258}, 289\textendash 301,
+2002.
+
+\bibitem{dalaimaitrasarkar} D. K. Dalai, S. Maitra and S. Sarkar.
+\newblock Results on rotation symmetric Bent functions. \newblock
+\textit{Second International Workshop on Boolean Functions: Cryptography
+and Applications, BFCA'06}, publications of the universities of Rouen
+and Havre, 137\textendash 156, 2006.
+
+\bibitem{fengliu} K. Feng and F. Liu. \newblock New Results On The
+Nonexistence of Generalized Bent Functions. \newblock \textit{IEEE
+Trans. Inf. Theory} \textbf{49}, 3066\textendash 3071, 2003.
+
+\bibitem{ggz} Y. Guo, G. Gao, Y. Zhao. \newblock Recent Results
+on Balanced Symmetric Boolean Functions. \newblock \textit{IEEE Trans.
+Inf. Theory} \textbf{62 (9)}, 5199\textendash 5203, 2016.
+
+\bibitem{hell} M. Hell, A. Maximov and S. Maitra. \newblock On efficient
+implementation of search strategy for rotation symmetric Boolean functions.
+\newblock \textit{Ninth International Workshop on Algebraic and Combinatorial
+Coding Theory, ACCT 2004}, Black Sea Coast, Bulgaria, 2004.
+
+\bibitem{hg} Y. Hu and G. Xiao. \newblock Resilient Functions Over
+Finite Fields. \newblock \textit{IEEE Trans. Inf. Theory} \textbf{49},
+2040\textendash 2046, 2003.
+
+\bibitem{fspectrum} M. Kolountzakis, R. J. Lipton, E. Markakis, A.
+Metha and N. K. Vishnoi. \newblock On the Fourier Spectrum of Symmetric
+Boolean Functions. \newblock \textit{Combinatorica}, \textbf{29},
+363\textendash 387, 2009.
+
+\bibitem{KScW} P.V. Kumar, R.A. Scholtz, and L.R. Welch. \newblock
+Generalized Bent Functions and Their Properties. \newblock \textit{J.
+Combinatorial Theory (A)}, \textbf{40}, 90\textendash 107, 1985.
+
+\bibitem{licusick1} Y. Li and T.W. Cusick. \newblock Linear Structures
+of Symmetric Functions over Finite Fields. \newblock {Inf. Processing
+Letters} \textbf{97}, 124\textendash 127, 2006.
+
+\bibitem{licusick2} Y. Li and T. W. Cusick. \newblock Strict Avalanche
+Criterion Over Finite Fields. \newblock \textit{J. Math. Cryptology}
+\textbf{1(1)}, 65\textendash 78, 2006.
+
+\bibitem{llm}M. Liu, P. Lu and G.L. Mullen. \newblock Correlation-Immune
+Functions over Finite Fields. \newblock \textit{IEEE Trans. Inf.
+Theory} \textbf{44}, 1273\textendash 1276, 1998.
+
+\bibitem{maxhellmaitra} A. Maximov, M. Hell and S. Maitra. \newblock
+Plateaued Rotation Symmetric Boolean Functions on Odd Number of Variables.
+\newblock \textit{First Workshop on Boolean Functions:Cryptography
+and Applications, BFCA'05}, publications of the universities of Rouen
+and Havre, 83\textendash 104, 2005.
+
+\bibitem{mitchell} C. Mitchell. \newblock Enumerating Boolean functions
+of cryptographic significance. \newblock {\em J. Cryptology} \textbf{2}
+(3), 155\textendash 170, 1990.
+
+\bibitem{mm1} O. Moreno and C. J. Moreno. \newblock Improvement
+of the Chevalley-Warning and the Ax-Katz theorems. \newblock \textit{Amer.
+J. Math.}, \textbf{117}, 241\textendash 244, 1995.
+
+\bibitem{mm} O. Moreno and C. J. Moreno. \newblock The MacWilliams-Sloane
+Conjecture on the Tightness of the Carlitz-Uchiyama Bound and the
+Weights of Dual of BCH Codes. \newblock \textit{IEEE Trans. Inform.
+Theory}, \textbf{40}, 1894\textendash 1907, 1994.
+
+\bibitem{parkerpott} M. G. Parker and A. Pott. \newblock On Boolean
+functions which are bent and negabent. \newblock \textit{Proc. Int.
+Conf. Sequences, Subsequences, Consequences}, LNCS-4893, 9\textendash 23,
+2007.
+
+\bibitem{piequ} J. Pieprzyk and C.X. Qu. \newblock Fast hashing
+and rotation-symmetric functions. \newblock \textit{J. Universal
+Comput. Sci.}, \textbf{5 (1)}, 20\textendash 31, 1999.
+
+\bibitem{rp} C. Riera and M. G. Parker. \newblock Generalized bent
+criteria for Boolean functions. \newblock \textit{IEEE Trans. Inform.
+Theory} \textbf{52} (9), 4142\textendash 4159, 2006.
+
+\bibitem{fdegree} A. Shpilka and A. Tal. \newblock On the Minimal
+Fourier Degree of Symmetric Boolean Functions. \newblock \textit{Combinatorica},
+\textbf{88}, 359\textendash 377, 2014.
+
+\bibitem{stanicamaitra} P. St$\check{\mbox{a}}$nic$\check{\mbox{a}}$
+and S. Maitra. \newblock Rotation Symmetric Boolean Functions \textendash{}
+Count and Cryptographic Properties. \newblock \textit{Discr. Appl.
+Math.}, \textbf{156}, 1567\textendash 1580, 2008
+
+\bibitem{stanicamaitraclark} P. St$\check{\mbox{a}}$nic$\check{\mbox{a}}$,
+S. Maitra and J. Clark. \newblock Results on Rotation Symmetric Bent
+and Correlation Immune Boolean Functions. \newblock \textit{Fast
+Software Encryption, FSE 2004}, Lecture Notes in Computer Science,
+\textbf{3017}, 161\textendash 177. SpringerVerlag, 2004.
+\end{thebibliography}
+
+\end{document}

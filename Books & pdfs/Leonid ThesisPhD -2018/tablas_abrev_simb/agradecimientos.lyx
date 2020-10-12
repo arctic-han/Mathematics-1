@@ -1,0 +1,140 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-named
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Description
+Agradecimiento
+\begin_inset space ~
+\end_inset
+
+familiar: A mi familia por toda su confianza y esperanza depositada en mi.
+ Mi padre y madre Jaime de Jesús Sepúlveda García y a mi esposa Arcenia
+ Alvarez.
+ Tambien a mis hijos Yeidy, Andrew y Santiago por sus valentía y perseverancia.
+ Y a todos los que me acompañaron en este proceso.
+\end_layout
+
+\begin_layout Description
+Agradecimiento
+\begin_inset space ~
+\end_inset
+
+Academia: De gran manera este agradecimiento se debe a la colaboración,
+ apoyo y concejería de todos los profesores y compañeros de estudio que
+ de alguna manera han impactado en mi educación.
+ En especial, resaltaría los nombres de los profesores: Hernan Alonso, Gilberto
+ García Carlos A.
+ Trujillo, Gustavo Loaiza, Carlos Castaño, Fernando Caceres, Pedro Vázquez,
+ Omar Colón, Italo Dejter y Luis Medina.
+ Y resaltaría los nombres de los compañeros de estudios: Gabriel úribe,
+ Rafael Aparicio, Julian Rodriguez, Juan Orozco, Edison Villa, Lucitairis
+ Acosta, Juana Vásquez y Ernesto Galán.
+\end_layout
+
+\begin_layout Description
+Agradecimiento
+\begin_inset space ~
+\end_inset
+
+especial: A la memoria del profesor Gustavo Loaiza, en especial por el evento
+ 
+\begin_inset Quotes eld
+\end_inset
+
+milagroso
+\begin_inset Quotes erd
+\end_inset
+
+ determinado por él hacia mi y también a mi concejeros doctorales, el Dr.
+ Luis A.
+ Medina y el Dr.
+ Francis N.
+ Castro que hicieron que la curva de continuidad de mis estudios queden
+ contruídos un punto de inflexión y un punto máximo en esta curva que jamá
+ serán olvidados por mi.
+\end_layout
+
+\begin_layout Description
+Agradecimiento
+\begin_inset space ~
+\end_inset
+
+general: A todos los que por algún motivo aportaron un granito positivo
+ para la consecusión de este grado, en especial a los miembros del comité
+ lector de esta disertación.
+\end_layout
+
+\end_body
+\end_document

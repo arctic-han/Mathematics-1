@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  TEMPLATE FOR GRADUATE STUDENT OF                          %%
+%%                   THE UNIVERSITY OF PUERTO RICO		       	              %%
+%% 	                        AT RIO PIEDRAS                                    %%
+%% Original version: 	Alberto Santana 2004                                  %%
+%% Modified: 		    Cesar Aceros - Jul/05                                 %%
+%%					    Create the RUM's Template                           %%
+%%					          											      %%
+%% UPCOMING MODIFICATIONS	GOES HERE						                  %%
+%% Modification 1: 	    Luis R. Fuentes Castilla - May 2010                   %%
+%%      				  Create the UPRRP's Template					      %%
+%%																			  %%
+%%																			  %%
+%% ---------------------------------------------------------------------------%%
+%% ESTE ARCHIVO ES LA COLUMNA VERTEBRAL  			                          %%
+%% DE LA TESIS.													              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{thesisinfo.tex}  	
+                         % This file defines important information for the thesis,
+									                   % Graduate Commitee and the Author.
+\begin{document}
+
+\frontmatter							               %This command is for preliminar pages. Stablish the roman numbers pagination.
+
+\input{front.tex}      		                       % This file create the Signature page, Abstract(english, spanish),
+													   % Copyright, Dedication, Acknowledgements pages.
+%\input{chapters/preface.tex}
+
+\tableofcontents					                   % Table of contents
+% \listoftables 						                   % List of tables
+%\listoffigures 						               % List of figures
+
+%\input{tablas_abrev_simb/abbreviations.tex} 	       % List of abbreviations
+\input{tablas_abrev_simb/symbol_list.tex}			   % List of symbols
+
+
+\mainmatter							                   % Preliminar pages end here, begin body of the thesis. Change the i,ii to 1,2
+
+\input{chapters/chapter1_Introduction.tex}             % This is the Chapter 1
+\input{chapters/chapter2.tex}
+\input{chapters/chapter3.tex}       				   % All the chapters goes here.
+%\input{chapters/chapter4.tex}
+%\input{chapters/chapter5.tex}
+%\input{chapters/chapter6.tex}
+%\input{chapters/chapter7.tex}
+%\input{chapters/capitulo5.tex}					   % If you want add this chapter remove the comment (%).
+%\input{chapters/chapter6.tex}                         % If you want add this chapter remove the comment (%).
+%\input{chapters/Conclusion.tex}    				   % This is the last Chapter
+
+%\appendix									           % End of the body of the thesis, begin of the appendices.
+%\makeappendicespage		                           % Create a page with "APPENDICES" in the middle.
+
+%\input{appendices/AppendixA.tex}			           % This is the appendix A.
+%\input{appendices/AppendixB.tex}			           % This is the appendix B. For more appendices: \input{AppendixC.tex}
+\input{back.tex}					                   % This file create the Bibliography, Biography and general abstrac for the thesis.
+\end{document} 

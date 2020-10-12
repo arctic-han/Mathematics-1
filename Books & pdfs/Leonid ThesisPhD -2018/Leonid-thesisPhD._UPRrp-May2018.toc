@@ -1,0 +1,17 @@
+\contentsline {extrachapter}{ABSTRACT}{iii}{Doc-Start}
+\contentsline {extrachapter}{ACKNOWLEDGMENTS}{vi}{chapter*.1}
+\contentsline {extrachapter}{LIST OF SYMBOLS}{viii}{chapter*.3}
+\contentsline {chapter}{\numberline {1}{Introduction}}{1}{chapter.4}
+\contentsline {chapter}{\numberline {2}{Recursions associated to trapezoid, symmetric and rotation symmetric functions over Galois fields }}{2}{chapter.6}
+\contentsline {section}{\numberline {2.1}Preliminaries}{5}{section.10}
+\contentsline {section}{\numberline {2.2}Linear recurrences over $\mathbb {F}_2$}{8}{section.23}
+\contentsline {section}{\numberline {2.3}Linear recurrences over $\mathbb {F}_q$}{16}{section.61}
+\contentsline {section}{\numberline {2.4}Linear recurrences over $\mathbb {F}_q$: Symmetric polynomials case}{29}{section.121}
+\contentsline {subsection}{\numberline {2.4.3}Quadratic case}{31}{subsection.130}
+\contentsline {section}{\numberline {2.5}Some observations and concluding remarks}{35}{section.145}
+\contentsline {chapter}{\numberline {3}{Closed formulas for exponential sums of symmetric polynomials over Galois fields}}{39}{chapter.152}
+\contentsline {section}{\numberline {3.1}Preliminaries}{42}{section.156}
+\contentsline {section}{\numberline {3.2}A formula for exponential sums in terms of multinomial sums}{45}{section.168}
+\contentsline {section}{\numberline {3.3}Closed formulas for exponential sums of symmetric polynomials}{52}{section.195}
+\contentsline {section}{\numberline {3.4}Concluding remarks}{70}{section.278}
+\contentsline {extrachapter}{BIBLIOGRAPHY}{74}{chapter*.279}

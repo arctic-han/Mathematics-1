@@ -1,0 +1,5599 @@
+#LyX file created by tex2lyx 2.2
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/leoni/Dropbox/Leonid DROpBox/Trabajos completados/Leonid ThesisPhD -2018/chapters/
+\textclass article
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% chapter3.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%==========================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+chapter{Closed formulas for exponential sums of symmetric polynomials over Galois fields}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "Closed formulas for exponential sums of symmetric polynomials over Galois fields"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% En Mayusculas (In Caps)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+section*{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Combinatorics and number theory are classic areas of mathematics with fascinating objects that captivate the attention of mathematicians. One subject that lies in the intersection of these two areas is the theory of Boolean functions. These beautiful functions have plenty of applications to different scientific fields. Some examples include electrical engineering, game theory, cryptography, coding theory and information theory.
+\end_layout
+
+\begin_layout Standard
+An 
+\begin_inset Formula $n$
+\end_inset
+
+-variable 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Boolean function
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ is a function 
+\begin_inset Formula $F({\bf X})$
+\end_inset
+
+ from the vector space 
+\begin_inset Formula $\mathbb{F}_2^n$
+\end_inset
+
+ to 
+\begin_inset Formula $\mathbb{F}_2$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathbb{F}_2=\{0,1\}$
+\end_inset
+
+ is the binary field and 
+\begin_inset Formula $n$
+\end_inset
+
+ is a positive number. In some applications related to cryptography it is important for Boolean functions to be balanced. A 
+\shape italic
+balanced Boolean function
+\family default
+\series default
+\shape default
+ is one for which the number of zeros and the number of ones are equal in its truth table (output table). Balancedness of Boolean functions can be studied from the point of exponential sums. The 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ exponential sum
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ of a Boolean function 
+\begin_inset Formula $F({\bf X})$
+\end_inset
+
+ over 
+\begin_inset Formula $\mathbb{F}_2$
+\end_inset
+
+ is defined as 
+\begin_inset Formula \begin{equation}
+\label{expS}
+S(F)=\sum_{{\bf x}\in \mathbb{F}_2^n} (-1)^{F({\bf x})}.
+\end{equation}
+\end_inset
+
+Observe that a Boolean function is balanced if and only if 
+\begin_inset Formula $S(F)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Memory restrictions of current technology have made the problem of efficient implementations of Boolean functions a challenging one. In general, this problem is very hard to tackle, but imposing conditions on these functions may ease the problem. For instance, symmetric Boolean functions are good candidates for efficient implementations and today they are an active area research 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cai, cm1, cm2, cm3, ccms, cusick4, cusick2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In general, to find closed formulas for exponential sums of symmetric Boolean functions was an open problem until Cai, Green and Thierauf found formulas for them in the 1990's 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cai"
+
+\end_inset
+
+. Moreover, their formulas imply that exponential sums of symmetric Boolean functions have a recursive nature. This has been exploited in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cgm3, cm1, cm2, cm3, cusick4"
+
+\end_inset
+
+. In the particular case of 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cm1"
+
+\end_inset
+
+, the recursive nature of these sequences and their closed formulas were used to prove asymptotically a conjecture about the balancedness of elementary symmetric Boolean polynomials 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cusick2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Many cryptographic properties, like correlation immune functions, resilient functions and bent functions have been extended to other finite fields 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "fengliu, hg, KScW, licusick1, licusick2, llm"
+
+\end_inset
+
+. Thus, a natural problem to explore is the possibility that the results mentioned in the above paragraph can be extended to other finite fields or perhaps they are just natural consequences of working over the binary field. Recently in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ccms"
+
+\end_inset
+
+, it has been showed that exponential sums of linear combinations of elementary symmetric polynomials over Galois fields also satisfy linear recurrences. Therefore, at least the recursive nature of these sequences is not unique to the binary field.
+\end_layout
+
+\begin_layout Standard
+The recursive nature of exponential sums of symmetric polynomials over Galois fields presented in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ccms"
+
+\end_inset
+
+ did not include explicit linear recurrences for these sequences. Instead, they proved the existence of such recurrences and provided a method to find them. In this chapter, we find explicit linear recurrences for these sequences. This is done by providing closed formulas for exponential sums of symmetric polynomials over Galois fields. In other words, in this work we settle the problem of finding closed formulas for exponential sums of linear combinations of elementary symmetric polynomials over any Galois field. This extends the work of Cai, Green and Thierauf for the binary field 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cai"
+
+\end_inset
+
+ to every finite field. As far as we know, this is new.
+\end_layout
+
+\begin_layout Standard
+Our closed formulas depend on some multinomial sum expressions for our exponential sums. These expressions provide a link between exponential sums of symmetric polynomials over Galois fields and a problem for multinomial coefficients which is similar to the problem of bisecting binomial coefficients. A solution 
+\begin_inset Formula $(\delta_0,\delta_1,\ldots, \delta_n)$
+\end_inset
+
+ to the equation 
+\begin_inset Formula \begin{equation}
+%\label{bisec}
+ \sum_{j=0}^n \delta_j \binom{n}{j}=0,\,\,\, \delta_j \in \{-1,1\},
+\end{equation}
+\end_inset
+
+is said to give a 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ bisection of the binomial coefficients
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\binom{n}{j}$
+\end_inset
+
+, 
+\begin_inset Formula $0\leq j \leq n.$
+\end_inset
+
+ Observe that a solution to (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "bisec"
+
+\end_inset
+
+) provides us with two disjoints sets 
+\begin_inset Formula $A,B$
+\end_inset
+
+ such that 
+\begin_inset Formula $A\cup B =\{0,1,2,\ldots,n\}$
+\end_inset
+
+ and 
+\begin_inset Formula \begin{equation}
+ \sum_{j \in A} \binom{n}{j}=\sum_{j\in B}\binom{n}{j}=2^{n-1}.
+\end{equation}
+\end_inset
+
+The problem of bisecting binomial coefficients is a very interesting problem in its own right, but it is out of the scope of this work. However, we believe that the connection between exponential sums of symmetric polynomials and a problem similar to bisecting binomial coefficients is very appealing and underlines the balancedness of symmetric polynomials over finite fields. It also has the potential to spark further research.
+\end_layout
+
+\begin_layout Standard
+This chapter is divided as follows. The next preamble contains some preliminaries. In Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "multinomialsums"
+
+\end_inset
+
+ we provide multinomial sum expressions for exponential sums of symmetric polynomials over Galois fields. We also include some representations that depend on integer partitions. These multinomial sums representations are a computational improvement over the formal definition of exponential sums. Moreover, as just mentioned, they provide a connection to a problem similar to the problem of bisecting binomial coefficients. Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "closedformulas"
+
+\end_inset
+
+ is the core and final section of this chapter. It is also the section where the main results are presented. In particular, we find closed formulas for some multinomial sums. This, together with multinomial sum representations for our exponential sums, allow us to prove closed formulas for exponential sums of linear combinations of elementary symmetric polynomials over finite fields. We also provide explicit linear recurrences for such exponential sums, showing that the recursive nature of these sequences is not special to the binary case. Moreover, every multi-variable function over a finite field extension of 
+\begin_inset Formula $\mathbb{F}_2$
+\end_inset
+
+ can be identified with a Boolean function. Thus, these results also provide new families of Boolean functions that might be useful for efficient implementations.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Preliminaries
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Preliminaries
+\end_layout
+
+\begin_layout Standard
+It is a well-established result in the theory of Boolean functions that any symmetric Boolean function can be identified with a linear combination of elementary symmetric Boolean polynomials. To be more precise, let 
+\begin_inset Formula $\boldsymbol{e}_{n,k}$
+\end_inset
+
+ be the elementary symmetric polynomial in 
+\begin_inset Formula $n$
+\end_inset
+
+ variables of degree 
+\begin_inset Formula $k$
+\end_inset
+
+. For example, 
+\begin_inset Formula \begin{equation*}
+\boldsymbol{e}_{4,3} = X_1 X_2 X_3\oplus X_1 X_4 X_3\oplus X_2 X_4 X_3\oplus X_1 X_2 X_4,
+\end{equation*}
+\end_inset
+
+where 
+\begin_inset Formula $\oplus$
+\end_inset
+
+ represents addition modulo 2. Every symmetric Boolean function 
+\begin_inset Formula $F({\bf X})$
+\end_inset
+
+ can be identified with an expression of the form 
+\begin_inset Formula \begin{equation}
+\label{genboolsym}
+F(\XX)=\boldsymbol{e}_{n,k_1}\oplus \boldsymbol{e}_{n,k_2}\oplus \cdots\oplus \boldsymbol{e}_{n,k_s},
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $0\leq k_1<k_2<\cdots<k_s$
+\end_inset
+
+ are integers. For the sake of simplicity, the notation 
+\begin_inset Formula $\boldsymbol{e}_{n,[k_1,\ldots,k_s]}$
+\end_inset
+
+ is used to denote (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "genboolsym"
+
+\end_inset
+
+). For example, 
+\begin_inset Formula \begin{eqnarray}
+\boldsymbol{e}_{3,[2,1]}&=&\boldsymbol{e}_{3,2}\oplus \boldsymbol{e}_{3,1}\\ \nonumber
+&=& X_1 X_2\oplus X_3 X_2\oplus X_1 X_3\oplus X_1\oplus X_2\oplus X_3.
+\end{eqnarray}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As mentioned in the introduction, it is known that exponential sums of symmetric Boolean functions are linear recursive 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cai, cm1"
+
+\end_inset
+
+. Moreover, closed formulas for them are well known. In fact, Cai et al. 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cai"
+
+\end_inset
+
+ proved the following theorem. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{theorem}[
+\backslash
+cite{cai}]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "invariant"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $1\leq k_1< \cdots <k_s$
+\end_inset
+
+ be fixed integers and 
+\begin_inset Formula $r=\lfloor \log_2(k_s) \rfloor+1$
+\end_inset
+
+. The value of the exponential sum 
+\begin_inset Formula $S(\boldsymbol{e}_{n,[k_1,\ldots,k_s]})$
+\end_inset
+
+ is given by 
+\begin_inset Formula \begin{eqnarray}
+\label{genvalue}\nonumber
+S(\boldsymbol{e}_{n,[k_1,\ldots,k_s]})&=& c_0(k_1,\ldots,k_s) 2^n + \sum_{j=1}^{2^r-1} c_j(k_1,\ldots,k_s) (1+\zeta_j)^n,
+\end{eqnarray}
+\end_inset
+
+where 
+\begin_inset Formula $\zeta_j = e^{\frac{\pi i\, j}{2^{r-1}}}, i=\sqrt{-1}$
+\end_inset
+
+ and 
+\begin_inset Formula \begin{equation}
+\label{coeffs}
+c_j(k_1,\ldots,k_s)=\frac{1}{2^r}\sum_{t=0}^{2^r-1}(-1)^{\binom{t}{k_1}+\cdots+\binom{t}{k_s}}\zeta_j^{-t}.
+\end{equation}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+ Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "invariant"
+
+\end_inset
+
+ and a closed formula for 
+\begin_inset Formula $c_0(k)$
+\end_inset
+
+ (proved in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cm1"
+
+\end_inset
+
+) were used by Castro and Medina 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cm1"
+
+\end_inset
+
+ to prove asymptotically a conjecture of Cusick, Li and St
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+nic
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+ about the balancedness of elementary symmetric polynomials 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cusick2"
+
+\end_inset
+
+. An adaptation of Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "invariant"
+
+\end_inset
+
+ to perturbations of symmetric Boolean functions (see 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cm2"
+
+\end_inset
+
+) was recently used in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cgm3"
+
+\end_inset
+
+ to prove a generalized conjecture of Canteaut and Videau 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "canteaut"
+
+\end_inset
+
+ about the existence of balanced perturbations when the number of variables grows. The original conjecture, which was stated for symmetric Boolean functions, said that only trivially balanced functions exists when the number of variables grows. The original conjecture was proved by Guo, Gao and Zhao 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ggz"
+
+\end_inset
+
+. The same behavior holds true for perturbations of symmetric Boolean functions.
+\end_layout
+
+\begin_layout Standard
+One of the goals of this chapter is to generalize Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "invariant"
+
+\end_inset
+
+ to the general setting of Galois fields. If 
+\begin_inset Formula $F:\mathbb{F}_q^n\to \mathbb{F}_q$
+\end_inset
+
+, then its 
+\shape italic
+exponential sum over 
+\begin_inset Formula $\mathbb{F}_q$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+ is given by 
+\begin_inset Formula \begin{equation}
+\label{expSq}
+ S_{\mathbb{F}_q}(F)=\sum_{{\bf x}\in \mathbb{F}^n_q} e^{\frac{2\pi i}{p} \text{Tr}_{\mathbb{F}_q/\mathbb{F}_p}(F({\bf x}))},
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\text{Tr}_{\mathbb{F}_q/\mathbb{F}_p}$
+\end_inset
+
+ represents the field trace function from 
+\begin_inset Formula $\mathbb{F}_q$
+\end_inset
+
+ to 
+\begin_inset Formula $\mathbb{F}_p$
+\end_inset
+
+. The 
+\shape italic
+field trace function
+\family default
+\series default
+\shape default
+ can be explicitly defined as 
+\begin_inset Formula \begin{equation}
+ \text{Tr}_{\mathbb{F}_{p^l}/\mathbb{F}_p}(\alpha)=\sum _{j=0}^{l-1} \alpha ^{p^j},
+\end{equation}
+\end_inset
+
+with arithmetic done in 
+\begin_inset Formula $\mathbb{F}_{p^l}$
+\end_inset
+
+. Recently in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ccms"
+
+\end_inset
+
+, it was proved that exponential sums over 
+\begin_inset Formula $\mathbb{F}_q$
+\end_inset
+
+ of linear combinations of elementary symmetric polynomials are linear recurrent with integer coefficients. Thus, the recursive nature of these sequences is not restricted to 
+\begin_inset Formula $\mathbb{F}_2$
+\end_inset
+
+. The approach presented in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ccms"
+
+\end_inset
+
+, however, does not provide specific linear recurrences for these functions. Instead, it gives a procedure that relies on linear algebra to calculate them. A closed formula for these sequences, like the one presented in Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "invariant"
+
+\end_inset
+
+, would allow us to find such recurrences. Perhaps it can also be used to settle, at least asymptotically, the generalization of Cusick, Li and St
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+nic
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+ conjecture for Galois fields, see 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "acgmr"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The formal definition of an exponential sum is not very useful if one desires to calculate the value of 
+\begin_inset Formula $S_{\mathbb{F}_q}(F)$
+\end_inset
+
+. In fact, in general, this problem is clearly exponentially hard. However, imposing conditions on the function 
+\begin_inset Formula $F$
+\end_inset
+
+ sometimes simplifies matters. For example, in the case of symmetric Boolean functions, it is not hard to show that 
+\begin_inset Formula \begin{equation}
+\label{binomS}
+ S(\boldsymbol{e}_{n,[k_1,\ldots,k_s]}) = \sum_{j=0}^n (-1)^{\binom{j}{k_1}+\cdots+\binom{j}{k_s}} \binom{n}{j}.
+\end{equation}
+\end_inset
+
+Equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "binomS"
+
+\end_inset
+
+) is a clear computational improvement over (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expS"
+
+\end_inset
+
+). It also connects (as mentioned in the introduction) the problem of balancedness of symmetric Boolean functions to the problem of bisecting binomial coefficients (see Mitchell 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "mitchell"
+
+\end_inset
+
+). As mentioned in the introduction, a solution 
+\begin_inset Formula $(\delta_0,\delta_1,\ldots, \delta_n)$
+\end_inset
+
+ to the equation 
+\begin_inset Formula \begin{equation}
+\label{bisec}
+ \sum_{j=0}^n \delta_j \binom{n}{j}=0,\,\,\, \delta_j \in \{-1,1\},
+\end{equation}
+\end_inset
+
+is said to give a 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ bisection of the binomial coefficients
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\binom{n}{j}$
+\end_inset
+
+, 
+\begin_inset Formula $0\leq j \leq n.$
+\end_inset
+
+ The problem of bisecting binomial coefficients is an interesting problem in its own right, however, it is out of the scope of this work. The interested reader is invited to read 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ims,mitchell"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the next section, we proved a formula similar to (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "binomS"
+
+\end_inset
+
+) for 
+\begin_inset Formula $S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})$
+\end_inset
+
+ using multinomial coefficients. The formula is not only a computational improvement over the formal definition of 
+\begin_inset Formula $S_{\mathbb{F}_q}(F)$
+\end_inset
+
+, but also provide a connection to a problem similar to the problem of bisecting of binomial coefficients for multinomial coefficients. Moreover, the fact that exponential sums of symmetric polynomials over finite fields can be expressed as multinomial sums is later used in the proof of closed formulas for them. The proof of the closed formulas also depends on a classical result in number theory known as Lucas' Theorem. We decided to include it here for completeness purposes.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{theorem}[Lucas' Theorem]
+\end_layout
+
+\end_inset
+
+ Suppose that 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+ are non-negative integers and let 
+\begin_inset Formula $p$
+\end_inset
+
+ be a prime. Suppose that 
+\begin_inset Formula \begin{eqnarray*}
+ n &=& n_0+n_1p+\cdots+n_lp^l\\
+ k &=& k_0+k_1p+\cdots+k_lp^l,
+\end{eqnarray*}
+\end_inset
+
+with 
+\begin_inset Formula $0\leq n_j,k_j <p$
+\end_inset
+
+ for 
+\begin_inset Formula $j=1,\ldots, l$
+\end_inset
+
+. Then, 
+\begin_inset Formula \[\binom{n}{k} \equiv \prod_{j=0}^l\binom{n_j}{k_j}\mod p.\]
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula $D=p^{\lfloor\log_p(k)\rfloor+1}$
+\end_inset
+
+. Observe that one consequence of Lucas' Theorem is 
+\begin_inset Formula \begin{equation}
+ \binom{n+D}{k} \equiv \binom{n}{k}\mod p.
+\end{equation}
+\end_inset
+
+This will be used throughout the rest of the chapter.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% A formula for exponential sums in terms of multinomial coefficients
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A formula for exponential sums in terms of multinomial sums
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "multinomialsums"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this section we prove a formula for 
+\begin_inset Formula $S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})$
+\end_inset
+
+ in terms of multinomial coefficients. This formula is a computational improvement over (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expSq"
+
+\end_inset
+
+). We start by finding a formula, in this case, a recursive one, for the value of 
+\begin_inset Formula $\boldsymbol{e}_{n,k}$
+\end_inset
+
+ at a vector 
+\begin_inset Formula ${\bf x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $n, k$
+\end_inset
+
+ and 
+\begin_inset Formula $m$
+\end_inset
+
+ be positive integers and 
+\begin_inset Formula $a_s$
+\end_inset
+
+ be a parameter (
+\begin_inset Formula $s$
+\end_inset
+
+ a positive integer). Let 
+\begin_inset Formula \begin{equation}
+\Lambda_{a_1}(k,m)=a_1^k \binom{m}{k} 
+\end{equation}
+\end_inset
+
+and define 
+\begin_inset Formula $\Lambda_{a_1,\ldots, a_l}$
+\end_inset
+
+ recursively by 
+\begin_inset Formula \begin{equation}
+ \Lambda_{a_1,a_2,\ldots, a_{l+1}}(k,m_1,m_2,\ldots,m_{l+1})=
+ \sum_{j=0}^{m_{l+1}}\binom{m_{l+1}}{j}a_{l+1}^j\Lambda_{a_1,\ldots,a_l}(k-j,m_1,m_2,\ldots,m_{l}),
+\end{equation}
+\end_inset
+
+The value of 
+\begin_inset Formula $\boldsymbol{e}_{n,k}$
+\end_inset
+
+ is linked to 
+\begin_inset Formula $\Lambda_{a_1,\ldots, a_l}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "lemmaSymm"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+ be positive integers. Let 
+\begin_inset Formula $A_l=\{0,a_1,\ldots,a_l\}$
+\end_inset
+
+ and 
+\begin_inset Formula ${\bf x} \in A_l^n$
+\end_inset
+
+. Suppose that 
+\begin_inset Formula $a_j$
+\end_inset
+
+ appears 
+\begin_inset Formula $m_j$
+\end_inset
+
+ times in 
+\begin_inset Formula ${\bf x}$
+\end_inset
+
+. Then, 
+\begin_inset Formula \begin{equation}
+ \boldsymbol{e}_{n,k}({\bf x})=\Lambda_{a_1,\ldots,a_l}(k,m_1,\ldots,m_{l}). 
+ \end{equation}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ First observe that if 
+\begin_inset Formula $l=1$
+\end_inset
+
+, that is, 
+\begin_inset Formula ${\bf x} \in A_1^n$
+\end_inset
+
+, then 
+\begin_inset Formula \begin{equation}
+ \boldsymbol{e}_{n,k}({\bf x}) = a_1^k\binom{m_1}{k}.
+\end{equation}
+\end_inset
+
+Now observe that if the variables 
+\begin_inset Formula $X_n,X_{n-1},\ldots, X_{n-r+1}$
+\end_inset
+
+ are set to be 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, then 
+\begin_inset Formula \begin{equation}
+  \boldsymbol{e}_{n,k}(X_1,\ldots, X_{n-r},\alpha,\ldots,\alpha)=\sum_{j=0}^r \binom{r}{j}\alpha^j\boldsymbol{e}_{n-r,k-j}(X_1,\ldots, X_{n-r}).
+ \end{equation}
+\end_inset
+
+Symmetry and an induction argument finish the proof. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The above lemma can be used to express exponential sums of symmetric polynomials as a multi-sum of products of multinomial coefficients.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "expsumformthm"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $n,k$
+\end_inset
+
+ be natural numbers such that 
+\begin_inset Formula $k\leq n$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ a prime and 
+\begin_inset Formula $q=p^r$
+\end_inset
+
+ for some positive integer 
+\begin_inset Formula $r$
+\end_inset
+
+. Suppose that 
+\begin_inset Formula $\mathbb{F}_q=\{0,\alpha_1,\ldots, \alpha_{q-1}\}$
+\end_inset
+
+ is the Galois field of 
+\begin_inset Formula $q$
+\end_inset
+
+ elements. Then, 
+\begin_inset Formula \begin{eqnarray*}
+S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})&=&\sum_{m_1=0}^n \sum_{m_2=0}^{n-m_1}\sum_{m_3=0}^{n-m_1-m_{2}}\cdots\sum_{m_{q-1=0}}^{n-m_{1}-\cdots-m_{q-2}} {n\choose m_0^*,m_1,m_2,\ldots, m_{q-1}}\\
+&& \times \exp\left(\frac{2\pi i}{p} \text{Tr}_{\mathbb{F}_q/\mathbb{F}_p}(\Lambda_{\alpha_1,\ldots, \alpha_{q-1}}(k,m_1,\ldots, m_{q-1})\right),
+\end{eqnarray*}
+\end_inset
+
+where 
+\begin_inset Formula $m_{0}^* = n-(m_1+\cdots+m_{q-1})$
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Consider a tuple 
+\begin_inset Formula ${\bf x} \in \mathbb{F}_q^n$
+\end_inset
+
+. Suppose that 
+\begin_inset Formula $\alpha_j$
+\end_inset
+
+ appears 
+\begin_inset Formula $m_j$
+\end_inset
+
+ times in 
+\begin_inset Formula ${\bf x}$
+\end_inset
+
+. Clearly, this implies 
+\begin_inset Formula \[n=m_0^*+m_1+m_2+\cdots+m_{q-1}.\]
+\end_inset
+
+A simple counting argument shows that there are 
+\begin_inset Formula \begin{equation}
+ \label{multbinom}
+  \binom{n}{m_1}\binom{n-m_1}{m_2}\binom{n-m_1-m_2}{m_3}\cdots \binom{n-m_1-m_2-\cdots-m_{q-2}}{m_{q-1}}
+ \end{equation}
+\end_inset
+
+of such tuples. This number can be written in multinomial form as 
+\begin_inset Formula \begin{equation}
+ {n\choose m_0^*,m_1,m_2,\ldots, m_{q-1}}.
+\end{equation}
+\end_inset
+
+Observe that Lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lemmaSymm"
+
+\end_inset
+
+ implies that the value of 
+\begin_inset Formula $\boldsymbol{e}_{n,k}$
+\end_inset
+
+ on each of these tuples is 
+\begin_inset Formula \begin{equation}
+ \boldsymbol{e}_{n,k}({\bf x})=\Lambda_{\alpha_1,\ldots, \alpha_{q-1}}(k,m_1,\ldots, m_{q-1}).
+\end{equation}
+\end_inset
+
+Adding over all possible choices of 
+\begin_inset Formula $m_{1},m_{2},\ldots, m_{q-1}$
+\end_inset
+
+ produces the result. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+ An easy adjustment to the proof of Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformthm"
+
+\end_inset
+
+ leads to the following corollary.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{corollary}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "expsumformcoro"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $1\leq k_1<k_2<\cdots<k_s$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ be positive integers, 
+\begin_inset Formula $p$
+\end_inset
+
+ a prime and 
+\begin_inset Formula $q=p^r$
+\end_inset
+
+ for some positive integer 
+\begin_inset Formula $r$
+\end_inset
+
+. Suppose that 
+\begin_inset Formula $\mathbb{F}_q=\{0,\alpha_1,\ldots, \alpha_{q-1}\}$
+\end_inset
+
+ is the Galois field of 
+\begin_inset Formula $q$
+\end_inset
+
+ elements. Consider the symmetric function 
+\begin_inset Formula \[\sum_{j=1}^s \beta_j \boldsymbol{e}_{n,k_j}\,\,\, \text{ where }\beta_j\in \mathbb{F}_q^{\times}.\]
+\end_inset
+
+Then, 
+\begin_inset Formula \begin{eqnarray*}
+S_{\mathbb{F}_q}\left(\sum_{j=1}^s \beta_j\boldsymbol{e}_{n,k_j}\right)&=&\sum_{m_1=0}^n \sum_{m_2=0}^{n-m_1}\sum_{m_3=0}^{n-m_1-m_{2}}\cdots\sum_{m_{q-1=0}}^{n-m_{1}-\cdots-m_{q-2}} {n\choose m_0^*,m_1,m_2,\ldots, m_{q-1}}\\
+&& \times \exp\left(\frac{2\pi i}{p} \text{Tr}_{\mathbb{F}_q/\mathbb{F}_p}\left(\sum_{j=1}^s \beta_j\Lambda_{\alpha_1,\ldots, \alpha_{q-1}}(k_j,m_1,\ldots, m_{q-1})\right)\right).
+\end{eqnarray*}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{corollary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ The proof follows the same argument as in Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformthm"
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformthm"
+
+\end_inset
+
+ and its corollary can be written in terms of partitions of 
+\begin_inset Formula $n$
+\end_inset
+
+. We say that 
+\begin_inset Formula $\boldsymbol{\lambda}= (\lambda_1,\ldots,\lambda_r)$
+\end_inset
+
+ is a 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ partition
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+, and write 
+\begin_inset Formula $\boldsymbol{\lambda} \dashv n$
+\end_inset
+
+, if the 
+\begin_inset Formula $\lambda_j$
+\end_inset
+
+ are integers and 
+\begin_inset Formula \[\lambda_1\geq \ldots \geq \lambda_r\geq 1 \,\, \text{ and }\,\,n=\lambda_1+\cdots+\lambda_r.\]
+\end_inset
+
+The notation 
+\begin_inset Formula $\boldsymbol{\lambda} \dashv_q n$
+\end_inset
+
+ implies that 
+\begin_inset Formula $\boldsymbol{\lambda}$
+\end_inset
+
+ is a partition of 
+\begin_inset Formula $n$
+\end_inset
+
+ and has at most 
+\begin_inset Formula $q$
+\end_inset
+
+ entries. For example, if 
+\begin_inset Formula $\boldsymbol{\lambda}=(6,3,1)$
+\end_inset
+
+, then 
+\begin_inset Formula $\boldsymbol{\lambda} \dashv_4 10$
+\end_inset
+
+ because it has 3 entries and 
+\begin_inset Formula $3\leq 4$
+\end_inset
+
+. On the other hand, if 
+\begin_inset Formula $\boldsymbol{\lambda} =(4,2,2,1,1)$
+\end_inset
+
+, then 
+\begin_inset Formula $\boldsymbol{\lambda} \dashv 10$
+\end_inset
+
+, but 
+\begin_inset Formula $\boldsymbol{\lambda} \not \dashv_4 10$
+\end_inset
+
+. From now on, we will see partitions 
+\begin_inset Formula $\boldsymbol{\lambda} \dashv_q n$
+\end_inset
+
+ as lists of length 
+\begin_inset Formula $q$
+\end_inset
+
+. Of course, by definition, a partition 
+\begin_inset Formula $\boldsymbol{\lambda} \dashv_q n$
+\end_inset
+
+ may have less than 
+\begin_inset Formula $q$
+\end_inset
+
+ entries. If that is the case, right-pad zeros to the list until it has 
+\begin_inset Formula $q$
+\end_inset
+
+ entries. For example, 
+\begin_inset Formula $\boldsymbol{\lambda}=(6,3,1)$
+\end_inset
+
+ is such that 
+\begin_inset Formula $\boldsymbol{\lambda} \dashv_4 10$
+\end_inset
+
+. In this case, we view 
+\begin_inset Formula $\boldsymbol{\lambda}$
+\end_inset
+
+ as 
+\begin_inset Formula $\boldsymbol{\lambda} =(6,3,1,0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\boldsymbol{\lambda}  \dashv n$
+\end_inset
+
+, then the symbol 
+\begin_inset Formula \begin{equation*}
+\binom{n}{\boldsymbol{\lambda}}
+\end{equation*}
+\end_inset
+
+represents the multinomial obtained from 
+\begin_inset Formula $\boldsymbol{\lambda}$
+\end_inset
+
+. For example, if 
+\begin_inset Formula $\boldsymbol{\lambda} =(6,3,1)$
+\end_inset
+
+, then 
+\begin_inset Formula \[\binom{10}{\boldsymbol{\lambda}}={10 \choose 6,3,1}.\]
+\end_inset
+
+By a 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ rearrangement
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ of 
+\begin_inset Formula $\boldsymbol{\lambda}$
+\end_inset
+
+ we mean a permutation of the symbols in 
+\begin_inset Formula $\boldsymbol{\lambda}$
+\end_inset
+
+. For example, the set of all different rearrangements of 
+\begin_inset Formula $\boldsymbol{\lambda} =(2,2,1,1)$
+\end_inset
+
+ is 
+\begin_inset Formula \begin{eqnarray*}
+(2, 2, 1, 1), & (2, 1, 2, 1)\\
+(2, 1, 1, 2), & (1, 2, 2, 1)\\
+(1, 2, 1, 2), & (1, 1, 2, 2).
+\end{eqnarray*}
+\end_inset
+
+We use 
+\begin_inset Formula $\Sym(\boldsymbol{\lambda})$
+\end_inset
+
+ to denote the set of all rearrangements of 
+\begin_inset Formula $\boldsymbol{\lambda}$
+\end_inset
+
+. Finally, if 
+\begin_inset Formula $\boldsymbol{\gamma}$
+\end_inset
+
+ is a non-empty list, then 
+\begin_inset Formula $\boldsymbol{\gamma}^*$
+\end_inset
+
+ is the list obtained from 
+\begin_inset Formula $\boldsymbol{\gamma}$
+\end_inset
+
+ by removing the first element. For example, if 
+\begin_inset Formula $\boldsymbol{\gamma}=(2,2,1,1)$
+\end_inset
+
+, then 
+\begin_inset Formula $\boldsymbol{\gamma}^*=(2,1,1)$
+\end_inset
+
+. Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformthm"
+
+\end_inset
+
+ and Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformcoro"
+
+\end_inset
+
+ can be re-stated as follows. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "thmpart"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $n,k$
+\end_inset
+
+ be natural numbers such that 
+\begin_inset Formula $k\leq n$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ a prime and 
+\begin_inset Formula $q=p^r$
+\end_inset
+
+ for some positive integer 
+\begin_inset Formula $r$
+\end_inset
+
+. Suppose that 
+\begin_inset Formula $\mathbb{F}_q=\{0,\alpha_1,\ldots, \alpha_{q-1}\}$
+\end_inset
+
+ is the Galois field of 
+\begin_inset Formula $q$
+\end_inset
+
+ elements. Then, 
+\begin_inset Formula \begin{eqnarray*}
+S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})&=&\sum_{\boldsymbol{\lambda}\dashv_q n} \binom{n}{\boldsymbol{\lambda}} \sum_{\boldsymbol{\gamma}\in \Sym(\boldsymbol{\lambda})}
+ \exp\left(\frac{2\pi i}{p} \text{Tr}_{\mathbb{F}_q/\mathbb{F}_p}(\Lambda_{\alpha_1,\ldots, \alpha_{q-1}}(k,\boldsymbol{\gamma}^*)\right).
+\end{eqnarray*}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{corollary}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "coropart"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $1\leq k_1<k_2<\cdots<k_s$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ be positive integers, 
+\begin_inset Formula $p$
+\end_inset
+
+ a prime and 
+\begin_inset Formula $q=p^r$
+\end_inset
+
+ for some positive integer 
+\begin_inset Formula $r$
+\end_inset
+
+. Suppose that 
+\begin_inset Formula $\mathbb{F}_q=\{0,\alpha_1,\ldots, \alpha_{q-1}\}$
+\end_inset
+
+ is the Galois field of 
+\begin_inset Formula $q$
+\end_inset
+
+ elements. Consider the symmetric function 
+\begin_inset Formula \[\sum_{j=1}^s \beta_j \boldsymbol{e}_{n,k_j}\,\,\, \text{ where }\beta_j\in \mathbb{F}_q^{\times}.\]
+\end_inset
+
+Then, 
+\begin_inset Formula \begin{eqnarray*}
+S_{\mathbb{F}_q}\left(\sum_{j=1}^s \beta_j\boldsymbol{e}_{n,k_j}\right)&=&\sum_{\boldsymbol{\lambda}\dashv_q n} \binom{n}{\boldsymbol{\lambda}} \sum_{\boldsymbol{\gamma}\in \Sym(\boldsymbol{\lambda})}
+ \exp\left(\frac{2\pi i}{p} \text{Tr}_{\mathbb{F}_q/\mathbb{F}_p}\left(\sum_{j=1}^s \beta_j\Lambda_{\alpha_1,\ldots, \alpha_{q-1}}(k_j,\boldsymbol{\gamma}^*)\right)\right).
+\end{eqnarray*}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{corollary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For small 
+\begin_inset Formula $q$
+\end_inset
+
+, Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformthm"
+
+\end_inset
+
+ and the recursive nature of 
+\begin_inset Formula $\Lambda_{a_1,\ldots,a_l}$
+\end_inset
+
+ can be used to speed up the computation of 
+\begin_inset Formula $S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})$
+\end_inset
+
+. For example, using an implementation of Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformthm"
+
+\end_inset
+
+ and an old computer (whose features are not top of the art) from of the research, it took 
+\shape italic
+Mathematica
+\family default
+\series default
+\shape default
+ 0.008 seconds to calculate 
+\begin_inset Formula \begin{equation}
+ S_{\mathbb{F}_3}(\boldsymbol{e}_{12,5}) = 346113+92664 e^{\frac{2 i \pi }{3}}+92664 e^{-\frac{2 i \pi }{3}} = 253449.
+\end{equation}
+\end_inset
+
+In comparison, it took 26.6 minutes when using the definition of the exponential sum. The same implementation can be used to obtain values of exponential sums for 
+\begin_inset Formula $n$
+\end_inset
+
+ relatively big. For instance, it took 
+\shape italic
+Mathematica
+\family default
+\series default
+\shape default
+ 1.28 seconds to calculate 
+\begin_inset Formula \begin{equation}
+ S_{\mathbb{F}_3}(\boldsymbol{e}_{100,7}) = 113935090835950800739864834563949291416514642941,
+\end{equation}
+\end_inset
+
+and 41.28 seconds to calculate 
+\begin_inset Formula \begin{equation}
+ S_{\mathbb{F}_4}(\boldsymbol{e}_{50,5}) = 158735097466874432874732322816.
+\end{equation}
+\end_inset
+
+It took about two minutes and a half to calculate 
+\begin_inset Formula $S_{\mathbb{F}_3}(\boldsymbol{e}_{500,11})$
+\end_inset
+
+, which is an integer with 239 digits.
+\end_layout
+
+\begin_layout Standard
+Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformthm"
+
+\end_inset
+
+ and Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformcoro"
+
+\end_inset
+
+ also offers a hint to a problem similar to bisections of binomial coefficients for multinomial coefficients. Emulating the binary case, we define 
+\begin_inset Formula $(p,q)$
+\end_inset
+
+-section of multinomial coefficients (
+\begin_inset Formula $q$
+\end_inset
+
+ being a power of 
+\begin_inset Formula $p$
+\end_inset
+
+) to be the process of dividing the list 
+\begin_inset Formula \begin{equation}
+ \mathcal{L}(n;q)=\left\{{n\choose m_0,m_1,m_2,\ldots, m_{q-1}^*}\right\},
+\end{equation}
+\end_inset
+
+where the indices run 
+\begin_inset Formula \[0\leq m_0 \leq n, 0\leq m_1\leq n-m_0,\ldots,0\leq m_{q-2}\leq n-m_0-m_1-\ldots-m_{q-3},\]
+\end_inset
+
+into 
+\begin_inset Formula $p$
+\end_inset
+
+ sublists, 
+\begin_inset Formula $l_j(n;q), 1\leq j \leq p$
+\end_inset
+
+, such that the sum on each sublist is the same. This common sum must be 
+\begin_inset Formula $q^{n-1}$
+\end_inset
+
+. Observe that every time 
+\begin_inset Formula $S_{\mathbb{F}_q}(\beta_1\boldsymbol{e}_{n,k_1}+\cdots+\beta_s\boldsymbol{e}_{n,k_s})=0$
+\end_inset
+
+ we obtain a 
+\begin_inset Formula $(p,q)$
+\end_inset
+
+-section to of multinomial coefficients. This connection generalizes the one that exists between bisections of binomial coefficients and symmetric Boolean functions. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{example}
+\end_layout
+
+\end_inset
+
+ The elementary symmetric polynomial 
+\begin_inset Formula $\boldsymbol{e}_{5,3}$
+\end_inset
+
+ is such that 
+\begin_inset Formula $S_{\mathbb{F}_3}(\boldsymbol{e}_{5,3})=0$
+\end_inset
+
+. Observe that 
+\begin_inset Formula \begin{equation}
+ \mathcal{L}(5;3) =\{1, 5, 10, 10, 5, 1, 5, 20, 30, 20, 5, 10, 30, 30, 10, 10, 20, 10, 5, 5, 1\}.
+\end{equation}
+\end_inset
+
+The 
+\begin_inset Formula $(3,3)$
+\end_inset
+
+-section that corresponds to 
+\begin_inset Formula $\boldsymbol{e}_{5,3}$
+\end_inset
+
+ over 
+\begin_inset Formula $\mathbb{F}_3$
+\end_inset
+
+ is 
+\begin_inset Formula \begin{eqnarray}
+ l_1(5;3) &=& \{1, 5, 5, 10, 10, 20, 30\}\\\nonumber
+ l_2(5;3) &=& \{1, 5, 5, 10, 10, 20, 30\}\\\nonumber
+ l_3(5;3) &=& \{1, 5, 5, 10, 10, 20, 30\}.
+\end{eqnarray}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{example}
+\end_layout
+
+\end_inset
+
+ The symmetric polynomial 
+\begin_inset Formula $\boldsymbol{e}_{6,5}+\boldsymbol{e}_{6,3}$
+\end_inset
+
+ also satisfies 
+\begin_inset Formula $S_{\mathbb{F}_3}(\boldsymbol{e}_{6,5}+\boldsymbol{e}_{6,3})=0$
+\end_inset
+
+. In this case, 
+\begin_inset Formula \begin{equation}
+ \small\mathcal{L}(6;3) =\{1, 6, 15, 20, 15, 6, 1, 6, 30, 60, 60, 30, 6, 15, 60, 90, 60, 15, 20, 60, 60, 20, 15, 30, 15, 6, 6, 1\}.
+\end{equation}
+\end_inset
+
+The 3-section that corresponds to 
+\begin_inset Formula $\boldsymbol{e}_{6,5}+\boldsymbol{e}_{6,3}$
+\end_inset
+
+ over 
+\begin_inset Formula $\mathbb{F}_3$
+\end_inset
+
+ is 
+\begin_inset Formula \begin{eqnarray}
+\label{3sec}
+ l_1(6;3) &=& \{1, 6, 6, 15, 15, 20, 30, 30, 30, 90\}\\\nonumber
+ l_2(6;3) &=& \{1, 6, 6, 15, 15, 20, 60, 60, 60\}\\\nonumber
+ l_3(6;3) &=& \{1, 6, 6, 15, 15, 20, 60, 60, 60\}.
+\end{eqnarray}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As in the Boolean case, we may try to define trivial 
+\begin_inset Formula $(p,q)$
+\end_inset
+
+-sections. A possible way to do this is to say that a 
+\begin_inset Formula $(p,q)$
+\end_inset
+
+-section is trivial if 
+\begin_inset Formula $l_1(n;k)=l_2(n;k)=\cdots=l_{p}(n;k)$
+\end_inset
+
+. Again, following the binary case, we say that a symmetric polynomial 
+\begin_inset Formula $\beta_1\boldsymbol{e}_{n,k_1}+\cdots+\beta_s\boldsymbol{e}_{n,k_s}$
+\end_inset
+
+ is trivially balanced over 
+\begin_inset Formula $\mathbb{F}_q$
+\end_inset
+
+ if its related 
+\begin_inset Formula $(p,q)$
+\end_inset
+
+-section is trivial. For example, 
+\begin_inset Formula $\boldsymbol{e}_{5,3}$
+\end_inset
+
+ is trivially balanced, while 
+\begin_inset Formula $\boldsymbol{e}_{6,5}+\boldsymbol{e}_{6,3}$
+\end_inset
+
+ is not. It would be interesting to know if some results known for the binary case also apply to this problem.
+\end_layout
+
+\begin_layout Standard
+Exponential sums of linear combinations of elementary symmetric polynomials are also linked, via Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thmpart"
+
+\end_inset
+
+ and Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "coropart"
+
+\end_inset
+
+, to the Diophantine equation 
+\begin_inset Formula \begin{equation}
+\label{diopheq}
+ \sum_{\boldsymbol{\lambda}\dashv_q n} \binom{n}{\boldsymbol{\lambda}} x_{\boldsymbol{\lambda}}=0.
+\end{equation}
+\end_inset
+
+Observe that every time 
+\begin_inset Formula \[S_{\mathbb{F}_q}\left(\sum_{j=1}^s \beta_j \boldsymbol{e}_{n,k_j}\right)=0,\]
+\end_inset
+
+we find a solution to (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diopheq"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{example}
+\end_layout
+
+\end_inset
+
+ Consider 
+\begin_inset Formula $\mathbb{F}_4=\{0,1,\alpha,\alpha+1\}$
+\end_inset
+
+ where 
+\begin_inset Formula $\alpha^2=\alpha+1$
+\end_inset
+
+. The symmetric polynomial 
+\begin_inset Formula \[(1+\alpha)\boldsymbol{e}_{n,3}+(1+\alpha)\boldsymbol{e}_{n,2}+\alpha\boldsymbol{e}_{n,1}\]
+\end_inset
+
+is such that 
+\begin_inset Formula \begin{equation}
+\label{diopheqex}
+S_{\mathbb{F}_4}\left((1+\alpha)\boldsymbol{e}_{8,3}+(1+\alpha)\boldsymbol{e}_{8,2}+\alpha\boldsymbol{e}_{8,1}\right)=0.
+\end{equation}
+\end_inset
+
+Therefore, we have a solution to (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diopheq"
+
+\end_inset
+
+) for 
+\begin_inset Formula $n=8$
+\end_inset
+
+ and 
+\begin_inset Formula $q=4$
+\end_inset
+
+. The integer partitions 
+\begin_inset Formula $\boldsymbol{\lambda}$
+\end_inset
+
+ of 
+\begin_inset Formula $8$
+\end_inset
+
+ that satisfies 
+\begin_inset Formula $\boldsymbol{\lambda}\dashv_4 8$
+\end_inset
+
+ are 
+\begin_inset Formula \[ \begin{array}{llll}
+ \boldsymbol{\lambda}_1=(8), &  \boldsymbol{\lambda}_2=(7, 1), & \boldsymbol{\lambda}_3= (6, 2), & \boldsymbol{\lambda}_4=(6, 1, 1),\\
+ \boldsymbol{\lambda}_5=(5, 3),& \boldsymbol{\lambda}_6=(5, 2, 1), & \boldsymbol{\lambda}_7=(5, 1, 1, 1),& \boldsymbol{\lambda}_8= (4, 4),\\
+ \boldsymbol{\lambda}_9=(4, 3, 1),& \boldsymbol{\lambda}_{10}= (4, 2, 2),& \boldsymbol{\lambda}_{11}= (4, 2, 1, 1),& \boldsymbol{\lambda}_{12}= (3, 3, 2),\\
+ \boldsymbol{\lambda}_{13}=(3, 3, 1, 1),& \boldsymbol{\lambda}_{14}=(3,2, 2, 1),& \boldsymbol{\lambda}_{15}=(2, 2, 2, 2). & 
+ \end{array}
+\]
+\end_inset
+
+The solution to (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diopheq"
+
+\end_inset
+
+) provided by (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diopheqex"
+
+\end_inset
+
+) is given by 
+\begin_inset Formula \[
+(\delta_1,\delta_2,\ldots,\delta_{15})=(4, -4, -4, 4, -4, 8, -4, 6, -8, -4, 4, 4, 2, -4, 1).
+\]
+\end_inset
+
+In other words, 
+\begin_inset Formula \[\sum_{j=1}^{15} \binom{8}{\boldsymbol{\lambda}_j} \delta_j=0.\]
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{example}
+\end_layout
+
+\end_inset
+
+ A natural problem to explore is to see how solutions to (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diopheq"
+
+\end_inset
+
+) given by exponential sums of linear combinations of elementary symmetric polynomials look like as 
+\begin_inset Formula $n$
+\end_inset
+
+ grows. Perhaps something similar to the study presented in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cgm3"
+
+\end_inset
+
+ holds true in this case. This is part of future research.
+\end_layout
+
+\begin_layout Standard
+In the next section, we prove closed formulas for exponential sums of symmetric polynomials over Galois fields. Moreover, we provide explicit linear recurrences with integer coefficients for these exponential sums.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Closed formulas
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Closed formulas for exponential sums of symmetric polynomials
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "closedformulas"
+
+\end_inset
+
+ In this section we generalize Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "invariant"
+
+\end_inset
+
+, that is, we provide closed formulas for the exponential sums considered in this chapter. These formulas, in turn, allow us to find explicit recursions for these sequences. Our formulas depend on circulant matrices and on periodicity. Thus, we start with a short background on these topics.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $D$
+\end_inset
+
+ be a positive integer and 
+\begin_inset Formula $\alpha=\left(c_{0},c_{1},\ldots,c_{D-1}\right)\in\mathbb{C}^{D}$
+\end_inset
+
+. The 
+\begin_inset Formula $D$
+\end_inset
+
+-
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ circulant matrix
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ associated to 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $\text{circ}(\alpha)$
+\end_inset
+
+, is defined by
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\text{circ}(\alpha):=\left(\begin{array}{ccccc}
+c_{0} & c_{1} & \cdots & c_{D-2} & c_{D-1}\\
+c_{D-1} & c_{0} & \cdots & c_{D-1} & c_{D-2}\\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+c_{2} & c_{3} & \cdots & c_{0} & c_{1}\\
+c_{1} & c_{2} & \cdots & c_{D-1} & c_{0}
+\end{array}\right).
+\end{equation}
+\end_inset
+
+The polynomial 
+\begin_inset Formula $p_{\alpha}(X)=c_0+c_1 X+\cdots+ c_{D-1} X^{D-1}$
+\end_inset
+
+ is called the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ associated polynomial
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ of the circulant matrix. In the literature, this polynomial is also called 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ representer polynomial
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+. Observe that if 
+\begin_inset Formula \begin{equation}
+ \pi = \left(
+\begin{array}{rrrrrr}
+ 0 & 1 & 0 & \cdots  & 0 & 0 \\
+ 0 & 0 & 1 & \cdots  & 0 & 0 \\
+ %0 & 0 & 0 & \cdots & 0 & 0 \\
+ \vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\
+ 0 & 0 & 0 &  \cdots & 0 & 1 \\
+ 1 & 0 & 0 & \cdots & 0 & 0 \\
+\end{array}
+\right),
+\end{equation}
+\end_inset
+
+then 
+\begin_inset Formula $\text{circ}(\alpha) = p_{\alpha}(\pi)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Circulant matrices are well-understood objects. For example, it is known that the (normalized) eigenvectors of any circulant matrix 
+\begin_inset Formula $\text{circ}(\alpha)$
+\end_inset
+
+ are given by 
+\begin_inset Formula \begin{equation}
+v_j=\frac{1}{\sqrt{n}}(1,\omega_j,\omega_j^2,\ldots, \omega_j^{D-1})^T,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\omega_j=\exp\left(2\pi \mathrm{i} j/D\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $i=\sqrt{-1}$
+\end_inset
+
+, with corresponding eigenvalues 
+\begin_inset Formula \begin{equation}
+\lambda_j(\alpha) = p_{\alpha}(\omega_j)=c_0+c_1 \omega_j+c_2 \omega_j^2+\cdots+c_{D-1} \omega_j^{D-1}.
+\end{equation}
+\end_inset
+
+Moreover, any circulant matrix 
+\begin_inset Formula $\text{circ}(\alpha)$
+\end_inset
+
+ can be diagonalized in the following form. Consider the 
+\shape italic
+Discrete Fourier Transform
+\family default
+\series default
+\shape default
+ matrix 
+\begin_inset Formula \begin{equation}
+ F_n = \left(
+\begin{array}{rrrr}
+ \xi_n^{0\cdot 0} & \xi_n^{0\cdot 1} & \cdots &  \xi_n^{0\cdot (n-1)} \\
+ \xi_n^{1\cdot 0} & \xi_n^{1\cdot 1} & \cdots &  \xi_n^{1\cdot (n-1)} \\
+ \vdots & \vdots &  \ddots & \vdots \\
+ \xi_n^{(n-1)\cdot 0} & \xi_n^{(n-1)\cdot 1} & \cdots  & \xi_n^{(n-1)\cdot (n-1)} \\
+\end{array}
+\right),
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\xi_n=\exp(-2\pi i/n)$
+\end_inset
+
+. Let 
+\begin_inset Formula $U_n=(1/\sqrt{n})F_n$
+\end_inset
+
+ be its normalization and define 
+\begin_inset Formula \begin{equation}
+ \Delta(\alpha) = \text{diag}(\lambda_0(\alpha),\lambda_1(\alpha),\ldots,\lambda_{D-1}(\alpha)).
+\end{equation}
+\end_inset
+
+Then, 
+\begin_inset Formula \begin{equation}
+\label{diagon}
+ \text{circ}(\alpha) = U_D \Delta(\alpha) U_D^*.
+\end{equation}
+\end_inset
+
+See 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "Th.3.2.2, p. 72"
+key "Davis"
+
+\end_inset
+
+ for more information.
+\end_layout
+
+\begin_layout Standard
+We say that a function 
+\begin_inset Formula $f:\mathbb{Z}\rightarrow\mathbb{Z}$
+\end_inset
+
+ is 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ periodic
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ with period 
+\begin_inset Formula $D$
+\end_inset
+
+ if 
+\begin_inset Formula $f(j+D)=f(j)$
+\end_inset
+
+ for any 
+\begin_inset Formula $j\in\mathbb{Z}$
+\end_inset
+
+. Periodicity can be extended to functions 
+\begin_inset Formula $g:\mathbb{Z}\times \mathbb{Z}\to\mathbb{Z}$
+\end_inset
+
+ without too much effort. The periodicity of a function 
+\begin_inset Formula $g:\mathbb{Z}\times \mathbb{Z}\rightarrow\mathbb{Z}$
+\end_inset
+
+ is usually divided by components. We say that a positive integer 
+\begin_inset Formula $D_1$
+\end_inset
+
+ is a 
+\shape italic
+period in the first component of
+\family default
+\series default
+\shape default
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ if 
+\begin_inset Formula \begin{equation}
+g(j_1+D_1,j_2)=g(j_1,j_2) 
+\end{equation}
+\end_inset
+
+for every 
+\begin_inset Formula $j_1,j_2 \in \mathbb{Z}$
+\end_inset
+
+. Similarly, we say that a positive integer 
+\begin_inset Formula $D_2$
+\end_inset
+
+ is a 
+\shape italic
+period in the second component of
+\family default
+\series default
+\shape default
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ if 
+\begin_inset Formula \begin{equation}
+g(j_1,j_2+D_2)=g(j_1,j_2)
+\end{equation}
+\end_inset
+
+for every 
+\begin_inset Formula $j_1,j_2 \in \mathbb{Z}$
+\end_inset
+
+. Of course, if 
+\begin_inset Formula $g$
+\end_inset
+
+ is periodic in its first and second components, then we say that 
+\begin_inset Formula $g$
+\end_inset
+
+ is periodic. Moreover, 
+\begin_inset Formula $D=\lcm(D_1,D_2)$
+\end_inset
+
+ is such that 
+\begin_inset Formula \begin{equation}
+g(j_1+D,j_2+D)=g(j_1,j_2)
+\end{equation}
+\end_inset
+
+for every 
+\begin_inset Formula $j_1,j_2 \in \mathbb{Z}$
+\end_inset
+
+. The concept of periodicity can be extended further to functions from 
+\begin_inset Formula $\mathbb{Z}\times\mathbb{Z}\times\cdots\times \mathbb{Z}$
+\end_inset
+
+ to 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+. The discussion is the same as for the case 
+\begin_inset Formula $\mathbb{Z}\times \mathbb{Z}$
+\end_inset
+
+, so we do not write the details.
+\end_layout
+
+\begin_layout Standard
+We are now ready to start with the argument for our formulas. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%We start with the field $
+\backslash
+mathbb{F}_3$. 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%Let $
+\backslash
+mathbb{N}_0 = 
+\backslash
+mathbb{N}
+\backslash
+cup 
+\backslash
+{0
+\backslash
+}$ and $T:
+\backslash
+mathbb{Z}
+\backslash
+to 
+\backslash
+mathbb{Z}$ be a multiplicative function $T(a+b) = T(a)T(b)$.  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Consider the summation 
+\begin_inset Formula \begin{equation}
+\label{sumofint}
+\sum_{l=0}^n a^l\binom{n}{l}.
+\end{equation}
+\end_inset
+
+Later it will become clear why we choose this sum. Given a positive integer 
+\begin_inset Formula $D>1$
+\end_inset
+
+, the sum (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sumofint"
+
+\end_inset
+
+) can be splitted as 
+\begin_inset Formula \begin{equation}
+\sum_{l=0}^n a^l\binom{n}{l} = \sum_{t=0}^{D-1} r_t(n;a),
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula \begin{equation}
+r_t(n;a)=\sum_{j\equiv t \,\,\text{mod }D} a^j\binom{n}{j}.
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proposition}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "closedformprop"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $n\in \mathbb{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $0\leq t \leq D-1$
+\end_inset
+
+. Then, 
+\begin_inset Formula \begin{equation}
+r_t(n;a) = \frac{1}{D}\sum_{m=0}^{D-1} \xi_{D}^{t m} \lambda_{m}^n,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\xi_D=\exp(2\pi i/D)$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_m = 1+a\xi_D^{-m}$
+\end_inset
+
+ are the eigenvalues of 
+\begin_inset Formula $\CIRC(1,0,\ldots, 0,a)$
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proposition}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ The approach of this proof is similar to the one presented in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cai"
+
+\end_inset
+
+. Note that for 
+\begin_inset Formula $1\leq t \leq D-1$
+\end_inset
+
+, we have 
+\begin_inset Formula \begin{equation}
+r_t(n;a) = r_t(n-1;a)+a\,r_{t-1}(n-1;a).
+\end{equation}
+\end_inset
+
+Also, 
+\begin_inset Formula \begin{equation}
+r_0(n;a) = r_0(n-1;a)+a\,r_{D-1}(n-1;a).
+\end{equation}
+\end_inset
+
+Therefore, if we define 
+\begin_inset Formula \begin{equation}
+ \boldsymbol{r}(n;a)=\left(
+\begin{array}{c}
+ r_0(n;a) \\
+ r_1(n;a) \\
+ \vdots \\
+ r_{D-1}(n;a) \\
+\end{array}
+\right),
+\end{equation}
+\end_inset
+
+then 
+\begin_inset Formula \begin{eqnarray}
+ \boldsymbol{r}(n;a)&=&\left(
+\begin{array}{cccccc}
+ 1 & 0 & 0 & \cdots & 0 & a \\
+ a & 1 & 0 & \cdots & 0 & 0 \\
+ 0 & a & 1 & \cdots & 0 & 0 \\
+ \vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\
+ 0 & 0 & 0 & \cdots & a & 1 \\
+\end{array}
+\right) \boldsymbol{r}(n-1;a).
+\end{eqnarray}
+\end_inset
+
+Let 
+\begin_inset Formula $\alpha=(1,0,\ldots, 0, a)$
+\end_inset
+
+. The last equation is equivalent to 
+\begin_inset Formula \begin{equation}
+\label{matrec}
+ \boldsymbol{r}(n;a)= A_D(a)\boldsymbol{r}(n-1;a),
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $A_D(a)=\CIRC(\alpha)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Iteration of (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "matrec"
+
+\end_inset
+
+) leads to 
+\begin_inset Formula $\boldsymbol{r}(n;a)= A_D(a)^n\boldsymbol{r}(0;a)$
+\end_inset
+
+. Observe that 
+\begin_inset Formula \begin{equation}
+ r_0(0;a)=\binom{0}{0} = 1 \,\, \text{ and }\,\, r_t(0;a)=0 \text{ for }t>0.
+\end{equation}
+\end_inset
+
+Thus, 
+\begin_inset Formula \begin{equation}
+\boldsymbol{r}(0;a)=\left(\begin{array}{c}
+ 1 \\
+ 0 \\
+ \vdots \\
+ 0 \\
+\end{array}
+\right).
+\end{equation}
+\end_inset
+
+Equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diagon"
+
+\end_inset
+
+) now implies that 
+\begin_inset Formula \begin{eqnarray}
+ \boldsymbol{r}(n;a) &=& \frac{1}{D} U_D \Delta(\alpha)^n U_D^* \boldsymbol{r}(0;a)=\frac{1}{D} U_D \Delta(\alpha)^n\left(\begin{array}{c}
+ 1 \\
+ 1 \\
+ \vdots \\
+ 1 \\
+\end{array}
+\right)\\\nonumber
+&=& \frac{1}{D} U_D \left(\begin{array}{c}
+ \lambda_0(\alpha)^n \\
+ \lambda_1(\alpha)^n \\
+ \vdots \\
+ \lambda_{D-1}(\alpha)^n \\
+\end{array}
+\right)= \left(\begin{array}{c}
+ \frac{1}{D}\sum_{j=0}^{D-1}\xi_D^{(s-1)j}\lambda_0(\alpha)^n\\
+ \frac{1}{D}\sum_{j=0}^{D-1}\xi_D^{(s-1)j}\lambda_1(\alpha)^n\\
+ \vdots \\
+ \frac{1}{D}\sum_{j=0}^{D-1}\xi_D^{(s-1)j}\lambda_{D-1}(\alpha)^n\\
+\end{array}
+\right).
+\end{eqnarray}
+\end_inset
+
+It follows that 
+\begin_inset Formula \begin{equation}
+ r_t(n;a)=\frac{1}{D}\sum_{j=0}^{D-1}\xi_D^{tj}\lambda_{j}(\alpha)^n
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\lambda_j(\alpha) = 1+a\xi_D^{-j}$
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The following results are easy consequences of the above proposition.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{corollary}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "corocloseda"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $F$
+\end_inset
+
+ be a periodic function with period 
+\begin_inset Formula $D$
+\end_inset
+
+. Suppose that 
+\begin_inset Formula $\xi^D=1$
+\end_inset
+
+ (not necessarily primitive). Then, 
+\begin_inset Formula \begin{equation}
+  \sum_{l=0}^n \binom{n}{l}a^l\xi^{F(l)} =\frac{1}{D}\sum_{t=0}^{D-1}\xi^{F(t)}\sum_{j=0}^{D-1}\xi_D^{tj}\lambda_j^n,
+ \end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\xi_D=\exp(2\pi i/D)$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_j=1+a\xi_D^{-j}$
+\end_inset
+
+, for 
+\begin_inset Formula $0\leq j \leq D-1$
+\end_inset
+
+, are the eigenvalues of 
+\begin_inset Formula $\CIRC(1,0,\ldots, 0,a)$
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{corollary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Observe that 
+\begin_inset Formula \begin{eqnarray}
+  \sum_{l=0}^n \binom{n}{l}a^l\xi^{F(l)}&=& \sum_{t=0}^{D-1}\left(\sum_{j\equiv t \text{ mod }D}\xi^{F(t)}a^l\binom{n}{j}\right)\\\nonumber
+  &=& \sum_{t=0}^{D-1}\xi^{F(t)}r_t(n;a).
+ \end{eqnarray}
+\end_inset
+
+The result now follows from Proposition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "closedformprop"
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{corollary}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "coroclosed"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $F$
+\end_inset
+
+ be a periodic function with period 
+\begin_inset Formula $D$
+\end_inset
+
+. Suppose that 
+\begin_inset Formula $\xi^D=1$
+\end_inset
+
+ (not necessarily primitive). Then, 
+\begin_inset Formula \begin{equation}
+  \sum_{l=0}^n\binom{n}{l}\xi^{F(l)} = \frac{1}{D}\sum_{t=0}^{D-1}\xi^{F(t)}\sum_{j=0}^{D-1} \xi_D^{tj}\left(1+\xi_D^{-j}\right)^n,
+ \end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\xi_D=\exp(2\pi i/D)$
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{corollary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Set 
+\begin_inset Formula $a=1$
+\end_inset
+
+ in the previous corollary. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These results can be extended further to obtain closed formulas for multinomial sums.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "generalclosed"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $F(q_1,\ldots,q_r)$
+\end_inset
+
+ be a periodic function in each component. Moreover, suppose that 
+\begin_inset Formula $D$
+\end_inset
+
+ is a period for 
+\begin_inset Formula $F$
+\end_inset
+
+ in each component and that 
+\begin_inset Formula $\xi^D=1$
+\end_inset
+
+ (not necessarily primitive). Define, 
+\begin_inset Formula \begin{equation}
+\label{gensum}
+S(n)=\sum_{q_1=0}^n\sum_{q_2=0}^{n-q_1}\cdots\sum_{q_r=0}^{n-q_1-\cdots-q_{r-1}} \binom{n}{q_1}\binom{n-q_1}{q_2}\cdots\binom{n-q_1-\cdots -q_{r-1}}{q_r}\xi^{F(q_1,\ldots,q_r)}. 
+\end{equation}
+\end_inset
+
+Then, 
+\begin_inset Formula \begin{equation}
+\label{nicerep}
+ S(n)=\frac{1}{D^r}\sum_{b_r=0}^{D-1}\sum_{b_{r-1}=0}^{D-1}\cdots \sum_{b_1=0}^{D-1}\sum_{j_1=0}^{D-1}\sum_{j_2=0}^{D-1}\cdots \sum_{j_r=0}^{D-1} \xi^{F(b_1,\ldots,b_r)}\xi_D^{j_1b_r+\cdots+j_rb_1}
+ \lambda_{j_1,\ldots,j_r}^n,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\xi_D=\exp(2\pi i/D)$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{j_1,\ldots, j_r} = 1+\xi_D^{-j_1}+\xi_D^{-j_2}+\cdots+\xi_D^{-j_r}$
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ We present the proof for the case when 
+\begin_inset Formula $r=3$
+\end_inset
+
+. We decided to do this in order to simplify the writing of the proof. The general case is the same argument repeated multiple times.
+\end_layout
+
+\begin_layout Standard
+Write 
+\begin_inset Formula $S(n)$
+\end_inset
+
+ as 
+\begin_inset Formula \begin{equation}
+  S(n)=\sum_{q_1=0}^n\sum_{q_2=0}^{n-q_1} \binom{n}{q_1}\binom{n-q_1}{q_2}\sum_{q_3=0}^{n-q_1-q_2}\binom{n-q_{1}-q_2}{q_3}\xi^{F(q_1,q_2,q_3)}.
+ \end{equation}
+\end_inset
+
+Apply Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "coroclosed"
+
+\end_inset
+
+ to the last sum to get 
+\begin_inset Formula \begin{equation}
+  S(n)=\sum_{q_1=0}^n\sum_{q_2=0}^{n-q_1} \binom{n}{q_1}\binom{n-q_1}{q_2}\left(\frac{1}{D}\sum_{b_3=0}^{D-1}\xi^{F(q_1,q_2,b_3)}
+  \sum_{j_1=0}^{D-1}\xi_D^{j_1b_3}\lambda_{j_1}^{n-q_1-q_2}\right),
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\lambda_{j_1} = 1+\xi_D^{-j_1}$
+\end_inset
+
+. Re-write this equation as 
+\begin_inset Formula \begin{equation}
+\label{after1step}
+ S(n)=\frac{1}{D}\sum_{b_3=0}^{D-1}\sum_{j_1=0}^{D-1}\xi_D^{j_1b_3}\sum_{q_1=0}^n\binom{n}{q_1}\lambda_{j_1}^{n-q_1}\sum_{q_2=0}^{n-q_1} \binom{n-q_1}{q_2}(\lambda_{j_1}^{-1})^{q_2}\xi^{F(q_1,q_{2},b_3)}.
+\end{equation}
+\end_inset
+
+Now apply Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "corocloseda"
+
+\end_inset
+
+ to the last sum to get 
+\begin_inset Formula \begin{equation}
+\label{axuliary1}
+ S(n)=\frac{1}{D}\sum_{b_3=0}^{D-1}\sum_{j_1=0}^{D-1}\xi_D^{j_1b_3}\sum_{q_1=0}^n\binom{n}{q_1}\lambda_{j_1}^{n-q_1}\left(\frac{1}{D}\sum_{b_2=0}^{D-1}\xi^{F(q_1,b_2,b_3)}\sum_{j_2=0}^{D-1}\xi_D^{j_2b_2}\right)
+ (1+\lambda_{j_1}^{-1}\xi_D^{-j_2})^{n-q_1}.
+ \end{equation}
+\end_inset
+
+However, observe that 
+\begin_inset Formula \[\lambda_{j_1}^{n-q_1}(1+\lambda_{j_1}^{-1}\xi_D^{-j_2})^{n-q_1}=(\lambda_{j_1}+\xi_D^{-j_2})^{n-q_1}=(1+\xi_D^{-j_1}+\xi_D^{-j_2})^{n-q_1}=\lambda_{j_1,j_2}^{n-q_1}.\]
+\end_inset
+
+Therefore, 
+\begin_inset Formula \begin{equation}
+\label{axuliary2}
+ S(n)=\frac{1}{D}\sum_{b_3=0}^{D-1}\sum_{j_1=0}^{D-1}\xi_D^{j_1b_3}\sum_{q_1=0}^n\binom{n}{q_1}\left(\frac{1}{D}\sum_{b_2=0}^{D-1}\xi^{F(q_1,b_2,b_3)}\sum_{j_2=0}^{D-1}\xi_D^{j_2b_2}\right)
+ \lambda_{j_1,j_2}^{n-q_1}.
+ \end{equation}
+\end_inset
+
+Rearrange terms to get 
+\begin_inset Formula \begin{align}
+ S(n)=\frac{1}{D^2}\sum_{b_3=0}^{D-1}\sum_{b_2=0}^{D-1}\sum_{j_1=0}^{D-1}\sum_{j_2=0}^{D-1}\xi_D^{j_1b_3+j_2b_2}\lambda_{j_1,j_2}^{n}.\sum_{q_1=0}^n\binom{n}{q_1}\xi^{F(q_1,b_2,b_3)}\xi_D^{j_2b_2}(\lambda_{j_1,j_2}^{-1})^{q_1}.
+\end{align}
+\end_inset
+
+Apply Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "corocloseda"
+
+\end_inset
+
+ once again. After simplification, we have 
+\begin_inset Formula \begin{align}
+ S(n)=\frac{1}{D^3}\sum_{b_3=0}^{D-1}\sum_{b_2=0}^{D-1}\sum_{b_1=0}^{D-1}\sum_{j_1=0}^{D-1}\sum_{j_2=0}^{D-1}\sum_{j_3=0}^{D-1}\xi_D^{j_1b_3+j_2b_2+j_3b_1}\xi^{F(b_1,b_2,b_3)}\lambda_{j_1,j_2,j_3}^n.
+\end{align}
+\end_inset
+
+The general case follows using the same method. This concludes the proof. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observe that equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "nicerep"
+
+\end_inset
+
+) can be written as 
+\begin_inset Formula \begin{equation}
+ S(n)=\sum_{j_1=0}^{D-1}\sum_{j_2=0}^{D-1}\cdots \sum_{j_r=0}^{D-1}
+ d_{j_1,\ldots, j_r}(D)\lambda_{j_1,\ldots,j_r}^n,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula \begin{equation}
+ d_{j_1,\ldots, j_r}(D)=\frac{1}{D^r}\sum_{b_r=0}^{D-1}\sum_{b_{r-1}=0}^{D-1}\cdots \sum_{b_1=0}^{D-1}  \xi^{F(b_1,\ldots,b_r)}\xi_D^{j_1b_r+\cdots+j_rb_1}.
+\end{equation}
+\end_inset
+
+However, note that 
+\begin_inset Formula $\lambda_{t_1,\ldots, t_r}=\lambda_{t'_1,\ldots, t'_r}$
+\end_inset
+
+ where 
+\begin_inset Formula $(t'_1,\ldots, t'_r)$
+\end_inset
+
+ is any rearrangement of 
+\begin_inset Formula $(t_1,\ldots, t_r)$
+\end_inset
+
+. This means that the coefficient of 
+\begin_inset Formula $\lambda^n_{t_1,\ldots,t_r}$
+\end_inset
+
+ in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "nicerep"
+
+\end_inset
+
+) is the sum of all 
+\begin_inset Formula $d_{t_1',\ldots,t_r'}(D)$
+\end_inset
+
+ where 
+\begin_inset Formula $(t_1',\ldots,t_r')$
+\end_inset
+
+ is a rearrangement of 
+\begin_inset Formula $(t_1,\ldots,t_r)$
+\end_inset
+
+. Recall that 
+\begin_inset Formula $\Sym(t_1,\ldots,t_r)$
+\end_inset
+
+ represents the set of all rearrangements of 
+\begin_inset Formula $(t_1,\ldots, t_r)$
+\end_inset
+
+. Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "generalclosed"
+
+\end_inset
+
+ now can be re-stated as follows.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "generalclosedA"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $F(q_1,\ldots,q_r)$
+\end_inset
+
+ be a periodic function in each component. Moreover, suppose that 
+\begin_inset Formula $D$
+\end_inset
+
+ is a period for 
+\begin_inset Formula $F$
+\end_inset
+
+ in each component and that 
+\begin_inset Formula $\xi^D=1$
+\end_inset
+
+ (not necessarily primitive). Define, 
+\begin_inset Formula \begin{equation}
+\label{gensumA}
+S(n)=\sum_{q_1=0}^n\sum_{q_2=0}^{n-q_1}\cdots\sum_{q_r=0}^{n-q_1-\cdots-q_{r-1}} \binom{n}{q_1}\binom{n-q_1}{q_2}\cdots\binom{n-q_1-\cdots -q_{r-1}}{q_r}\xi^{F(q_1,\ldots,q_r)}. 
+\end{equation}
+\end_inset
+
+Then, 
+\begin_inset Formula \begin{equation}
+ S(n)=\sum_{j_1=0}^{D-1}\sum_{j_2=0}^{j_1}\cdots \sum_{j_r=0}^{j_{r-1}}c_{j_1,\ldots,j_r}(D)\left(1+\xi_D^{-j_1}+\cdots+\xi_D^{-j_r}\right)^n,%\lambda_{j_1,\ldots,j_r}^n,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula \begin{equation}
+ c_{j_1,\ldots, j_r}(D)=\frac{1}{D^r}\sum_{b_r=0}^{D-1}\sum_{b_{r-1}=0}^{D-1}\cdots \sum_{b_1=0}^{D-1}  \xi^{F(b_1,\ldots,b_r)}\sum_{(j_1',\ldots,j_r')\in \Sym(j_1,\ldots, j_r)}
+ \xi_D^{j_1'b_r+\cdots+j_r' b_1},
+\end{equation}
+\end_inset
+
+and 
+\begin_inset Formula $\xi_D=\exp(2\pi i/D)$
+\end_inset
+
+.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%, and $
+\backslash
+lambda_{j_1,
+\backslash
+ldots, j_r} = 1+
+\backslash
+xi_D^{-j_1}+
+\backslash
+xi_D^{-j_2}+
+\backslash
+cdots+
+\backslash
+xi_D^{-j_r}$.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ This is just a re-statement of Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "generalclosed"
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A nice consequence of this result is that sequences of the form 
+\begin_inset Formula $\{S(n)\}$
+\end_inset
+
+, with 
+\begin_inset Formula $S(n)$
+\end_inset
+
+ defined as in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gensumA"
+
+\end_inset
+
+), satisfy linear recurrences with integer coefficients. Moreover, we can provide explicit characteristic polynomials for such recurrences.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{corollary}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "gencoro"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $S(n)$
+\end_inset
+
+ be defined as in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gensumA"
+
+\end_inset
+
+). Then, the sequence 
+\begin_inset Formula $\{S(n)\}$
+\end_inset
+
+ satisfies the linear recurrence with integer coefficients whose characteristic polynomial is given by 
+\begin_inset Formula \begin{equation}
+  P_S(X)=\prod_{a_1=0}^{D-1}\,\prod_{0\leq a_2\leq a_1} \cdots \prod_{0\leq a_r\leq a_{r-1}} \left(X-(1+\xi_D^{a_1}+\cdots+\xi_D^{a_r})\right).
+ \end{equation}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{corollary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ This is a direct consequence of the above theorem. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The linear recurrence given in Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gencoro"
+
+\end_inset
+
+ is not necessarily the minimal linear recurrence with integer coefficients satisfied by 
+\begin_inset Formula $\{S(n)\}$
+\end_inset
+
+. However, the characteristic polynomial of the minimal of such recurrences must be a factor of 
+\begin_inset Formula $P_S(X)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{example}
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula $F$
+\end_inset
+
+ be a 
+\begin_inset Formula $n$
+\end_inset
+
+-variable Boolean function. The 
+\shape italic
+nega-Hadamard transform of F
+\family default
+\series default
+\shape default
+ is defined as the complex valued function given by 
+\begin_inset Formula \begin{equation}
+\label{nega1}
+ \mathcal{N}_{F}(\boldsymbol{a}) = \sum_{{\bf x} \in \mathbb{F}_2^n} (-1)^{F({\bf x})\oplus\boldsymbol{a}\cdot {\bf x}} \,\,i^{w({\bf x})},
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $i=\sqrt{-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $w({\bf x})$
+\end_inset
+
+ is the Hamming weight of the vector 
+\begin_inset Formula ${\bf x}$
+\end_inset
+
+. According to Riera and Parker 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "rp"
+
+\end_inset
+
+, the nega-Hadamard transform is central to the structural analysis of pure 
+\begin_inset Formula $n$
+\end_inset
+
+-qubit stabilizer quantum states.
+\end_layout
+
+\begin_layout Standard
+Consider the case 
+\begin_inset Formula $\boldsymbol{a}=\boldsymbol{0}$
+\end_inset
+
+, which is the equivalent of the exponential sum in this setting. If 
+\begin_inset Formula $F$
+\end_inset
+
+ is symmetric, then 
+\begin_inset Formula $\mathcal{N}_{F}(\boldsymbol{0})$
+\end_inset
+
+ can be written as a binomial sum. In particular, 
+\begin_inset Formula \begin{equation}
+ \mathcal{N}_{\boldsymbol{e}_{n,[k_1,\ldots,k_s]}}(\boldsymbol{0})=\sum_{q=0}^n \binom{n}{q} i^{q} (-1)^{\binom{q}{k_1}+\cdots+\binom{q}{k_s}}.
+\end{equation}
+\end_inset
+
+Let 
+\begin_inset Formula $r=\lfloor\log_2(k_s)\rfloor+1$
+\end_inset
+
+ and 
+\begin_inset Formula $D=2^{r}$
+\end_inset
+
+. Lucas' Theorem and Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "corocloseda"
+
+\end_inset
+
+ imply that 
+\begin_inset Formula \begin{equation}
+\mathcal{N}_{\boldsymbol{e}_{n,[k_1,\ldots,k_s]}}(\boldsymbol{0}) = \sum_{j=0}^{D-1} \left(\frac{1}{D}\sum_{t=0}^{D-1}(-1)^{\binom{t}{k_1}+\cdots+\binom{t}{k_s}}\xi_D^{tj}\right)\lambda_j^n,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\lambda_j = 1+i \xi_D^{-j}$
+\end_inset
+
+. Moreover, Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gencoro"
+
+\end_inset
+
+ implies that the sequence 
+\begin_inset Formula $\{\mathcal{N}_{\boldsymbol{e}_{n,[k_1,\ldots,k_s]}}(\boldsymbol{0})\}$
+\end_inset
+
+ satisfies the linear recurrence with integer coefficients given by 
+\begin_inset Formula \begin{eqnarray}
+ P(X)&=& \prod_{a=0}^{2^r-1} \left(X-(1+i \xi_D^a)\right)\\\nonumber
+ &=& (X-2)\Phi_{4}(X-1)\Phi_8(X-1)\cdots \Phi_{2^r}(X-1),
+\end{eqnarray}
+\end_inset
+
+where 
+\begin_inset Formula $\Phi_n(X)$
+\end_inset
+
+ is the 
+\begin_inset Formula $n$
+\end_inset
+
+-th cyclotomic polynomial.
+\end_layout
+
+\begin_layout Standard
+We would like to point out that this is not a new result. It was already established in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cms"
+
+\end_inset
+
+. However, we decided to include it because it is a straightforward application of our results. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{example}
+\end_layout
+
+\end_inset
+
+ Consider the sum 
+\begin_inset Formula \begin{equation}
+  S(n)=\sum _{q_1=0}^n \sum _{q_2=0}^{n-q_1}\sum _{q_3=0}^{n-q_1-q_2} \binom{n}{q_1}\binom{n-q_1}{q_2} \binom{n-q_1-q_2}{q_3}\xi_5^{q_1+q_2+q_3},
+ \end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\xi_5=\exp(2\pi i/5)$
+\end_inset
+
+. Let 
+\begin_inset Formula $F(q_1,q_2,q_3)=q_1+q_2+q_3$
+\end_inset
+
+. Note that 
+\begin_inset Formula $F(q_1,q_2,q_3)\mod 5$
+\end_inset
+
+ is clearly periodic in each component with period 5. Therefore, Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gencoro"
+
+\end_inset
+
+ implies that 
+\begin_inset Formula $\{S(n)\}$
+\end_inset
+
+ satisfies the linear recurrence whose characteristic polynomial is given by 
+\begin_inset Formula \begin{align}
+ P_S(X)=&\prod _{a_1=0}^4 \prod _{a_2=0}^{a_1} \prod _{a_3=0}^{a_2}\left(X-\left(1+\xi_5^{a_1}+\xi_5^{a_2}+\xi_5^{a_3}\right)\right).
+\end{align}
+\end_inset
+
+However, the minimal linear recurrence with integer coefficients satisfied by 
+\begin_inset Formula $\{S(n)\}$
+\end_inset
+
+ has characteristic polynomial 
+\begin_inset Formula \begin{eqnarray}
+ \mu_S(X)&=&X^5-5 X^4+10 X^3-10 X^2+5 X-244\\\nonumber
+ &=&(X-4) \left(X^4-X^3+6 X^2+14 X+61\right).
+\end{eqnarray}
+\end_inset
+
+Thus, it must be true that 
+\begin_inset Formula $\mu_S(X)|P_S(X)$
+\end_inset
+
+. Indeed, after simplification, we have 
+\begin_inset Formula \begin{align}
+ P_S(X)=& (X-4) \left(X^2-3 X+1\right) \left(X^4-11 X^3+46 X^2-86 X+61\right)\\\nonumber
+ &\left(X^4-6 X^3+16 X^2-21 X+11\right) \left(X^4-6 X^3+16 X^2-16 X+16\right)\\\nonumber
+ &\left(X^4-X^3-4 X^2+4 X+11\right) \left(X^4-X^3+X^2-X+1\right)\\\nonumber
+ &\left(X^4-X^3+6 X^2-6 X+11\right) \left(X^4-X^3+6 X^2+4 X+1\right)\\\nonumber
+ &\left(X^4-X^3+6 X^2+14
+   X+61\right).
+\end{align}
+\end_inset
+
+The fact that 
+\begin_inset Formula $\mu_S(X)|P_S(X)$
+\end_inset
+
+ is now evident. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{example}
+\end_layout
+
+\end_inset
+
+ Other toy examples can be constructed with previous classical results. For example, it is known that 
+\begin_inset Formula $\{f_n \mod m\}$
+\end_inset
+
+, where 
+\begin_inset Formula $f_n$
+\end_inset
+
+ represents the 
+\begin_inset Formula $n$
+\end_inset
+
+-th Fibonacci number and 
+\begin_inset Formula $m$
+\end_inset
+
+ is a positive integer, is periodic. The period is known as the Pisano period mod 
+\begin_inset Formula $m$
+\end_inset
+
+ and it is usually denoted by 
+\begin_inset Formula $\pi(m)$
+\end_inset
+
+. Let 
+\begin_inset Formula $f_n^{(m)}$
+\end_inset
+
+ represent 
+\begin_inset Formula $f_n\mod m$
+\end_inset
+
+ and consider the sum 
+\begin_inset Formula \begin{equation}
+ S_m(n)=\sum_{q=0}^n \binom{n}{q}\xi_{\pi(m)}^{f_q^{(m)}},
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\xi_{\pi(m)}=\exp(2\pi i/\pi(m))$
+\end_inset
+
+. Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gencoro"
+
+\end_inset
+
+ implies that 
+\begin_inset Formula $\{S_m(n)\}$
+\end_inset
+
+ satisfies the linear recurrence with integer coefficients whose characteristic polynomial is given by 
+\begin_inset Formula \begin{equation}
+ P_{S_m}(X) = \prod_{a=0}^{\pi(m)-1} (X-(1+\xi_{\pi(m)}^a)).
+\end{equation}
+\end_inset
+
+Moreover, Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "corocloseda"
+
+\end_inset
+
+ implies that its closed form is given by 
+\begin_inset Formula \begin{equation}
+ S_m(n)=\sum_{j=0}^{\pi(m)-1} \left(\frac{1}{\pi(m)}\sum_{t=0}^{\pi(m)-1}\xi_{\pi(m)}^{f_t^{(m)}+tj}\right) \left(1+\xi_{\pi(m)}^{-j}\right)^n.
+\end{equation}
+\end_inset
+
+This example can be easily generalized to any Lucas sequence of the first kind 
+\begin_inset Formula $u_n(a,b)$
+\end_inset
+
+ (the Fibonacci sequence is given by 
+\begin_inset Formula $u_n(1,-1)$
+\end_inset
+
+). 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us go back to our exponential sums. The above results can be used to obtain closed formulas for exponential sums of elementary symmetric polynomials. Let 
+\begin_inset Formula $\mathbb{F}_q=\{0,\alpha_1,\ldots,\alpha_{q-1}\}$
+\end_inset
+
+. Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformthm"
+
+\end_inset
+
+ implies that 
+\begin_inset Formula \begin{equation}
+ S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k}) = \sum_{m_1=0}^n\sum_{m_2=0}^{n-m_1}\cdots\sum_{m_{q-1}=0}^{n-m_1-\cdots-m_{q-1}}{n\choose m_0^*,m_1,m_2,\ldots, m_{q-1}}\xi_p^{\text{Tr}
+ \left(\Lambda_{\alpha_1,\ldots,\alpha_{q-1}}\left(k,m_1,\ldots,m_{q-1}\right)\right)}
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $m_0^*=n-(m_1+\cdots+m_{q-1})$
+\end_inset
+
+, 
+\begin_inset Formula $\xi_p=\exp(2\pi i/p)$
+\end_inset
+
+ and 
+\begin_inset Formula $\text{Tr}=\text{Tr}_{\mathbb{F}_q/\mathbb{F}_p}$
+\end_inset
+
+. Moreover, note that 
+\begin_inset Formula \[{n\choose m_0^*,m_1,m_2,\ldots, m_{q-1}}=\binom{n}{m_1}\binom{n-m_1}{m_2}\cdots\binom{n-m_1-\cdots-m_{q-2}}{m_{q-1}}.\]
+\end_inset
+
+Therefore, if we let 
+\begin_inset Formula \begin{equation}
+F_{k;\mathbb{F}_q}(m_1,\ldots,m_{q-1})=\Lambda_{\alpha_1,\ldots,\alpha_{q-1}}(k,m_1,\ldots, m_{q-1}),
+\end{equation}
+\end_inset
+
+then 
+\begin_inset Formula \begin{equation}
+\label{goodtype}
+S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k}) = \sum_{m_1=0}^n\sum_{m_2=0}^{n-m_1}\cdots\sum_{m_{q-1}=0}^{n-m_1-\cdots-m_{q-1}}{n\choose m_0^*,m_1,m_2,\ldots, m_{q-1}}\xi_p^{\text{Tr}
+\left(F_{k,\mathbb{F}_q}\left(m_1,\ldots,m_{q-1}\right)\right)}
+\end{equation}
+\end_inset
+
+is of the same type as (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gensum"
+
+\end_inset
+
+). It remains to show the periodicity of 
+\begin_inset Formula $F_{k;\mathbb{F}_q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We start with the following lemma.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "lambdaperiod"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be prime and 
+\begin_inset Formula $a_1,\ldots, a_l$
+\end_inset
+
+ be some elements in some field extension of 
+\begin_inset Formula $\mathbb{F}_p$
+\end_inset
+
+. Define 
+\begin_inset Formula \begin{equation}
+  \Lambda^{(p)}_{a_1,\ldots,a_l}(k,m_1,\ldots,m_l)= \Lambda_{a_1,\ldots,a_l}(k,m_1^{+},\ldots,m_l^{+})\mod p,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula \[m_j^{+} = \begin{cases}
+ m_j, & \text{ if }m_j>0 \\
+ m_j + \left(\left\lfloor\frac{-m_j}{D}\right\rfloor+1\right)D, & \text{ if }m_j\leq 0.
+\end{cases}
+\]
+\end_inset
+
+Then, 
+\begin_inset Formula $\Lambda^{(p)}_{a_1,\ldots, a_l}(k,m_1,\ldots,m_l)$
+\end_inset
+
+ is periodic in each of the variables 
+\begin_inset Formula $m_1,\ldots, m_l$
+\end_inset
+
+ with period 
+\begin_inset Formula $D=p^{\lfloor\log_p(k)\rfloor+1}$
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ We first show that if 
+\begin_inset Formula $m_1,\ldots, m_l$
+\end_inset
+
+ are all non-negative, then 
+\begin_inset Formula \[\Lambda_{a_1,\ldots,a_l}(k,m_1,\ldots,m_j+D,\ldots, m_l)\equiv\Lambda_{a_1,\ldots,a_l}(k,m_1,\ldots,m_j,\ldots, m_l)\mod p\]
+\end_inset
+
+for each 
+\begin_inset Formula $j=1,\ldots, l$
+\end_inset
+
+. The proof of this claim is by induction on 
+\begin_inset Formula $l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Suppose first that 
+\begin_inset Formula $l=1$
+\end_inset
+
+. That is, consider 
+\begin_inset Formula \begin{equation}
+  \Lambda_{a_1}(k,m_1) = a^k\binom{m_1}{k}.
+ \end{equation}
+\end_inset
+
+Lucas' Theorem implies that if 
+\begin_inset Formula $D=p^{\lfloor\log_p(k)\rfloor+1}$
+\end_inset
+
+, then 
+\begin_inset Formula \begin{equation}
+ \binom{m_1+D}{k'}\equiv \binom{m_1}{k'}\mod p,
+\end{equation}
+\end_inset
+
+for ever 
+\begin_inset Formula $k'\leq k$
+\end_inset
+
+. Therefore, 
+\begin_inset Formula $\Lambda_{a_1}(k',m_1+D)\equiv \Lambda_{a_1}(k',m_1)\mod p$
+\end_inset
+
+ for every 
+\begin_inset Formula $k'\leq k$
+\end_inset
+
+ and the result holds for 
+\begin_inset Formula $l=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Suppose now that the result holds for some 
+\begin_inset Formula $l\geq 1$
+\end_inset
+
+. Consider 
+\begin_inset Formula \[\Lambda_{a_1,\ldots,a_l,a_{l+1}}(k,m_1,\ldots,m_l,m_{l+1}).\]
+\end_inset
+
+Recall that 
+\begin_inset Formula \begin{equation}
+\label{lambdaind}
+ \Lambda_{a_1,\ldots,a_l,a_{l+1}}(k,m_1,\ldots,m_l,m_{l+1}) = \sum_{j=0}^{m_{l+1}} \binom{m_{l+1}}{j}a_{l+1}^j \Lambda_{a_1,\ldots, a_l}(k-j,m_1,\ldots, m_l).
+\end{equation}
+\end_inset
+
+It is clear that 
+\size small
+
+\begin_inset Formula \[\Lambda_{a_1,\ldots,a_l,a_{l+1}}(k,m_1,\ldots,m_j+D,\ldots,m_l,m_{l+1})\equiv \Lambda_{a_1,\ldots,a_l,a_{l+1}}(k,m_1,\ldots,m_j,\ldots,m_l,m_{l+1})\mod p\]
+\end_inset
+
+
+\size default
+ holds for 
+\begin_inset Formula $j=1,\ldots, l$
+\end_inset
+
+ (induction hypothesis). It remains to show that it is also true for the variable 
+\begin_inset Formula $m_{l+1}$
+\end_inset
+
+. In order to do that, first note that a simple induction argument shows that if 
+\begin_inset Formula $k<0$
+\end_inset
+
+, then 
+\begin_inset Formula \[\Lambda_{a_1,\ldots, a_l}(k,m_1,\ldots, m_l)=0.\]
+\end_inset
+
+Therefore, every term on the right-hand side of (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lambdaind"
+
+\end_inset
+
+) for which 
+\begin_inset Formula $j>k$
+\end_inset
+
+ is 0. This implies that the binomial coefficient that accompanies every surviving term in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lambdaind"
+
+\end_inset
+
+) satisfies (Lucas' Theorem) 
+\begin_inset Formula \begin{equation}
+ \binom{m_{l+1}+D}{j}\equiv \binom{m_{l+1}}{j} \mod p.
+\end{equation}
+\end_inset
+
+Then, 
+\begin_inset Formula \begin{align}\nonumber
+ \Lambda_{a_1,\ldots, a_l,a_{l+1}}(k,m_1,\ldots,m_l,&m_{l+1}+D) = \sum_{j=0}^{m_{l+1}+D}\binom{m_{l+1}+D}{j}a_{l+1}^j \Lambda_{a_1,\ldots,a_{l}}(k-j,m_1,\ldots,m_l)\\\nonumber
+ &\equiv \sum_{j=0}^{m_{l+1}+D}\binom{m_{l+1}}{j}a_{l+1}^j \Lambda_{a_1,\ldots,a_{l}}(k-j,m_1,\ldots,m_l)\mod p\\\nonumber
+ &\equiv \sum_{j=0}^{m_{l+1}}\binom{m_{l+1}}{j}a_{l+1}^j \Lambda_{a_1,\ldots,a_{l}}(k-j,m_1,\ldots,m_l)\mod p\\\nonumber
+ &\equiv \Lambda_{a_1,\ldots,a_{l+1}}(k,m_1,\ldots,m_{l+1}) \mod p.
+\end{align}
+\end_inset
+
+Therefore, 
+\begin_inset Formula \[\Lambda_{a_1,\ldots, a_{l+1}}(k,m_1,\ldots, m_{l+1}+D)\equiv \Lambda_{a_1,\ldots, a_{l+1}}(k,m_1,\ldots, m_{l+1})\mod p\]
+\end_inset
+
+is also true. We conclude by induction that if 
+\begin_inset Formula $m_1,\ldots,m_l$
+\end_inset
+
+ are non-negative integers, then 
+\begin_inset Formula \[\Lambda_{a_1,\ldots, a_l}(k,m_1,\ldots,m_j+D,\ldots,m_l)\equiv \Lambda_{a_1,\ldots, a_l}(k,m_1,\ldots,m_j,\ldots,m_l)\mod p\]
+\end_inset
+
+for 
+\begin_inset Formula $j=1,\ldots, l$
+\end_inset
+
+ and 
+\begin_inset Formula $D=p^{\lfloor\log_p(k)r\rfloor+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It is clear that 
+\begin_inset Formula \begin{equation}
+\Lambda_{a_1,\ldots, a_l}(k,m_1,\ldots,m_j+t D,\ldots,m_l)\equiv \Lambda_{a_1,\ldots, a_l}(k,m_1,\ldots,m_j,\ldots,m_l)\mod p
+\end{equation}
+\end_inset
+
+for every non-negative integer 
+\begin_inset Formula $t$
+\end_inset
+
+. Sadly, the same cannot be said about negative 
+\begin_inset Formula $t$
+\end_inset
+
+. For example, if 
+\begin_inset Formula $m_l$
+\end_inset
+
+ is negative, then by the inductive definition of 
+\begin_inset Formula $\Lambda_{a_1,\ldots, a_l}$
+\end_inset
+
+ one has that 
+\begin_inset Formula \[\Lambda_{a_1,\ldots,a_l}(k,m_1,\ldots, m_l)=0.\]
+\end_inset
+
+However, this can be circumvented by defining the function 
+\begin_inset Formula \[\Lambda^{(p)}_{a_1,\ldots,a_l}(k,m_1,\ldots,m_l):= \Lambda_{a_1,\ldots,a_l}(k,m_1^{+},\ldots,m_l^{+})\mod p,\]
+\end_inset
+
+where 
+\begin_inset Formula \begin{equation}
+m_j^{+} = \begin{cases}
+ m_j, & \text{ if }m_j>0 \\
+ m_j + \left(\left\lfloor\frac{-m_j}{D}\right\rfloor+1\right)D, & \text{ if }m_j\leq 0.
+\end{cases}
+\end{equation}
+\end_inset
+
+Observe that 
+\begin_inset Formula \[\Lambda^{(p)}(k,m_1,\ldots,m_j+t D,\ldots,m_l)=\Lambda^{(p)}(k,m_1,\ldots,m_j,\ldots,m_l)\]
+\end_inset
+
+for every 
+\begin_inset Formula $t\in \mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $j=1,\ldots,l$
+\end_inset
+
+. In other words, 
+\begin_inset Formula $\Lambda^{(p)}_{a_1,\ldots,a_l}(k,m_1,\ldots,m_l)$
+\end_inset
+
+ is periodic in each of the variables 
+\begin_inset Formula $m_1,\ldots,m_l$
+\end_inset
+
+ with period 
+\begin_inset Formula $D$
+\end_inset
+
+. This concludes the proof. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us go back to formula (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "goodtype"
+
+\end_inset
+
+) for 
+\begin_inset Formula $S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})$
+\end_inset
+
+. Note that the value of 
+\begin_inset Formula $\xi_p^{\Tr(F_{k;\mathbb{F}_q}(m_1,\ldots,m_{q-1}))}$
+\end_inset
+
+ depends only on the value of 
+\begin_inset Formula $F_{k;\mathbb{F}_q}(m_1,\ldots,m_l)\mod p$
+\end_inset
+
+. Therefore, if we define 
+\begin_inset Formula \begin{equation}
+F^{(p)}_{k;\mathbb{F}_q}(m_1,\ldots,m_{q-1}):= \Lambda^{(p)}_{\alpha_1,\ldots,\alpha_{q-1}}(k,m_1,\ldots,m_{q-1}),
+\end{equation}
+\end_inset
+
+then 
+\begin_inset Formula \begin{equation}
+\label{goodtype2}
+S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k}) = \sum_{m_1=0}^n\sum_{m_2=0}^{n-m_1}\cdots\sum_{m_{q-1}=0}^{n-m_1-\cdots-m_{q-1}}{n\choose m_0^*,m_1,m_2,\ldots, m_{q-1}}\xi_p^{\text{Tr}
+\left(F^{(p)}_{k,\mathbb{F}_q}\left(m_1,\ldots,m_{q-1}\right)\right)}.
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now present our closed formulas for 
+\begin_inset Formula $S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})$
+\end_inset
+
+. This generalizes Cai et al.'s result for the binary case 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cai"
+
+\end_inset
+
+. It also generalizes the recurrence exploited in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cm1,cm2"
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "closedformsSq"
+
+\end_inset
+
+ Let 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $k>1$
+\end_inset
+
+ be positive integers and 
+\begin_inset Formula $p$
+\end_inset
+
+ be a prime and 
+\begin_inset Formula $q=p^r$
+\end_inset
+
+ with 
+\begin_inset Formula $r\geq 1$
+\end_inset
+
+. Let 
+\begin_inset Formula $D=p^{\lfloor\log_p(k)\rfloor+1}$
+\end_inset
+
+. Then, 
+\begin_inset Formula \[ S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k}) = \sum_{j_1=0}^{D-1}\sum_{j_2=0}^{j_1}\cdots \sum_{j_{q-1}=0}^{j_{q-2}} 
+ c_{j_1,\ldots,j_{q-1}}(k)\left(1+\xi_D^{-j_1}+\cdots+\xi_D^{-j_{q-1}}\right)^n,\]
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+lambda_{j_1,
+\backslash
+ldots,j_{q-1}}^n,$$
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+where 
+\begin_inset Formula \begin{equation*}
+  c_{j_1,\ldots,j_{q-1}}(k)=\frac{1}{D^{q-1}}\sum_{b_{q-1}=0}^{D-1}\cdots \sum_{b_1=0}^{D-1} \xi_p^{\text{Tr}\left(F_{k;\mathbb{F}_q}^{(p)}\left(b_1,\ldots,b_{q-1}\right)\right)}
+  \sum_{(j_1',\ldots,j_{q-1}')\in \Sym(j_1,\ldots, j_{q-1})}
+ \xi_D^{j_1'b_{q-1}+\cdots+j_{q-1}' b_1},
+ \end{equation*}
+\end_inset
+
+
+\begin_inset Formula $\xi_{m}=\exp(2\pi i/m)$
+\end_inset
+
+, 
+\begin_inset Formula $\text{Tr}=\text{Tr}_{\mathbb{F}_q/\mathbb{F}_p}$
+\end_inset
+
+, and 
+\begin_inset Formula $\lambda_{j_1,\ldots, j_{q-1}} = 1+\xi_D^{-j_1}+\xi_{D}^{-j_2}+\cdots+\xi_D^{-j_{q-1}}$
+\end_inset
+
+. In particular, the sequence 
+\begin_inset Formula $\{S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})\}$
+\end_inset
+
+ satisfies the linear recurrence with integer coefficients whose characteristic polynomial is given by 
+\begin_inset Formula \[P_{q,k}(X)=\prod_{a_1=0}^{D-1}\,\prod_{0\leq a_2\leq a_1} \cdots \prod_{0\leq a_{q-1}\leq a_{q-2}} \left(X-\left(1+\xi_D^{a_1}+\cdots+\xi_D^{a_{q-1}}\right)\right).\]
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ The sum in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "goodtype2"
+
+\end_inset
+
+) is of type (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gensum"
+
+\end_inset
+
+). Moreover, Lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lambdaperiod"
+
+\end_inset
+
+ implies that the function 
+\begin_inset Formula $F^{(p)}_{n,k;\mathbb{F}_q}(m_1,\ldots,m_{q-1})$
+\end_inset
+
+ is periodic in each component with period 
+\begin_inset Formula $D$
+\end_inset
+
+. The result now follows from Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "generalclosedA"
+
+\end_inset
+
+ and its corollary. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "closedformsSq"
+
+\end_inset
+
+ also provides a bound for the degree of the minimal linear recurrence with integer coefficients satisfied by 
+\begin_inset Formula $\{S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{corollary}
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula $k>1$
+\end_inset
+
+ be positive integers and 
+\begin_inset Formula $p$
+\end_inset
+
+ be a prime and 
+\begin_inset Formula $q=p^r$
+\end_inset
+
+ with 
+\begin_inset Formula $r\geq 1$
+\end_inset
+
+. Let 
+\begin_inset Formula $D=p^{\lfloor\log_p(k)\rfloor+1}$
+\end_inset
+
+. The degree of the minimal linear recurrence with integer coefficients that 
+\begin_inset Formula $\{S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})\}$
+\end_inset
+
+ satisfies is less than or equal to 
+\begin_inset Formula $(D)_q/q!$
+\end_inset
+
+, where 
+\begin_inset Formula $(a)_n = a(a+1)(a+2)\cdots(a+n-1)$
+\end_inset
+
+ is the Pochhammer symbol. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{corollary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ The characteristic polynomial of such recurrence is a factor of 
+\begin_inset Formula $P_{q,k}(X)$
+\end_inset
+
+. The result now follows from the fact that the degree of 
+\begin_inset Formula $P_{q,k}(X)$
+\end_inset
+
+ is 
+\begin_inset Formula $(D)_q/q!$
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{example}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "exF4"
+
+\end_inset
+
+ Consider the sequence 
+\begin_inset Formula $\{S_{\mathbb{F}_4}(\boldsymbol{e}_{n,3})\}$
+\end_inset
+
+. Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "closedformsSq"
+
+\end_inset
+
+ implies that this sequence satisfies the linear recurrence whose characteristic is given by 
+\begin_inset Formula \begin{eqnarray*}
+ P_{4,3}(X)&=& \prod_{a_1=0}^3\prod_{0\leq a_2\leq a_1}\prod_{0\leq a_3\leq a_2}\left(X-\left(1+i^{a_1}+i^{a_2}+i^{a_3}\right)\right)\\
+ &=&(X-4) (X-2)^2 X^2 (X+2) \left(X^2+4\right) \left(X^2-6 X+10\right) \left(X^2-4 X+8\right)\\
+ &&\left(X^2-2 X+2\right)^2 \left(X^2-2 X+10\right) \left(X^2+2 X+2\right).
+\end{eqnarray*}
+\end_inset
+
+The minimal linear recurrence with integer coefficients that 
+\begin_inset Formula $\{S_{\mathbb{F}_4}(\boldsymbol{e}_{n,3})\}$
+\end_inset
+
+ satisfies has characteristic polynomial given by 
+\begin_inset Formula \[\mu_{4,3}(X)=(X-4) (X-2) \left(X^2+4\right).\]
+\end_inset
+
+Note that, as expected, 
+\begin_inset Formula $\mu_{4,3}(X)|P_{4,3}(X)$
+\end_inset
+
+. After simplification, the closed formula given by Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "closedformsSq"
+
+\end_inset
+
+ is 
+\begin_inset Formula \begin{eqnarray*}
+S_{\mathbb{F}_4}(\boldsymbol{e}_{n,3})&=&4^{n-1}+3\cdot 2^{n-1}-\frac{3}{4}(2i)^n-\frac{3}{4}(-2i)^n\\
+&=&4^{n-1}+3\cdot 2^{n-1}-3\cdot 2^{n-1} \cos \left(\frac{n\pi}{2}\right).
+\end{eqnarray*}
+\end_inset
+
+The function 
+\begin_inset Formula $\text{Tr}_{\mathbb{F}_4/\mathbb{F}_2}(\boldsymbol{e}_{n,3})$
+\end_inset
+
+ can be identified with a 
+\begin_inset Formula $2n$
+\end_inset
+
+-variable Boolean function. The identification depends on the value-vector of 
+\begin_inset Formula $\text{Tr}_{\mathbb{F}_4/\mathbb{F}_2}(\boldsymbol{e}_{n,3})$
+\end_inset
+
+, which is a 
+\begin_inset Formula $2n$
+\end_inset
+
+-tuple of 0's and 1's, and an order of the elements of 
+\begin_inset Formula $\mathbb{F}_{2}^{2n}$
+\end_inset
+
+ (different order, different representation). For instance, 
+\begin_inset Formula $\text{Tr}_{\mathbb{F}_4/\mathbb{F}_2}(\boldsymbol{e}_{4,3})$
+\end_inset
+
+ can be identified with 
+\begin_inset Formula \begin{align*}
+ F_8({\bf X})=&X_2 X_3 X_5+X_1 X_4 X_5+X_2 X_4 X_5+X_2 X_7 X_5+X_4 X_7 X_5+X_1 X_8 X_5+X_2 X_8 X_5+\\
+ &X_3 X_8 X_5+X_4 X_8 X_5+X_1 X_3 X_6+X_2 X_3 X_6+X_1 X_4 X_6+X_2 X_3 X_7+X_1 X_4 X_7+\\
+ &X_2 X_4 X_7+X_1 X_6 X_7+X_2 X_6 X_7+X_3 X_6 X_7+X_4 X_6 X_7+X_1 X_3 X_8+X_2 X_3 X_8+\\
+ &X_1 X_4 X_8+X_1 X_6 X_8+X_3 X_6 X_8.
+\end{align*}
+\end_inset
+
+Observe that 
+\begin_inset Formula $S_{\mathbb{F}_4}(\boldsymbol{e}_{4,3})=S_{\mathbb{F}_2}(F_8)=64.$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{example}
+\end_layout
+
+\end_inset
+
+ Consider the sequence 
+\begin_inset Formula $\{S_{\mathbb{F}_8}(\boldsymbol{e}_{n,3})\}$
+\end_inset
+
+. Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "closedformsSq"
+
+\end_inset
+
+ implies that this sequence satisfies the linear recurrence whose characteristic is given by 
+\begin_inset Formula \begin{eqnarray*}
+ P_{8,3}(X)&=& \prod_{a_1=0}^3\prod_{a_2=0}^{a_1}\prod_{a_3=0}^{a_2}\prod_{a_4=0}^{a_3}\prod_{a_5=0}^{a_4}\prod_{a_6=0}^{a_5}\prod_{a_7=0}^{a_6}\left(X-\left(1+i^{a_1}+i^{a_2}+i^{a_3}+i^{a_4}+i^{a_5}+i^{a_6}+i^{a_7}\right)\right).
+\end{eqnarray*}
+\end_inset
+
+The minimal linear recurrence with integer coefficients that 
+\begin_inset Formula $\{S_{\mathbb{F}_8}(\boldsymbol{e}_{n,3})\}$
+\end_inset
+
+ satisfies has characteristic polynomial given by 
+\begin_inset Formula \[\mu_{8,3}(X)=(X-4) (X+4) \left(X^2+16\right) \left(X^2-8 X+32\right) \left(X^2-4 X+8\right) \left(X^2+4 X+8\right).\]
+\end_inset
+
+It can be verified that 
+\begin_inset Formula $\mu_{8,3}(X)|P_{8,3}(X)$
+\end_inset
+
+. The closed formula for this exponential sum is given (after simplification) by 
+\begin_inset Formula \begin{equation*}
+ \footnotesize S_{\mathbb{F}_8}(\boldsymbol{e}_{n,3})=\frac{1}{8} \left(2 \sqrt{2}\right)^n \left(\left(9+(-1)^n\right) \left(\sqrt{2}\right)^n+2 \left(2^n+9\right) \sin \left(\frac{n\pi}{4}\right)
+ -6 \sin \left(\frac{3n \pi}{4}\right)-6 \left(\sqrt{2}\right)^n \cos \left(\frac{n\pi}{2}\right)\right).
+\end{equation*}
+\end_inset
+
+As with the previous example, the function 
+\begin_inset Formula $\text{Tr}_{\mathbb{F}_8/\mathbb{F}_2}(\boldsymbol{e}_{n,3})$
+\end_inset
+
+ can be identified with a 
+\begin_inset Formula $3n$
+\end_inset
+
+-variable Boolean function. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These two examples show a big difference between the degrees of the polynomials 
+\begin_inset Formula $P_{q,k}(X)$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{q,k}(X)$
+\end_inset
+
+, where 
+\begin_inset Formula $\mu_{q,k}(X)$
+\end_inset
+
+ represents the characteristic polynomial of the minimal linear recurrence with integer coefficients satisfied by the sequence 
+\begin_inset Formula $\{S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})\}$
+\end_inset
+
+. In particular, 
+\begin_inset Formula $P_{q,k}(X)$
+\end_inset
+
+ does not seem to be tight. However, what you are seeing here is the fact that when working over 
+\begin_inset Formula $\mathbb{F}_q$
+\end_inset
+
+ with 
+\begin_inset Formula $q=p^r$
+\end_inset
+
+ and 
+\begin_inset Formula $r>1$
+\end_inset
+
+, some of the factors of 
+\begin_inset Formula $P_{q,k}(X)$
+\end_inset
+
+ are repeated multiple times. For instance, consider Example 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exF4"
+
+\end_inset
+
+. Observe that when 
+\begin_inset Formula $(a_1,a_2,a_3)=(2,1,0)$
+\end_inset
+
+ we get the factor 
+\begin_inset Formula $X-(1 + i)$
+\end_inset
+
+. However when 
+\begin_inset Formula $(a_1,a_2,a_3)=(3,1,1)$
+\end_inset
+
+, we also get the factor 
+\begin_inset Formula $X-(1+i)$
+\end_inset
+
+. Therefore, this factor is repeated twice. The factor 
+\begin_inset Formula $X-(1-i)$
+\end_inset
+
+ is also repeated twice. That is why the factor 
+\begin_inset Formula $X^2-2 X+2$
+\end_inset
+
+ appears in 
+\begin_inset Formula $P_{4,3}(X)$
+\end_inset
+
+ with 2 as exponent. This phenomenon does not occur over 
+\begin_inset Formula $\mathbb{F}_p$
+\end_inset
+
+. In fact, there are examples where the polynomial 
+\begin_inset Formula $P_{p,k}(X)$
+\end_inset
+
+ is tight.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{example}
+\end_layout
+
+\end_inset
+
+ Consider the sequence 
+\begin_inset Formula $\{S_{\mathbb{F}_3}(\boldsymbol{e}_{n,7})\}$
+\end_inset
+
+. The characteristic polynomial of the minimal linear recurrence with integer coefficients satisfied by this sequence is 
+\begin_inset Formula \[\mu_{3,7}(X)=\frac{1}{X}P_{3,7}(X).\]
+\end_inset
+
+The term 
+\begin_inset Formula $1/X$
+\end_inset
+
+ in front of 
+\begin_inset Formula $P_{3,7}(X)$
+\end_inset
+
+ comes from the fact that 
+\begin_inset Formula $P_{3,7}(0)=0$
+\end_inset
+
+, i.e., 0 is a root for 
+\begin_inset Formula $P_{3,7}(X)$
+\end_inset
+
+. However, the root 0 does not contribute anything to the closed formula for the exponential sum. Therefore, taking the term 
+\begin_inset Formula $X$
+\end_inset
+
+ does not alter the result. Thus, the polynomial 
+\begin_inset Formula $P_{3,7}(X)$
+\end_inset
+
+ is tight for this example. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The repetition of factors can be eliminated by using 
+\shape italic
+least common multiples
+\family default
+\series default
+\shape default
+ (
+\begin_inset Formula $\lcm$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $k>1$
+\end_inset
+
+ be positive integers and 
+\begin_inset Formula $p$
+\end_inset
+
+ be a prime and 
+\begin_inset Formula $q=p^r$
+\end_inset
+
+ with 
+\begin_inset Formula $r\geq 1$
+\end_inset
+
+. Let 
+\begin_inset Formula $D=p^{\lfloor\log_p(k)\rfloor+1}$
+\end_inset
+
+. Let 
+\begin_inset Formula $M_{a_1,\ldots,a_{q-1}}(X)$
+\end_inset
+
+ be the minimal polynomial for the algebraic integer 
+\begin_inset Formula $1+\xi_D^{a_1}+\cdots+\xi_D^{a_{q-1}}$
+\end_inset
+
+. Then, 
+\begin_inset Formula $\{S_{\mathbb{F}_q}(\boldsymbol{e}_{n,k})\}$
+\end_inset
+
+ satisfies the linear recurrence with integer coefficients whose characteristic polynomial is given by 
+\begin_inset Formula \[\chi_{q,k}(X)=\lcm\left(M_{a_1,\ldots,a_{q-1}}(X)\right)_{0\leq a_{q-1}\leq \cdots \leq a_2\leq a_1 \leq D-1}.\]
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{remark}
+\end_layout
+
+\end_inset
+
+ As expected, having these recurrences at hand allow us to compute exponential sums of elementary symmetric polynomials for big values of 
+\begin_inset Formula $n$
+\end_inset
+
+. For instance, it took 
+\shape italic
+Mathematica
+\family default
+\series default
+\shape default
+ 37.504 seconds to calculate 
+\begin_inset Formula $S_{\mathbb{F}_3}(\boldsymbol{e}_{100,000,11})$
+\end_inset
+
+, which is an integer with 
+\begin_inset Formula $47,712$
+\end_inset
+
+ digits.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{remark}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We point out that Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "closedformsSq"
+
+\end_inset
+
+ and other results after it can be extended to linear combinations of elementary symmetric polynomials without too much effort. For instance, suppose that 
+\begin_inset Formula $0\leq k_1<\cdots<k_s$
+\end_inset
+
+ are integers and 
+\begin_inset Formula $\beta_1,\ldots,\beta_s \in \mathbb{F}_q^{\times}$
+\end_inset
+
+. The discussion prior Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "closedformsSq"
+
+\end_inset
+
+ together with Corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "expsumformcoro"
+
+\end_inset
+
+ implies that 
+\begin_inset Formula \begin{align}
+\label{goodtype3}
+S_{\mathbb{F}_q}\left(\sum_{j=1}^s \beta_j\boldsymbol{e}_{n,k_j}\right) =& \sum_{m_1=0}^n\sum_{m_2=0}^{n-m_1}\cdots\sum_{m_{q-1}=0}^{n-m_1-\cdots-m_{q-1}}{n\choose m_0^*,m_1,m_2,\ldots, m_{q-1}}\\\nonumber
+& \times \xi_p^{\text{Tr}\left(\sum_{j=1}^s \beta_j F^{(p)}_{k,\mathbb{F}_q}\left(m_1,\ldots,m_{q-1}\right)\right)}.
+\end{align}
+\end_inset
+
+The statement of Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "closedformsSq"
+
+\end_inset
+
+ can now be written almost verbatim for linear combinations of elementary symmetric polynomials. The only differences are that 
+\begin_inset Formula $D$
+\end_inset
+
+ is now 
+\begin_inset Formula $D=p^{\lfloor\log_p(k_s)\rfloor+1}$
+\end_inset
+
+ and 
+\begin_inset Formula \[\text{Tr}\left(F_{k;\mathbb{F}_q}^{(p)}\left(b_1,\ldots,b_{q-1}\right)\right)\]
+\end_inset
+
+in the definition of 
+\begin_inset Formula $c_{j_1,\ldots,j_{q-1}}(k)$
+\end_inset
+
+ must be replaced by 
+\begin_inset Formula \[\text{Tr}\left(\sum_{j=1}^s \beta_j F_{k_j;\mathbb{F}_q}^{(p)}\left(b_1,\ldots,b_{q-1}\right)\right).\]
+\end_inset
+
+Similar adjustments apply to the other results.
+\end_layout
+
+\begin_layout Section
+Concluding remarks
+\end_layout
+
+\begin_layout Standard
+We expressed exponential sums of linear combinations of elementary symmetric polynomials over finite fields as multinomial sums. These expressions represent a computational improvement over the definition of exponential sums. These expressions also provided a link between balancedness of symmetric polynomials over Galois fields and a problem similar to the one of bisecting binomial coefficients. We also proved closed formulas for exponential sums of linear combinations of elementary symmetric polynomials over Galois fields by exploiting their multinomial sum representations. These closed formulas extend the work of Cai, Green and Thierauf on the binary field to every finite field. Our closed formulas also provide a faster way to compute the value of the exponential sums considered, hence we can understand better the behavior of these exponential sums over Galois field. Moreover, we showed that the recursive nature of these exponential sums is not special to the binary case and provide explicit linear recurrences the they satisfy. We hope our results can be used to find families of symmetric functions with desired cryptographic properties over finite fields.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%Finally, since 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%every multi-variable function over a finite field extension of $
+\backslash
+mathbb{F}_2$ can be identified with a Boolean function, then perhaps these results can be used to find new families of Boolean functions that 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%might be useful for efficient implementations. 
+\backslash
+medskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%{
+\backslash
+bf Acknowledgments.}  The authors would like to thank Oscar E. Gonz
+\backslash
+'alez for reading a previous version of this article. His comments and suggestions improve the presentation of this work.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

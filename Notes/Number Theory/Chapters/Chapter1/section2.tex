@@ -1,0 +1,122 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Unique Factorization in $K[x]$}
+\hspace{10mm}
+
+Consider now an arbitrary field $K$. We denote $K[x]=\{\sum_{i=0}^{n} a_ix^i:a_i \in K\}$ to be the polynomial ring over $K$. Defining $+$ and $\cdot$ as the usual addition and multiplication for polynomials, and denoting two polynomials to be equal if their coefficients are equal, it can be shown that $K[x]$ indeed forms a ring. We would rather like to characterize unique factorization for such polynomials however. This means carrying over the same arguments and definitions which were used for $\Z$ over to $K[x]$. We denote polynomials in $K[x]$ as $f(x)$, or simply just $f$.
+
+\begin{definition}
+    Let $f,g \in K[x]$ be polynomials. We say that $f$ \textbf{divides} $g$ if for some $h \in K[x]$, $g(x)=f(x)h(x)$. We write $f|g$.
+\end{definition}
+
+We denote the \textbf{degree} of a polynomial $f$ as the highest power of $x$; we denote it $\deg{f}$. In other words, we can define the degree of a ploynomial to be a map $\deg:K[x] \rightarrow \Z^+$. We also have that for two polynomials $f,g$ that $\deg{fg}=\deg{f}+\deg{g}$. We have that $\deg{f}=0$ if and only if $f \in K$. We call such polynomials \textbf{constant polynomials}, or just \textbf{constants}. We will call all nonzero elements of $K$ \textbf{units} of $K[x]$.
+
+\begin{definition}
+    We call a polynomial $p \in K[x]$ \textbf{irreducible} if for $q \in K[x]$, $q|p$ implies that either $q$ is a unit, or $q(x)=cp(x)$ for some unit $c$.
+\end{definition}
+
+\begin{definition}
+    A polynomial $f \in K[x]$ is called \textbf{monic} if it's leading coefficient is $1$.; i.e. $f(x)=a_0+a_1x+a_2x^2+ \dots + x^n$ where $\deg{f}=n$. 
+\end{definition}
+
+\begin{lemma}[The Division Theorem]\label{lemma1.2.1}
+    Let $f,g \in K[x]$ with $g \neq 0$. Then there exists $q,r \in K[x]$ such that $f(x)=q(x)g(x)+r(x)$ where $r(x)=0$ or $\deg{r}<\deg{g}$. 
+\end{lemma}
+\begin{proof}
+    If $g|f$, the take $q(x)=\frac{f(x)}{g(x)}$ and $r(x)=0$, and we are done. Now suppose that $g \not| f$. Consider the set $\{l(x):f(x)-l(x)g(x)\}$. Since $\deg:K[x] \rightarrow \Z^+$, the set of degrees of polynomials of the form $f(x)-l(x)g(x)$ forms a subset of $\Z^+$, hence by the WOP, there exists a least degree of that set; and so there exists a polynomial of least degree, $r(x)=f(x)-q(x)g(x)$ of that set. Now If $r(x)=0$, we are done, so suppose that $r(x) \neq 0$. If it happens that $\deg{r} \geq \deg{g}$, let $d=\deg{r}$, $m=\deg{g}$ and consider the leading terms $ax^d,bx^m$ of $r$ and $g$ respectively. Then $r(x)-ab^{-1}x^{d-m}g(x)=f(x)-(q(x)+ab^{-1}x^{d-m})g(x)$ which has smaller degree than $r$, contradicting its minimality. And so $\deg{r}<\deg{g}$. 
+\end{proof}
+
+Now if $f_1, \dots, f_n \in K[x]$, let $(f_1, \dots, f_n)=\{f_1h_1+\dots+f_nh_n:h_i \in K[x]\}$. Then $f_1, \dots, f_n)$ forms an ideal in $K[x]$. 
+
+\begin{lemma}\label{lemma1.2.2}
+    Let $f,g \in K[x]$. Then there exists a $d \in K[x]$ such that $(f,g)=(d)$. 
+\end{lemma}
+\begin{proof}
+    Let $d \in (f,g)$. Be the polynomial of least degree (this is guaranteed by the WOP). Then $d(x)=f(x)h_1(x)+g(x)h_2(x)$ for $h_1,h_2 \in K[x]$. Hence for $q \in K[x]$, $d(x)q(x)=f(x)(q(x)h_1(x))+g(x)(q(x)h_2(x))$, so $(d) \subseteq (f,g)$. Now let $c \in (f,g)$. If $d|c$, we are done. If not, then for $q,r \in K[x[$, $c(x)=q(x)d(x)+r(x)$ with $\deg{r}<\deg{d}$. Since $c,d \in (f,g)$, $r(x)=c(x)-q(x)d(x) \in (f,g)$, contradicting the minimality of $d$. so $d \not| c$ cannot occur. So $c \in (d)$; hence $(f,g) \subseteq (d)$. Therefore $(f,g)=(d)$. 
+\end{proof}
+
+We can now define the greatest common divisor of two polynomials, analogous to the greatest common divisor of two integers.
+
+\begin{definition}
+    We say that a polynomials $d \in K[x]$ is a \textbf{greatest common divisor} of two polynomials $f,g \in K[x]$ if:
+        \begin{enumerate}[label=(\arabic*)]
+            \item $d|f$ and $d|g$.
+            
+            \item If $c|f$ and $c|g$ for $c \in K[x]$, then $c|d$.
+        \end{enumerate}
+\end{definition}
+
+The greatest common divisor is determined up to the constant multiplication by a unit, however if we require the greatest common divisor to be a monic polynomial, then it is unique. What is left, is then for us to show that such an object exists.
+
+\begin{lemma}\label{lemma1.2.3}
+    Let $f,g \in K[x]$. If for some $d \in K[x]$, $(f,g)=(d)$, then $d$ is the greatest common divisor.
+\end{lemma}
+\begin{proof}
+    By lemma \ref{lemma1.2.2} such a $d$ exists in $(f,g)$. Now let $(f,g)=(d)$, then $f,g \in (d)$, and so $d|f$ and $d|g$.
+    
+    Now let $c \in K[x]$ such that $c|f$ and $c|g$. Then in particular, $c|fn+gm$ for all $m,n \in K[x]$. In particular, $c|d$.
+\end{proof}
+
+We shall denote the greatest common divisor as $(f,g)=(d)$, or when we are only considering monic polynomials, we may write $(f,g)=d$.
+
+\begin{definition}
+    Two polynomials $f,g \in K[x]$ are \textbf{coprime} or (\textbf{relatively prime}) if the only common divisor is a unit, i.e. $(f,g)=c$ for some $c \in K$. We also write $(f,g)=(1)$. 
+\end{definition}
+
+\begin{definition}
+    Let $p$ be a monic irreducible polynomial, and let $f \in K[x]$. We define the \textbf{order} of $f$ at $p$ to be the smallest integer $a$ such that $p^a|f$ but $p^{a+1} \not| f$. We denote it $\ord_p{f}=a$. 
+\end{definition}
+
+Again, $\ord_p{f}=0$ if and only if $p \not| f$.
+
+\begin{proposition}\label{proposition1.2.4}
+    If $f$ and $g$ are relatively prime, and $f|gh$, then $f|h$.
+\end{proposition}
+\begin{proof}
+    Let $(f,g)=c$ for some $c \in K$. Then there are polynomials $n,m$ such that $fn+gm=c$. Hence $fhn+ghm=fhn+fkm=f(hn+km)=c$. Since $c$ is a unit, $f \not| c$, so it must be that $f|h$. 
+\end{proof}
+
+\begin{corollary}
+    If $p$ is irreducible, and $p|fg$, then $p|f$ or $p|g$.
+\end{corollary}
+\begin{proof}
+    Since $p$ is irreducible, then either $(f,p)=(p)$ or $(f,p)=(1)$. If $(f,p)=(p)$, then $p|f$ and we are done. Suppose the latter case then. If $p \not|f$, but $p|fg$, then it must be that $p|g$. 
+\end{proof}
+
+\begin{corollary}
+    If $p$ is a monic irreducible polynomial, and $f,g \in K[x]$, then $\ord_p{fg}=\ord_p{f}+\ord_p{g}$. 
+\end{corollary}
+
+\begin{lemma}\label{lemma1.2.5}
+    Every nonconstant polynomial is the product of irreducible polynomials.
+\end{lemma}
+\begin{proof}
+    By induction on the degree. If $\deg{f}=1$, then by the division theorem, there exists $q,r \in K[x]$ such that $f(x)=q(x)g(x)+r(x)$ where $r(x)=0$ or $\deg{r}<\deg{g}$. Likewise, both $\deg{q},\deg{g} \leq \deg{f}=1$. Hence Either $q$ or $g$ is a unit, and the latter is a polynomial of $\deg=1$. Hence choose $g$. Then $\deg{r}<1$, and so $r$ is also a unit or 0. Hence $f$ is nonconstant, and is irreducible.
+    
+    Now suppose for all polynomials of $\deg<n$ that the result is true, and let $\deg{f}=n$. If $f$ is irreducible, we are done; so suppose not. Then $f(x)=g(x)q(x)$ with $1 \leq \deg{g},\deg{q}<n$. So by hypothesis, $g$ and $q$ can be expressed as a product of irreducible polynomials, and since $f=gq$, hence so is $f$.
+\end{proof}
+
+In particular, some irreducible factors of $f$ may be monic irreducible, so we simply factor out all the units of the nonmonic polynomials and get a factorization completely in terms of monic irreducible polynomials.
+
+\begin{theorem}\label{theorem1.2.6}
+    Let $f \in K[x]$. Then
+        \begin{equation}
+            f(x)=c \prod_{p} p(x)^{a(p)}
+        \end{equation}
+    Where the product is over all monic irreducible polynomials that divide $f$, and $c$ is a unit, and $a(p)=\ord_p{f}$. 
+\end{theorem}
+\begin{proof}
+    By lemma \ref{lemma1.2.5} we can express the irreducible factorization of $f$ as 
+        \begin{equation*}
+            f(x)=c \prod_{p} p(x)^{a(p)}
+        \end{equation*}
+    Where the product is over all monic irreducible factors of $f$. Then let $q$ be a monic irreducible polynomial of $f$. Then applying $\ord_q$ to both sides:
+        \begin{align*}
+            \ord_q{f} &= \ord_q{c \prod_{p} p(x)^{a(p)}} \\
+                      &= \ord_q{c}+\sum_{p} a(p)\ord_q{p(x)} \\
+            \ord_q{f} &= \sum_{p} a(p)\ord_q{p(x)} \\
+        \end{align*}
+    Now since $q$ is monic irreducible, we have that $\ord_q{p}=0$ when $q \neq p$, and $\ord_q{p}=1$ when $q=p$. So we get that $\ord_q{f}=a(q)$. 
+\end{proof}

@@ -1,0 +1,64 @@
+%----------------------------------------------------------------------------------------
+%	SECTION X.X
+%----------------------------------------------------------------------------------------
+
+\section{Basic Properties of Finite Fields}
+
+We assume the existence of finite fields and leave the construction of such fields for later. Let $F$ be a finite field with $q$ elements, so $F^*$ has $q-1$ elements and every element satisfies the equation $x^{q-1}=1$. By consequence every element satisfies $x^q=x$, it is this equation that is of interest to us.
+
+\begin{proposition}\label{proposition7.1.1}
+    \begin{equation*}
+        x^q-x = \prod_{a \in F} (x-\alpha)
+    \end{equation*}
+\end{proposition}
+\begin{proof}
+    We have that $f(x)=x^q-x \in F[x]$. The degree $\deg{f}=q$, so $f$ has at most $q$ roots in $F$. Since $|F|=q$, it follows that every element of $F$ must e a root of $f$ which allows us to split $f$ into the terms $x-\alpha$ with $\alpha \in F$.
+\end{proof}
+
+\begin{corollary}
+    Let $F \subseteq K$ where $K$ is a field. An element $\alpha \in K$ is in $F$ if and only if it satisfies $x^q=x$.
+\end{corollary}
+\begin{proof}
+    This is a direct consequence of proposition \ref{proposition7.1.1}.
+\end{proof}
+
+\begin{corollary}
+    Let $f(x) \in F[x]$. If $f|x^q-x$, then $f$ has $d$ distinct roots where $\deg{f}=d$
+\end{corollary}
+\begin{proof}
+    Let $f(x) \in F[x]$ be a polynomial of $\deg{f}=d$. If $f|x^q-x$, then for some $g(x) \in F[x]$, $f(x)g(x)=x^q-x$. $\deg{g}=q-d$, and since $x^q-x$ has $q=d+(q-d)$ distinct roots, $f$ has $d$ distinct roots.
+\end{proof}
+
+\begin{theorem}\label{theorem7.1.2}
+    Let $F$ be a finite field and $F^*=F\backslash\{0\}$ be its multiplicative group. Then $F^*$ is cyclic. 
+\end{theorem}
+\begin{proof}
+    If $d|q-1$, then $x^d-1|x^{q-1}-1$. Then $x^d-1$ has $d$ distinct roots, so a subgroup of $F^*$ of elements satisfying $x^d=1$ has order $d$.
+    
+    Now let $\psi(d)=|\{a \in F^*:a^d=1\}|$, then $\sum_{c|d} \psi(c)=d$. By the Möbius inversion theorem:
+        \begin{equation*}
+            \psi(d) = \sum_{c|d} \mu(d)\frac{d}{c}=\phi(d)
+        \end{equation*}
+    Where $\phi$ is the Euler-$\phi$ function. In particular, we have $\psi(q-1)=\phi(q-1)$ except for $q=2$. Hence there exist elements of order $q-1$, which makes $F^*$ cyclic. 
+\end{proof}
+
+\begin{proposition}
+    Let $\alpha \in F^*$. $x^n=\alpha$ has solutions if and only if $\alpha^{q-1/d}=1$ where $d=(n,q-1)$. There are $d$ solutions.
+\end{proposition}
+\begin{proof}
+    Consider a generator $\gamma \in F^*$ and $\alpha=\gamma^a$ and $x= \gamma^y$. Then the equation $x^n=\alpha$ is equivalent to $\gamma^{yn}=\gamma^a$, that is $yn \equiv a \mod{q-1}$. Letting $d=(n,q-1)$, then $yn \equiv a \mod{q-1}$ has solutions if and only if $d|a$, thus $\alpha^{q-1/d}=1$ and there are $d$ such solutions.
+\end{proof}
+
+\begin{lemma}
+    Let $F$ be a finite field. The integer multiples of the identity of $F$ form a subfield of $F$ isomorphic to $\Z/p\Z$ for some prime $p$.
+\end{lemma}
+\begin{proof}
+    Let $e \in F^*$ be the identity of $F$, and consider the map $\Z \rightarrow F$ by taking $n \rightarrow ne$. Clearly the map is a ring homomorphism, and so its image is a subring of $F$, which is also particularly an integral domain. We also see that $\ker=\{e\}$, which makes the map 1-1. Therefore the subring is isomorphic to $\Z/p\Z$, since $\{e\}$ is also a prime ideal.
+\end{proof}
+
+\begin{proposition}
+    Let $F$ be a finite field, then $|F|=p^n$ where $p$ is a prime and $n \in \Z$.
+\end{proposition}
+\begin{proof}
+    Consider again the map $n \rightarrow ne$, then its image is $\Z/p\Z$, and thinking of $F$ as a vector space over $\Z/p\Z$, with $\dim{F}=n$, then $\{\omega_1, \dots, \omega_n\}$ forms a basis for the vector space, that is every element in $F$ can be expressed as a linear combination: $a_1+\omega_1+ \dots +a_n \omega_n$ with $a_i \in \Z/p\Z$ for $1 \leq i \leq n$. Therefore there are $p^n$ elements in $F$.
+\end{proof}

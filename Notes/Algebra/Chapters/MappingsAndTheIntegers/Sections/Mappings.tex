@@ -1,0 +1,30 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Mappings}
+
+\hspace{5mm}One topic of great importance in the whole of mathematics, especially in tat of Algebra, Calculus, Topology; is the notion of a "mapping" or "function". A mapping can informally be thought of as being a rule that takes an element from a specified set $S$ and sends it to a set $T$. We will however, require a formal definition of such an object if we want to be able to do mathematics with it.
+
+\begin{definition}
+    Let $S \neq \emptyset$ and $T \neq \emptyset$ be sets. A \ita{Mapping}, $M:S \rightarrow T$ is the set $M \subseteq S \times T$; such that $\forall s \in S$, there exists a unique $t \in T$ shuch that $(s,t) \in M$
+\end{definition}
+
+If we let $\sigma :S \rightarrow T$ be a mapping, we can also write $S\xrightarrow{\sigma} T$, or if $(s,t) \in \sigma$ is known, we can write $\sigma :s \rightarrow t$.We represent the latter by using the notation "$\sigma(s)=t$" (however some algebraists will write $(s)\sigma =t$ or $s\sigma = t$, we however will use $\sigma(s)=t$). In fact, it turns out that, though precise, our current definition is a bit clunky; so we can introduce an equivalent definition which allows use to make use of our prefered notation:
+
+\begin{definition}
+    Let $S \neq \emptyset$ and $T \neq \emptyset$ be sets. A \ita{Mapping}, $M:S \rightarrow T$ is the set $M \subseteq S \times T$; such that:
+        \begin{enumerate}
+            \item If $s \in S$, then  $\exists t \in T$ such that $M(s)=t$
+            \item If $s \in S$ and $t_1,t_2 \in T$ $M(s)=t_1$ and $M(s)=t_2$ then $t_1=t_2$
+        \end{enumerate}
+\end{definition}
+
+\begin{definition}
+    Let $M:S \rightarrow T$ be a mapping. The \ita{Image} of $S$ under $M$ is the set
+        \begin{equation}
+            M(S)=\{M(s):s \in S\}
+        \end{equation}
+\end{definition}
+
+Using the definition of an image, we can further define for $s \in S$, $M(s)=t$ to be the \ita{image} of $s$ under $M$

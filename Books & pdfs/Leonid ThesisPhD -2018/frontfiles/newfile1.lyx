@@ -1,0 +1,121 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Resumen
+\end_layout
+
+\begin_layout Standard
+In this thesis, we study exponential sums of various functions defined ove
+ any Galois field 
+\begin_inset Formula $\mathbb{F}_{q}$
+\end_inset
+
+.
+ Thomas Cusick's proved that exponential sums of rotations symmetric Boolean
+ functions satisfy homogeneous linear recurrences with integer coefficients.
+ A generalized version of Cusick's is proved over any Galois fields inthis
+ work.
+ Other functions of cryptographic importance: elementary symmetric polynomial
+ and trapezoid function, with a new techniques of turning 
+\begin_inset Formula $ON$
+\end_inset
+
+ and 
+\begin_inset Formula $OFF$
+\end_inset
+
+ some of the variable and recursive generating set are we prove that they
+ satisfy homogeneous linear recurrences with integer coefficients.
+\end_layout
+
+\begin_layout Standard
+Also, we extend the result of Cai, Green and Thierauf (Boolean case), that
+ is, we find closed formulas for exponential sums of symmetric polynomials
+ over any Galois field.
+ The tools Discrete Fourier transform and circulant matrix are connected
+ to obtain these closed formulas.
+ We conclude that one of these closed formulas demonstrates that the sequence
+ of exponential sums of symmetric polynomials satisfies HLR with its explicit
+ characteristic polynomial, and another one byproduct of our results, we
+ discover a link between exponential sums of symmetric polynomials over
+ Galois fields and a problem multinomial coefficients which similar to the
+ problem of bisecting binomial coefficients.
+ 
+\end_layout
+
+\end_body
+\end_document

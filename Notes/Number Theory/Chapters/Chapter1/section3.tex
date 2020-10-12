@@ -1,0 +1,151 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Unique Factorization in a Principle Ideal Domain}
+\hspace{10mm}
+
+Both $\Z$ and $K[x]$ aren't unique in terms of rings where unique factorization holds. In fact, there are a whole class of rings in which this is true. We now examine such rings. We first not that a ring $R$ is an \textbf{integral domain} if for $a,b \in R$ the expression $ab=0$ implies that either $a=0$ or $b=0$ (i.e. there exist no zero-divisors). We will be working in integral domains.
+
+\begin{definition}
+    Let $R$ be an integral domain. We call $R$ a \textbf{Euclidean domain}, if ther is a map $\lambda:R^* \rightarrow \Z^+$ such that for $a \in R$ and $b \in R^*$, there exists $q,r \in R$ such that $a=qb+r$ and $r=0$ or $\lambda(r)<\lambda(b)$.
+\end{definition}
+
+\begin{example}
+    Both $\Z$ and $K[x]$ were shown to be Euclidean domains, for $\Z$, we took $\lambda=|\cdot|$, and for $K[x]$, we took $\lambda=\deg$. 
+\end{example}
+
+\begin{proposition}\label{proposition1.3.1}
+    If $R$ is a Euclidean domain, and $I \subseteq R$ is an ideal in $R$, then there exists an $a \in R$ such that $I=Ra$.
+\end{proposition}
+\begin{proof}
+    Consider the set $\{\lambda(b):b \in I \text{ and } b \neq 0\}$. This set clearly forms a subset of $\Z^+$, and so by the WOP, there is a least element $\lambda(a)$ for $a \in I$ and $a \neq 0$. So $\lambda(a) \leq \lambda(b)$ for all $b \neq 0 \in I$. Now consider $Ra=\{ra:r \in R\}$. Since $I$ is an ideal, and $a \in I$, we get that $Ra \subseteq I$. Now let $b \in I$. Then there are $q,r \in R$ such that $b=qa+r$ where $r=0$ or $\lambda(r)<\lambda(a)$; but by the minimality of $\lambda(a)$, we get that $r=0$. So $b=qa \in Ra$. Hence $I \subseteq Ra$, and so $I=Ra$.
+\end{proof}
+
+Before proceeding further, we make some preliminary definitions. First, let for $a_1, \dots, a_n \in R$, and define $(a_1, \dots, a_n)=Ra_1+ \dots Ra_n=\{\sum_{i=1}^{n} r_ia_i:r_i \in R\}$. This is an ideal in $R$. 
+
+\begin{definition}
+    We say that an ideal $I$ in $R$ is \textbf{finitely generated} if $I=(a_1, \dots,a_n)$ for $a_1, \dots,a_n \in I$. We say that $I$ is a \textbf{principle ideal} if $I=(a)$ for some $a \in I$.
+\end{definition}
+
+\begin{definition}
+    We say that an integral domain $R$ is a \textbf{Principle Ideal Domain} (PID) if every ideal in $R$ is a principle ideal.
+\end{definition}
+
+Hence, we have show that any Euclidean domain is a PID. However, the converse is not necessarily true. For the coming definitions, assume that $R$ is a Euclidean domain.
+
+\begin{definition}
+    Let $a,b \in R$ and $b \neq 0$, we say that $b$ \textbf{divides} $a$ if for some $c \in R$, $a=bc$. We write $b|a$.
+\end{definition}
+
+The usual properties of divisibility can be shown.
+
+\begin{definition}
+    An element $u \in R$ is called a \textbf{unit} if $u|1$.
+\end{definition}
+
+\begin{definition}
+    Two elements $a,b \in R$ are associates if $a=bu$ for some unit $u$.
+\end{definition}
+
+\begin{definition}
+    An element $p \in R$ is \textbf{irreducible} if for $q \in R$, $q|p$ implies that $q$ is either a unit, or an associate of $p$.
+\end{definition}
+
+\begin{definition}
+    A nonunit $p \in R^*$ is \textbf{prime} if for $a,b \in R$, $p|ab$ implies that $p|a$ or $p|b$. 
+\end{definition}
+
+As unlike in $\Z$ and $K[x]$, it is not the case in a general Euclidean domain that the notions of a prime, and irreducible coincide.
+
+\begin{definition}
+    An element $d \in R$ is ca;;ed a \textbf{greatest common divisor} of two elements $a,b \in R$ if:
+        \begin{enumerate}[label=(\arabic*)]
+            \item $d|a$ and $d|b$.
+            
+            \item If $c|a$ and $c|b$, then $c|d$, for $c \in R$.
+        \end{enumerate}
+\end{definition}
+
+If both $d$ and $d'$ are greatest common divisors of $a$ and $b$, then $d|d'$ and $d'|d$, so $d=d'u$, for some unit $u$. Hence, $d$ and $d'$ are associate.
+
+\begin{proposition}\label{proposition1.3.2}
+    Let $R$ be a PID, and let $a,b \in R$. Then $a$ and $b$ have a greatest common divisor $d \in R$, and $(a,b)=(d)$.
+\end{proposition}
+\begin{proof}
+    Since $R$ is a PID, there exists such a $d \in R$ such that $(a,b)=(d)$. Now we have that $(a) \subseteq (d)$ and $(b) \subseteq (d)$. So $d|a$ and $d|b$.
+    
+    Now let $c|a$ and $c|b$. Then $(a) \subseteq (c)$ and $(b) \subseteq (d)$, hence $(a,b)=(d) \subseteq (c)$, so $c|d$. Thus $d$ is the greatest common divisor of $a$ and $b$.
+\end{proof}
+
+The existence of a greatest common divisor is completely dependent on whether $R$ is a PID.
+
+\begin{definition}
+    Two elements $a,b \in R$ are \textbf{coprime} (or \textbf{relatively prime}) if $(a,b)$ is a unit in $R$
+\end{definition}
+
+\begin{corollary}
+    If $R$ is a PID, and $a,b \in R$ are coprime, then $(a,b)=R$. 
+\end{corollary}
+
+\begin{corollary}
+    If $R$ is a PID, and $p \in R$ is irreducible, then $p$ is prime.
+\end{corollary}
+\begin{proof}
+    Suppose for $a,b \in R$ that $p|ab$ and that $p \not| a$. Then $(a,p)=R$, thus $(ab,bp)=(b)$. Now since $ab \in (p)$, and $bp \in (p)$, then $(ab,bp)=(b) \subseteq (p)$ and so $p|b$.
+\end{proof}
+
+\begin{lemma}\label{lemma1.3.3}
+    Let $R$ be a PID and consider the sequence $\{(a_1),(a_2), \dots, (a_n), \dots\}$ of ideals in $R$ such that $(a_1) \subseteq (a_2) \subseteq \dots \subseteq (a_n)  \subseteq \dots$. Then there is a $k \in \Z^+$ such that $(a_k)=(a_{k+l})$ for $l \in \Z^+$. That is the sequence $\{(a_1),(a_2), \dots, (a_n), \dots\}$ is not infinite and terminates at $(a_k)$.
+\end{lemma}
+\begin{proof}
+    Let $I=\bigcup_{i=1}^{\infty} (a_i)$. Since $(a_i)$ is an ideal for all $1 \leq i$, then it follows that $I$ is also an ideal; and since R is a PID, there is some $a \in R$ such that $I=(a)$. That is $(a)=\bigcup_{i=1}^{\infty} (a_i)$. So $a \in \bigcup_{i=1}^{\infty} (a_i)$, and hence $a \in (a_k)$ for some $k \in \Z^+$. So $I=(a) \subseteq (a_k)$. Now suppose that $a \in (a_{k+l})$ for $l \in \Z^+0$. Then $I=(a_{k+l})$, and since $(a_k) \subseteq (a_{k+l})$, we have that $(a_k) \subseteq I$. Hence $(a_k)=I$, so $(a_k)=(a_{k+l})$. 
+\end{proof}
+
+\begin{proposition}\label{proposition1.3.4}
+    Every nonunit of a PID $R$ can be expressed as a product of irreducibles.
+\end{proposition}
+\begin{proof}
+    We first show that every nonunit is divisible by an irreducible. Let $a \in R^*$ be a nonunit. If $a$ is irreducible we are done. If not, then $a=a_1b_1$ for $a_1,b_1 \in R^*$ nonunits. It is sufficient to just look at one of the terms. If $a_1$ is irreducible, we are done. If not, $a_1=a_2b_2$ where $a_2,b_2 \in R^*$ are nonunits. Continuing this way, we get a sequence $\{(a_1),(a_2), \dots\}$ such that $(a_1) \subseteq (a_2) \subseteq \dots$. By lemma \ref{lemma1.3.3}, this sequence ends at some $(a_k)$, i.e. for some positive integer $k$, $(a_k)$ is irreducible. And so there is some irreducible element $a_k|a$.
+    
+    Now we show that $a$ is a product of irreducible elements. If $a$ is irreducible, then we are done. If not, then $a=p_1c_1$ where $p_1|a$. Now if $c_1$ is a unit, we are done. If not, $c_1=p_2c_2$ where $p_2|c_1$. Continuing along this line, we get a sequence $\{(c_1),(c_2), \dots\}$ such that $(c_1) \subseteq (c_2) \subseteq \dots$, then again by lemma \ref{lemma1.3.3}, there is some positive integer $k$ for which $c_k$ is a unit. Hence $a=p_1p_1 \dots p_kc_k$, where $p_kc_k$ is irreducible.
+\end{proof}
+
+\begin{lemma}\label{lemma1.3.5}
+    Let $p$ be a prime, and let $a \neq 0$. Then there is an $n \in \Z^+$ for which $p^n|a$ but $p^{n+1} \not| a$.
+\end{lemma}
+\begin{proof}
+    Suppose to the contrary. Then for every $m>0 \in \Z^+$, there is a $b_m \in R$ such that $a=p^mb_m$. Then let $b_m=pb_{m+1}$. The $(b1) \subseteq (b_2) \subseteq \dots$ is infinite ascending, which contradicts lemma \ref{lemma1.3.3}. 
+\end{proof}
+
+Now we have that $n$ is uniquely determined by $p$ and $a$, so we can define:
+
+\begin{definition}
+    Let $a \in R^*$ and let $p$ be a prime. The \textbf{order} of $a$ at $p$ is the least integer $n \in \Z^+$ such that $p^n|a$ but $p^{n+1} \not| a$. We denote it $\ord_p{a}=n$.
+\end{definition}
+
+We have again that $\ord_p{a}=0$ if and only if $p \not| a$. 
+
+\begin{lemma}\label{lemma1.3.6}
+    If $a,b \in R^*$, then $\ord_p{ab}=\ord_p{a}+\ord_p{b}$. 
+\end{lemma}
+
+\begin{theorem}\label{theorem1.3.7}
+    Let $R$ be a PID, and let $S$ be a set of primes in $R$ such that every prime in $R$ is associate to a prime in $S$, and no two primes in $S$ are associate. Then if $a \in R^*$ we can write
+        \begin{equation}
+            a = u \prod_{p \in S} p^{e(p)}
+        \end{equation}
+    Where $u$ is a unit. Both $u$ and $e(p)$ are uniquely determined by $a$, in fact, $e(p)=\ord_p{a}$.
+\end{theorem}
+\begin{proof}
+    By proposition \ref{proposition1.3.4}, we can factorize $a$ into
+        \begin{equation*}
+            a= u \prod_{p} p^{e(p)}
+        \end{equation*}
+    Where $u$ is a unit and the product is over all $p \in S$. Now let $q \in S$. Then applying $\ord_q$ to both sides
+        \begin{align*}
+            \ord_q{a} &= \ord_q{u \prod_{p \in S} p^{e(p)}} \\
+                      &= \ord_q{u}+\sum_{p \in S} e(p)\ord_q{p} \\
+        \end{align*}
+    Now since $u$ is a unit, $q \not| u$, so $\ord_q{u}=0$. Now we also have that since $q,p \in S$, they are not associate, so if $q \neq p$, $\ord_q{p}=0$. So $\ord_q{p}=1$ whenever $q=p$. Hence $e(q)=\ord_q(a)$ is uniquely determined. Since $e(q)$ is uniquely determined, then so is $u$.
+\end{proof}

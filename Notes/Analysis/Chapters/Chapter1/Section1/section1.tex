@@ -1,0 +1,170 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{A Note on Finite and Infinite Sets}
+
+We go over the notions of ``finite'' and ``infinite'' sets.
+
+\begin{definition}
+    \begin{enumerate}[label=(\arabic*)]
+        \item The emptyset $\emptyset$, is said to have $0$ \textbf{elements}.
+
+        \item If $n \in \N$, a set  $S$ is said to have $n$ \textbf{elements} if there is a bijection from the set \
+            $\{1,2,,\dots, n\}$ onto  $S$.
+
+        \item A set  $S$ is \textbf{finite} if it is either the emptyset, or has $n$ elements.
+
+        \item A set $S$ is \textbf{infinite} if it is not finite
+    \end{enumerate}		
+\end{definition}
+
+We assume two theorems which will help us study finite and infinite sets.
+
+\begin{theorem}
+    If $S$ is a finite set, then the number of elements of $S$ is a natural number.
+\end{theorem}
+
+\begin{theorem}
+    The set $\N$ is infinite.
+\end{theorem}
+
+\begin{theorem}
+    \begin{enumerate}[label=(\arabic*)]
+        \item If $A$ has $m$ elements, and  $B$ has  $n$ elements, and $A \cap B=\emptyset$,then $A \cup B$ has $m+n$ 
+            elements.
+
+        \item If $A$ has $m$ elements and  $C \subeseteq A$ is a set with  $1$ element, then $C \backslash A$ has $m-1$ 
+            elements.
+
+        \item If  $C$ is an infinite set, and  $B$ is a finite set, then $C \backslash B$ is an infinite set.
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    \begin{enumerate}[label=(\arabic*)]
+        \item 	Let $f$ be a bijection from  $\N_m=\{1, \dots, m\}$ onto $A$, and let  $g$ be a bijection from  $\N_n=\{1, \dots, n\}$ 
+    onto $B$.Define  $h$ from $\N_{m+n}$ into $A \cup B$ (without loss of generality) by:
+        \begin{equation}
+            h(i) = \begin{cases}
+                        f(i), \text{ for } i=1,\dots,m \\
+                        g(i-m) \text{ for } i=m+1,\dots,m+n  
+                   \end{cases}
+        \end{equation}
+    We wish to show that $h$ is a bijection. Notice that since $A$ has  $m$ elements and  $B$ has $n$ elements, then the set 
+    $A \cup B$ will have atmost $m+n$ elements; so all that is needed is to show that  $h$ is  $1-1$. Let  $i,j \in \N_m$, 
+    then $h(i)=h(j)$ implies that  $f(i)=f(j)$, which is injective, thus  $i=j$ ; now if $i,j = m+1, \dots m++n$, then  $h(i)=h(j)$ 
+    implies that  $g(m-i)=m-j$, since  $g$ is also injective,  $m-i=m-j$, so  $i=j$. Thus  $h$ is injective and we are done.
+
+        \item Let $f$ be a bijection from  $\n_m$ onto $A$, since  $C \subeteq A$,  $f$ is also a bijection from  $\N_1$ 
+    onto $C$. Consider now  $h$ defined from $\N_{n-1}$ onto  $A \backslash C$ by  $h(i)=f(i)$ for $i=2, \dots m$. 
+    Then by the argument of  $(1)$,  $h$ is a bijecction.
+
+        \item Let $f$ be a bijection from $\N_m$ onto  $B$, and consider $h$ defined from  $\N$ into $C \backslash B$ by 
+    $h(i)=g(i)$ for $i=m+1,\dots$. Clearly  $h$ is injective, but is it surjective? If  $B=\emptyset$, then 
+    $C \backslash B =C$, and $h$ is not surjective. Now suppose that  $B$ has only $1$ element and suppose that $h$ is indeed 
+    surjective. Then for every  $j$ \in C \backslash B$, there exists and  $i \in \N$ such that  $h(i)=j$, Then clearly 
+    $j \notin B$, hence  $h$ is surjective still if we restrict it just to  $C$, which would make  $C$ finite, a contradiction. 
+    Hence,  $C \backslash B$ cannot be finite.
+    \end{enumerate}
+\end{proof}
+
+\begin{theorem}
+    Suppose that $T$ and  $S$ are sets, and that  $T \subeseteq S$. Then the following are true:
+        \begin{enumerate}[label=(\arabic*)]
+            \item If $S$ is finite, then $T$ is also finite.
+
+            \item If $S$ is infinite, then $T$ is also infinite.
+        \end{enumerate}
+\end{theorem}
+\begin{proof}
+    \begin{enumerate}[label=(\arabic*)]
+        \item Suppose $S$ is finite, then there is a bijection from  onto $S$, for some  $m \in T$. Now since $T \subeteq S$, 
+            restricting $f$ to  $N_n$ for some $n \leq m$,  $f$ is a bijection onto  $T$; therefore  $T$ is finite.
+
+        \item This is the contrapositive of the first argument.
+    \end{enumerate}		
+\end{proof}
+
+\begin{definition}
+    A set $S$ is \textbf{denumerable} if there is a bijecction from $\N$ onto  $S$.  $S$ is \textbf{countable} if it is either 
+    finite or denumerable. $S$ is uncountable if it is not countable.
+\end{definition}
+
+\begin{example }
+    \begin{enumerate}[label=(\arabic*)]
+        \item The set $E=\{2n: n\in \N\}$ and  $O=\{2n+1: n \in \N\}$ are denumerable, take $f:\N \rightarrow E$ by $f(n)=2n$ 
+            and take $g:\N \rightarrow O$ by  $g(n)=2n+1$.
+
+        \item The integers  $\Z$ are denumerable, take  $f(0)=0$ and  $f(n)=2n$ for $n>0$ and  $f(n)=2n+1$ for  $n<0$.
+
+        \item Then union of denumberable sets is also denumerable.
+    \end{enumerate}		
+\end{example}
+
+\begin{theorem}
+    The set $\N \times \N$ is denumerable.
+\end{theorem}
+
+\begin{theorem}
+    Let $S$ and $T$ be sets with  $T \subseteq S$; then:
+        \begin{enumerate}[label=(\arabic*)]
+            \item If $S$ is  countable then $T$ is countable.
+
+            \item If $S$ is uncountable then $T$ is uhncountable.
+        \end{enumerate}
+\end{theorem}
+
+\begin{theorem}
+    The following statements are true:
+        \begin{enumerate}[label=(\arabic*)]
+            \item $S$ is denumerable.
+
+            \item There exists a surjection of $\N$ onto  $S$.
+
+            \item There exists an injection of  $\N$ onto  $S$.
+        \end{enumerate}
+\end{theorem}
+\begin{proof}
+    \begin{enumerate}[label=(\arabic*)]
+        \item If  $S$ is finite, then clearly it is countable. Now suppose that $S$ is denumerable, then there is a bijection 
+            from $\N$ onto  $S$, which by definition is surjective.
+
+        \item If  $H$ is a surjection from  $\N$ onto  $S$, define  $H_1:S \rightarrow \N$ by taking $ H_1(s)$ to be the least 
+            element in the set $H^{-1}=\{n \in \N: H(s)=n\}$, note that if  $s,t \in S$ and  $n_{st}=H_1(s)=H_1(t)$, then by 
+            definition of $H_1$, $s=H(n_{st})=t$, so  $H_1$ is injective.
+
+        \item If $ H_1:S \rightarrow \N$ is injective, then it is bijective from $S$ onto $H_1(S) \subeseteq \N$, by theorem 
+            $1.1.6$ $S$ is countable.
+            		
+    \end{enumerate}		
+\end{proof}
+
+\begin{theorem}
+   The set of all rational numebers $\Q$ is denumerable. 
+\end{theorem}
+\begin{proof}
+    Since $\N \times \N$ is denumerable, it follows from theorem $1.1.7$ that there is a surjection 
+    $f:\N rightarrow \N \times \N. Now if $g: \N \times \N \rightarrow \Q^+$, sends  $(m,n) \rightarrow \frac{m}{n}$, then 
+    $g$ is surjective. Then composing  $g$ with  $f$, we get the surjection  $g \circ f: \B \right \Q^+$, and so  $\Q^+$ is 
+    countable. Similarly,  $\Q^-$ is countable, hence  $\Q=\Q^+ \cup \Q^- \cup \{0\}$ is countable.
+\end{proof}
+
+\begin{theorem}
+    If $A_m$ is countable for each $m \in \N$, then the union,  $A=\bigcup_{m=1}^{\infty} A_m$ is countable.
+\end{theorem}
+\begin{proof}
+    For each $m \in \N$, let  $\phi_m:\N \rightarrow A$ be a surjection. Define  $\beta: \N \times \N ]rightarrow A$ by 
+    $\beta(m,n)=\phi_m(n)$. Then we claim that $\beta$ is a surjection. If  $a \in A$, then there exists an  $m \in \N$ such 
+    that  $a \in A_m$. Hence there exists an  $n \in \N$ such that  $a=\phi_m(n)=\beta(m,n)$. Therefore  $\beta$ is surjective, 
+    and  $A$ is countable.
+\end{proof}
+
+\begin{theorem}[Cantor's Theorem.]
+    If $A$ is any set, then there is no surjection from  $A$ onto  $2^{A}$.
+\end{theorem}
+\begin{proof}
+    Suppose that $\phi:A \rightarrow 2^{A}$ is a surjection. Since $\phi(a) \subseteq A$, either  $a \in A$ or  $a \notin A$. 
+    Now let $D=\{a \in A: a \notin \phi(a) \}$. Then $D \subseteq A$; hence $D=\phi(a_0)$ for some $ a_0 \in A$. Then either 
+    $a_0 \in D$ or $a_0 \notin D$. If $a \in D$, then $a=\phi(a_0)$, a contradiction of the definition of $D$. If  $a \notin D$ 
+    then $a \notin \phi(a_0)$, another contradiction. Therefore, $\phi$ cannot be surjective.
+\end{proof}

@@ -1,0 +1,32 @@
+\chapter{Project Summary}
+
+\section{Introduction}
+
+\hspace{10mm} We begin by giving an overall background of elliptic curve cryptosystems. The paper starts by drawing out the concept of a cryptosystem. It is done by giving an informal definition first, followed by a more formal mathematical one. The motivation for the use of cryptosystems are presented as well as why this topic is relevant today. Definitions are shown for concepts that arise from the use of cryptosystems. Concepts such as plaintext, ciphertext, encryption and decryption are all explained accordingly. After that, the basic process of sending an encrypted message is shown by simple steps, in order to provide an overview of how communication works in cryptosystems. 
+
+\hspace{10mm} Then, elliptic curves are introduced, by giving a formal definition using the standard equation \begin{equation}
+    y^2=x^3+ax+b
+\end{equation}
+
+\hspace{10mm} The motivations for the use of elliptic curves are highlighted as well as the benefits from its use when compared to other systems like RSA. 
+
+\hspace{10mm} In the proofs section, definitions and examples are presented in order to show some properties and calculate results  about elliptic curves. First, the group laws on addition of points are be described, as well as basic properties of elliptic curves. An example of an elliptic curve, \begin{equation}
+    y^2=x^3-x
+\end{equation}
+is used in order to perform some of the calculations and proofs. Beginning with listing all of the points of the elliptic curve, which is done in the field $\mathbb{F}_7=\mathbb{Z}_7$. Then it is shown that it is possible to obtain an abelian group of order 8 with a point at infinity. After that, the orders of each point are calculated. Then it is shown whether or not if this group is isomorphic with
+$\mathbb{Z}_8$. Finally, the public key cryptosystem of the Analog of Massey-Omura is explained, with a detailed step-by-step messaging protocol demonstration.
+
+\section{Problem Statement}
+
+\hspace{10mm}To provide an adequate treatment of the material in this paper, we would like to pose the following problems to be solved.
+\begin{enumerate}
+    \item Explain the group laws of addition of points on elliptic curves
+    \item List all the points on the elliptic curve
+        \begin{equation*}
+            y^2=x^3-x
+        \end{equation*}
+        with coefficients in the field $\F_7$. 
+    \item Together with the point at infinity, show that this elliptic curve forms a group under addition
+    \item Find the orders of each of the points in this group
+    \item Show whether or not this group is isomorphic to the group $\Z_8$
+\end{enumerate}

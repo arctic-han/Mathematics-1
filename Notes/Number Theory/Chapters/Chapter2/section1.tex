@@ -1,0 +1,49 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Basic prime distribution in $\Z$}
+\hspace{10mm}
+
+\begin{theorem}\label{theorem2.1.1}
+    There are infinitely many primes in $\Z$.
+\end{theorem}
+\begin{proof}
+    We give a proof attributed to Euclid. Suppose there are finitely many primes in $\Z$. Then we can list them as $p_1,p_2, \dots, p_n$, such that $p_1<p_2< \dots <p_n$. Now let $N=p_1p_2 \dots p_n+1$. Now $N>1$, and we also have that $p_i \not| N$ for all $1 \leq i \leq n$. However, by theorem \ref{theorem1.1.8}, $N$ has a prime factorization, and there exists some prime $p$ dividing $N$. Now we have that $p \not| p_1p_2 \dots p_n$, so $p \not| p_i$, and since $p$ cannot be in the list of primes, we have that $p_n<p$; contradicting that there are finitely many primes.   
+\end{proof}
+
+We now consider another set of numbers. Let $p$ be a prime, and let $\Z_p=\{\frac{a}{b}: a,b \in \Z \text{ and } p \not|b\}$. We note that $\Z_p \subseteq \Q$. Now we have that $\frac{ad+cb}{bd},\frac{ac}{bd} \in \Z_p$ as $ad+bc,ac,bd \in \Z$ and $p \not| b$ and $\p \not| d$ implies that $p \not| bd$. Likewise, we have that $\frac{-a}{b} \in \Z_p$ whenever $\frac{a}{b} \in \Z_p$. So $\Z_p$ is a subring of $\Q$, and hence a ring.
+
+\begin{lemma}\label{lemma2.1.2}
+    An element $\frac{a}{b} \in \Z_p$ is a unit if and only if $p \not|a$ and $p \not| b$.
+\end{lemma}
+\begin{proof}
+    An element $\frac{a}{b} \in \Z_p$ is a unit if for some $\frac{c}{d} \in \Z_p$, $\frac{a}{b}\frac{c}{d}=\frac{ac}{bd}=1$. Then $ac=bd$, and since $p \not| bd$, then $p \not|ac$, hence $p \not| a$. Now suppose that $p \not| a$ and $p \not| b$. Consider $c,d \in \Z$ such that $ac=pbd$dividing by $p$, we get $ac'=bd'$ where $p \not|c',d'$ and hence $\frac{c'}{d'} \in \Z_p$ and $\frac{a}{b}\frac{c'}{d'}=1$. This makes $\frac{a}{b}$ into a unit of $\Z_p$. 
+\end{proof}
+
+Now suppose that $\frac{a}{b} \in \Z_p$, and let $a=p^la'$ where $p \not|a$. Then $\frac{a}{b}=p^l\frac{a'}{b}$ and since $p \not| b$, then $\frac{a'}{b}$ is a unit in $\Z_p$. Hence, every element of $\Z_p$ is a prime power times a unit. That is, every element is associate to a prime power.
+
+\begin{lemma}\label{lemma2.1.3}
+    Every prime in $\Z_p$ is associate to another prime in $\Z_p$.
+\end{lemma}
+\begin{proof}
+    Let $\frac{a}{b} \in \Z_p$ be a prime. We have that $\frac{a}{b}=p^l\frac{a'}{b}$ where $\frac{a'}{b}$ is a unit. Then since $\frac{a}{b}$ is prime, and $\frac{a'}{b}$ is a unit, then it follows that $p^l$ itself must be a prime, thus $\frac{a}{b}$ is associate to $p^l$. 
+\end{proof}
+
+\begin{lemma}\label{lemma2.1.4}
+    If $\frac{a}{b} \in \Z_p$ is not a unit, then $\frac{a}{b}+1$ is a unit in $\Z_p$. 
+\end{lemma}
+\begin{proof}
+    Let $\frac{a}{b} \in \Z_p$ not be a unit. Then $p|a$. Now then, $\frac{a}{b}+1=\frac{a+b}{b}$. Now since $p \not| b$, it follows that even though $p|a$, that $p \not| a+b$. Hence $\frac{a+b}{b}$ is a unit.
+\end{proof}
+
+\begin{theorem}\label{theorem2.1.5}
+    There are finitely many primes in $\Z_p$
+\end{theorem}
+\begin{proof}
+    Suppose there are infinitely many primes in $\Z_p$. Let $q_1, \dots, q_n$ be a list of primes in $\Z_p$, and let $q \in \Z_p$ be another prime. By proposition \ref{lemma2.1.3}, we have that $q$ is associate to some prime, say $q_i$ in $\Z_p$. Then $q=q_i\frac{a'}{b}$ with $\frac{a'}{b}$ a unit. Now, notice that $q_i|q$, however, since both $q$, $q_i$ are prime, then $q=q_i$. We also have that $q+1$ is a unit by proposition \ref{lemma2.1.4}, and hence cannot be prime.
+\end{proof}
+
+The ring $\Z_p$ shows, that in general, there need not be an infinite number of primes. We now give Euclid's proof for prime distribution in $K[x]$. Here by prime, we mean a monic irreducible polynomial.
+
+First notice that if the field $K$ is finite (the existence of such fields will be discussed later), that the polynomial ring $K[x]$ is also finite, and by consequence, there must be finitely many monic irreducible polynomials (this serves as another example of a finite prime distribution in a given ring). So let $K$ be infinite, and suppose there are finitely many monic irreducible polynomials $p_!,p_2, \dots, p_n$ such that $\deg{p_1}<\deg{p_2}< \dots <\deg{p_n}$. Now let $N \in K[x]$ be such that $N(x)=p_1(x)p_2(x) \dots p_n(x)+c$ where $c \in K$. We have that $\deg{N}>1$, so $N$ is not a unit. Likewise, $p_i \not| N$ for $1 \leq i \leq n$. However, by theorem \ref{theorem1.2.6} there is some monic irreducible polynomial $p$ that divides $N$. Now we have that $\deg{p} \leq \deg{p_1p_2 \dots p_n}$, but $p$ cannot be in the list, so we have that $\deg{p_n} < \deg{p}$, which contradicts that there are finitely many monic irreducible polynomials in $K[x]$.

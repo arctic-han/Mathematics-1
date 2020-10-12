@@ -1,0 +1,2255 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Discrete mathematics and pure mathematics plays an essential role in the
+ development of this thesis.
+ It is precisely in these two branches is that the family of symmetric functions
+ defined on Galois field have obtained a special interest in the area of
+ mathematics.
+ Moreover, it could be said that in the last decades it has been the family
+ of the symmetrical Boolean functions that have acquired greater importance
+ in the applicable mathematics.
+ Through time, the study of these functions, today they are an active area
+ research as the combinatoric, game theory, cryptography, the theory of
+ error-correcting codes and electrical engineering have helped us get great
+ advances in applications (see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BCP,cai,cm1,cm3,ccms,cusickstanica,dalaimaitrasarkar,hell,stanicamaitra,stanicamaitraclark"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+In a simplified and concise way, we introduce a general and conceptual framework
+ of the main components of this thesis using the Boolean case.
+ All the mathematical objects mentioned in this first part of the introduction
+ are defined in a similar way for other Galois Field (
+\begin_inset Formula $\mathbb{F}_{q}$
+\end_inset
+
+ with 
+\begin_inset Formula $q$
+\end_inset
+
+ a power of a prime).
+ In this work, one of the first mathematical objects used and highlighted
+ in this section, is the case of a Booleana function.
+ The next function is known as a Boolean function
+\begin_inset Formula 
+\[
+F^{*}:\mathbb{F}_{2}^{n}\rightarrow\mathbb{F}_{2}.
+\]
+
+\end_inset
+
+For our purposes, we use the polynomial representation of 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ commonly known as the Algebraic Normal Form of 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+, and instead of the function 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ we identify it as the function 
+\begin_inset Formula $F$
+\end_inset
+
+ in 
+\begin_inset Formula $n-$
+\end_inset
+
+variables over 
+\begin_inset Formula $\mathbb{F}_{2}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "canteaut,licusick1"
+
+\end_inset
+
+.
+ In addition, it should be noted that within the family of Boolean functions
+ several fulfill a very interesting same property, that of being symmetrical.
+ the be symmetrical.
+ A Boolean function F is symmetric if it is verified that 
+\begin_inset Formula $F\left(x_{1},\cdots,x_{n}\right)=F\left(x_{\sigma\left(1\right)},\cdots,x_{\sigma\left(n\right)}\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is any permutation of the symmetric group 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+ In other words, for simplicity it is said that 
+\begin_inset Formula $F$
+\end_inset
+
+ is symmetric if all the subindices of 
+\begin_inset Formula $\left(x_{1},\cdots,x_{n}\right)$
+\end_inset
+
+ are permuted in any way, so that the resulting function is invariant.
+ Moreover, the symmetric Boolean function can be associated with an exponential
+ sum, joint property that is defined as the following expression
+\begin_inset Formula 
+\[
+S\left(F\right)=\sum_{X\in\mathbb{F}_{2}^{n}}\left(-1\right)^{F\left(X\right)}.
+\]
+
+\end_inset
+
+Inside the same Boolean functions symmetrical highlights two important functions
+ will be to study in this thesis: the elementary symmetric Boolean polynomial
+ and the rotation symmetric Boolean function.
+ In the course of this work, the previously mentioned mathematical objects
+ are defined similarly for other field Galois (
+\begin_inset Formula $\mathbb{F}_{q}$
+\end_inset
+
+ with 
+\begin_inset Formula $q$
+\end_inset
+
+ a power of a prime).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "sperber"
+
+\end_inset
+
+ A.
+ Adolphson and S.
+ Sperber.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $p$
+\end_inset
+
+-adic Estimates for Exponential Sums and the of Chevalley-Warning.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Ann.
+ Sci.
+ Ec.
+ Norm.
+ Super.
+\shape default
+, 
+\begin_inset Formula $4^{e}$
+\end_inset
+
+ série, 
+\series bold
+20
+\series default
+, 545–556, 1987.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "acgmr"
+
+\end_inset
+
+ R.
+ A.
+ Arce-Nazario, F.
+ N.
+ Castro, O.
+ E.
+ González, L.
+ A.
+ Medina and I.
+ M.
+ Rubio.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ New families of balanced symmetric functions and a generalization of Cuscik,
+ Li and P.
+ St
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+nic
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Designs, Codes and Cryptography
+\shape default
+ 
+\series bold
+86
+\series default
+, 693–701, 2018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ax"
+
+\end_inset
+
+ J.
+ Ax.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Zeros of polynomials over finite fields.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Amer.
+ J.
+ Math.
+\shape default
+, 
+\series bold
+86
+\series default
+, 255–261, 1964.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "BCP"
+
+\end_inset
+
+ M.
+ L.
+ Bileschi, T.W.
+ Cusick and D.
+ Padgett.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Weights of Boolean cubic monomial rotation symmetric functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Cryptogr.
+ Commun.
+\shape default
+, 
+\series bold
+4
+\series default
+, 105–130, 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "browncusick"
+
+\end_inset
+
+ A.
+ Brown and T.
+ W.
+ Cusick.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Recursive weights for some Boolean functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+J.
+ Math.
+ Cryptology
+\shape default
+, 
+\series bold
+6(2)
+\series default
+, 105–135, 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cai"
+
+\end_inset
+
+ J.
+ Cai, F.
+ Green and T.
+ Thierauf.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ On the correlation of symmetric functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Math.
+ Systems Theory
+\shape default
+, 
+\series bold
+29
+\series default
+, 245–258, 1996.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "canteaut"
+
+\end_inset
+
+ A.
+ Canteaut and M.
+ Videau.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Symmetric Boolean Functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inf.
+ Theory
+\shape default
+ 
+\series bold
+51(8)
+\series default
+, 2791–2881, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Davis"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Philip Davis.
+ Circulant Matrices.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Chelsea publishing, Second Edition,1994.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cmg3"
+
+\end_inset
+
+ F.
+ N.
+ Castro, O.
+ E.
+ González and L.
+ A.
+ Medina.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Diophantine Equations With Binomial Coefficients and Perturbations of Symmetric
+ Boolean Functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inf.
+ Theory
+\shape default
+, 
+\series bold
+64(2)
+\series default
+, 1347–1360, 2018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cm1"
+
+\end_inset
+
+ F.
+ N.
+ Castro and L.
+ A.
+ Medina.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Linear Recurrences and Asymptotic Behavior of Exponential Sums of Symmetric
+ Boolean Functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Elec.
+ J.
+ Combinatorics
+\shape default
+, 18:#P8, 2011.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cm2"
+
+\end_inset
+
+ F.
+ N.
+ Castro and L.
+ A.
+ Medina.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Asymptotic Behavior of Perturbations of Symmetric Functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Annals of Combinatorics
+\shape default
+, 18:397–417, 2014.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cm3"
+
+\end_inset
+
+ F.
+ N.
+ Castro and L.
+ A.
+ Medina.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Modular periodicity of exponential sums of symmetric Boolean functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Discrete Appl.
+ Math.
+
+\shape default
+ 
+\series bold
+217
+\series default
+, 455–473, 2017.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cms"
+
+\end_inset
+
+ F.
+ N.
+ Castro, L.
+ A.
+ Medina and P.
+ St
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+nic
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Generalized Walsh transforms of symmetric and rotation symmetric Boolean
+ functions are linear recurrent.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Appl.
+ Algebra Eng.
+ Commun.
+ Comput.
+\shape default
+, DOI 10.1007/s00200-018-0351-5, 2018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ccms"
+
+\end_inset
+
+ F.
+ N.
+ Castro, R.
+ Chapman, L.
+ A.
+ Medina, and L.
+ B.
+ Sepúlveda.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Recursions associated to trapezoid, symmetric and rotation symmetric functions
+ over Galois fields.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ to appear in Discrete Math.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cusick4"
+
+\end_inset
+
+ T.
+ W.
+ Cusick.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Hamming weights of symmetric Boolean functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Discrete Appl.
+ Math.
+
+\shape default
+ 
+\series bold
+215
+\series default
+, 14–19, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cusickArXiv"
+
+\end_inset
+
+ T.
+ W.
+ Cusick.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Weight recursions for any rotation symmetric Boolean functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inf.
+ Theory
+\shape default
+, 
+\series bold
+64
+\series default
+, 2962 - 2968, 2018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cusickjohns"
+
+\end_inset
+
+ T.
+ W.
+ Cusick and B.
+ Johns.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Recursion orders for weights of Boolean cubic rotation symmetric functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Discr.
+ Appl.
+ Math.
+\shape default
+, 
+\series bold
+186
+\series default
+, 1–6, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cusick2"
+
+\end_inset
+
+ T.
+ W.
+ Cusick, Y.
+ Li, and P.
+ St
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+nic
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Balanced Symmetric Functions over 
+\begin_inset Formula $GF(p)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inf.
+ Theory
+\shape default
+, 
+\series bold
+5
+\series default
+, 1304–1307, 2008.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cusickstanica"
+
+\end_inset
+
+ T.W.
+ Cusick and P.
+ St
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+nic
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Fast evaluation, weights and nonlinearity of rotation symmetric functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Discr.
+ Math.
+\shape default
+, 
+\series bold
+258
+\series default
+, 289–301, 2002.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "dalaimaitrasarkar"
+
+\end_inset
+
+ D.
+ K.
+ Dalai, S.
+ Maitra and S.
+ Sarkar.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Results on rotation symmetric Bent functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Second International Workshop on Boolean Functions: Cryptography and Application
+s, BFCA'06
+\shape default
+, publications of the universities of Rouen and Havre, 137–156, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fengliu"
+
+\end_inset
+
+ K.
+ Feng and F.
+ Liu.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ New Results On The Nonexistence of Generalized Bent Functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inf.
+ Theory
+\shape default
+ 
+\series bold
+49
+\series default
+, 3066–3071, 2003.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ggz"
+
+\end_inset
+
+ Y.
+ Guo, G.
+ Gao, Y.
+ Zhao.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Recent Results on Balanced Symmetric Boolean Functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inf.
+ Theory
+\shape default
+ 
+\series bold
+62 (9)
+\series default
+, 5199–5203, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "hell"
+
+\end_inset
+
+ M.
+ Hell, A.
+ Maximov and S.
+ Maitra.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ On efficient implementation of search strategy for rotation symmetric Boolean
+ functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Ninth International Workshop on Algebraic and Combinatorial Coding Theory,
+ ACCT 2004
+\shape default
+, Black Sea Coast, Bulgaria, 2004.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "hg"
+
+\end_inset
+
+ Y.
+ Hu and G.
+ Xiao.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Resilient Functions Over Finite Fields.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inf.
+ Theory
+\shape default
+ 
+\series bold
+49
+\series default
+, 2040–2046, 2003.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fspectrum"
+
+\end_inset
+
+ M.
+ Kolountzakis, R.
+ J.
+ Lipton, E.
+ Markakis, A.
+ Metha and N.
+ K.
+ Vishnoi.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ On the Fourier Spectrum of Symmetric Boolean Functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Combinatorica
+\shape default
+, 
+\series bold
+29
+\series default
+, 363–387, 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "KScW"
+
+\end_inset
+
+ P.V.
+ Kumar, R.A.
+ Scholtz, and L.R.
+ Welch.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Generalized Bent Functions and Their Properties.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+J.
+ Combinatorial Theory (A)
+\shape default
+, 
+\series bold
+40
+\series default
+, 90–107, 1985.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "licusick1"
+
+\end_inset
+
+ Y.
+ Li and T.W.
+ Cusick.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Linear Structures of Symmetric Functions over Finite Fields.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Inf.
+ Processing Letters
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+97
+\series default
+, 124–127, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "licusick2"
+
+\end_inset
+
+ Y.
+ Li and T.
+ W.
+ Cusick.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Strict Avalanche Criterion Over Finite Fields.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+J.
+ Math.
+ Cryptology
+\shape default
+ 
+\series bold
+1(1)
+\series default
+, 65–78, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "llm"
+
+\end_inset
+
+M.
+ Liu, P.
+ Lu and G.L.
+ Mullen.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Correlation-Immune Functions over Finite Fields.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inf.
+ Theory
+\shape default
+ 
+\series bold
+44
+\series default
+, 1273–1276, 1998.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "maxhellmaitra"
+
+\end_inset
+
+ A.
+ Maximov, M.
+ Hell and S.
+ Maitra.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Plateaued Rotation Symmetric Boolean Functions on Odd Number of Variables.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+First Workshop on Boolean Functions:Cryptography and Applications, BFCA'05
+\shape default
+, publications of the universities of Rouen and Havre, 83–104, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mitchell"
+
+\end_inset
+
+ C.
+ Mitchell.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Enumerating Boolean functions of cryptographic significance.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ J.
+ Cryptology
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+2
+\series default
+ (3), 155–170, 1990.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mm1"
+
+\end_inset
+
+ O.
+ Moreno and C.
+ J.
+ Moreno.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Improvement of the Chevalley-Warning and the Ax-Katz theorems.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Amer.
+ J.
+ Math.
+\shape default
+, 
+\series bold
+117
+\series default
+, 241–244, 1995.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mm"
+
+\end_inset
+
+ O.
+ Moreno and C.
+ J.
+ Moreno.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ The MacWilliams-Sloane Conjecture on the Tightness of the Carlitz-Uchiyama
+ Bound and the Weights of Dual of BCH Codes.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inform.
+ Theory
+\shape default
+, 
+\series bold
+40
+\series default
+, 1894–1907, 1994.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "parkerpott"
+
+\end_inset
+
+ M.
+ G.
+ Parker and A.
+ Pott.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ On Boolean functions which are bent and negabent.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Proc.
+ Int.
+ Conf.
+ Sequences, Subsequences, Consequences
+\shape default
+, LNCS-4893, 9–23, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "piequ"
+
+\end_inset
+
+ J.
+ Pieprzyk and C.X.
+ Qu.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Fast hashing and rotation-symmetric functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+J.
+ Universal Comput.
+ Sci.
+\shape default
+, 
+\series bold
+5 (1)
+\series default
+, 20–31, 1999.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rp"
+
+\end_inset
+
+ C.
+ Riera and M.
+ G.
+ Parker.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Generalized bent criteria for Boolean functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+IEEE Trans.
+ Inform.
+ Theory
+\shape default
+ 
+\series bold
+52
+\series default
+ (9), 4142–4159, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fdegree"
+
+\end_inset
+
+ A.
+ Shpilka and A.
+ Tal.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ On the Minimal Fourier Degree of Symmetric Boolean Functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Combinatorica
+\shape default
+, 
+\series bold
+88
+\series default
+, 359–377, 2014.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "stanicamaitra"
+
+\end_inset
+
+ P.
+ St
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+nic
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+ and S.
+ Maitra.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Rotation Symmetric Boolean Functions – Count and Cryptographic Properties.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Discr.
+ Appl.
+ Math.
+\shape default
+, 
+\series bold
+156
+\series default
+, 1567–1580, 2008
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "stanicamaitraclark"
+
+\end_inset
+
+ P.
+ St
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+nic
+\begin_inset Formula $\check{\mbox{a}}$
+\end_inset
+
+, S.
+ Maitra and J.
+ Clark.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Results on Rotation Symmetric Bent and Correlation Immune Boolean Functions.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Fast Software Encryption, FSE 2004
+\shape default
+, Lecture Notes in Computer Science, 
+\series bold
+3017
+\series default
+, 161–177.
+ SpringerVerlag, 2004.
+\end_layout
+
+\end_body
+\end_document

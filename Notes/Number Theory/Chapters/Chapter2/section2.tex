@@ -1,0 +1,258 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Arithmetic Functions}
+\hspace{10mm}
+
+One of the most important concepts in number theory, is that of an arithmetic function. That is a function or map that takes integers into integers. We will study such functions.
+
+\begin{definition}
+    An integer $a \in \Z$ is \textbf{square free} if it is not divisible by the square of any other integer greater than 1.
+\end{definition}
+
+\begin{proposition}\label{proposition2.2.1}
+    If $n \in \Z$, then $n=ab^2$ where $a,b \in \Z$ and $a$ is square free.
+\end{proposition}
+\begin{proof}
+    Let $n=p_1^{a_1}p_2^{a_2} \dots p_l^{a_l}$. Now let $a_i=2b_i+r_i$ where $r_i=0$ or $r_i=1$ for $1 \leq i \leq l$.Then $n=(p_1^{r_1}p_2^{r_2} \dots p_l^{r_l})(p_1^{b_1}p_2^{b_2} \dots p_l^{b_l})^2$, letting $a=p_1^{r_1}p_2^{r_2} \dots p_l^{r_l}$, then it is clear that $a$ is square free. 
+\end{proof}
+
+Now let $\tau:\Z^+ \rightarrow \Z^+$ be such that $\tau(n)$ is the number of positive divisors of $n$. Let $\sigma:\Z^+ \rightarrow \Z^+$ be such that $\sigma(n)$ is the sum of all positive divisors of $n$. We notice that:
+    \begin{equation*}
+        \tau(n)=\sum_{d|n} 1 \text{ and } \sigma(n)=\sum_{d|n} d
+    \end{equation*}
+    
+\begin{definition}
+    We say that an arithmetic function, i.e. a map $f:\Z \rightarrow \Z$ is \textbf{multiplicative} if for $m,n \in \Z$ and $(m,n)=1$, then $f(mn)=f(m)f(n)$.
+\end{definition}
+
+\begin{lemma}\label{lemma2.2.2}
+    $\tau$ is multiplicative
+\end{lemma}
+\begin{proof}
+    Let $m,n \in \Z$ with $(m,n)=1$. Then
+        \begin{equation*}
+            \tau(mn)=\sum_{d|mn} 1
+        \end{equation*}
+    Now if $d|mn$, let $d=d_1d'_1$ such that $d_1|m$ and $d'_1|n$. Now since $(m,n)=1$ we have that $d_1 \not|n$ and $d_1 \not| m$. We also have as a consequence of theorem \ref{theorem1.1.8}, that the number of divisors of an integer is finite, Hence there is a set of divisors of $mn$: $S=\{d_1,d_2, \dots, d_l,d'_1,d'_2, \dots,d'_r\}$ that can be partitioned into $S=\{d_1,d_2, \dots, d_l\} \cup \{d'_1,d'_2, \dots,d'_r\}$ where $d_i|m$ and $d'_j|n$ for $1 \leq i \leq l$ and $1 \leq j \leq r$. Let $M=\{d_1,d_2, \dots, d_l\}$ and $N=\{d'_1,d'_2, \dots,d'_r\}$. Then $S=M \cup N$ and:
+        \begin{align*}
+            \tau(mn) &= \sum_{S} 1 = \sum_{M \cup N} 1 \\
+                     &= \sum_{M}\sum_{N} 1 \\
+            \tau(mn) & = (\sum_{d_i|m} 1)(\sum_{d'_j|n} 1)=\tau(m)\tau(n) \\
+        \end{align*}
+\end{proof}
+
+\begin{lemma}\label{lemma2.2.3}
+    Let $n=p^a$ for $p$ prime and $a \in \Z^+$. Then $\tau(n)=a+1$
+\end{lemma}
+\begin{proof}
+    We have that the divisors of $p^a$ are $1,p,p^2, \dots, p^a$, and there are $a+1$ of them.
+    \begin{equation*}
+        \tau(n)=\sum_{d|p^a}1 = \underbrace{1+1+\dots+1}_{\text{$a+1$ times}}=a+1
+    \end{equation*}
+\end{proof}
+
+\begin{lemma}\label{lemma2.2.4}
+    $\sigma$ is multiplicative
+\end{lemma}
+\begin{proof}
+    Let $m,n \in \Z$ such that $(m,n)=1$. As in the proof of lemma \ref{lemma2.2.2}, we have that the set of divisors of $mn$ can partitioned into the set $S=M \cup N$ where $M=\{d_1,d_2, \dots, d_l\}$ and $N=\{d'_1,d'_2, \dots, d'_r\}$ such that $d_i|m$ and $d'_j|n$ for $1 \leq i \leq l$ and $1 \leq j \leq r$. We get that for any divisor $d$ of $mn$, that $d=d_id'_j$. Then
+        \begin{align*}
+            \sigma(mn) &= \sum_{d|mn} d = \sum_{S} d \\
+                       &= \sum_{M \cup N} d_id'_j = \sum_{d_i|m}\sum_{d'_j|n} d_id'_j \\
+            \sigma(mn) &= (\sum_{d_i|m} d_i)(\sum_{d'_j|n} d'_j) = \sigma(m)\sigma(n) \\
+        \end{align*}
+\end{proof}
+
+\begin{lemma}\label{lemma2.2.5}
+    Let $n=p^a$ where $p$ is prime and $a \in \Z^+$. Then $\sigma(n)=\frac{p^{a+1}-1}{p-1}$
+\end{lemma}
+\begin{proof}
+    We first note that for any integers $a,k \in \Z$ that $a^{k+1}-1=(a-1)(a^k+a^{k-1}+\dots+a^2+a+1)$. 
+    
+    Now let $n=p^a$ for $p$ a prime, and $a \in \Z^+$. Then
+        \begin{equation*}
+            \sigma(n)=\sum_{d|p^a} d=1+p+p^2+\dots+p^a=\frac{p^{a+1}-1}{p-1}. 
+        \end{equation*}
+\end{proof}
+
+We now can find general formulas for $\tau$ and $\sigma$.
+
+\begin{proposition}\label{proposition2.2.6}
+    Let $n \in \Z^+$ and let $n=p_1^{a_1}p_2^{a_2} \dots p_l^{a_l}$. Then:
+        \begin{enumerate}[label=(\arabic*)]
+            \item $\tau(n)=(a_1+1)(a_2+1) \dots (a_l+1)$
+            
+            \item $\sigma(n)=(\frac{p_1^{a_1+1}-1}{p_1-1})(\frac{p_2^{a_2+1}-1}{p_2-1}) \dots (\frac{p_l^{a_l+1}-1}{p_l-1})$
+        \end{enumerate}
+\end{proposition}
+\begin{proof}
+    We make use of the multiplicity of $\tau$ and $\sigma$. First notice that since $p_i$ is prime for $1 \leq i \leq l$, then  $(p_i,p_j)=1$ whenever $i \neq j$. Hence
+        \begin{enumerate}[label=(\arabic*)]
+            \item $\tau(n)=\tau(p_1^{a_1}p_2^{a_2} \dots p_l^{a_l})=\tau(p_1^{a_1})\tau(p_2^{a_2}) \dots \tau(p_l^{a_l})=(a_1+1)(a_2+1) \dots (a_l+1)$.
+            
+            \item $\sigma(n)=\sigma(p_1^{a_1}p_2^{a_2} \dots p_l^{a_l})=\sigma(p_1^{a_1})\sigma(p_2^{a_2}) \dots \sigma(p_l^{a_l})=(\frac{p_1^{a_1+1}-1}{p_1-1})(\frac{p_2^{a_2+1}-1}{p_2-1}) \dots (\frac{p_l^{a_l+1}-1}{p_l-1}$.
+        \end{enumerate}
+\end{proof}
+
+There does exist a proof of proposition \ref{proposition2.2.6} independent of multiplicity, and if we assume such proof, then we can use proposition \ref{proposition2.2.6} to prove that $\tau$ and $\sigma$ are multiplicative. We now go through some immediate applications of these arithmetic functions.
+
+\begin{definition}
+    An integer $n$ is \textbf{perfect} if $\sigma(n)=2n$. 
+\end{definition}
+
+\begin{lemma}\label{lemma2.2.7}
+    If for $m \in \Z^+$, $2^{m+1}-1$ is prime, then $n=2^m(2^{m+1}-1)$ is perfect.
+\end{lemma}
+\begin{proof}
+    Let $n=2^m(2^{m+1}-1)$ with $m \in \Z^+$ and $2^{m+1}-1$ prime. Then $\sigma(n)=\sigma(2^m)\sigma(2^{m+1}-1)=2^{m+1}(2^{m+1}-1)=2(2^m(2^{m+1}-1))=2n$
+\end{proof}
+
+\begin{definition}
+    Let $m \in \Z^+$. A \textbf{Mersenne prime} is any prime of the form $2^{m+1}-1$
+\end{definition}
+
+\begin{lemma}\label{lemma2.2.8}
+    If for $a \in \Z$, and $n \in \Z^+$, $a^n-1$ is prime, then $a=2$, and $n$ is prime.
+\end{lemma}
+\begin{proof}
+    We have that $a^n-1=(a-1)(a^{n-1}+\dots+a^2+a+1)$. Now both $a-1$ and $a^{n-1}+\dots+a^2+a+1$ divide $a^n-1$, so let $a-1=1$, hence $a=2$. So we get $2^n-1=2^{n-1}+\dots+2^2+2+1$.
+    
+    Now suppose $n=ab$, with $(a,b)=1$. Then $2^n-1=2^{ab}-1=(2^a)^b-1=(2^a)^{b-1}+\dots+(2^a)^2+2^a+1$, so $2^n-1=2^{ab-a}+\dots+2^{2a}+2^a+1=2^{n-a}+\dots+2^{2a}+2^a+1$. Now since $2^n-1$ is prime, and has the form $2^{n-1}+\dots+2^2+2+1$, then necessarily, $a=1$, which makes $n$ a prime.
+\end{proof}
+
+Hence if $2^{m+1}-1$ is a Mersenne prime for some $m \in \Z^+$, then $m+1$ is prime. We call general numbers of the form $2^{m+1}-1$ \textbf{Mersenne numbers}.
+
+\begin{definition}
+    An integer $n$ is \textbf{multiplicatively perfect} if the product of its divisors is $n^2$.
+\end{definition}
+
+So $n$ is multiplicatively perfect if $\prod_{d|n} d=n^2$. We go over a few requirements for a number to be multiplicatively perfect. If $n$ is prime, then $\prod_{d|n} d=1 \cdot n=n$, so $n$ cannot be prime.What if $n=p^2$, with $p$ a prime? Then $\prod_{d|n} d=1 \cdot p \cdot p^2=p^3$, so $n$ cannot be the square of a prime.
+
+Now suppose $n$ is not prime, nor the square of a prime. Then there is a proper divisor $d \neq \frac{n}{d}$ of $n$, and $\prod_{d|n} d=1 \cdot d \cdot \frac{n}{d} \cdot n=n^2$. Now suppose that $n$ is multiplicatively perfect. Then there es a divisor $d$ of $n$ such that $n \cdot d=n^2$, hence $d=n$. So $d=d'\frac{n}{d}$, where $d' \neq \frac{n}{d}$. Now suppose there is a third perfect divisor $\frac{n}{d_1}$. Then $1 \cdot \frac{n}{d_1} \cdot d \cdot n=\frac{n^3}{d_1}$, which contradicts that $n$ is multiplicatively perfect. Hence we get the lemma:
+
+\begin{lemma}\label{lemma2.2.9}
+    An integer $n$ is multiplicatively perfect, if and only if $n$ is the product of exactly two prefect divisors.
+\end{lemma}
+
+From this lemma we can see that integers of the form $p^3$ and $p^lq^r$, with $p,q$ prime, are multiplicatively perfect.
+
+\begin{example}
+    $27=3^3$, so $27$ is multiplicatively perfect. $1 \cdot 3 \cdot 3^2 \cdot 27=729=27^2$. Likewise, $10=2^15^1$, so $10$ is multiplicatively perfect. $1 \cdot 2 \cdot 5 \cdot 10=100=10^2$.
+\end{example}
+
+\begin{definition}
+    We define the \textbf{M\"obius $\mu$ function} to be the map $\mu:\Z^+\rightarrow \Z$ such that:
+        \begin{equation}
+            \mu(n)=\begin{cases}
+                    1 & \text{ if } n=1 \\
+                    (-1)^l & \text{ if for $p_i$ prime, } n=p_1p_2 \dots p_l \\
+                    0 & \text{ if  $n$ is not square free}
+            \end{cases}
+        \end{equation}
+\end{definition}
+
+\begin{lemma}\label{lemma2.2.10}
+    $\mu$ is multiplicative.
+\end{lemma}
+\begin{proof}
+    Let $m,n \in \Z^+$ with $(m,n)=1$. Consider when $m=1$ or, when $m=1$ and $n=1$. We get $\mu(mn)=\mu(n)=1 \cdot \mu(n)=\mu(m)\mu(n)$; or $\mu(mn)=1=1 \cdot 1=\mu(m)\mu(n)$. Now suppose that $m,n \neq 1$, and that $m$ is not square free. Then if $m$ is not square free, then $a^2|m$ for some $a \in \Z$. So $a^2|mn$, so $mn$ is not square free. Hence $\mu(mn)=0=0 \cdot \mu(n)=\mu(m)\mu(n)$.
+    
+    Now suppose that $m,n \neq 1$, and that $m$ and $n$ are both square free. Then $mn$ is square free. Let $m=p_1p_2 \dots p_l$ and $n=q_1q_2 \dots q_r$ for $p_i,q_j$ distinct primes where $1 \leq i \leq l$ and $1 \leq j \leq r$. Then $mn=p_1 \dots p_lq_1 \dots q_r$. Hence $\mu(mn)=(-1)^{l+r}=(-1)^l(-1)^r=\mu(m)\mu(n)$. 
+\end{proof}
+
+\begin{proposition}\label{proposition2.2.11}
+    If $n>1$, then
+        \begin{equation*}
+            \sum_{d|n} \mu(d)=0
+        \end{equation*}
+\end{proposition}
+\begin{proof}
+    Let $n=p_1^{a_1}p_2^{a_2} \dots p_l^{a_l}$. Then
+        \begin{align*}
+            \sum_{d|n} \mu(d) &= \sum_{(e_1,e_2, \dots, e_l)} \mu(p_1^{e_1}p_2^{e_2} \dots p_l^{e_l}) \text{ where $e_i=0,1$.} \\
+                             &= \sum_{(e_1,e_2, \dots, e_l)} \mu(p_1^{e_1})\mu(p_2^{e_2}) \dots \mu(p_l^{e_l}) \\
+                             &= (-1)^1+(-1)^2+(-1)^3\dots+(-1)^l=(-1)+1+(-1)+ \dots+(-1)^l \\
+                             &= 1+(-1)^l=(1-1)^l=0 \\
+        \end{align*}
+\end{proof}
+
+\begin{definition}
+    Let $f:\Z^+ \rightarrow \C$ and $g:\Z^+ \rightarrow \C$ be complex valued functions over $\Z^+$. We define the \textbf{Dirichlet product} of $f$ and $g$ to be $f \circ g(n)=\sum_{(d_1,d_2)} f(d_1)g(d_2)$, where $n=d_1d_2$. 
+\end{definition}
+
+\begin{lemma}\label{lemma2.2.12}
+    The Dirichlet product is associative.
+\end{lemma}
+\begin{proof}
+    Let $f,g,h$ be complex valued functions over $\Z^+$. Then $f \circ (g \circ h)(n)=f \circ \sum_{(d_2,d_3)} g(d_2)h(d_3)=\sum_{d_1}f(d_1)\sum_{(d_2,d_3)} g(d_2)h(d_3)=\sum_{(d_1,d_2,d_3)} f(d_1)g(d_2)h(d_3)=\sum_{(d_1,d_2)} f(d_1)g(d_2) \sum_{d_3}h(d_3)=(f \circ g) \circ h(n)$.
+\end{proof}
+
+We now define the functions $\iota:\Z^+ \rightarrow \Z^+$ and $I: \Z^+ \rightarrow \Z^+$ to be $\iota(1)=1$ and $\iota(n)=0$ for $n>1$; and $I(n)=1$ for all $n \in \Z^+$. Then for some complex valued function $f:\Z^+ \rightarrow \C$, $f \circ \iota(n)=\iota \circ f(n)$, and $f \circ I(n)=I \circ f(n)$.
+
+\begin{lemma}\label{lemma2.2.13}
+    $I \circ \mu=\iota$.
+\end{lemma}
+\begin{lemma}
+    Let $n=1$. Then $\iota \circ \mu(1)=I(1)\mu(1)=1=\iota$. Now let $n>1$. Then $\I \circ \mu(n)=\sum_{(d_1,d_2)} I(d_1)\mu(d_2)=\sum_{d_2|n} \mu(d_2)=0=\iota(n)$.
+\end{lemma}
+
+\begin{namedtheorem}{The M\"obius Inversion Theorem}
+    Let $f:\Z^+ \rightarrow \Z$ and $F: \Z^+ \rightarrow \Z$ be l=multiplicative functions such that: $F(n)=\sum_{d|n} f(d)$. Then
+        \begin{equation}
+            f(n)=\sum_{d|n} F(d)\mu(\frac{n}{d})=\sum_{d|n} F(\frac{n}{d})\mu(d).
+        \end{equation}
+\end{namedtheorem}
+\begin{proof}
+    We have thst $f \circ I(n)=\sum_{(d_1,d_2)}f(d_1)I(d_2)=\sum_{d_1}f(d_1)$. Hence $F=f \circ I=I \circ f$. Thus, $F \circ \mu=(f \circ I) \circ \mu=f \circ (I \circ \mu)=f \circ \iota=f$. Hence $f(n)=F \circ \mu(n)= \sum_{(d_1,d_2)} F(d_1)\mu(d_2)$. Now since $n=d_1d_2$, we can take them to be perfect divisors. Hence letting $d_1=d$, and $d_2=\frac{n}{d}$, we get $f(n)=\sum_{d|n} F(d)\mu(\frac{n}{d})$; letting $d_1=\frac{n}{d}$ and $d_2=d$, we get $f(n)=\sum_{d|n} F(\frac{n}{d})\mu(d)$.
+\end{proof}
+
+\begin{definition}
+    We define the \textbf{Euler $\phi$ function} to be the map $\phi:\Z^+ \rightarrow \Z^+$ such that $\phi(1)=1$, and $\phi(n)$ is the number of positive integers coprime to $n$, for $n>1$.
+\end{definition}
+
+Observing a little better the definition of $\phi$, we can see that $\phi(n)=|\{a \in \Z:(a,n)=1\}|$. We would like to use this notion when proving the multiplicity of $\phi$.
+
+\begin{lemma}\label{lemma2.2.15}
+    $\phi$ is multiplicative.
+\end{lemma}
+\begin{proof}
+    Let $m,n \in \Z^+$ such that $(m,n)=1$. Firs notice that for any integer $a \in \Z^+$ if $(a,mn)=1$, then for $\alpha,\beta \in \Z$, $a\alpha+mn\beta=a\alpha+m(n\beta)=a\alpha+n(m\beta)=1$, so $(a,m)=1$ and $(a,n)=1$. Hence $\{a \in \Z^+:(a,mn)=1\} \subseteq \{a \in \Z^+:(a,m)=1 \text{ and } (a,n)=1\}$. We also have that if $(a,m)=1$ and $(a,n)=1$, then clearly $(a,mn)=1$ (this result is an easy exercise), and so $\{a \in \Z^+:(a,m)=1 \text{ and } (a,n)=1\} \subseteq \{a \in \Z^+:(a,m)=1 \text{ and } (a,n)=1\}$. Thus $\{a \in \Z^+:(a,mn)=1\}=\{a \in \Z^+:(a,m)=1 \text{ and } (a,n)=1\}$.
+    
+    Now, we have that $\phi(mn)=|\{a \in \Z^+:(a,mn)=1\}|=|\{a \in \Z^+:(a,m)=1 \text{ and } (a,n)=1\}|$ (by our previous observation). Now Notice that there are $\phi(m)$ integers coprime to $m$ and $\phi(n)$ integers coprime to $n$. Hence there are $\phi(m)\phi(n)$ integers coprime to both $m$ and $n$. Hence $\phi(m)\phi(n)=|\{a \in \Z^+:(a,m)=1 \text{ and } (a,n)=1\}|$. That is, $\phi(mn)=\phi(m)\phi(n)$.
+\end{proof}
+
+\begin{lemma}\label{lemma2.2.16}
+    Let $n=p^a$ with $p$ prime and $a \in \Z^+$. Then $\phi(n)=p^a-p^{a-1}=p^a(1-\frac{1}{p})$.
+\end{lemma}
+\begin{proof}
+    Let $n=p^a$. We have that $\phi(p^a)$ is the number of integers coprime to $p^a$. Consider the divisors of $p^a$, $1,p,p^2, \dots, p^a$. Now $(1,p^a)=1$, but $(p^i,p^a)=p^i$ for all $1 \leq i \leq a$. Hence $p,p^2, \dots, p^a$ are the only integers not coprime with $p^a$, and there are $p^{a-1}$ of them. So we just take $\phi(p^a)=p^a-p^{a-1}$.
+\end{proof}
+
+\begin{proposition}\label{proposition2.2.17}
+    Let $n=p_1^{a_1}p_2^{a_2} \dots p_l^{a_l}$. Then:
+        \begin{equation}
+            \phi(n)=n(1-\frac{1}{p_1})(1-\frac{1}{p_2}) \dots (1-\frac{1}{p_l})
+        \end{equation}
+\end{proposition}
+\begin{proof}
+    Let $p_1^{a_1}p_2^{a_2} \dots p_l^{a_l}$. Then since $p_i$ is prime for all $1 \leq i \leq l$, we have that $(p_i,p_j)=1$ whenever $i \neq j$. Thus
+        \begin{align*}
+            \phi(n) &= \phi(p_1^{a_1}p_2^{a_2} \dots p_l^{a_l})=\phi(p_1^{a_1})\phi(p_2^{a_2}) \dots \phi(p_l^{a_l}) \\
+                    &= p_1^{a_1}(1-\frac{1}{p_1})p_2^{a_2}(1-\frac{1}{p_2}) \dots p_l^{a_l}(1-\frac{1}{p_l}) \\
+                    &=n(1-\frac{1}{p_1})(1-\frac{1}{p_2}) \dots (1-\frac{1}{p_l})
+        \end{align*}
+\end{proof}
+
+The Euler $\phi$ function will be of great importance later, so we will consider a last result.
+
+\begin{proposition}\label{proposition2.2.18}
+    $\sum_{d|n} \phi(d)=n$
+\end{proposition}
+\begin{proof}
+    Consider the rational numbers $\frac{1}{n},\frac{2}{n}, \dots, \frac{n-1}{n}$. Reducing each to lowest terms, we will find that the denominators will be divisors of $n$. Now if $d|n$, since the fractions are in lowest terms, there are exactly $\phi(d)$ such denominator. Hence adding them up, we get that $\sum_{d} \phi(d)=n$.
+\end{proof}
+
+
+

@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% THIS FILE SPECIFIES ALL INFORMATION OF THE AUTHOR AND THE THESIS         %%
+%%                                                                          %%
+%% This program may be distributed and/or modified under the                %%
+%% conditions of the LaTeX Project Public License, either version 1.2       %%
+%% of this license or (at your option) any later version.                   %%
+%% The latest version of this license is in                                 %%
+%%   http://www.latex-project.org/lppl.txt                                  %%
+%% and version 1.2 or later is part of all distributions of LaTeX           %%
+%% version 1999/12/01 or later.                                             %%
+%%                                                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% This is the definition of the work thesis and the packages that the Thesis
+%% will gonna use
+
+\documentclass[12pt,Bold,Justify,letterpaper]{uprmclass}
+%\usepackage[spanish,activeacute]{babel}
+%\usepackage{amssymb,amsmath,amsthm,mathrsfs,keyval,color,psfrag,multirow,lscape}		 %,overcite}
+% beatiful curly letters
+%\usepackage{mathptmx} 			                                                            % beatiful curly letters
+
+%========Inicio Leonid
+
+%\usepackage{color}
+
+\usepackage[inner=1in,outer=1in,bottom=1in,top=1in]{geometry}
+\usepackage[sort&compress]{natbib}
+\makeatletter
+\def\Ddots{\mathinner{\mkern1mu\raise\p@
+\vbox{\kern7\p@\hbox{.}}\mkern2mu
+\raise4\p@\hbox{.}\mkern2mu\raise7\p@\hbox{.}\mkern1mu}}
+\makeatother
+
+%========Fin Leonid
+
+\usepackage{mathbbol} 	
+\usepackage{amsmath}                     % Matematiske kommandoer
+\usepackage{amssymb}                     % Matematiske symboler
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{verbatim}		                                                            % beatiful curly letters
+\usepackage{graphicx}
+\usepackage{url} 		                                                                	 \usepackage{caption}
+\usepackage{setspace}
+\usepackage{subfigure}
+\usepackage{calrsfs} 			                                                            % beatiful curly letters
+\usepackage{hypernat}
+\usepackage{enumerate}
+\usepackage{setspace}
+\usepackage{rotating}   	                                                                % Package for rotate tables
+\usepackage{pst-all}
+\usepackage{amsfonts}
+\usepackage{dsfont}
+\usepackage{fancyhdr}
+\usepackage[dvips,bookmarks=true,bookmarksopen=true,breaklinks=true,letterpaper=true,pdftitle={DCFFT},plainpages=false,pdfauthor={StudentRUM},colorlinks=false,hypertexnames=false,citecolor=black,linkcolor=blue,file
+color=black]{hyperref}
+
+
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{Fuchsia}{rgb}{1.0, 0.0, 1.0}
+\definecolor{amethyst}{rgb}{0.2, 0.2, 0.8}
+
+%\usepackage[numbers,sort&compress]{natbib}
+%\usepackage{subfigure}  	                                                                %If you want subfigures
+\makeatletter
+\g@addto@macro\@verbatim\footnotesize
+\makeatother
+
+%    Absolute value notation
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+%    Blank box placeholder for figures (to avoid requiring any
+%    particular graphics capabilities for printing this document).
+\newcommand{\blankbox}[2]{%
+\parbox{\columnwidth}{\centering
+%    Set fboxsep to 0 so that the actual size of the box will match the
+%    given measurements more closely.
+    \setlength{\fboxsep}{0pt}%
+    \fbox{\raisebox{0pt}[#2]{\hspace{#1}}}%
+  }%
+}
+\def\newpic#1{%
+\def\emline##1##2##3##4##5##6{%
+\put(##1,##2){\special{em:point #1##3}}%
+\put(##4,##5){\special{em:point #1##6}}%
+\special{em:line #1##3,#1##6}}}
+\newpic{}
+\def\emline#1#2#3#4#5#6{%
+\put(#1,#2){\special{em:moveto}}%
+\put(#4,#5){\special{em:lineto}}}
+\def\newpic#1{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DEFINE STUDENT AND THESIS SPECIFIC INFO   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\SetFullName{Leonid Brehsner Sep\'ulveda Avenda\~no}				                                     %
+\SetThesisType{Ph. D Thesis}							                                     %
+\SetThesisTypes{pcgf}						                                                 % En espanol
+\SetDegreeType{Doctor of Philosophy in Mathematics}					                     %
+%\SetDegreeTypes{Doctorado de Filosof\'ia en Matem\'aticas}		                             % En espanol
+\SetSpecialty{Mathematics} 									                                 % Mathematics%
+\SetGradMonth{May}												                             %
+%\SetGradMes{Julio} 												                             % En espanol
+\SetGradYear{2018}												                             %
+\SetDepartment{Mathematics} 								                                 % Mathematics%
+%\SetDepartmento{Matematicas} 						                                         % Mathematics
+%\SetChair{Luis A. medina}											                         %
+\SetTitle{Linear recursivity of exponential sums of symmetric functions over Galois Field}					 %
+\SetTitlesp{pcgf}						                                                     % En espanol
+%% Signature page members
+\SetNamea{Luis A. Medina}					                                                 % President Graduate Commitee (Normally Chairman)
+\SetDegreea{Ph.D.}
+\SetUniva{University of Puerto Rico, R\'io Piedras}
+%%%
+\SetNameb{Francis Castro}			% First Member Graduate Commitee
+\SetDegreeb{Ph.D.}
+\SetUnivb{University of Puerto Rico, R\'io Piedras}
+%%%
+\SetNamec{Ivelisse Rubio}			% Second Member Graduate Commitee
+\SetDegreec{Ph.D.}
+\SetUnivc{University of Puerto Rico, R\'io Piedras}
+%%%
+\SetNamed{Ra\'ul Figueroa}	                 % Third Member Graduate Commitee
+\SetDegreed{Ph.D.}
+\SetUnivd{University of Puerto Rico, R\'io Piedras}
+%%%
+\SetNamee{CARLOS}                	 % Fourth Member Graduate Commitee
+\SetDegreee{Ph.D}
+\SetUnive{University} 
+%%%      
+%\SetNamef{Nameless}	                  % Quinto Member Graduate Commitee
+%\SetDegreef{Ph.D.}
+%\SetUnivf{NN}
+
+
+
+%\SetNameChairDep{Medina Luis}	% Chairperson of the Department
+%\SetDegreeChairDep{Ph.D}
+
+\input{defs.tex}   % This file contents all the commands of style defined for the thesis such as theorems,
+									 % definitions, etc... (if you have no idea what is it. Don't modify anything)
+									 % def.tex is a file used to define special enviroments such as a proof of a theorem.
+
+
+
+

@@ -1,0 +1,148 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Unique Factorization in $\Z$}
+\hspace{10mm}
+
+We begin with a few preliminary definitions and results about divisibility in $\Z$. The main goal of this section is to prove that the integers have a unique factorization in primes. This is a fundamental aspect in all of number theory, and a great deal of results in number theory depend on this notion.
+
+\begin{definition}
+    For $a$ and $b$ integers, we say that $a$ \textbf{divides} $b$ if there exists some $c \in \Z$ such that $b=ac$. We also call $a$ a \textbf{divisor} of $b$ and we write $a|b$.
+\end{definition}
+
+\begin{definition}
+    We say that a positive integer $p$ is \textbf{prime} if it has only 1 and itself as divisors.
+\end{definition}
+
+\begin{example}
+    The first few primes of $\Z$ are $2,3,5,7,11, \dots$. Notice that 2 is the only odd prime
+\end{example}
+
+\begin{example}
+    $2|8$., $3|15$, but $6\not| 21$. Also see that $180=18 \cdot 10=2 \cdot 2 \cdot 9 \cdot 5=2 \cdot 2 \cdot 3 \cdot 3 \cdot 5=2^2 \cdot 3^2 \cdot 5$. This is as far as we can factor $180$, and it is also a unique representation of the factors of 180.
+\end{example}
+
+We also admit the following properties of divisibility:
+    \begin{enumerate}[label=(\arabic*)]
+        \item $a|a$ for $a \neq 0$.
+        
+        \item If $a|b$ and $b|a$, then $a=\pm{b}$.
+        
+        \item If $a|b$ and $b|c$, then $a|c$.
+        
+        \item If $a|b$ and $c|d$, then $ac|bd$.
+        
+        \item If $a|b$ and $a|c$, then $a|(bx+cy)$ for $x,y \in \Z$.
+    \end{enumerate}
+
+\begin{lemma}[The Division Theorem]\label{lemma1.1.1}
+    If $a$ and $b$ are integers, then there exist $r,q \in \Z$ unique such that $a=qb+r$ and $0 \leq r < b$.
+\end{lemma}
+\begin{proof}
+    Consider the set $s=\{a-xb:x \in \Z\}$. $S$ contains positive integers, for take $x=-|a|$, so by the Well Ordering Principle, let $r=a-qb$ be the smallest such integer. Now if $r=a-qb \geq b$, then $0 \leq a-(q+1)b <r $, contradicting the minimality of $r$, hence $0 \leq r < b$. The proof of uniqueness is left as an exercise. 
+\end{proof}
+
+Now for $a_1,a_2, \dots, a_n \in \Z$, let $(a_1,a_2, \dots, a_n)=\{a_1x_1+a_2x_2+ \dots a_nx_n:x_1,x_2, \dots x_n \in \Z\}$. We claim that this set is an ideal in $\Z$, for let $A=(a_1,a_2, \dots, a_n)$. If $x_1, \dots, x_n,y_1, \dots, y_n, \in A$ then $x_1+y_1, \dots, x_n+y_n \in A$ by direct computation; moreover, for some $r \in \Z$, then $r(a_1x_1+a_2x_2+ \dots a_nx_)=a_1(rx_1)+a_2(rx_2)+ \dots a_n(rx_n)$ so $rx_1, \dots, rx_n \in A$. We now use this to treat an object fundamental to divisibility.
+
+\begin{lemma}\label{lemma1.1.2}
+    If $a,b \in\Z$, then there exists some $d \in \Z$ such that $(a,b)=(d)$.
+\end{lemma}
+\begin{proof}
+    Suppose $a$ and $b$ are not both 0, then $(a,b)$ has positive elements; then again, by the Well Ordering Principle, let $d \in (a,b)$ be the smallest such positive element. Now if $r \in (d)$, then $r=dq=(am+bn)q=a(qm)+b(qn)$, for $m,n,q \in \Z$; hence $(d) \subseteq (a,b)$. 
+    
+    Now let $c \in (a,b)$. Then by the division theorem, there exist $r,q \in \Z$ unique such that $c=dq+r$ and $0 \leq r < d$. Since $d \in (a,b)$, then $r=c-dq \in (a,b)$, and by the minimality of $d$, $r=0$. Hence $c=dq \in (d)$. So $(a,b) \subseteq (d)$, hence $(a,b)=(d)$. 
+\end{proof}
+
+\begin{definition}
+    Let $a$ and $b$ be positive integers. We call a positive integer $d$ the \textbf{greatest common divisor} of both $a$ and $b$ if:
+        \begin{enumerate}[label=(\arabic*)]
+            \item $d|a$ and $d|b$.
+            
+            \item For some $c \in \Z$, if $c|a$ and $c|b$, then $c|d$. 
+        \end{enumerate}
+\end{definition}
+
+\begin{lemma}\label{lemma1.1.3}
+    Let $a,b,d \in \Z$. If $(a,b)=(d)$, then $d$ is the greatest common divisor of $a$ and $b$ and is unique.
+\end{lemma}
+\begin{proof}
+    Suppose that $(a,b)=(d)$. Then $a \in (d)$ and $b \in(d)$, hence $d|a$ and $d|b$. Now let $c|a$ and $c|b$ for some $c \in \Z$. Then $c|(ax+by)$ for $x,y \in \Z$. In particular, $c|d$. This makes $d$ the greatest common divisor.
+    
+    Now suppose that $c$ is another greatest common divisor of $a$ and $b$. Then we get that $c|d$ but also that $d|c$. Hence $c=\pm{d}$, and since $c \in \Z^+$ by definition, we have that $c=d$.
+\end{proof}
+
+The lemmas say much more than just stating the existence and uniqueness of the greatest common divisor. First of all, uniqueness is determined up to sign, if we do not require the greatest common divisor to be a positive integer, then it is not unique; namely we have two greatest common divisors $d$ and $-d$. Far more important, is that they tell us the form of the greatest common divisor. Considering the structure of $(a,b)$,and since $d \in (a,b)$ is the smallest such element, then $d=am+bn$ for some particular choice of $m,n \in \Z$ (this does not tell us how to find them however). With this in mind, we can denote the greatest common divisor of $a$ and $b$ by $(a,b)$, which is a justified notation with our development.
+
+\begin{definition}
+    We say that two integers $a$ and $b$ are \textbf{coprime} (or \textbf{relatively prime}) if $(a,b)=1$. 
+\end{definition}
+
+\begin{proposition}\label{proposition1.1.4}
+    If $a|bc$ and $(a,b)=1$ then $a|c$.
+\end{proposition}
+\begin{proof}
+    Since $(a,b)=1$, there exist $m,n \in \Z$ such that $am+bn=1$. Then $acm+bcn=c$. Since $a|bc$, $acm+bcn=acm+adn=a(cm+dn)=c$ for some $d \in \Z$. Thus $a|c$. 
+\end{proof}
+
+\begin{corollary}
+    If $p$ is prime, and $p|bc$, then either $p|b$ or $p|c$. 
+\end{corollary}
+\begin{proof}
+    Notice for any integer $a$, $(a,p)=1$ if $p \not| a$, or $(a,p)=p$ if $p|a$. Now if $p|b$, we are done. If not, then $(b,p)=1$, and hence by \ref{proposition1.1.4}, $p|c$. 
+\end{proof}
+
+We are now in a position to prove unique factorization in $\Z$.
+
+\begin{lemma}\label{lemma1.1.5}
+    Evey nonzero integer can be written as a product of primes.
+\end{lemma}
+\begin{proof}
+    Suppose not. Let $N$ be the smallest such positive integer that cannot be written as a product of primes (then any integer smaller than $N$ can); then $N$ cannot be a prime number. Hence, $n=mn$ where $1<m,n<N$ for $m,n \in \Z$. Then $m$ and $n$ can be written as a product of prime factors, but since $N=mn$, this contradicts our supposition. So every integer can be written as a product of primes.
+\end{proof}
+
+By lemma \ref{lemma1.1.5}, we can factor $n$ into a product of primes, and group them into the form $n=p_1^{a_1}p_2^{a_2} \dots p_m^{a_m}$ where $p_i$ is prime and $a_i \in \Z^+$ for $1 \leq i \leq m$. We would like to shorten this into the form:
+    \begin{equation*}
+        n=(-1)^{\epsilon(n)} \prod_{p} p^{a(p)}
+    \end{equation*}
+Where $\epsilon(n)=0$ if $n \geq 0$ or $\epsilon(n)=1$ of $n<0$. This form will let us prove unique factorization in a quicker mannr than what is usual. 
+
+\begin{definition}
+    Let $n \in \Z$ and let $p$ be a prime. The \textbf{order} of $n$ about $p$ is the smallest integer $a$ such that $p^a|n$ but $p^{a+1} \not| n$. We denote it $\ord_p{n}=a$. We take $\ord_p{0}=\infty$.
+\end{definition}
+
+\begin{lemma}\label{lema1.1.6}
+    $\ord_p{n}=0$ if and only if $p \not|n$.
+\end{lemma}
+\begin{proof}
+    If $\ord_p{n}=0$, then $p^o=1|n$ but $p^1=p \not| n$. Now suppose that $p \not| n$. Then $p^1 \not| n$, but $1=p^0|n$, hence $\ord_p{n}=0$.
+\end{proof}
+
+\begin{proposition}\label{proposition1.1.7}
+    Suppose that $p$ is prime. Then for $a,b \in \Z$, $\ord_P{ab}=\ord_p{a}+\ord_p{b}$. 
+\end{proposition}
+\begin{proof}
+    Let $\ord_p{a}=\alpha$ and $\ord_p{b}=\beta$. Then $p^{\alpha}|a$ and $p^{\beta}|b$, hence $p^{\alpha+\beta}|ab$. Now consider $p^{\alpha+\beta+1}=p^{(\alpha+1)+\beta}=p^{\alpha+(\beta+1)}$. If $p^{\alpha+\beta+1}|ab$, then this contradicts the orders of $a$ or $b$ respectively, hence $p^{\alpha+\beta+1} \not| ab$. Therefore $\ord_p{ab}=\alpha+\beta=\ord_p{a}+\ord_p{b}$. 
+\end{proof}
+
+\begin{theorem}\label{theorem1.1.8}
+    For every nonzero integer $n$, there exists a unique prime factorization:
+        \begin{equation}\label{equation1.1}
+            n=(-1)^{\epsilon(n)} \prod_{p} p^{a(p)}
+        \end{equation}
+    Where $\ord_p(n)=a(p)$. 
+\end{theorem}
+\begin{proof}
+    By lemma \ref{lemma1.1.5}, we can write $n$ as:
+        \begin{equation*}
+            n=(-1)^{\epsilon(n)} \prod_{p} p^{a(p)}
+        \end{equation*}
+    Now, consider for some other prime $q$, $\ord_q$. Then
+        \begin{align*}
+            \ord_q{n} &= \ord_q{((-1)^{\epsilon(n)} \prod_{p} p^{a(p)})} \\
+                     &= \ord_q{((-1)^{\epsilon(n)})}+\ord_q{(\prod_{p} p^{a(p)})} \\
+                     &= \epsilon(n)\ord_q{(-1)}+\sum_{p} a(p)\ord_q(p) \\
+           \ord_q{n} &= \sum_{p} a(p)\ord_q(p) \\
+        \end{align*}
+    We have now that $\ord_q{p}=0$ if $q \neq p$ and $\ord_q{p}=1$ if $q=p$ (this proves uniqueness), and so $\sum_{p} a(p)\ord_q(p)=a(q)$. Hence $\ord_q(n)=a(q)$. 
+\end{proof}

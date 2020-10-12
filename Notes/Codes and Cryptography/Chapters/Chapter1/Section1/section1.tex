@@ -1,0 +1,69 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Uncertainty.}
+
+Suppose that $X$ and  $Y$ are distinct random variables such that:
+    \begin{align*}
+          P(X=0)=p && P(X=1)=1-p \\
+        P(Y=100)=p && P(200)=1-p \\
+    \end{align*} 
+where $0<p<1$. We would like to define ``uncertainty'' for $X$ and  $Y$.
+
+\begin{definition}
+    The \textbf{uncertainty} of a random variable $Z$, which takes values $a_i$ with probabilities $p_i$ for $1 \leq i \leq n$, 
+    is a function $H$ if the probabilities $p_i$ such that:
+        \begin{enumerate}[label=(A\arabic*)]
+            \item $H(p_1, \dots, p_n)$ attains a maximum at  $p_1=\dots=p_n=\frac{1}{n}$.
+
+            \item For anny permutation $\pi$ of  $(1,2, \dots, n)$ we have that:  $H(p_1, \dots, p_n)=H(p_{\pi(1)}, \dots, 
+                p_{\pi(n)})$. I.e,  $H$ is symmetric.
+
+            \item  $H(p_1, \dots, p_n) \geq 0$ and equals  $0$ only when  $p_i=1$ for some  $1 \leq i \leq n$.
+
+            \item  $H(\frac{1}{n}, \dots, \frac{1}{n}) \leq H(\frac{1}{n+1}, \dots, \frac{1}{n+1})$.
+
+            \item $H$ is a continuous function.
+
+            \item If  $m,n \in \Z^+$, then  $H(\frac{1}{mn}, \dots, \frac{1}{mn})=H(\frac{1}{m}, \dots, \frac{1}{m})+
+                H(\frac{1}{n}, \dots, \frac{1}{n})$ 
+
+            \item Let $p=p_1+\dots+p_m$ and  $q=q_1+\dots+q_n$ with both $p_i,q_i \geq 0$ (for $1 \leq i \leq n$) and 
+                $p+q=1$. Then:
+                    \begin{equation*}
+                        H(p_1, \dots, p_m,q_1,\dots, q_n)=H(p,q)+pH(\frac{p_1}{p}, \dots, \frac{p_m}{p})+
+                        qH(\frac{q_1}{q}, \dots, \frac{q_n}{q})
+                    \end{equation*} 
+    We call $H$ an \textbf{entropy function}.
+\end{definition}
+
+\begin{theorem}
+    Let $H$ be a function defined over any integer  $n$ and all probabilities $p_i \geq 0$ with  $1 \leq i \leq n$, and:
+        \begin{equation}
+            \sum_{i=0}^{n} p_i=1
+        \end{equation}
+    If $H$ is to be an entropy function, then:
+        \begin{equation}
+            H(p_1, \dots, p_n)=-\lambda\sum_{k} p_k \log{p_k}		
+        \end{equation} 
+    With $\lambda$ a positive constant and where the sum is over those  $k$ for which $p_k>0$.
+\end{theorem}
+We defer the proof.
+
+\begin{definition}
+    Let $X$ be a random variable taking a finite set of values with probabilities  $p_1, \dots, p_n$. We define the 
+    \textbf{entropy} (or \textbf{uncertainty}) of $X$ to be the function:
+        \begin{equation}
+            H(X)=-\sum_{k} p_k \log_{2}{p_k}
+        \end{equation}
+    Where the sum is over all $k$ for which  $p_k>0$.
+\end{definition}
+
+\begin{theorem}
+    The function $H(X)=-\sum_{k} p_k \log_{2}{p_k}$ is an entropy function.
+
+\end{theorem}
+\begin{proof}
+    		
+\end{proof}
