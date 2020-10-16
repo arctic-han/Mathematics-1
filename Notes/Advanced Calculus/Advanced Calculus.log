@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.24)  13 OCT 2020 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.24)  16 OCT 2020 19:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -603,7 +603,20 @@ File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count312
 \l__pdf_internal_box=\box65
-) (./Advanced Calculus.aux)
+) (./Advanced Calculus.aux
+
+LaTeX Warning: Label `Chapter1' multiply defined.
+
+
+LaTeX Warning: Label `Chapter1' multiply defined.
+
+
+LaTeX Warning: Label `lemma' multiply defined.
+
+
+LaTeX Warning: Label `Chapter1' multiply defined.
+
+)
 \openout1 = `"Advanced Calculus.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -1350,29 +1363,229 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[31] [32]) (./Chapters/Chapter3/Section3/section3.tex [33] [34])) [35]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+[31] [32]) (./Chapters/Chapter3/Section3/section3.tex [33] [34])) (./Solutions/solutionsToChapter1/solutionsToChapter1.tex [35] [36
+
+]
+Chapter 4.
+(./Solutions/solutionsToChapter1/Solutions1/solutions1.tex
+
+./Solutions/solutionsToChapter1/Solutions1/solutions1.tex:8: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     \begin{enumerate}[label=(\arabic*)]
+                                           
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[37]) (./Solutions/solutionsToChapter1/Solutions2/solutions2.tex
+./Solutions/solutionsToChapter1/Solutions2/solutions2.tex:35: Display math should end with $$.
+<to be read again> 
+                   (
+l.35                 $(
+                       n+1)^2=n^2+2n+1 \leq 2^n+1+2n+1 \leq 2^n+2^n+1 \leq 2...
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./Solutions/solutionsToChapter1/Solutions2/solutions2.tex:35: Missing $ inserted.
+<inserted text> 
+                $
+l.35                 $(n+1)^
+                            2=n^2+2n+1 \leq 2^n+1+2n+1 \leq 2^n+2^n+1 \leq 2...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+) (./Solutions/solutionsToChapter1/Solutions3/solutions3.tex
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:7: Undefined control sequence.
+l.7 ...pose $E \subseteq \Z$ and  $E \neq \emtyset
+                                                  $ and that  $E$ is bounded...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[38]
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:17: Missing $ inserted.
+<inserted text> 
+                $
+l.17 ...a<\frac{p}{q}+\sqrt{2}<b. Now $\frac{p}{q}
+                                                   \in \Q$,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:17: Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.17 ...a<\frac{p}{q}+\sqrt{2}<b. Now $\frac{p}{q}
+                                                   \in \Q$,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:23: Display math should end with $$.
+<to be read again> 
+                   ,
+l.23 ...e have that $nr_n<na$, then  $$na-1<nr_n$,
+                                                   then  $na<nr_n+1$, thus  ...
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:33: Undefined control sequence.
+<recently read> \epsion 
+                        
+l.33                 Suppose for some $\epsion
+                                              _0>0$ that there is no element...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:33: Undefined control sequence.
+l.33 ...g betweenw  $\inf{E}$ and $\inf{E}+\epsion
+                                                  _0$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:34: Undefined control sequence.
+l.34                 Now $\inf{E}+\epsion
+                                         _0 \leq a$ for all  $a \in E$, so  ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:34: Undefined control sequence.
+l.34 ...$ for all  $a \in E$, so  $\inf{E}+\epsion
+                                                  _0$ is a lower bound, thus
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:35: Undefined control sequence.
+l.35                 $\inf{E}+\epsion
+                                     _0 \leq \inf{E}$, implying that $\epsio...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:35: Undefined control sequence.
+<recently read> \epsion 
+                        
+l.35 ...on_0 \leq \inf{E}$, implying that $\epsion
+                                                  _0 \leq 0$, a contradiction.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Solutions/solutionsToChapter1/Solutions3/solutions3.tex:50: Missing } inserted.
+<inserted text> 
+                }
+l.50 \end{enumerate}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)) (./Solutions/solutionsToChapter2/solutionsToChapter2.tex [39] [40
+
+] (./Solutions/solutionsToChapter2/Solutions1/solutions1.tex [41]) (./Solutions/solutionsToChapter2/Solutions2/solutions2.tex) (./Solutions/solutionsToChapter2/Solutions3/solutions3.tex
+./Solutions/solutionsToChapter2/Solutions3/solutions3.tex:16: Undefined control sequence.
+l.16     \item[(2)] Let $E \susbeteq
+                                     \R$ be nonempty and bounded, and suppos...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Solutions/solutionsToChapter2/Solutions3/solutions3.tex:27: Undefined control sequence.
+l.27         $\inf{E} \notit
+                             E$, we get that there is a strictly decreasing ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[42]) (./Solutions/solutionsToChapter2/Solutions4/solutions4.tex) (./Solutions/solutionsToChapter2/Solutions5/solutions5.tex [43]
+Overfull \hbox (3.32573pt too wide) in paragraph at lines 66--68
+[]$[] [] [] [] \OT1/cmr/m/n/12 = [] [] [] [] = [] [] \OMS/cmsy/m/n/12 ^^T [] [] \OT1/cmr/m/n/12 =
+ []
+
+./Solutions/solutionsToChapter2/Solutions5/solutions5.tex:72: Missing { inserted.
+<to be read again> 
+                   }
+l.72         x\limsup{y_}
+                         $, thus  $\limsup{x_ny_n}=x\limsup{y_n}$, for  $x_n...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./Solutions/solutionsToChapter2/Solutions5/solutions5.tex:72: Missing } inserted.
+<inserted text> 
+                }
+l.72         x\limsup{y_}$
+                          , thus  $\limsup{x_ny_n}=x\limsup{y_n}$, for  $x_n...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)) (./Solutions/solutionsToChapter3/solutionsToChapter3.tex [44] (./Solutions/solutionsToChapter3/Solutions1/solutions1.tex)) [45
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (./Advanced Calculus.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
-Package rerunfilecheck Info: File `"Advanced Calculus".out' has not changed.
-(rerunfilecheck)             Checksum: 494679BC9BC6EE3723089AC18E6FA3DE;1034.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+
+
+Package rerunfilecheck Warning: File `"Advanced Calculus".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Advanced Calculus".out':
+(rerunfilecheck)             Before: 6CD60DA4044ABEBE1EDCB269E2E51745;1748
+(rerunfilecheck)             After:  6659668A01C6C8647A53D6A6FCC9D2FF;1745.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 30065 strings out of 483183
- 701857 string characters out of 5966292
- 1051982 words of memory out of 5000000
- 44244 multiletter control sequences out of 15000+600000
+ 30197 strings out of 483183
+ 705069 string characters out of 5966292
+ 1052046 words of memory out of 5000000
+ 44268 multiletter control sequences out of 15000+600000
  546768 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,10n,98p,745b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Advanced Calculus.pdf" (35 pages, 334425 bytes).
+Output written on "Advanced Calculus.pdf" (45 pages, 368121 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 445 compressed objects within 5 object streams
- 213 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 579 compressed objects within 6 object streams
+ 277 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
