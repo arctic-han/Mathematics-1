@@ -411,30 +411,6 @@ INPUT Chapters/Chapter3/Section2/section2.tex
 INPUT Chapters/Chapter3/Section2/section2.tex
 INPUT Chapters/Chapter3/Section3/section3.tex
 INPUT Chapters/Chapter3/Section3/section3.tex
-INPUT Solutions/solutionsToChapter1/solutionsToChapter1.tex
-INPUT Solutions/solutionsToChapter1/solutionsToChapter1.tex
-INPUT Solutions/solutionsToChapter1/Solutions1/solutions1.tex
-INPUT Solutions/solutionsToChapter1/Solutions1/solutions1.tex
-INPUT Solutions/solutionsToChapter1/Solutions2/solutions2.tex
-INPUT Solutions/solutionsToChapter1/Solutions2/solutions2.tex
-INPUT Solutions/solutionsToChapter1/Solutions3/solutions3.tex
-INPUT Solutions/solutionsToChapter1/Solutions3/solutions3.tex
-INPUT Solutions/solutionsToChapter2/solutionsToChapter2.tex
-INPUT Solutions/solutionsToChapter2/solutionsToChapter2.tex
-INPUT Solutions/solutionsToChapter2/Solutions1/solutions1.tex
-INPUT Solutions/solutionsToChapter2/Solutions1/solutions1.tex
-INPUT Solutions/solutionsToChapter2/Solutions2/solutions2.tex
-INPUT Solutions/solutionsToChapter2/Solutions2/solutions2.tex
-INPUT Solutions/solutionsToChapter2/Solutions3/solutions3.tex
-INPUT Solutions/solutionsToChapter2/Solutions3/solutions3.tex
-INPUT Solutions/solutionsToChapter2/Solutions4/solutions4.tex
-INPUT Solutions/solutionsToChapter2/Solutions4/solutions4.tex
-INPUT Solutions/solutionsToChapter2/Solutions5/solutions5.tex
-INPUT Solutions/solutionsToChapter2/Solutions5/solutions5.tex
-INPUT Solutions/solutionsToChapter3/solutionsToChapter3.tex
-INPUT Solutions/solutionsToChapter3/solutionsToChapter3.tex
-INPUT Solutions/solutionsToChapter3/Solutions1/solutions1.tex
-INPUT Solutions/solutionsToChapter3/Solutions1/solutions1.tex
 INPUT Advanced Calculus.aux
 INPUT ./Advanced Calculus.out
 INPUT ./Advanced Calculus.out

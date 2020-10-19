@@ -134,3 +134,54 @@ For the extreme value theorem to work, the interval $I$ must be closed, and
 bounded. That is it does not work for intervals of the type  $(a,b)$, $(a, \infty)$ and 
 $[a,\infty)$, or  $(-\infty, b)$ and  $(-\infty,b]$. $f$ must also be a continous 
 function. Remove any one of those properties, and the theorem falls apart.
+
+\begin{lemma}[The Sign Preserving Property]\label{3.3.5}
+    Let $f:I \rightarrow \R$ where $I$ is an open nondegenerate interval. If  $f$ is continous 
+    at a point  $x_0 \in I$, and  $f(x_0)>0$, then there are positive numbers  $\epsilon,\delta$, such that
+    $|x-x_0|<\delta$ implies  $f(x)>\epsilon$.
+\end{lemma}
+\begin{proof}
+    Choose $\epsilon=\frac{f(x_0)}{2}$, choose $\delta>0$, such that  $|x-x_0|<\delta$ implies that
+    $-\frac{f(x_0)}{2}<f(x)-f(x_0)<\frac{f(x_0)}{2}$, then we see that $f(x)>\epsilon$.
+\end{proof}
+
+\begin{definition}
+    We say that a real number $a$ lies \textbf{between} real numbers  $b,c$ if  either $c<a<b$ 
+    or $b<a<c$.
+\end{definition}
+
+\begin{theorem}[The Intermediate Value Theorem]\label{3.3.6}
+    Let $I$ be a nondegenerate interval, and let  $f:I \rightarrow \R$ be a continuous realvalued 
+    function. Then if  $a,b \in I$, with  $a<b$, and if  $y_0$ is between  $f(a)$ and  $f(b)$ 
+    then there is an $x_0 \in (a,b)$ such that $f(x_0)=y_0$.
+\end{theorem}
+\begin{proof}
+    Suppose that $f(a)<y_0<f(b)$, and let  $E=\{x \in [a,b]: f(x)<y_0\}$. We have
+    $a,b \in E$, and  $E \subseteq [a,b]\subseteq \R$, then by the completeness axiom, 
+    $x_0=\sup{E} \in E$ is finite. Then we have that $x_0 \neq a,b$ by the sign preserving 
+    property. Now choose $x_n \in E$ such that  $x_n \rightarrow x_0$ as  $n \rightarrow \infty$. 
+    Then by the comparison theorem,  $x \in [a,b]$, and we also have that 
+    $f(x_0)=\lim{f(x_n)} \leq y_0$. Now if  $f(x_0)<y_0$, then  $y_0-f(x)$, is continuous, 
+    and  $y_0-f(x_0)>0$. Then by the sign preserving property, choose  $\epsilon,\delta$>0 
+    such that  $y_0-f(x)>\epsilon$ for $|x-x_0|< \delta$. Then, that is,  $x_0<x<x_0+\delta$ and 
+    $f(x)<y_0$ for any  $x$, which contradicts that  $x_0=\sup{E}$.
+\end{proof}
+
+\begin{definition}
+    We say a realvalued function $f:I \rightarrow \R$ is \textbf{discontinuous} 
+    at a point $a \in I$ if  $f$ is not continuous at  $a$. Then we call  $a$ the point
+    of \textbf{point of discontiuity}.
+\end{definition}
+
+\begin{example}
+    Show that $f(x)=\frac{|x|}{x}$, at $x \neq 0$ and $f(x)=1$ at  $x=0$ is 
+    continuous on  $(-\infty, 0)$ and  $[0, \infty)$ and discontinuous everywhere else, 
+    and that $f(0^+)$ and  $f(0^-)$ exist.
+\end{example} 
+\begin{solution}
+    We have that $f(0+)=1$ for  $ \geq 0$, and  $f \rightarrow f(a)$ as $x \rightarrow a$. 
+    Now, $f(0^-)=-1$, and  $f$ is continous on  $(-\infty, 0)$.
+\end{solution}
+\begin{example}
+    $f(x)=\sin{x}$ for 		
+\end{example} 
