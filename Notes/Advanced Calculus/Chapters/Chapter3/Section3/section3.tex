@@ -183,5 +183,53 @@ function. Remove any one of those properties, and the theorem falls apart.
     Now, $f(0^-)=-1$, and  $f$ is continous on  $(-\infty, 0)$.
 \end{solution}
 \begin{example}
-    $f(x)=\sin{x}$ for 		
+    $f(x)=\sin{x}$ for $x \neq 0$ and  $f(x)=1$ for  $x=0$ is continuous on  $(-\infty,0)$ and 
+    $(0,\infty)$, and discontinuous everywhere else. Now we also havee that  $f(0^+)$ and 
+    $f(0^-)$ do not exist. Choose sequences  $\{x_n\}$ and  $\{y_n\}$ with  $x_n=\frac{1}{2n\pi+\frac{\pi}{2}}$ 
+    and $y_n=\frac{1}{2n\pi-\frac{\pi}{2}}$.
 \end{example} 
+
+\begin{example}
+    The \textbf{Dirichlet function} is defined on $\R$ such that  $f(x)=1$ if  $x \in \Q$, and 
+    $f(x)=0$ if  $x \notin \Q$. Then every point  $x \in \R$ is a point of discontiuity. We call these 
+    types of functions \textbf{nowhere continous}.
+\end{example} 
+\begin{proof}
+    Let  $x_0 \in \R$, and $\epsilon>0$, and let there be a  $\delta>0$ such that  $|x-x_0|<\delta$ 
+    implies that $|f(x)-f(x_0)|<\epsilon$. We consider two cases; suppose  $x_0 \in \R$. Then 
+    $f(x_0)=1$ and choose  $\epsilon=\frac{1}{2}$. Then since there is alwas an irrational $x$,
+    we have for every  $\delta>0$,  $|x-x_0|<\delta$ abd  $f(x)=0$. Then  $|f(x)-f(x_0)|=|f(x)|=1>\epsilon$.
+    a contradiction. Now suppose that $x_0 \notin \R$, and choose  $\epsilon=\frac{1}{2}$, and 
+    by the density of $\Q$ in  $\R$, we have for every  $\delta>0$ there is a rational  $x$ 
+    such that $|x-x_0|<\delta$. Then  $f(x)=1$, and  $|f(x)-f(x_0)|=|f(x)|=1>\epsilon$; another 
+    contradiction.
+\end{proof}
+
+\begin{example}
+    Define $f(x)=\frac{1}{q}$ if $x=\frac{p}{q} \in \Q$ (with $\gcd(p,q)=1$); and 
+    $f(x)=0$ if  $x \notin \Q$. Then  $f$ is continous at irrational numbers and discontinuous at rationals over 
+    $(0,1)$.
+\end{example} 
+\begin{proof}
+    Let $x_0=\frac{p}{q} \in \Q$. Then $f(x_0)=\frac{1}{q}$. Choose $\epsilon=\frac{1}{2q}$. Then for
+    any $\delta>0$, there is an irrational  $x$ with  $|x-x_0|<\delta$, and $f(x)=0$. Then 
+    $|f(x)-f(x_0)|=|f(x_0)|=\frac{1}{q}>\epsilon$; A contradiction. Now for $x \notin \Q$, then 
+    $f(x)=0$. Now let  $\epsilon>0$, then there is  a positive integer  $q$ such that 
+    $\\frac{1}{q}<\epsilon$. Now consider $1,2,3,4, \dots, q-1$; there are finitely many 
+    rational numbers with denominator $1,2,3,4 \dots, q-1$. Now choose  $\delta>0$ such that 
+     $|x-x_0|<\delta$ does not include any rational numbers from the above list. In other 
+     words, if $|x-x_0|<\delta$ and $x=\frac{p}{q} \in \Q$, then $p \geq q$, which implies 
+     $f(x)= \frac{1}{p}< \leq \frac{1}{q}<\epsilon$, then $|f(x)-f(x_0)|=|f(x)| \leq \frac{1}{q}<\epsilon$. 
+     Thuse $f$ is continuous at  $x \notin \Q$.
+\end{proof}
+
+\begin{remark} 
+    $g \circ f$ can be nowhere continuous, even though  $f$ is discontinuous only on  $\Q$ and 
+     $g$ is discontinuous only at a point. One possible function is taking the function in 
+     the previous example, and taking $g(x)=1$ for  $x \neq 0$, and  $g(x)=0$ for  $x=0$. Then 
+     $g \circ f$ is the Dirichlet function.
+\end{remark}
+
+\begin{HW} 
+    Exercises $3$, $4$, $6$, $8$ on page $79$.
+\end{HW}
