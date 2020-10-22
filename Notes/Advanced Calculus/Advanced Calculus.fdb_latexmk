@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1603285553 "Advanced Calculus.tex" "Advanced Calculus.pdf" "Advanced Calculus" 1603285553
+["pdflatex"] 1603384055 "Advanced Calculus.tex" "Advanced Calculus.pdf" "Advanced Calculus" 1603384055
   "/etc/texmf/web2c/texmf.cnf" 1598309051 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -230,8 +230,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1598309486 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1598309490 4791332 cc7d2a3f40ea68c8e6027a446c35380a ""
-  "Advanced Calculus.aux" 1603285408 4803 a839a6867de9920cc770e81cc6c2dca0 "pdflatex"
-  "Advanced Calculus.out" 1603285408 1034 494679bc9bc6ee3723089ac18e6fa3de "pdflatex"
+  "Advanced Calculus.aux" 1603382927 5063 41b985f02bf051cd8318c7e6ad9dcf88 "pdflatex"
+  "Advanced Calculus.out" 1603382927 1092 7800caef84469bdfcc7179a9432f4280 "pdflatex"
   "Advanced Calculus.tex" 1603144582 2481 7c87ff2243d5170de3c213746993c5aa ""
   "Chapters/Chapter1/Section1/section1.tex" 1598975954 10491 e8ee00a0ea9ebe4b88dcebdc201035e8 ""
   "Chapters/Chapter1/Section2/section2.tex" 1598976271 5077 accec4bf9dc40c1c235331401378d7cc ""
@@ -246,12 +246,13 @@
   "Chapters/Chapter2/chapter2.tex" 1600692982 653 ce1eb4cffbab716854875dd8efd4661a ""
   "Chapters/Chapter3/Section1/section1.tex" 1601336357 9203 8b8509f87a70ab27bccd3226600bc7c4 ""
   "Chapters/Chapter3/Section2/section2.tex" 1602596524 5784 bd4f03a9d00adaf3ff0f144eeb9dcc3f ""
-  "Chapters/Chapter3/Section3/section3.tex" 1603285551 12820 ccd133538a7cec6eedf9acf803fd8b58 ""
-  "Chapters/Chapter3/chapter3.tex" 1602085950 606 f8e4a3b0cc1e1a0cec05fcc454567444 ""
+  "Chapters/Chapter3/Section3/section3.tex" 1603285570 12820 ccd133538a7cec6eedf9acf803fd8b58 ""
+  "Chapters/Chapter3/Section4/section4.tex" 1603384054 5716 0bf6abae2c0bcf7ad3a3f95187685e3d ""
+  "Chapters/Chapter3/chapter3.tex" 1603377570 605 3124a4ba9ac364dea2a73665343f9194 ""
   "Library/Fonts/BlackboardBold.tex" 1598311731 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1598311731 791 fe7a518c060a9035d50e4618c12ce65f ""
   (generated)
-  "Advanced Calculus.out"
-  "Advanced Calculus.log"
-  "Advanced Calculus.pdf"
   "Advanced Calculus.aux"
+  "Advanced Calculus.out"
+  "Advanced Calculus.pdf"
+  "Advanced Calculus.log"
