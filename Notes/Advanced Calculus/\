@@ -1,0 +1,35 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 4.1
+%----------------------------------------------------------------------------------------
+
+\section{The Derivative.}
+
+\begin{definition}
+    A realvalued function $f:I \rightarrow \R$ (with $I$ an open interval) is said to be 
+    \textbf{differentiable} at a point  $a \in I$, if and only if $f$ is defined 
+    over all of  $I$, except possibly at  $a$, and 
+        \begin{equation}
+            f'(a)=\lim_{h \rightarrow 0}{\frac{f(a+h)-f(a)}{h}}=\lim_{x \rightarrow a}
+            {\frac{f(x)-f(a)}{x-a}}		
+        \end{equation} 
+        exists. We call $f'(a)$ the \textbf{derivative} of $f$ at  $a$.
+\end{definition}
+
+This definition, illustrated geometrically, is given by the line tangent to the 
+function $f$ at $a$. That is, if  $\frac{f(x)-f(a)}{x-a}$ is the slope of the 
+secant cutting $f$ at  $a$, then the derivative is the limit of that slope as  $x \rightarrow a$; 
+which gives us the ``instantaneous'' rate of change of $f$ at  $a$.
+
+It need not be that  $f$ is differentiable at every point in its domain. However, 
+if  $f'$ is defined on every point in the domain of  $f$, then we call  $f'$ the 
+\textbf{derivative function}. Alternative notations for the derivative of $f'$ include: 
+$D_x{f}$,  $ \frac{dy}{dx}$, and $f^{(1)}$.
+
+Now if $f'$ is also differentiable on  a domain $E$, then the \textbf{excond derivative} 
+of $f$ is the derivative of  $f'$, denoted by  $f''$. Similarly, we define the  $n^{th}$ 
+derivative recursively to be:
+    \begin{enumerate}[label=(\arabic*)]
+         \item $f^{(0)}=f$, $f^{(1)}=f'$.
+
+         \item $f^{(n+1)}=(f^{(n)})'$.
+    \end{enumerate}

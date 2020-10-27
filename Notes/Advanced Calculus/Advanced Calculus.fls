@@ -413,6 +413,10 @@ INPUT Chapters/Chapter3/Section3/section3.tex
 INPUT Chapters/Chapter3/Section3/section3.tex
 INPUT Chapters/Chapter3/Section4/section4.tex
 INPUT Chapters/Chapter3/Section4/section4.tex
+INPUT Chapters/Chapter4/chapter4.tex
+INPUT Chapters/Chapter4/chapter4.tex
+INPUT Chapters/Chapter4/Section1/section1.tex
+INPUT Chapters/Chapter4/Section1/section1.tex
 INPUT Advanced Calculus.aux
 INPUT ./Advanced Calculus.out
 INPUT ./Advanced Calculus.out
