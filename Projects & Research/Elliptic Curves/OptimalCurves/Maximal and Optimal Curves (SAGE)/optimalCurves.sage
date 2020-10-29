@@ -35,4 +35,3 @@ for a1 in range(q):
                         print("Curve defined by ", [a1,a2,a3,a4,a6], "| Optimal")
                     else:
                         print("Curve defined by ", [a1,a2,a3,a4,a6] ,"| Not optimal")
-
