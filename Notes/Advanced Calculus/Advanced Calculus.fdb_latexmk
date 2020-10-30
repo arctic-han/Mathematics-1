@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1603815986 "Advanced Calculus.tex" "Advanced Calculus.pdf" "Advanced Calculus" 1603815986
-  "/etc/texmf/web2c/texmf.cnf" 1603718044 475 c0e671620eb5563b2130f56340a5fde8 ""
+["pdflatex"] 1604077211 "Advanced Calculus.tex" "Advanced Calculus.pdf" "Advanced Calculus" 1604077211
+  "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -228,11 +228,11 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1417732693 4962 9c1069474ff71dbc47d5006555e352d3 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1596975543 38841 5237427e4d3283e7b009b6a8b45dfdcd ""
   "/usr/share/texmf/web2c/texmf.cnf" 1596975543 38841 5237427e4d3283e7b009b6a8b45dfdcd ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1603718268 128028 f533b797fba58d231669ea19e894e23e ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1603718269 1156114 dc9cfe384f0a98ca5554886202fcda82 ""
-  "Advanced Calculus.aux" 1603815810 5607 b83c2a504d894e83a86998da048ba855 "pdflatex"
-  "Advanced Calculus.out" 1603815810 1213 329dd897d75bc945432f0aa179b75886 "pdflatex"
-  "Advanced Calculus.tex" 1603812306 2520 3923b925aa87c8e9e54638465b745fc1 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604064816 128028 f533b797fba58d231669ea19e894e23e ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604064823 1156109 3d7119fb332ffed2b4ab40dce9b9b203 ""
+  "Advanced Calculus.aux" 1604077018 6247 b1127fb23000203b15b703847a07d5b3 "pdflatex"
+  "Advanced Calculus.out" 1604077018 1358 e599d64a933cc2bb147834590e4cfdbd "pdflatex"
+  "Advanced Calculus.tex" 1604066580 2555 df1a5215c0d93e9aae43d5724dcead04 ""
   "Chapters/Chapter1/Section1/section1.tex" 1598975954 10491 e8ee00a0ea9ebe4b88dcebdc201035e8 ""
   "Chapters/Chapter1/Section2/section2.tex" 1598976271 5077 accec4bf9dc40c1c235331401378d7cc ""
   "Chapters/Chapter1/Section3/section3.tex" 1599197644 10758 673fefe81bf37132ef48bc3b9305c486 ""
@@ -249,8 +249,10 @@
   "Chapters/Chapter3/Section3/section3.tex" 1603285570 12820 ccd133538a7cec6eedf9acf803fd8b58 ""
   "Chapters/Chapter3/Section4/section4.tex" 1603384072 5716 0bf6abae2c0bcf7ad3a3f95187685e3d ""
   "Chapters/Chapter3/chapter3.tex" 1603811942 605 3124a4ba9ac364dea2a73665343f9194 ""
-  "Chapters/Chapter4/Section1/section1.tex" 1603815986 5213 098741b5a43dfee46c616ae44c43c35d ""
-  "Chapters/Chapter4/chapter4.tex" 1603812339 469 9ec72d528eac852884575aebf87bb950 ""
+  "Chapters/Chapter4/Section1/section1.tex" 1603816174 5213 098741b5a43dfee46c616ae44c43c35d ""
+  "Chapters/Chapter4/Section2/section2.tex" 1604069030 2390 cea00658e4eca82a632e84f3684fa949 ""
+  "Chapters/Chapter4/Section3/section3.tex" 1604077209 6906 a8380d9802c7539290bc6af7cb74debb ""
+  "Chapters/Chapter4/chapter4.tex" 1604068980 564 5f4fddc1808dc281dfcd081c4f7845a2 ""
   "Library/Fonts/BlackboardBold.tex" 1598311731 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1598311731 791 fe7a518c060a9035d50e4618c12ce65f ""
   (generated)

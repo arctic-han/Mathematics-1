@@ -1,0 +1,1025 @@
+Curve defined by  [0, 0, 0, 0, 0] | Not optimal
+Curve defined by  [0, 0, 0, 0, 1] | Not optimal
+Curve defined by  [0, 0, 0, 0, 2] | Not optimal
+Curve defined by  [0, 0, 0, 0, 3] | Not optimal
+Curve defined by  [0, 0, 0, 1, 0] | Not optimal
+Curve defined by  [0, 0, 0, 1, 1] | Not optimal
+Curve defined by  [0, 0, 0, 1, 2] | Not optimal
+Curve defined by  [0, 0, 0, 1, 3] | Not optimal
+Curve defined by  [0, 0, 0, 2, 0] | Not optimal
+Curve defined by  [0, 0, 0, 2, 1] | Not optimal
+Curve defined by  [0, 0, 0, 2, 2] | Not optimal
+Curve defined by  [0, 0, 0, 2, 3] | Not optimal
+Curve defined by  [0, 0, 0, 3, 0] | Not optimal
+Curve defined by  [0, 0, 0, 3, 1] | Not optimal
+Curve defined by  [0, 0, 0, 3, 2] | Not optimal
+Curve defined by  [0, 0, 0, 3, 3] | Not optimal
+Curve defined by  [0, 0, 1, 0, 0] | Optimal
+Curve defined by  [0, 0, 1, 0, 1] | Optimal
+Curve defined by  [0, 0, 1, 0, 2] | Optimal
+Curve defined by  [0, 0, 1, 0, 3] | Optimal
+Curve defined by  [0, 0, 1, 1, 0] | Not optimal
+Curve defined by  [0, 0, 1, 1, 1] | Not optimal
+Curve defined by  [0, 0, 1, 1, 2] | Not optimal
+Curve defined by  [0, 0, 1, 1, 3] | Not optimal
+Curve defined by  [0, 0, 1, 2, 0] | Optimal
+Curve defined by  [0, 0, 1, 2, 1] | Optimal
+Curve defined by  [0, 0, 1, 2, 2] | Optimal
+Curve defined by  [0, 0, 1, 2, 3] | Optimal
+Curve defined by  [0, 0, 1, 3, 0] | Not optimal
+Curve defined by  [0, 0, 1, 3, 1] | Not optimal
+Curve defined by  [0, 0, 1, 3, 2] | Not optimal
+Curve defined by  [0, 0, 1, 3, 3] | Not optimal
+Curve defined by  [0, 0, 2, 0, 0] | Not optimal
+Curve defined by  [0, 0, 2, 0, 1] | Not optimal
+Curve defined by  [0, 0, 2, 0, 2] | Not optimal
+Curve defined by  [0, 0, 2, 0, 3] | Not optimal
+Curve defined by  [0, 0, 2, 1, 0] | Not optimal
+Curve defined by  [0, 0, 2, 1, 1] | Not optimal
+Curve defined by  [0, 0, 2, 1, 2] | Not optimal
+Curve defined by  [0, 0, 2, 1, 3] | Not optimal
+Curve defined by  [0, 0, 2, 2, 0] | Not optimal
+Curve defined by  [0, 0, 2, 2, 1] | Not optimal
+Curve defined by  [0, 0, 2, 2, 2] | Not optimal
+Curve defined by  [0, 0, 2, 2, 3] | Not optimal
+Curve defined by  [0, 0, 2, 3, 0] | Not optimal
+Curve defined by  [0, 0, 2, 3, 1] | Not optimal
+Curve defined by  [0, 0, 2, 3, 2] | Not optimal
+Curve defined by  [0, 0, 2, 3, 3] | Not optimal
+Curve defined by  [0, 0, 3, 0, 0] | Optimal
+Curve defined by  [0, 0, 3, 0, 1] | Optimal
+Curve defined by  [0, 0, 3, 0, 2] | Optimal
+Curve defined by  [0, 0, 3, 0, 3] | Optimal
+Curve defined by  [0, 0, 3, 1, 0] | Not optimal
+Curve defined by  [0, 0, 3, 1, 1] | Not optimal
+Curve defined by  [0, 0, 3, 1, 2] | Not optimal
+Curve defined by  [0, 0, 3, 1, 3] | Not optimal
+Curve defined by  [0, 0, 3, 2, 0] | Optimal
+Curve defined by  [0, 0, 3, 2, 1] | Optimal
+Curve defined by  [0, 0, 3, 2, 2] | Optimal
+Curve defined by  [0, 0, 3, 2, 3] | Optimal
+Curve defined by  [0, 0, 3, 3, 0] | Not optimal
+Curve defined by  [0, 0, 3, 3, 1] | Not optimal
+Curve defined by  [0, 0, 3, 3, 2] | Not optimal
+Curve defined by  [0, 0, 3, 3, 3] | Not optimal
+Curve defined by  [0, 1, 0, 0, 0] | Not optimal
+Curve defined by  [0, 1, 0, 0, 1] | Not optimal
+Curve defined by  [0, 1, 0, 0, 2] | Not optimal
+Curve defined by  [0, 1, 0, 0, 3] | Not optimal
+Curve defined by  [0, 1, 0, 1, 0] | Not optimal
+Curve defined by  [0, 1, 0, 1, 1] | Not optimal
+Curve defined by  [0, 1, 0, 1, 2] | Not optimal
+Curve defined by  [0, 1, 0, 1, 3] | Not optimal
+Curve defined by  [0, 1, 0, 2, 0] | Not optimal
+Curve defined by  [0, 1, 0, 2, 1] | Not optimal
+Curve defined by  [0, 1, 0, 2, 2] | Not optimal
+Curve defined by  [0, 1, 0, 2, 3] | Not optimal
+Curve defined by  [0, 1, 0, 3, 0] | Not optimal
+Curve defined by  [0, 1, 0, 3, 1] | Not optimal
+Curve defined by  [0, 1, 0, 3, 2] | Not optimal
+Curve defined by  [0, 1, 0, 3, 3] | Not optimal
+Curve defined by  [0, 1, 1, 0, 0] | Not optimal
+Curve defined by  [0, 1, 1, 0, 1] | Not optimal
+Curve defined by  [0, 1, 1, 0, 2] | Not optimal
+Curve defined by  [0, 1, 1, 0, 3] | Not optimal
+Curve defined by  [0, 1, 1, 1, 0] | Optimal
+Curve defined by  [0, 1, 1, 1, 1] | Optimal
+Curve defined by  [0, 1, 1, 1, 2] | Optimal
+Curve defined by  [0, 1, 1, 1, 3] | Optimal
+Curve defined by  [0, 1, 1, 2, 0] | Not optimal
+Curve defined by  [0, 1, 1, 2, 1] | Not optimal
+Curve defined by  [0, 1, 1, 2, 2] | Not optimal
+Curve defined by  [0, 1, 1, 2, 3] | Not optimal
+Curve defined by  [0, 1, 1, 3, 0] | Optimal
+Curve defined by  [0, 1, 1, 3, 1] | Optimal
+Curve defined by  [0, 1, 1, 3, 2] | Optimal
+Curve defined by  [0, 1, 1, 3, 3] | Optimal
+Curve defined by  [0, 1, 2, 0, 0] | Not optimal
+Curve defined by  [0, 1, 2, 0, 1] | Not optimal
+Curve defined by  [0, 1, 2, 0, 2] | Not optimal
+Curve defined by  [0, 1, 2, 0, 3] | Not optimal
+Curve defined by  [0, 1, 2, 1, 0] | Not optimal
+Curve defined by  [0, 1, 2, 1, 1] | Not optimal
+Curve defined by  [0, 1, 2, 1, 2] | Not optimal
+Curve defined by  [0, 1, 2, 1, 3] | Not optimal
+Curve defined by  [0, 1, 2, 2, 0] | Not optimal
+Curve defined by  [0, 1, 2, 2, 1] | Not optimal
+Curve defined by  [0, 1, 2, 2, 2] | Not optimal
+Curve defined by  [0, 1, 2, 2, 3] | Not optimal
+Curve defined by  [0, 1, 2, 3, 0] | Not optimal
+Curve defined by  [0, 1, 2, 3, 1] | Not optimal
+Curve defined by  [0, 1, 2, 3, 2] | Not optimal
+Curve defined by  [0, 1, 2, 3, 3] | Not optimal
+Curve defined by  [0, 1, 3, 0, 0] | Not optimal
+Curve defined by  [0, 1, 3, 0, 1] | Not optimal
+Curve defined by  [0, 1, 3, 0, 2] | Not optimal
+Curve defined by  [0, 1, 3, 0, 3] | Not optimal
+Curve defined by  [0, 1, 3, 1, 0] | Optimal
+Curve defined by  [0, 1, 3, 1, 1] | Optimal
+Curve defined by  [0, 1, 3, 1, 2] | Optimal
+Curve defined by  [0, 1, 3, 1, 3] | Optimal
+Curve defined by  [0, 1, 3, 2, 0] | Not optimal
+Curve defined by  [0, 1, 3, 2, 1] | Not optimal
+Curve defined by  [0, 1, 3, 2, 2] | Not optimal
+Curve defined by  [0, 1, 3, 2, 3] | Not optimal
+Curve defined by  [0, 1, 3, 3, 0] | Optimal
+Curve defined by  [0, 1, 3, 3, 1] | Optimal
+Curve defined by  [0, 1, 3, 3, 2] | Optimal
+Curve defined by  [0, 1, 3, 3, 3] | Optimal
+Curve defined by  [0, 2, 0, 0, 0] | Not optimal
+Curve defined by  [0, 2, 0, 0, 1] | Not optimal
+Curve defined by  [0, 2, 0, 0, 2] | Not optimal
+Curve defined by  [0, 2, 0, 0, 3] | Not optimal
+Curve defined by  [0, 2, 0, 1, 0] | Not optimal
+Curve defined by  [0, 2, 0, 1, 1] | Not optimal
+Curve defined by  [0, 2, 0, 1, 2] | Not optimal
+Curve defined by  [0, 2, 0, 1, 3] | Not optimal
+Curve defined by  [0, 2, 0, 2, 0] | Not optimal
+Curve defined by  [0, 2, 0, 2, 1] | Not optimal
+Curve defined by  [0, 2, 0, 2, 2] | Not optimal
+Curve defined by  [0, 2, 0, 2, 3] | Not optimal
+Curve defined by  [0, 2, 0, 3, 0] | Not optimal
+Curve defined by  [0, 2, 0, 3, 1] | Not optimal
+Curve defined by  [0, 2, 0, 3, 2] | Not optimal
+Curve defined by  [0, 2, 0, 3, 3] | Not optimal
+Curve defined by  [0, 2, 1, 0, 0] | Optimal
+Curve defined by  [0, 2, 1, 0, 1] | Optimal
+Curve defined by  [0, 2, 1, 0, 2] | Optimal
+Curve defined by  [0, 2, 1, 0, 3] | Optimal
+Curve defined by  [0, 2, 1, 1, 0] | Not optimal
+Curve defined by  [0, 2, 1, 1, 1] | Not optimal
+Curve defined by  [0, 2, 1, 1, 2] | Not optimal
+Curve defined by  [0, 2, 1, 1, 3] | Not optimal
+Curve defined by  [0, 2, 1, 2, 0] | Optimal
+Curve defined by  [0, 2, 1, 2, 1] | Optimal
+Curve defined by  [0, 2, 1, 2, 2] | Optimal
+Curve defined by  [0, 2, 1, 2, 3] | Optimal
+Curve defined by  [0, 2, 1, 3, 0] | Not optimal
+Curve defined by  [0, 2, 1, 3, 1] | Not optimal
+Curve defined by  [0, 2, 1, 3, 2] | Not optimal
+Curve defined by  [0, 2, 1, 3, 3] | Not optimal
+Curve defined by  [0, 2, 2, 0, 0] | Not optimal
+Curve defined by  [0, 2, 2, 0, 1] | Not optimal
+Curve defined by  [0, 2, 2, 0, 2] | Not optimal
+Curve defined by  [0, 2, 2, 0, 3] | Not optimal
+Curve defined by  [0, 2, 2, 1, 0] | Not optimal
+Curve defined by  [0, 2, 2, 1, 1] | Not optimal
+Curve defined by  [0, 2, 2, 1, 2] | Not optimal
+Curve defined by  [0, 2, 2, 1, 3] | Not optimal
+Curve defined by  [0, 2, 2, 2, 0] | Not optimal
+Curve defined by  [0, 2, 2, 2, 1] | Not optimal
+Curve defined by  [0, 2, 2, 2, 2] | Not optimal
+Curve defined by  [0, 2, 2, 2, 3] | Not optimal
+Curve defined by  [0, 2, 2, 3, 0] | Not optimal
+Curve defined by  [0, 2, 2, 3, 1] | Not optimal
+Curve defined by  [0, 2, 2, 3, 2] | Not optimal
+Curve defined by  [0, 2, 2, 3, 3] | Not optimal
+Curve defined by  [0, 2, 3, 0, 0] | Optimal
+Curve defined by  [0, 2, 3, 0, 1] | Optimal
+Curve defined by  [0, 2, 3, 0, 2] | Optimal
+Curve defined by  [0, 2, 3, 0, 3] | Optimal
+Curve defined by  [0, 2, 3, 1, 0] | Not optimal
+Curve defined by  [0, 2, 3, 1, 1] | Not optimal
+Curve defined by  [0, 2, 3, 1, 2] | Not optimal
+Curve defined by  [0, 2, 3, 1, 3] | Not optimal
+Curve defined by  [0, 2, 3, 2, 0] | Optimal
+Curve defined by  [0, 2, 3, 2, 1] | Optimal
+Curve defined by  [0, 2, 3, 2, 2] | Optimal
+Curve defined by  [0, 2, 3, 2, 3] | Optimal
+Curve defined by  [0, 2, 3, 3, 0] | Not optimal
+Curve defined by  [0, 2, 3, 3, 1] | Not optimal
+Curve defined by  [0, 2, 3, 3, 2] | Not optimal
+Curve defined by  [0, 2, 3, 3, 3] | Not optimal
+Curve defined by  [0, 3, 0, 0, 0] | Not optimal
+Curve defined by  [0, 3, 0, 0, 1] | Not optimal
+Curve defined by  [0, 3, 0, 0, 2] | Not optimal
+Curve defined by  [0, 3, 0, 0, 3] | Not optimal
+Curve defined by  [0, 3, 0, 1, 0] | Not optimal
+Curve defined by  [0, 3, 0, 1, 1] | Not optimal
+Curve defined by  [0, 3, 0, 1, 2] | Not optimal
+Curve defined by  [0, 3, 0, 1, 3] | Not optimal
+Curve defined by  [0, 3, 0, 2, 0] | Not optimal
+Curve defined by  [0, 3, 0, 2, 1] | Not optimal
+Curve defined by  [0, 3, 0, 2, 2] | Not optimal
+Curve defined by  [0, 3, 0, 2, 3] | Not optimal
+Curve defined by  [0, 3, 0, 3, 0] | Not optimal
+Curve defined by  [0, 3, 0, 3, 1] | Not optimal
+Curve defined by  [0, 3, 0, 3, 2] | Not optimal
+Curve defined by  [0, 3, 0, 3, 3] | Not optimal
+Curve defined by  [0, 3, 1, 0, 0] | Not optimal
+Curve defined by  [0, 3, 1, 0, 1] | Not optimal
+Curve defined by  [0, 3, 1, 0, 2] | Not optimal
+Curve defined by  [0, 3, 1, 0, 3] | Not optimal
+Curve defined by  [0, 3, 1, 1, 0] | Optimal
+Curve defined by  [0, 3, 1, 1, 1] | Optimal
+Curve defined by  [0, 3, 1, 1, 2] | Optimal
+Curve defined by  [0, 3, 1, 1, 3] | Optimal
+Curve defined by  [0, 3, 1, 2, 0] | Not optimal
+Curve defined by  [0, 3, 1, 2, 1] | Not optimal
+Curve defined by  [0, 3, 1, 2, 2] | Not optimal
+Curve defined by  [0, 3, 1, 2, 3] | Not optimal
+Curve defined by  [0, 3, 1, 3, 0] | Optimal
+Curve defined by  [0, 3, 1, 3, 1] | Optimal
+Curve defined by  [0, 3, 1, 3, 2] | Optimal
+Curve defined by  [0, 3, 1, 3, 3] | Optimal
+Curve defined by  [0, 3, 2, 0, 0] | Not optimal
+Curve defined by  [0, 3, 2, 0, 1] | Not optimal
+Curve defined by  [0, 3, 2, 0, 2] | Not optimal
+Curve defined by  [0, 3, 2, 0, 3] | Not optimal
+Curve defined by  [0, 3, 2, 1, 0] | Not optimal
+Curve defined by  [0, 3, 2, 1, 1] | Not optimal
+Curve defined by  [0, 3, 2, 1, 2] | Not optimal
+Curve defined by  [0, 3, 2, 1, 3] | Not optimal
+Curve defined by  [0, 3, 2, 2, 0] | Not optimal
+Curve defined by  [0, 3, 2, 2, 1] | Not optimal
+Curve defined by  [0, 3, 2, 2, 2] | Not optimal
+Curve defined by  [0, 3, 2, 2, 3] | Not optimal
+Curve defined by  [0, 3, 2, 3, 0] | Not optimal
+Curve defined by  [0, 3, 2, 3, 1] | Not optimal
+Curve defined by  [0, 3, 2, 3, 2] | Not optimal
+Curve defined by  [0, 3, 2, 3, 3] | Not optimal
+Curve defined by  [0, 3, 3, 0, 0] | Not optimal
+Curve defined by  [0, 3, 3, 0, 1] | Not optimal
+Curve defined by  [0, 3, 3, 0, 2] | Not optimal
+Curve defined by  [0, 3, 3, 0, 3] | Not optimal
+Curve defined by  [0, 3, 3, 1, 0] | Optimal
+Curve defined by  [0, 3, 3, 1, 1] | Optimal
+Curve defined by  [0, 3, 3, 1, 2] | Optimal
+Curve defined by  [0, 3, 3, 1, 3] | Optimal
+Curve defined by  [0, 3, 3, 2, 0] | Not optimal
+Curve defined by  [0, 3, 3, 2, 1] | Not optimal
+Curve defined by  [0, 3, 3, 2, 2] | Not optimal
+Curve defined by  [0, 3, 3, 2, 3] | Not optimal
+Curve defined by  [0, 3, 3, 3, 0] | Optimal
+Curve defined by  [0, 3, 3, 3, 1] | Optimal
+Curve defined by  [0, 3, 3, 3, 2] | Optimal
+Curve defined by  [0, 3, 3, 3, 3] | Optimal
+Curve defined by  [1, 0, 0, 0, 0] | Not optimal
+Curve defined by  [1, 0, 0, 0, 1] | Not optimal
+Curve defined by  [1, 0, 0, 0, 2] | Not optimal
+Curve defined by  [1, 0, 0, 0, 3] | Not optimal
+Curve defined by  [1, 0, 0, 1, 0] | Not optimal
+Curve defined by  [1, 0, 0, 1, 1] | Not optimal
+Curve defined by  [1, 0, 0, 1, 2] | Not optimal
+Curve defined by  [1, 0, 0, 1, 3] | Not optimal
+Curve defined by  [1, 0, 0, 2, 0] | Not optimal
+Curve defined by  [1, 0, 0, 2, 1] | Not optimal
+Curve defined by  [1, 0, 0, 2, 2] | Not optimal
+Curve defined by  [1, 0, 0, 2, 3] | Not optimal
+Curve defined by  [1, 0, 0, 3, 0] | Not optimal
+Curve defined by  [1, 0, 0, 3, 1] | Not optimal
+Curve defined by  [1, 0, 0, 3, 2] | Not optimal
+Curve defined by  [1, 0, 0, 3, 3] | Not optimal
+Curve defined by  [1, 0, 1, 0, 0] | Not optimal
+Curve defined by  [1, 0, 1, 0, 1] | Not optimal
+Curve defined by  [1, 0, 1, 0, 2] | Not optimal
+Curve defined by  [1, 0, 1, 0, 3] | Not optimal
+Curve defined by  [1, 0, 1, 1, 0] | Not optimal
+Curve defined by  [1, 0, 1, 1, 1] | Not optimal
+Curve defined by  [1, 0, 1, 1, 2] | Not optimal
+Curve defined by  [1, 0, 1, 1, 3] | Not optimal
+Curve defined by  [1, 0, 1, 2, 0] | Not optimal
+Curve defined by  [1, 0, 1, 2, 1] | Not optimal
+Curve defined by  [1, 0, 1, 2, 2] | Not optimal
+Curve defined by  [1, 0, 1, 2, 3] | Not optimal
+Curve defined by  [1, 0, 1, 3, 0] | Not optimal
+Curve defined by  [1, 0, 1, 3, 1] | Not optimal
+Curve defined by  [1, 0, 1, 3, 2] | Not optimal
+Curve defined by  [1, 0, 1, 3, 3] | Not optimal
+Curve defined by  [1, 0, 2, 0, 0] | Not optimal
+Curve defined by  [1, 0, 2, 0, 1] | Not optimal
+Curve defined by  [1, 0, 2, 0, 2] | Not optimal
+Curve defined by  [1, 0, 2, 0, 3] | Not optimal
+Curve defined by  [1, 0, 2, 1, 0] | Not optimal
+Curve defined by  [1, 0, 2, 1, 1] | Not optimal
+Curve defined by  [1, 0, 2, 1, 2] | Not optimal
+Curve defined by  [1, 0, 2, 1, 3] | Not optimal
+Curve defined by  [1, 0, 2, 2, 0] | Not optimal
+Curve defined by  [1, 0, 2, 2, 1] | Not optimal
+Curve defined by  [1, 0, 2, 2, 2] | Not optimal
+Curve defined by  [1, 0, 2, 2, 3] | Not optimal
+Curve defined by  [1, 0, 2, 3, 0] | Not optimal
+Curve defined by  [1, 0, 2, 3, 1] | Not optimal
+Curve defined by  [1, 0, 2, 3, 2] | Not optimal
+Curve defined by  [1, 0, 2, 3, 3] | Not optimal
+Curve defined by  [1, 0, 3, 0, 0] | Not optimal
+Curve defined by  [1, 0, 3, 0, 1] | Not optimal
+Curve defined by  [1, 0, 3, 0, 2] | Not optimal
+Curve defined by  [1, 0, 3, 0, 3] | Not optimal
+Curve defined by  [1, 0, 3, 1, 0] | Not optimal
+Curve defined by  [1, 0, 3, 1, 1] | Not optimal
+Curve defined by  [1, 0, 3, 1, 2] | Not optimal
+Curve defined by  [1, 0, 3, 1, 3] | Not optimal
+Curve defined by  [1, 0, 3, 2, 0] | Not optimal
+Curve defined by  [1, 0, 3, 2, 1] | Not optimal
+Curve defined by  [1, 0, 3, 2, 2] | Not optimal
+Curve defined by  [1, 0, 3, 2, 3] | Not optimal
+Curve defined by  [1, 0, 3, 3, 0] | Not optimal
+Curve defined by  [1, 0, 3, 3, 1] | Not optimal
+Curve defined by  [1, 0, 3, 3, 2] | Not optimal
+Curve defined by  [1, 0, 3, 3, 3] | Not optimal
+Curve defined by  [1, 1, 0, 0, 0] | Not optimal
+Curve defined by  [1, 1, 0, 0, 1] | Not optimal
+Curve defined by  [1, 1, 0, 0, 2] | Not optimal
+Curve defined by  [1, 1, 0, 0, 3] | Not optimal
+Curve defined by  [1, 1, 0, 1, 0] | Not optimal
+Curve defined by  [1, 1, 0, 1, 1] | Not optimal
+Curve defined by  [1, 1, 0, 1, 2] | Not optimal
+Curve defined by  [1, 1, 0, 1, 3] | Not optimal
+Curve defined by  [1, 1, 0, 2, 0] | Not optimal
+Curve defined by  [1, 1, 0, 2, 1] | Not optimal
+Curve defined by  [1, 1, 0, 2, 2] | Not optimal
+Curve defined by  [1, 1, 0, 2, 3] | Not optimal
+Curve defined by  [1, 1, 0, 3, 0] | Not optimal
+Curve defined by  [1, 1, 0, 3, 1] | Not optimal
+Curve defined by  [1, 1, 0, 3, 2] | Not optimal
+Curve defined by  [1, 1, 0, 3, 3] | Not optimal
+Curve defined by  [1, 1, 1, 0, 0] | Not optimal
+Curve defined by  [1, 1, 1, 0, 1] | Not optimal
+Curve defined by  [1, 1, 1, 0, 2] | Not optimal
+Curve defined by  [1, 1, 1, 0, 3] | Not optimal
+Curve defined by  [1, 1, 1, 1, 0] | Not optimal
+Curve defined by  [1, 1, 1, 1, 1] | Not optimal
+Curve defined by  [1, 1, 1, 1, 2] | Not optimal
+Curve defined by  [1, 1, 1, 1, 3] | Not optimal
+Curve defined by  [1, 1, 1, 2, 0] | Not optimal
+Curve defined by  [1, 1, 1, 2, 1] | Not optimal
+Curve defined by  [1, 1, 1, 2, 2] | Not optimal
+Curve defined by  [1, 1, 1, 2, 3] | Not optimal
+Curve defined by  [1, 1, 1, 3, 0] | Not optimal
+Curve defined by  [1, 1, 1, 3, 1] | Not optimal
+Curve defined by  [1, 1, 1, 3, 2] | Not optimal
+Curve defined by  [1, 1, 1, 3, 3] | Not optimal
+Curve defined by  [1, 1, 2, 0, 0] | Not optimal
+Curve defined by  [1, 1, 2, 0, 1] | Not optimal
+Curve defined by  [1, 1, 2, 0, 2] | Not optimal
+Curve defined by  [1, 1, 2, 0, 3] | Not optimal
+Curve defined by  [1, 1, 2, 1, 0] | Not optimal
+Curve defined by  [1, 1, 2, 1, 1] | Not optimal
+Curve defined by  [1, 1, 2, 1, 2] | Not optimal
+Curve defined by  [1, 1, 2, 1, 3] | Not optimal
+Curve defined by  [1, 1, 2, 2, 0] | Not optimal
+Curve defined by  [1, 1, 2, 2, 1] | Not optimal
+Curve defined by  [1, 1, 2, 2, 2] | Not optimal
+Curve defined by  [1, 1, 2, 2, 3] | Not optimal
+Curve defined by  [1, 1, 2, 3, 0] | Not optimal
+Curve defined by  [1, 1, 2, 3, 1] | Not optimal
+Curve defined by  [1, 1, 2, 3, 2] | Not optimal
+Curve defined by  [1, 1, 2, 3, 3] | Not optimal
+Curve defined by  [1, 1, 3, 0, 0] | Not optimal
+Curve defined by  [1, 1, 3, 0, 1] | Not optimal
+Curve defined by  [1, 1, 3, 0, 2] | Not optimal
+Curve defined by  [1, 1, 3, 0, 3] | Not optimal
+Curve defined by  [1, 1, 3, 1, 0] | Not optimal
+Curve defined by  [1, 1, 3, 1, 1] | Not optimal
+Curve defined by  [1, 1, 3, 1, 2] | Not optimal
+Curve defined by  [1, 1, 3, 1, 3] | Not optimal
+Curve defined by  [1, 1, 3, 2, 0] | Not optimal
+Curve defined by  [1, 1, 3, 2, 1] | Not optimal
+Curve defined by  [1, 1, 3, 2, 2] | Not optimal
+Curve defined by  [1, 1, 3, 2, 3] | Not optimal
+Curve defined by  [1, 1, 3, 3, 0] | Not optimal
+Curve defined by  [1, 1, 3, 3, 1] | Not optimal
+Curve defined by  [1, 1, 3, 3, 2] | Not optimal
+Curve defined by  [1, 1, 3, 3, 3] | Not optimal
+Curve defined by  [1, 2, 0, 0, 0] | Not optimal
+Curve defined by  [1, 2, 0, 0, 1] | Not optimal
+Curve defined by  [1, 2, 0, 0, 2] | Not optimal
+Curve defined by  [1, 2, 0, 0, 3] | Not optimal
+Curve defined by  [1, 2, 0, 1, 0] | Not optimal
+Curve defined by  [1, 2, 0, 1, 1] | Not optimal
+Curve defined by  [1, 2, 0, 1, 2] | Not optimal
+Curve defined by  [1, 2, 0, 1, 3] | Not optimal
+Curve defined by  [1, 2, 0, 2, 0] | Not optimal
+Curve defined by  [1, 2, 0, 2, 1] | Not optimal
+Curve defined by  [1, 2, 0, 2, 2] | Not optimal
+Curve defined by  [1, 2, 0, 2, 3] | Not optimal
+Curve defined by  [1, 2, 0, 3, 0] | Not optimal
+Curve defined by  [1, 2, 0, 3, 1] | Not optimal
+Curve defined by  [1, 2, 0, 3, 2] | Not optimal
+Curve defined by  [1, 2, 0, 3, 3] | Not optimal
+Curve defined by  [1, 2, 1, 0, 0] | Not optimal
+Curve defined by  [1, 2, 1, 0, 1] | Not optimal
+Curve defined by  [1, 2, 1, 0, 2] | Not optimal
+Curve defined by  [1, 2, 1, 0, 3] | Not optimal
+Curve defined by  [1, 2, 1, 1, 0] | Not optimal
+Curve defined by  [1, 2, 1, 1, 1] | Not optimal
+Curve defined by  [1, 2, 1, 1, 2] | Not optimal
+Curve defined by  [1, 2, 1, 1, 3] | Not optimal
+Curve defined by  [1, 2, 1, 2, 0] | Not optimal
+Curve defined by  [1, 2, 1, 2, 1] | Not optimal
+Curve defined by  [1, 2, 1, 2, 2] | Not optimal
+Curve defined by  [1, 2, 1, 2, 3] | Not optimal
+Curve defined by  [1, 2, 1, 3, 0] | Not optimal
+Curve defined by  [1, 2, 1, 3, 1] | Not optimal
+Curve defined by  [1, 2, 1, 3, 2] | Not optimal
+Curve defined by  [1, 2, 1, 3, 3] | Not optimal
+Curve defined by  [1, 2, 2, 0, 0] | Not optimal
+Curve defined by  [1, 2, 2, 0, 1] | Not optimal
+Curve defined by  [1, 2, 2, 0, 2] | Not optimal
+Curve defined by  [1, 2, 2, 0, 3] | Not optimal
+Curve defined by  [1, 2, 2, 1, 0] | Not optimal
+Curve defined by  [1, 2, 2, 1, 1] | Not optimal
+Curve defined by  [1, 2, 2, 1, 2] | Not optimal
+Curve defined by  [1, 2, 2, 1, 3] | Not optimal
+Curve defined by  [1, 2, 2, 2, 0] | Not optimal
+Curve defined by  [1, 2, 2, 2, 1] | Not optimal
+Curve defined by  [1, 2, 2, 2, 2] | Not optimal
+Curve defined by  [1, 2, 2, 2, 3] | Not optimal
+Curve defined by  [1, 2, 2, 3, 0] | Not optimal
+Curve defined by  [1, 2, 2, 3, 1] | Not optimal
+Curve defined by  [1, 2, 2, 3, 2] | Not optimal
+Curve defined by  [1, 2, 2, 3, 3] | Not optimal
+Curve defined by  [1, 2, 3, 0, 0] | Not optimal
+Curve defined by  [1, 2, 3, 0, 1] | Not optimal
+Curve defined by  [1, 2, 3, 0, 2] | Not optimal
+Curve defined by  [1, 2, 3, 0, 3] | Not optimal
+Curve defined by  [1, 2, 3, 1, 0] | Not optimal
+Curve defined by  [1, 2, 3, 1, 1] | Not optimal
+Curve defined by  [1, 2, 3, 1, 2] | Not optimal
+Curve defined by  [1, 2, 3, 1, 3] | Not optimal
+Curve defined by  [1, 2, 3, 2, 0] | Not optimal
+Curve defined by  [1, 2, 3, 2, 1] | Not optimal
+Curve defined by  [1, 2, 3, 2, 2] | Not optimal
+Curve defined by  [1, 2, 3, 2, 3] | Not optimal
+Curve defined by  [1, 2, 3, 3, 0] | Not optimal
+Curve defined by  [1, 2, 3, 3, 1] | Not optimal
+Curve defined by  [1, 2, 3, 3, 2] | Not optimal
+Curve defined by  [1, 2, 3, 3, 3] | Not optimal
+Curve defined by  [1, 3, 0, 0, 0] | Not optimal
+Curve defined by  [1, 3, 0, 0, 1] | Not optimal
+Curve defined by  [1, 3, 0, 0, 2] | Not optimal
+Curve defined by  [1, 3, 0, 0, 3] | Not optimal
+Curve defined by  [1, 3, 0, 1, 0] | Not optimal
+Curve defined by  [1, 3, 0, 1, 1] | Not optimal
+Curve defined by  [1, 3, 0, 1, 2] | Not optimal
+Curve defined by  [1, 3, 0, 1, 3] | Not optimal
+Curve defined by  [1, 3, 0, 2, 0] | Not optimal
+Curve defined by  [1, 3, 0, 2, 1] | Not optimal
+Curve defined by  [1, 3, 0, 2, 2] | Not optimal
+Curve defined by  [1, 3, 0, 2, 3] | Not optimal
+Curve defined by  [1, 3, 0, 3, 0] | Not optimal
+Curve defined by  [1, 3, 0, 3, 1] | Not optimal
+Curve defined by  [1, 3, 0, 3, 2] | Not optimal
+Curve defined by  [1, 3, 0, 3, 3] | Not optimal
+Curve defined by  [1, 3, 1, 0, 0] | Not optimal
+Curve defined by  [1, 3, 1, 0, 1] | Not optimal
+Curve defined by  [1, 3, 1, 0, 2] | Not optimal
+Curve defined by  [1, 3, 1, 0, 3] | Not optimal
+Curve defined by  [1, 3, 1, 1, 0] | Not optimal
+Curve defined by  [1, 3, 1, 1, 1] | Not optimal
+Curve defined by  [1, 3, 1, 1, 2] | Not optimal
+Curve defined by  [1, 3, 1, 1, 3] | Not optimal
+Curve defined by  [1, 3, 1, 2, 0] | Not optimal
+Curve defined by  [1, 3, 1, 2, 1] | Not optimal
+Curve defined by  [1, 3, 1, 2, 2] | Not optimal
+Curve defined by  [1, 3, 1, 2, 3] | Not optimal
+Curve defined by  [1, 3, 1, 3, 0] | Not optimal
+Curve defined by  [1, 3, 1, 3, 1] | Not optimal
+Curve defined by  [1, 3, 1, 3, 2] | Not optimal
+Curve defined by  [1, 3, 1, 3, 3] | Not optimal
+Curve defined by  [1, 3, 2, 0, 0] | Not optimal
+Curve defined by  [1, 3, 2, 0, 1] | Not optimal
+Curve defined by  [1, 3, 2, 0, 2] | Not optimal
+Curve defined by  [1, 3, 2, 0, 3] | Not optimal
+Curve defined by  [1, 3, 2, 1, 0] | Not optimal
+Curve defined by  [1, 3, 2, 1, 1] | Not optimal
+Curve defined by  [1, 3, 2, 1, 2] | Not optimal
+Curve defined by  [1, 3, 2, 1, 3] | Not optimal
+Curve defined by  [1, 3, 2, 2, 0] | Not optimal
+Curve defined by  [1, 3, 2, 2, 1] | Not optimal
+Curve defined by  [1, 3, 2, 2, 2] | Not optimal
+Curve defined by  [1, 3, 2, 2, 3] | Not optimal
+Curve defined by  [1, 3, 2, 3, 0] | Not optimal
+Curve defined by  [1, 3, 2, 3, 1] | Not optimal
+Curve defined by  [1, 3, 2, 3, 2] | Not optimal
+Curve defined by  [1, 3, 2, 3, 3] | Not optimal
+Curve defined by  [1, 3, 3, 0, 0] | Not optimal
+Curve defined by  [1, 3, 3, 0, 1] | Not optimal
+Curve defined by  [1, 3, 3, 0, 2] | Not optimal
+Curve defined by  [1, 3, 3, 0, 3] | Not optimal
+Curve defined by  [1, 3, 3, 1, 0] | Not optimal
+Curve defined by  [1, 3, 3, 1, 1] | Not optimal
+Curve defined by  [1, 3, 3, 1, 2] | Not optimal
+Curve defined by  [1, 3, 3, 1, 3] | Not optimal
+Curve defined by  [1, 3, 3, 2, 0] | Not optimal
+Curve defined by  [1, 3, 3, 2, 1] | Not optimal
+Curve defined by  [1, 3, 3, 2, 2] | Not optimal
+Curve defined by  [1, 3, 3, 2, 3] | Not optimal
+Curve defined by  [1, 3, 3, 3, 0] | Not optimal
+Curve defined by  [1, 3, 3, 3, 1] | Not optimal
+Curve defined by  [1, 3, 3, 3, 2] | Not optimal
+Curve defined by  [1, 3, 3, 3, 3] | Not optimal
+Curve defined by  [2, 0, 0, 0, 0] | Not optimal
+Curve defined by  [2, 0, 0, 0, 1] | Not optimal
+Curve defined by  [2, 0, 0, 0, 2] | Not optimal
+Curve defined by  [2, 0, 0, 0, 3] | Not optimal
+Curve defined by  [2, 0, 0, 1, 0] | Not optimal
+Curve defined by  [2, 0, 0, 1, 1] | Not optimal
+Curve defined by  [2, 0, 0, 1, 2] | Not optimal
+Curve defined by  [2, 0, 0, 1, 3] | Not optimal
+Curve defined by  [2, 0, 0, 2, 0] | Not optimal
+Curve defined by  [2, 0, 0, 2, 1] | Not optimal
+Curve defined by  [2, 0, 0, 2, 2] | Not optimal
+Curve defined by  [2, 0, 0, 2, 3] | Not optimal
+Curve defined by  [2, 0, 0, 3, 0] | Not optimal
+Curve defined by  [2, 0, 0, 3, 1] | Not optimal
+Curve defined by  [2, 0, 0, 3, 2] | Not optimal
+Curve defined by  [2, 0, 0, 3, 3] | Not optimal
+Curve defined by  [2, 0, 1, 0, 0] | Optimal
+Curve defined by  [2, 0, 1, 0, 1] | Optimal
+Curve defined by  [2, 0, 1, 0, 2] | Optimal
+Curve defined by  [2, 0, 1, 0, 3] | Optimal
+Curve defined by  [2, 0, 1, 1, 0] | Not optimal
+Curve defined by  [2, 0, 1, 1, 1] | Not optimal
+Curve defined by  [2, 0, 1, 1, 2] | Not optimal
+Curve defined by  [2, 0, 1, 1, 3] | Not optimal
+Curve defined by  [2, 0, 1, 2, 0] | Optimal
+Curve defined by  [2, 0, 1, 2, 1] | Optimal
+Curve defined by  [2, 0, 1, 2, 2] | Optimal
+Curve defined by  [2, 0, 1, 2, 3] | Optimal
+Curve defined by  [2, 0, 1, 3, 0] | Not optimal
+Curve defined by  [2, 0, 1, 3, 1] | Not optimal
+Curve defined by  [2, 0, 1, 3, 2] | Not optimal
+Curve defined by  [2, 0, 1, 3, 3] | Not optimal
+Curve defined by  [2, 0, 2, 0, 0] | Not optimal
+Curve defined by  [2, 0, 2, 0, 1] | Not optimal
+Curve defined by  [2, 0, 2, 0, 2] | Not optimal
+Curve defined by  [2, 0, 2, 0, 3] | Not optimal
+Curve defined by  [2, 0, 2, 1, 0] | Not optimal
+Curve defined by  [2, 0, 2, 1, 1] | Not optimal
+Curve defined by  [2, 0, 2, 1, 2] | Not optimal
+Curve defined by  [2, 0, 2, 1, 3] | Not optimal
+Curve defined by  [2, 0, 2, 2, 0] | Not optimal
+Curve defined by  [2, 0, 2, 2, 1] | Not optimal
+Curve defined by  [2, 0, 2, 2, 2] | Not optimal
+Curve defined by  [2, 0, 2, 2, 3] | Not optimal
+Curve defined by  [2, 0, 2, 3, 0] | Not optimal
+Curve defined by  [2, 0, 2, 3, 1] | Not optimal
+Curve defined by  [2, 0, 2, 3, 2] | Not optimal
+Curve defined by  [2, 0, 2, 3, 3] | Not optimal
+Curve defined by  [2, 0, 3, 0, 0] | Optimal
+Curve defined by  [2, 0, 3, 0, 1] | Optimal
+Curve defined by  [2, 0, 3, 0, 2] | Optimal
+Curve defined by  [2, 0, 3, 0, 3] | Optimal
+Curve defined by  [2, 0, 3, 1, 0] | Not optimal
+Curve defined by  [2, 0, 3, 1, 1] | Not optimal
+Curve defined by  [2, 0, 3, 1, 2] | Not optimal
+Curve defined by  [2, 0, 3, 1, 3] | Not optimal
+Curve defined by  [2, 0, 3, 2, 0] | Optimal
+Curve defined by  [2, 0, 3, 2, 1] | Optimal
+Curve defined by  [2, 0, 3, 2, 2] | Optimal
+Curve defined by  [2, 0, 3, 2, 3] | Optimal
+Curve defined by  [2, 0, 3, 3, 0] | Not optimal
+Curve defined by  [2, 0, 3, 3, 1] | Not optimal
+Curve defined by  [2, 0, 3, 3, 2] | Not optimal
+Curve defined by  [2, 0, 3, 3, 3] | Not optimal
+Curve defined by  [2, 1, 0, 0, 0] | Not optimal
+Curve defined by  [2, 1, 0, 0, 1] | Not optimal
+Curve defined by  [2, 1, 0, 0, 2] | Not optimal
+Curve defined by  [2, 1, 0, 0, 3] | Not optimal
+Curve defined by  [2, 1, 0, 1, 0] | Not optimal
+Curve defined by  [2, 1, 0, 1, 1] | Not optimal
+Curve defined by  [2, 1, 0, 1, 2] | Not optimal
+Curve defined by  [2, 1, 0, 1, 3] | Not optimal
+Curve defined by  [2, 1, 0, 2, 0] | Not optimal
+Curve defined by  [2, 1, 0, 2, 1] | Not optimal
+Curve defined by  [2, 1, 0, 2, 2] | Not optimal
+Curve defined by  [2, 1, 0, 2, 3] | Not optimal
+Curve defined by  [2, 1, 0, 3, 0] | Not optimal
+Curve defined by  [2, 1, 0, 3, 1] | Not optimal
+Curve defined by  [2, 1, 0, 3, 2] | Not optimal
+Curve defined by  [2, 1, 0, 3, 3] | Not optimal
+Curve defined by  [2, 1, 1, 0, 0] | Not optimal
+Curve defined by  [2, 1, 1, 0, 1] | Not optimal
+Curve defined by  [2, 1, 1, 0, 2] | Not optimal
+Curve defined by  [2, 1, 1, 0, 3] | Not optimal
+Curve defined by  [2, 1, 1, 1, 0] | Optimal
+Curve defined by  [2, 1, 1, 1, 1] | Optimal
+Curve defined by  [2, 1, 1, 1, 2] | Optimal
+Curve defined by  [2, 1, 1, 1, 3] | Optimal
+Curve defined by  [2, 1, 1, 2, 0] | Not optimal
+Curve defined by  [2, 1, 1, 2, 1] | Not optimal
+Curve defined by  [2, 1, 1, 2, 2] | Not optimal
+Curve defined by  [2, 1, 1, 2, 3] | Not optimal
+Curve defined by  [2, 1, 1, 3, 0] | Optimal
+Curve defined by  [2, 1, 1, 3, 1] | Optimal
+Curve defined by  [2, 1, 1, 3, 2] | Optimal
+Curve defined by  [2, 1, 1, 3, 3] | Optimal
+Curve defined by  [2, 1, 2, 0, 0] | Not optimal
+Curve defined by  [2, 1, 2, 0, 1] | Not optimal
+Curve defined by  [2, 1, 2, 0, 2] | Not optimal
+Curve defined by  [2, 1, 2, 0, 3] | Not optimal
+Curve defined by  [2, 1, 2, 1, 0] | Not optimal
+Curve defined by  [2, 1, 2, 1, 1] | Not optimal
+Curve defined by  [2, 1, 2, 1, 2] | Not optimal
+Curve defined by  [2, 1, 2, 1, 3] | Not optimal
+Curve defined by  [2, 1, 2, 2, 0] | Not optimal
+Curve defined by  [2, 1, 2, 2, 1] | Not optimal
+Curve defined by  [2, 1, 2, 2, 2] | Not optimal
+Curve defined by  [2, 1, 2, 2, 3] | Not optimal
+Curve defined by  [2, 1, 2, 3, 0] | Not optimal
+Curve defined by  [2, 1, 2, 3, 1] | Not optimal
+Curve defined by  [2, 1, 2, 3, 2] | Not optimal
+Curve defined by  [2, 1, 2, 3, 3] | Not optimal
+Curve defined by  [2, 1, 3, 0, 0] | Not optimal
+Curve defined by  [2, 1, 3, 0, 1] | Not optimal
+Curve defined by  [2, 1, 3, 0, 2] | Not optimal
+Curve defined by  [2, 1, 3, 0, 3] | Not optimal
+Curve defined by  [2, 1, 3, 1, 0] | Optimal
+Curve defined by  [2, 1, 3, 1, 1] | Optimal
+Curve defined by  [2, 1, 3, 1, 2] | Optimal
+Curve defined by  [2, 1, 3, 1, 3] | Optimal
+Curve defined by  [2, 1, 3, 2, 0] | Not optimal
+Curve defined by  [2, 1, 3, 2, 1] | Not optimal
+Curve defined by  [2, 1, 3, 2, 2] | Not optimal
+Curve defined by  [2, 1, 3, 2, 3] | Not optimal
+Curve defined by  [2, 1, 3, 3, 0] | Optimal
+Curve defined by  [2, 1, 3, 3, 1] | Optimal
+Curve defined by  [2, 1, 3, 3, 2] | Optimal
+Curve defined by  [2, 1, 3, 3, 3] | Optimal
+Curve defined by  [2, 2, 0, 0, 0] | Not optimal
+Curve defined by  [2, 2, 0, 0, 1] | Not optimal
+Curve defined by  [2, 2, 0, 0, 2] | Not optimal
+Curve defined by  [2, 2, 0, 0, 3] | Not optimal
+Curve defined by  [2, 2, 0, 1, 0] | Not optimal
+Curve defined by  [2, 2, 0, 1, 1] | Not optimal
+Curve defined by  [2, 2, 0, 1, 2] | Not optimal
+Curve defined by  [2, 2, 0, 1, 3] | Not optimal
+Curve defined by  [2, 2, 0, 2, 0] | Not optimal
+Curve defined by  [2, 2, 0, 2, 1] | Not optimal
+Curve defined by  [2, 2, 0, 2, 2] | Not optimal
+Curve defined by  [2, 2, 0, 2, 3] | Not optimal
+Curve defined by  [2, 2, 0, 3, 0] | Not optimal
+Curve defined by  [2, 2, 0, 3, 1] | Not optimal
+Curve defined by  [2, 2, 0, 3, 2] | Not optimal
+Curve defined by  [2, 2, 0, 3, 3] | Not optimal
+Curve defined by  [2, 2, 1, 0, 0] | Optimal
+Curve defined by  [2, 2, 1, 0, 1] | Optimal
+Curve defined by  [2, 2, 1, 0, 2] | Optimal
+Curve defined by  [2, 2, 1, 0, 3] | Optimal
+Curve defined by  [2, 2, 1, 1, 0] | Not optimal
+Curve defined by  [2, 2, 1, 1, 1] | Not optimal
+Curve defined by  [2, 2, 1, 1, 2] | Not optimal
+Curve defined by  [2, 2, 1, 1, 3] | Not optimal
+Curve defined by  [2, 2, 1, 2, 0] | Optimal
+Curve defined by  [2, 2, 1, 2, 1] | Optimal
+Curve defined by  [2, 2, 1, 2, 2] | Optimal
+Curve defined by  [2, 2, 1, 2, 3] | Optimal
+Curve defined by  [2, 2, 1, 3, 0] | Not optimal
+Curve defined by  [2, 2, 1, 3, 1] | Not optimal
+Curve defined by  [2, 2, 1, 3, 2] | Not optimal
+Curve defined by  [2, 2, 1, 3, 3] | Not optimal
+Curve defined by  [2, 2, 2, 0, 0] | Not optimal
+Curve defined by  [2, 2, 2, 0, 1] | Not optimal
+Curve defined by  [2, 2, 2, 0, 2] | Not optimal
+Curve defined by  [2, 2, 2, 0, 3] | Not optimal
+Curve defined by  [2, 2, 2, 1, 0] | Not optimal
+Curve defined by  [2, 2, 2, 1, 1] | Not optimal
+Curve defined by  [2, 2, 2, 1, 2] | Not optimal
+Curve defined by  [2, 2, 2, 1, 3] | Not optimal
+Curve defined by  [2, 2, 2, 2, 0] | Not optimal
+Curve defined by  [2, 2, 2, 2, 1] | Not optimal
+Curve defined by  [2, 2, 2, 2, 2] | Not optimal
+Curve defined by  [2, 2, 2, 2, 3] | Not optimal
+Curve defined by  [2, 2, 2, 3, 0] | Not optimal
+Curve defined by  [2, 2, 2, 3, 1] | Not optimal
+Curve defined by  [2, 2, 2, 3, 2] | Not optimal
+Curve defined by  [2, 2, 2, 3, 3] | Not optimal
+Curve defined by  [2, 2, 3, 0, 0] | Optimal
+Curve defined by  [2, 2, 3, 0, 1] | Optimal
+Curve defined by  [2, 2, 3, 0, 2] | Optimal
+Curve defined by  [2, 2, 3, 0, 3] | Optimal
+Curve defined by  [2, 2, 3, 1, 0] | Not optimal
+Curve defined by  [2, 2, 3, 1, 1] | Not optimal
+Curve defined by  [2, 2, 3, 1, 2] | Not optimal
+Curve defined by  [2, 2, 3, 1, 3] | Not optimal
+Curve defined by  [2, 2, 3, 2, 0] | Optimal
+Curve defined by  [2, 2, 3, 2, 1] | Optimal
+Curve defined by  [2, 2, 3, 2, 2] | Optimal
+Curve defined by  [2, 2, 3, 2, 3] | Optimal
+Curve defined by  [2, 2, 3, 3, 0] | Not optimal
+Curve defined by  [2, 2, 3, 3, 1] | Not optimal
+Curve defined by  [2, 2, 3, 3, 2] | Not optimal
+Curve defined by  [2, 2, 3, 3, 3] | Not optimal
+Curve defined by  [2, 3, 0, 0, 0] | Not optimal
+Curve defined by  [2, 3, 0, 0, 1] | Not optimal
+Curve defined by  [2, 3, 0, 0, 2] | Not optimal
+Curve defined by  [2, 3, 0, 0, 3] | Not optimal
+Curve defined by  [2, 3, 0, 1, 0] | Not optimal
+Curve defined by  [2, 3, 0, 1, 1] | Not optimal
+Curve defined by  [2, 3, 0, 1, 2] | Not optimal
+Curve defined by  [2, 3, 0, 1, 3] | Not optimal
+Curve defined by  [2, 3, 0, 2, 0] | Not optimal
+Curve defined by  [2, 3, 0, 2, 1] | Not optimal
+Curve defined by  [2, 3, 0, 2, 2] | Not optimal
+Curve defined by  [2, 3, 0, 2, 3] | Not optimal
+Curve defined by  [2, 3, 0, 3, 0] | Not optimal
+Curve defined by  [2, 3, 0, 3, 1] | Not optimal
+Curve defined by  [2, 3, 0, 3, 2] | Not optimal
+Curve defined by  [2, 3, 0, 3, 3] | Not optimal
+Curve defined by  [2, 3, 1, 0, 0] | Not optimal
+Curve defined by  [2, 3, 1, 0, 1] | Not optimal
+Curve defined by  [2, 3, 1, 0, 2] | Not optimal
+Curve defined by  [2, 3, 1, 0, 3] | Not optimal
+Curve defined by  [2, 3, 1, 1, 0] | Optimal
+Curve defined by  [2, 3, 1, 1, 1] | Optimal
+Curve defined by  [2, 3, 1, 1, 2] | Optimal
+Curve defined by  [2, 3, 1, 1, 3] | Optimal
+Curve defined by  [2, 3, 1, 2, 0] | Not optimal
+Curve defined by  [2, 3, 1, 2, 1] | Not optimal
+Curve defined by  [2, 3, 1, 2, 2] | Not optimal
+Curve defined by  [2, 3, 1, 2, 3] | Not optimal
+Curve defined by  [2, 3, 1, 3, 0] | Optimal
+Curve defined by  [2, 3, 1, 3, 1] | Optimal
+Curve defined by  [2, 3, 1, 3, 2] | Optimal
+Curve defined by  [2, 3, 1, 3, 3] | Optimal
+Curve defined by  [2, 3, 2, 0, 0] | Not optimal
+Curve defined by  [2, 3, 2, 0, 1] | Not optimal
+Curve defined by  [2, 3, 2, 0, 2] | Not optimal
+Curve defined by  [2, 3, 2, 0, 3] | Not optimal
+Curve defined by  [2, 3, 2, 1, 0] | Not optimal
+Curve defined by  [2, 3, 2, 1, 1] | Not optimal
+Curve defined by  [2, 3, 2, 1, 2] | Not optimal
+Curve defined by  [2, 3, 2, 1, 3] | Not optimal
+Curve defined by  [2, 3, 2, 2, 0] | Not optimal
+Curve defined by  [2, 3, 2, 2, 1] | Not optimal
+Curve defined by  [2, 3, 2, 2, 2] | Not optimal
+Curve defined by  [2, 3, 2, 2, 3] | Not optimal
+Curve defined by  [2, 3, 2, 3, 0] | Not optimal
+Curve defined by  [2, 3, 2, 3, 1] | Not optimal
+Curve defined by  [2, 3, 2, 3, 2] | Not optimal
+Curve defined by  [2, 3, 2, 3, 3] | Not optimal
+Curve defined by  [2, 3, 3, 0, 0] | Not optimal
+Curve defined by  [2, 3, 3, 0, 1] | Not optimal
+Curve defined by  [2, 3, 3, 0, 2] | Not optimal
+Curve defined by  [2, 3, 3, 0, 3] | Not optimal
+Curve defined by  [2, 3, 3, 1, 0] | Optimal
+Curve defined by  [2, 3, 3, 1, 1] | Optimal
+Curve defined by  [2, 3, 3, 1, 2] | Optimal
+Curve defined by  [2, 3, 3, 1, 3] | Optimal
+Curve defined by  [2, 3, 3, 2, 0] | Not optimal
+Curve defined by  [2, 3, 3, 2, 1] | Not optimal
+Curve defined by  [2, 3, 3, 2, 2] | Not optimal
+Curve defined by  [2, 3, 3, 2, 3] | Not optimal
+Curve defined by  [2, 3, 3, 3, 0] | Optimal
+Curve defined by  [2, 3, 3, 3, 1] | Optimal
+Curve defined by  [2, 3, 3, 3, 2] | Optimal
+Curve defined by  [2, 3, 3, 3, 3] | Optimal
+Curve defined by  [3, 0, 0, 0, 0] | Not optimal
+Curve defined by  [3, 0, 0, 0, 1] | Not optimal
+Curve defined by  [3, 0, 0, 0, 2] | Not optimal
+Curve defined by  [3, 0, 0, 0, 3] | Not optimal
+Curve defined by  [3, 0, 0, 1, 0] | Not optimal
+Curve defined by  [3, 0, 0, 1, 1] | Not optimal
+Curve defined by  [3, 0, 0, 1, 2] | Not optimal
+Curve defined by  [3, 0, 0, 1, 3] | Not optimal
+Curve defined by  [3, 0, 0, 2, 0] | Not optimal
+Curve defined by  [3, 0, 0, 2, 1] | Not optimal
+Curve defined by  [3, 0, 0, 2, 2] | Not optimal
+Curve defined by  [3, 0, 0, 2, 3] | Not optimal
+Curve defined by  [3, 0, 0, 3, 0] | Not optimal
+Curve defined by  [3, 0, 0, 3, 1] | Not optimal
+Curve defined by  [3, 0, 0, 3, 2] | Not optimal
+Curve defined by  [3, 0, 0, 3, 3] | Not optimal
+Curve defined by  [3, 0, 1, 0, 0] | Not optimal
+Curve defined by  [3, 0, 1, 0, 1] | Not optimal
+Curve defined by  [3, 0, 1, 0, 2] | Not optimal
+Curve defined by  [3, 0, 1, 0, 3] | Not optimal
+Curve defined by  [3, 0, 1, 1, 0] | Not optimal
+Curve defined by  [3, 0, 1, 1, 1] | Not optimal
+Curve defined by  [3, 0, 1, 1, 2] | Not optimal
+Curve defined by  [3, 0, 1, 1, 3] | Not optimal
+Curve defined by  [3, 0, 1, 2, 0] | Not optimal
+Curve defined by  [3, 0, 1, 2, 1] | Not optimal
+Curve defined by  [3, 0, 1, 2, 2] | Not optimal
+Curve defined by  [3, 0, 1, 2, 3] | Not optimal
+Curve defined by  [3, 0, 1, 3, 0] | Not optimal
+Curve defined by  [3, 0, 1, 3, 1] | Not optimal
+Curve defined by  [3, 0, 1, 3, 2] | Not optimal
+Curve defined by  [3, 0, 1, 3, 3] | Not optimal
+Curve defined by  [3, 0, 2, 0, 0] | Not optimal
+Curve defined by  [3, 0, 2, 0, 1] | Not optimal
+Curve defined by  [3, 0, 2, 0, 2] | Not optimal
+Curve defined by  [3, 0, 2, 0, 3] | Not optimal
+Curve defined by  [3, 0, 2, 1, 0] | Not optimal
+Curve defined by  [3, 0, 2, 1, 1] | Not optimal
+Curve defined by  [3, 0, 2, 1, 2] | Not optimal
+Curve defined by  [3, 0, 2, 1, 3] | Not optimal
+Curve defined by  [3, 0, 2, 2, 0] | Not optimal
+Curve defined by  [3, 0, 2, 2, 1] | Not optimal
+Curve defined by  [3, 0, 2, 2, 2] | Not optimal
+Curve defined by  [3, 0, 2, 2, 3] | Not optimal
+Curve defined by  [3, 0, 2, 3, 0] | Not optimal
+Curve defined by  [3, 0, 2, 3, 1] | Not optimal
+Curve defined by  [3, 0, 2, 3, 2] | Not optimal
+Curve defined by  [3, 0, 2, 3, 3] | Not optimal
+Curve defined by  [3, 0, 3, 0, 0] | Not optimal
+Curve defined by  [3, 0, 3, 0, 1] | Not optimal
+Curve defined by  [3, 0, 3, 0, 2] | Not optimal
+Curve defined by  [3, 0, 3, 0, 3] | Not optimal
+Curve defined by  [3, 0, 3, 1, 0] | Not optimal
+Curve defined by  [3, 0, 3, 1, 1] | Not optimal
+Curve defined by  [3, 0, 3, 1, 2] | Not optimal
+Curve defined by  [3, 0, 3, 1, 3] | Not optimal
+Curve defined by  [3, 0, 3, 2, 0] | Not optimal
+Curve defined by  [3, 0, 3, 2, 1] | Not optimal
+Curve defined by  [3, 0, 3, 2, 2] | Not optimal
+Curve defined by  [3, 0, 3, 2, 3] | Not optimal
+Curve defined by  [3, 0, 3, 3, 0] | Not optimal
+Curve defined by  [3, 0, 3, 3, 1] | Not optimal
+Curve defined by  [3, 0, 3, 3, 2] | Not optimal
+Curve defined by  [3, 0, 3, 3, 3] | Not optimal
+Curve defined by  [3, 1, 0, 0, 0] | Not optimal
+Curve defined by  [3, 1, 0, 0, 1] | Not optimal
+Curve defined by  [3, 1, 0, 0, 2] | Not optimal
+Curve defined by  [3, 1, 0, 0, 3] | Not optimal
+Curve defined by  [3, 1, 0, 1, 0] | Not optimal
+Curve defined by  [3, 1, 0, 1, 1] | Not optimal
+Curve defined by  [3, 1, 0, 1, 2] | Not optimal
+Curve defined by  [3, 1, 0, 1, 3] | Not optimal
+Curve defined by  [3, 1, 0, 2, 0] | Not optimal
+Curve defined by  [3, 1, 0, 2, 1] | Not optimal
+Curve defined by  [3, 1, 0, 2, 2] | Not optimal
+Curve defined by  [3, 1, 0, 2, 3] | Not optimal
+Curve defined by  [3, 1, 0, 3, 0] | Not optimal
+Curve defined by  [3, 1, 0, 3, 1] | Not optimal
+Curve defined by  [3, 1, 0, 3, 2] | Not optimal
+Curve defined by  [3, 1, 0, 3, 3] | Not optimal
+Curve defined by  [3, 1, 1, 0, 0] | Not optimal
+Curve defined by  [3, 1, 1, 0, 1] | Not optimal
+Curve defined by  [3, 1, 1, 0, 2] | Not optimal
+Curve defined by  [3, 1, 1, 0, 3] | Not optimal
+Curve defined by  [3, 1, 1, 1, 0] | Not optimal
+Curve defined by  [3, 1, 1, 1, 1] | Not optimal
+Curve defined by  [3, 1, 1, 1, 2] | Not optimal
+Curve defined by  [3, 1, 1, 1, 3] | Not optimal
+Curve defined by  [3, 1, 1, 2, 0] | Not optimal
+Curve defined by  [3, 1, 1, 2, 1] | Not optimal
+Curve defined by  [3, 1, 1, 2, 2] | Not optimal
+Curve defined by  [3, 1, 1, 2, 3] | Not optimal
+Curve defined by  [3, 1, 1, 3, 0] | Not optimal
+Curve defined by  [3, 1, 1, 3, 1] | Not optimal
+Curve defined by  [3, 1, 1, 3, 2] | Not optimal
+Curve defined by  [3, 1, 1, 3, 3] | Not optimal
+Curve defined by  [3, 1, 2, 0, 0] | Not optimal
+Curve defined by  [3, 1, 2, 0, 1] | Not optimal
+Curve defined by  [3, 1, 2, 0, 2] | Not optimal
+Curve defined by  [3, 1, 2, 0, 3] | Not optimal
+Curve defined by  [3, 1, 2, 1, 0] | Not optimal
+Curve defined by  [3, 1, 2, 1, 1] | Not optimal
+Curve defined by  [3, 1, 2, 1, 2] | Not optimal
+Curve defined by  [3, 1, 2, 1, 3] | Not optimal
+Curve defined by  [3, 1, 2, 2, 0] | Not optimal
+Curve defined by  [3, 1, 2, 2, 1] | Not optimal
+Curve defined by  [3, 1, 2, 2, 2] | Not optimal
+Curve defined by  [3, 1, 2, 2, 3] | Not optimal
+Curve defined by  [3, 1, 2, 3, 0] | Not optimal
+Curve defined by  [3, 1, 2, 3, 1] | Not optimal
+Curve defined by  [3, 1, 2, 3, 2] | Not optimal
+Curve defined by  [3, 1, 2, 3, 3] | Not optimal
+Curve defined by  [3, 1, 3, 0, 0] | Not optimal
+Curve defined by  [3, 1, 3, 0, 1] | Not optimal
+Curve defined by  [3, 1, 3, 0, 2] | Not optimal
+Curve defined by  [3, 1, 3, 0, 3] | Not optimal
+Curve defined by  [3, 1, 3, 1, 0] | Not optimal
+Curve defined by  [3, 1, 3, 1, 1] | Not optimal
+Curve defined by  [3, 1, 3, 1, 2] | Not optimal
+Curve defined by  [3, 1, 3, 1, 3] | Not optimal
+Curve defined by  [3, 1, 3, 2, 0] | Not optimal
+Curve defined by  [3, 1, 3, 2, 1] | Not optimal
+Curve defined by  [3, 1, 3, 2, 2] | Not optimal
+Curve defined by  [3, 1, 3, 2, 3] | Not optimal
+Curve defined by  [3, 1, 3, 3, 0] | Not optimal
+Curve defined by  [3, 1, 3, 3, 1] | Not optimal
+Curve defined by  [3, 1, 3, 3, 2] | Not optimal
+Curve defined by  [3, 1, 3, 3, 3] | Not optimal
+Curve defined by  [3, 2, 0, 0, 0] | Not optimal
+Curve defined by  [3, 2, 0, 0, 1] | Not optimal
+Curve defined by  [3, 2, 0, 0, 2] | Not optimal
+Curve defined by  [3, 2, 0, 0, 3] | Not optimal
+Curve defined by  [3, 2, 0, 1, 0] | Not optimal
+Curve defined by  [3, 2, 0, 1, 1] | Not optimal
+Curve defined by  [3, 2, 0, 1, 2] | Not optimal
+Curve defined by  [3, 2, 0, 1, 3] | Not optimal
+Curve defined by  [3, 2, 0, 2, 0] | Not optimal
+Curve defined by  [3, 2, 0, 2, 1] | Not optimal
+Curve defined by  [3, 2, 0, 2, 2] | Not optimal
+Curve defined by  [3, 2, 0, 2, 3] | Not optimal
+Curve defined by  [3, 2, 0, 3, 0] | Not optimal
+Curve defined by  [3, 2, 0, 3, 1] | Not optimal
+Curve defined by  [3, 2, 0, 3, 2] | Not optimal
+Curve defined by  [3, 2, 0, 3, 3] | Not optimal
+Curve defined by  [3, 2, 1, 0, 0] | Not optimal
+Curve defined by  [3, 2, 1, 0, 1] | Not optimal
+Curve defined by  [3, 2, 1, 0, 2] | Not optimal
+Curve defined by  [3, 2, 1, 0, 3] | Not optimal
+Curve defined by  [3, 2, 1, 1, 0] | Not optimal
+Curve defined by  [3, 2, 1, 1, 1] | Not optimal
+Curve defined by  [3, 2, 1, 1, 2] | Not optimal
+Curve defined by  [3, 2, 1, 1, 3] | Not optimal
+Curve defined by  [3, 2, 1, 2, 0] | Not optimal
+Curve defined by  [3, 2, 1, 2, 1] | Not optimal
+Curve defined by  [3, 2, 1, 2, 2] | Not optimal
+Curve defined by  [3, 2, 1, 2, 3] | Not optimal
+Curve defined by  [3, 2, 1, 3, 0] | Not optimal
+Curve defined by  [3, 2, 1, 3, 1] | Not optimal
+Curve defined by  [3, 2, 1, 3, 2] | Not optimal
+Curve defined by  [3, 2, 1, 3, 3] | Not optimal
+Curve defined by  [3, 2, 2, 0, 0] | Not optimal
+Curve defined by  [3, 2, 2, 0, 1] | Not optimal
+Curve defined by  [3, 2, 2, 0, 2] | Not optimal
+Curve defined by  [3, 2, 2, 0, 3] | Not optimal
+Curve defined by  [3, 2, 2, 1, 0] | Not optimal
+Curve defined by  [3, 2, 2, 1, 1] | Not optimal
+Curve defined by  [3, 2, 2, 1, 2] | Not optimal
+Curve defined by  [3, 2, 2, 1, 3] | Not optimal
+Curve defined by  [3, 2, 2, 2, 0] | Not optimal
+Curve defined by  [3, 2, 2, 2, 1] | Not optimal
+Curve defined by  [3, 2, 2, 2, 2] | Not optimal
+Curve defined by  [3, 2, 2, 2, 3] | Not optimal
+Curve defined by  [3, 2, 2, 3, 0] | Not optimal
+Curve defined by  [3, 2, 2, 3, 1] | Not optimal
+Curve defined by  [3, 2, 2, 3, 2] | Not optimal
+Curve defined by  [3, 2, 2, 3, 3] | Not optimal
+Curve defined by  [3, 2, 3, 0, 0] | Not optimal
+Curve defined by  [3, 2, 3, 0, 1] | Not optimal
+Curve defined by  [3, 2, 3, 0, 2] | Not optimal
+Curve defined by  [3, 2, 3, 0, 3] | Not optimal
+Curve defined by  [3, 2, 3, 1, 0] | Not optimal
+Curve defined by  [3, 2, 3, 1, 1] | Not optimal
+Curve defined by  [3, 2, 3, 1, 2] | Not optimal
+Curve defined by  [3, 2, 3, 1, 3] | Not optimal
+Curve defined by  [3, 2, 3, 2, 0] | Not optimal
+Curve defined by  [3, 2, 3, 2, 1] | Not optimal
+Curve defined by  [3, 2, 3, 2, 2] | Not optimal
+Curve defined by  [3, 2, 3, 2, 3] | Not optimal
+Curve defined by  [3, 2, 3, 3, 0] | Not optimal
+Curve defined by  [3, 2, 3, 3, 1] | Not optimal
+Curve defined by  [3, 2, 3, 3, 2] | Not optimal
+Curve defined by  [3, 2, 3, 3, 3] | Not optimal
+Curve defined by  [3, 3, 0, 0, 0] | Not optimal
+Curve defined by  [3, 3, 0, 0, 1] | Not optimal
+Curve defined by  [3, 3, 0, 0, 2] | Not optimal
+Curve defined by  [3, 3, 0, 0, 3] | Not optimal
+Curve defined by  [3, 3, 0, 1, 0] | Not optimal
+Curve defined by  [3, 3, 0, 1, 1] | Not optimal
+Curve defined by  [3, 3, 0, 1, 2] | Not optimal
+Curve defined by  [3, 3, 0, 1, 3] | Not optimal
+Curve defined by  [3, 3, 0, 2, 0] | Not optimal
+Curve defined by  [3, 3, 0, 2, 1] | Not optimal
+Curve defined by  [3, 3, 0, 2, 2] | Not optimal
+Curve defined by  [3, 3, 0, 2, 3] | Not optimal
+Curve defined by  [3, 3, 0, 3, 0] | Not optimal
+Curve defined by  [3, 3, 0, 3, 1] | Not optimal
+Curve defined by  [3, 3, 0, 3, 2] | Not optimal
+Curve defined by  [3, 3, 0, 3, 3] | Not optimal
+Curve defined by  [3, 3, 1, 0, 0] | Not optimal
+Curve defined by  [3, 3, 1, 0, 1] | Not optimal
+Curve defined by  [3, 3, 1, 0, 2] | Not optimal
+Curve defined by  [3, 3, 1, 0, 3] | Not optimal
+Curve defined by  [3, 3, 1, 1, 0] | Not optimal
+Curve defined by  [3, 3, 1, 1, 1] | Not optimal
+Curve defined by  [3, 3, 1, 1, 2] | Not optimal
+Curve defined by  [3, 3, 1, 1, 3] | Not optimal
+Curve defined by  [3, 3, 1, 2, 0] | Not optimal
+Curve defined by  [3, 3, 1, 2, 1] | Not optimal
+Curve defined by  [3, 3, 1, 2, 2] | Not optimal
+Curve defined by  [3, 3, 1, 2, 3] | Not optimal
+Curve defined by  [3, 3, 1, 3, 0] | Not optimal
+Curve defined by  [3, 3, 1, 3, 1] | Not optimal
+Curve defined by  [3, 3, 1, 3, 2] | Not optimal
+Curve defined by  [3, 3, 1, 3, 3] | Not optimal
+Curve defined by  [3, 3, 2, 0, 0] | Not optimal
+Curve defined by  [3, 3, 2, 0, 1] | Not optimal
+Curve defined by  [3, 3, 2, 0, 2] | Not optimal
+Curve defined by  [3, 3, 2, 0, 3] | Not optimal
+Curve defined by  [3, 3, 2, 1, 0] | Not optimal
+Curve defined by  [3, 3, 2, 1, 1] | Not optimal
+Curve defined by  [3, 3, 2, 1, 2] | Not optimal
+Curve defined by  [3, 3, 2, 1, 3] | Not optimal
+Curve defined by  [3, 3, 2, 2, 0] | Not optimal
+Curve defined by  [3, 3, 2, 2, 1] | Not optimal
+Curve defined by  [3, 3, 2, 2, 2] | Not optimal
+Curve defined by  [3, 3, 2, 2, 3] | Not optimal
+Curve defined by  [3, 3, 2, 3, 0] | Not optimal
+Curve defined by  [3, 3, 2, 3, 1] | Not optimal
+Curve defined by  [3, 3, 2, 3, 2] | Not optimal
+Curve defined by  [3, 3, 2, 3, 3] | Not optimal
+Curve defined by  [3, 3, 3, 0, 0] | Not optimal
+Curve defined by  [3, 3, 3, 0, 1] | Not optimal
+Curve defined by  [3, 3, 3, 0, 2] | Not optimal
+Curve defined by  [3, 3, 3, 0, 3] | Not optimal
+Curve defined by  [3, 3, 3, 1, 0] | Not optimal
+Curve defined by  [3, 3, 3, 1, 1] | Not optimal
+Curve defined by  [3, 3, 3, 1, 2] | Not optimal
+Curve defined by  [3, 3, 3, 1, 3] | Not optimal
+Curve defined by  [3, 3, 3, 2, 0] | Not optimal
+Curve defined by  [3, 3, 3, 2, 1] | Not optimal
+Curve defined by  [3, 3, 3, 2, 2] | Not optimal
+Curve defined by  [3, 3, 3, 2, 3] | Not optimal
+Curve defined by  [3, 3, 3, 3, 0] | Not optimal
+Curve defined by  [3, 3, 3, 3, 1] | Not optimal
+Curve defined by  [3, 3, 3, 3, 2] | Not optimal
+Curve defined by  [3, 3, 3, 3, 3] | Not optimal
+
