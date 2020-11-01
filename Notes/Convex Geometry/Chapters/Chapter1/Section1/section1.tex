@@ -17,7 +17,7 @@
     Let $x_1,x_2, \dots, x_m$ be points in $\R^d$. We call a point  $x \in \R^d$, of the form 
    $x=\sum_{i=1}^{m}{\alpha_ix_i}$, with  $\sum{\alpha_i}=1$, a \textbf{convex combination} of $x$. We 
    call the set of all convex combinations of a subset  $A \subseteq \R^d$ the 
-   \textbf{convex hull} of $A$, and denote it  $\hat{A}$.
+   \textbf{convex hull} of $A$, and denote it  $\conv{A}$.
 \end{definition}
 
 \begin{definition}
@@ -42,8 +42,8 @@
     The convex hull of a convex set is convex.
 \end{lemma}
 \begin{proof}
-    Let $A \subseteq \R^d$, and let $x,y \in \hat{A}$. Then by definition the set of all convex 
-    combinations of $x$ and  $y$ is in  $\hat{A}$, thus  $[x,y] \in \hat{A}$
+    Let $A \subseteq \R^d$, and let $x,y \in \conv{A}$. Then by definition the set of all convex 
+    combinations of $x$ and  $y$ is in  $\conv{A}$, thus  $[x,y] \in \conv{A}$
 \end{proof}
 
 \begin{definition}
@@ -66,5 +66,47 @@
     Let $A \subseteq \R^d$ be a regular polyhedron and let  $x,y \in A$. Then 
     $\langle{c_i,x}\rangle, \langle{c_i,y}\rangle \leq \beta_i$ for $c_i \in \R^d$, $\beta_i \in \R$ 
     for  $1 \leq i \leq m$.Then by the scalar linearity of the innerproduct,  $\langle{c_i, \alpha x+ (1-\alpha)y} \rangle
-    \leq \beta_i$. Thus $[x,y] \in $A$.
+    \leq \beta_i$. Thus $[x,y] \in A$.
 \end{proof}
+
+\begin{example}
+    Let $V=\{v_1, \dots, v_m\} \subseteq \R^d$, $\rho_1, \dots, \rho_m \in \R^d$, define $f:\R^d \rightarrow \R$ by 
+    $f(x)=\sum{\rho_ie^{\langle{x,v_i}\rangle}}$, and define  $H: \R^d \rightarrow \R^d$ by 
+        \begin{equation*}
+            H(x)=\frac{\sum{\rho_iv_ie^{\langle{x,v_i}\rangle}}}{f(x)}
+        \end{equation*} 
+    Letting $x,y \in \R^d$, and choosing  $0 \leq \alpha \leq 1$, using the scalar linearity of 
+    the inner product, we see that:
+        \begin{equation*}
+            H(\alpha x_(1-\alpha)y)=
+            \frac{\sum{\rho_iv_ie^{\langle{\alpha x+(1-\alpha)y,v_i}\rangle}}}
+            {f(\alpha x+(1-\alpha)y)}
+        \end{equation*}
+        so $H(\R^d) \in \conv{V}$, which also implies that $H(\R^d)$ inherits 
+        convexity.
+\end{example} 
+
+\begin{example}
+    Consider the function $H$ in the example above. Let $y \in \con{V}$, and choose 
+    $x=(1-\alpha_m)y' \in \R^d$ such that $||H(x)||<\frac{\epsilon}{2}$; for $\epsilon>0$. Then since 
+    $y<x$,  $||H(y)||<||H(x)||<\frac{\epsilon}{2}$. Thus we have that $||H(x)-y|| \leq 
+    ||H(x)||+||y||<\frac{\epsilon}{2}+\frac{\epsilon}{2}=\epsilon$.
+
+    Moreover, we see that $H$ is 1-1, for suppose there is no nonzero vector  $c \in \R^d$ 
+    such that  $\langle{c,v_i}\rangle=\alpha$ for some $\alpha$. If  $H(x)=H(y)$, then 
+    $\langle{x,v_i}\rangle=\langle{y,v_i}\rangle=\alpha$, and so by our supposition, $x=y=0$.
+\end{example}
+
+\begin{example}
+    Let $q_1,q_2: \R^n \rightarrow \R$ be quadratic forms, and let $S^{n-1}$ be the unit 
+    ball in $\R^n$. Define $T:\R^n \rightarrow \R^2$ by  $T(x)=(q_1(x),q_2(x))$. Then 
+    $T(S^{n-1})$ is convex in  $R^2$, provided that  $n>2$.
+\end{example} 
+
+\begin{theorem}[The Shur-Horn Theorem]\label{1.1.3}
+    Let $A=(\alpha_{ij})$ be an  $n \cross n$ matrix, with diagonal $\diag{A}=(\alpha_{11}, \dots \alpha_{nn})$
+    and let  $\lambda_1, \dots, \lambda_n \in \R$. Let $X \subseteq \R$ be the set of all diagonals of  $n \times n$ 
+    \symmetric matrices with eigenvalues $\lambda_1, \dots, \lambda_n$, Then $X$ is a convex set. 
+    Morever, if  $l=(\lambda_1, \dots, \lambda_n)$ is the vecotr of eigenvalues, and  $\sigma$ is 
+    a permutation on  $\{1, \dots, n\}$, then $X=\conv{\{l^{\sigma}: 1 \leq i \leq n\}}$.
+\end{theorem}

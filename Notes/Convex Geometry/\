@@ -25,6 +25,7 @@
 \input{Library/Fonts/MathCalligraphy}
 \newcommand{\ita}[1]{\textit{#1}}
 \newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\conv}[1]{#1}
 \newcommand{\oneton}{\{1,2,3,...,n\}}
 \newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
 \newcommand\ef{\ita{f} }
@@ -35,8 +36,6 @@
 \newcommand\en{\ita{n }}
 \newcommand{\vbrack}[1]{\langle #1\rangle}
 \DeclareMathOperator{\ord}{ord}
-\DeclareMathOperator{\conv}{conv}
-\DeclareMathOperator{\diag}{diag}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
