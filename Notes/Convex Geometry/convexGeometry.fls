@@ -1,10 +1,10 @@
-PWD /home/eletrico/Mathematics/Notes/Advanced Calculus
+PWD /home/eletrico/Mathematics/Notes/Convex Geometry
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT Advanced Calculus.tex
-OUTPUT Advanced Calculus.log
+INPUT convexGeometry.tex
+OUTPUT convexGeometry.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
@@ -295,9 +295,9 @@ INPUT Library/Fonts/MathCalligraphy.tex
 INPUT Library/Fonts/MathCalligraphy.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT Advanced Calculus.aux
-INPUT Advanced Calculus.aux
-OUTPUT Advanced Calculus.aux
+INPUT convexGeometry.aux
+INPUT convexGeometry.aux
+OUTPUT convexGeometry.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -310,14 +310,14 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT Advanced Calculus.out
-INPUT Advanced Calculus.out
-INPUT Advanced Calculus.out
-INPUT Advanced Calculus.out
-OUTPUT Advanced Calculus.pdf
-INPUT ./Advanced Calculus.out
-INPUT ./Advanced Calculus.out
-OUTPUT Advanced Calculus.out
+INPUT convexGeometry.out
+INPUT convexGeometry.out
+INPUT convexGeometry.out
+INPUT convexGeometry.out
+OUTPUT convexGeometry.pdf
+INPUT ./convexGeometry.out
+INPUT ./convexGeometry.out
+OUTPUT convexGeometry.out
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
@@ -349,6 +349,7 @@ INPUT Chapters/Chapter1/Section1/section1.tex
 INPUT Chapters/Chapter1/Section1/section1.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -366,81 +367,25 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT Figures/convexSets.png
+INPUT ./Figures/convexSets.png
+INPUT ./Figures/convexSets.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT Chapters/Chapter1/Section2/section2.tex
-INPUT Chapters/Chapter1/Section2/section2.tex
-INPUT Chapters/Chapter1/Section3/section3.tex
-INPUT Chapters/Chapter1/Section3/section3.tex
-INPUT Chapters/Chapter1/Section4/section4.tex
-INPUT Chapters/Chapter1/Section4/section4.tex
-INPUT Chapters/Chapter2/chapter2.tex
-INPUT Chapters/Chapter2/chapter2.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT Chapters/Chapter2/Section1/section1.tex
-INPUT Chapters/Chapter2/Section1/section1.tex
-INPUT Chapters/Chapter2/Section2/section2.tex
-INPUT Chapters/Chapter2/Section2/section2.tex
-INPUT Chapters/Chapter2/Section3/section3.tex
-INPUT Chapters/Chapter2/Section3/section3.tex
-INPUT Chapters/Chapter2/Section4/section4.tex
-INPUT Chapters/Chapter2/Section4/section4.tex
-INPUT Chapters/Chapter2/Section5/section5.tex
-INPUT Chapters/Chapter2/Section5/section5.tex
-INPUT Chapters/Chapter3/chapter3.tex
-INPUT Chapters/Chapter3/chapter3.tex
-INPUT Chapters/Chapter3/Section1/section1.tex
-INPUT Chapters/Chapter3/Section1/section1.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT Chapters/Chapter3/Section2/section2.tex
-INPUT Chapters/Chapter3/Section2/section2.tex
-INPUT Chapters/Chapter3/Section3/section3.tex
-INPUT Chapters/Chapter3/Section3/section3.tex
-INPUT Chapters/Chapter3/Section4/section4.tex
-INPUT Chapters/Chapter3/Section4/section4.tex
-INPUT Chapters/Chapter4/chapter4.tex
-INPUT Chapters/Chapter4/chapter4.tex
-INPUT Chapters/Chapter4/Section1/section1.tex
-INPUT Chapters/Chapter4/Section1/section1.tex
-INPUT Chapters/Chapter4/Section2/section2.tex
-INPUT Chapters/Chapter4/Section2/section2.tex
-INPUT Chapters/Chapter4/Section3/section3.tex
-INPUT Chapters/Chapter4/Section3/section3.tex
-INPUT figures/meanValueTheorem.png
-INPUT ./figures/meanValueTheorem.png
-INPUT ./figures/meanValueTheorem.png
-INPUT Advanced Calculus.aux
-INPUT ./Advanced Calculus.out
-INPUT ./Advanced Calculus.out
+INPUT Figures/regularPolyhedra.png
+INPUT ./Figures/regularPolyhedra.png
+INPUT ./Figures/regularPolyhedra.png
+INPUT convexGeometry.aux
+INPUT ./convexGeometry.out
+INPUT ./convexGeometry.out
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

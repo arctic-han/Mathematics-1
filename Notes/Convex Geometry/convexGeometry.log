@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  1 NOV 2020 10:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  1 NOV 2020 11:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"Advanced Calculus.tex"
-(./Advanced Calculus.tex
+**convexGeometry.tex
+(./convexGeometry.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-07-17> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
@@ -605,29 +605,25 @@ File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count312
 \l__pdf_internal_box=\box66
-) (./Advanced Calculus.aux
+) (./convexGeometry.aux)
+\openout1 = `convexGeometry.aux'.
 
-LaTeX Warning: Label `3.4.1' multiply defined.
-
-)
-\openout1 = `"Advanced Calculus.aux"'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -685,7 +681,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.17} (current compat level: 1.12).
 
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring OFF on input line 74.
+Package hyperref Info: Link coloring OFF on input line 75.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -695,12 +691,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count319
 )
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
- (./Advanced Calculus.out) (./Advanced Calculus.out)
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
+ (./convexGeometry.out) (./convexGeometry.out)
 \@outlinefile=\write4
-\openout4 = `"Advanced Calculus.out"'.
+\openout4 = `convexGeometry.out'.
 
  (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -709,11 +705,11 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -724,730 +720,110 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 Chapter 1.
 (./Chapters/Chapter1/Section1/section1.tex
-./Chapters/Chapter1/Section1/section1.tex:20: Undefined control sequence.
-l.20       \item $a \cdot (b+c) = (a \codt
-                                           b)+(a \cdot c)$.
+./Chapters/Chapter1/Section1/section1.tex:13: Undefined control sequence.
+l.13     $\Delta: \R^d \cross
+                              \R^d \rightarrow \R$ such that $\Delta(x,y)=||...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[3] [4] [5]) (./Chapters/Chapter1/Section2/section2.tex [6]
+<Figures/convexSets.png, id=27, 800.5107pt x 615.9813pt>
+File: Figures/convexSets.png Graphic file (type png)
+<use Figures/convexSets.png>
+Package pdftex.def Info: Figures/convexSets.png  used on input line 36.
+(pdftex.def)             Requested size: 160.0993pt x 123.19408pt.
+[3 <./Figures/convexSets.png>]
+<Figures/regularPolyhedra.png, id=44, 500.3493pt x 385.1991pt>
+File: Figures/regularPolyhedra.png Graphic file (type png)
+<use Figures/regularPolyhedra.png>
+Package pdftex.def Info: Figures/regularPolyhedra.png  used on input line 57.
+(pdftex.def)             Requested size: 150.10594pt x 115.56061pt.
 
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 64.
-
-[7] [8]) (./Chapters/Chapter1/Section3/section3.tex
-./Chapters/Chapter1/Section3/section3.tex:41: Undefined control sequence.
-l.41 .... Now $a \leq \sup{E}$, hence $a \leq \Sup
-                                                  {E}-\epsilon_0$, so $\sup{...
+./Chapters/Chapter1/Section1/section1.tex:59: Undefined control sequence.
+l.59     \fig
+             {fig1.2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapters/Chapter1/Section3/section3.tex:41: Undefined control sequence.
-l.41 ...q \Sup{E}-\epsilon_0$, so $\sup{E}-\epsion
-                                                  _0$ is an upperbound of $E...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./Chapters/Chapter1/Section3/section3.tex:65: Undefined control sequence.
-l.65 ...et $E$ to be $E=\{3.14,3.141,43.1415, \etc
-                                                  \}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[9] [10]
-./Chapters/Chapter1/Section3/section3.tex:134: Undefined control sequence.
-l.134   A nonempty set $E \subseeq
-                                   \R$ is said to be \textbf{bounded} if it ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./Chapters/Chapter1/Section4/section4.tex [11] [12]
-./Chapters/Chapter1/Section4/section4.tex:71: Undefined control sequence.
-l.71       y = \loq
-                   {\frac{x}{2}+\frac{\sqrt{x^2}+4}{2}} = f^{-1}(x)
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section4/section4.tex:76: Undefined control sequence.
-l.76 ...textbf{finite} if and only if $e=\emptysey
-                                                  $ or there is a 1-1 mappin...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section4/section4.tex:76: Undefined control sequence.
-l.76 ...r there is a 1-1 mapping $f$ between $\{\1
-                                                  , \dots, n\}$ onto
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[13]
-./Chapters/Chapter1/Section4/section4.tex:173: Missing number, treated as zero.
-<to be read again> 
-                   A
-l.173         \item  $$A_1 \time A
-                                  _2$ is atmost countable.
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./Chapters/Chapter1/Section4/section4.tex:173: Display math should end with $$.
-<to be read again> 
-                    
-l.173         \item  $$A_1 \time A_2$ 
-                                      is atmost countable.
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-[14]
-./Chapters/Chapter1/Section4/section4.tex:182: Missing { inserted.
-<to be read again> 
-                   $
-l.182 ...,m)=(\phi_1(m),\phi_2(n))$, clearly  $f_$
-                                                   is onto, now if we can
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./Chapters/Chapter1/Section4/section4.tex:182: Missing } inserted.
-<inserted text> 
-                }
-l.182 ...,m)=(\phi_1(m),\phi_2(n))$, clearly  $f_$
-                                                   is onto, now if we can
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-LaTeX Warning: Command \i invalid in math mode on input line 188.
-
-./Chapters/Chapter1/Section4/section4.tex:204: Undefined control sequence.
-l.204 ...ection of sets $\Ec$ is said to be \textb
-                                                  {indexed} by a set $A$ if ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Runaway argument?
- (\bigcup E_{\alpha })^{C} &= \bigcap E_{\alpha }^{C} \\ 
-./Chapters/Chapter1/Section4/section4.tex:223: Paragraph ended before \align was complete.
-<to be read again> 
-                   \par 
-l.223 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-./Chapters/Chapter1/Section4/section4.tex:223: Missing $ inserted.
-<inserted text> 
-                $
-l.223 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapters/Chapter1/Section4/section4.tex:223: Missing } inserted.
-<inserted text> 
-                }
-l.223 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./Chapters/Chapter1/Section4/section4.tex:223: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.223 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./Chapters/Chapter1/Section4/section4.tex:223: Display math should end with $$.
-<to be read again> 
-                   \@@par 
-l.223 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-./Chapters/Chapter1/Section4/section4.tex:223: Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.223 
-      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./Chapters/Chapter1/Section4/section4.tex:224: Missing $ inserted.
-<inserted text> 
-                $
-l.224          (\bigcap
-                        E_{\alpha})^{C} &= \bigcup E_{\alpha}^{C} \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapters/Chapter1/Section4/section4.tex:224: Misplaced alignment tab character &.
-l.224          (\bigcap E_{\alpha})^{C} &
-                                         = \bigcup E_{\alpha}^{C} \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./Chapters/Chapter1/Section4/section4.tex:225: Missing $ inserted.
-<inserted text> 
-                $
-l.225 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapters/Chapter1/Section4/section4.tex:225: Missing } inserted.
-<inserted text> 
-                }
-l.225 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./Chapters/Chapter1/Section4/section4.tex:225: Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.225 
-      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./Chapters/Chapter1/Section4/section4.tex:226: Misplaced \cr.
-\math@cr@@@ ->\cr 
-                  
-l.226     \end{align}
-                     
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./Chapters/Chapter1/Section4/section4.tex:226: Misplaced \noalign.
-\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
-                                                  {\vskip #1\relax }
-l.226     \end{align}
-                     
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./Chapters/Chapter1/Section4/section4.tex:226: Misplaced \noalign.
-\black@ #1->\noalign 
-                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.226     \end{align}
-                     
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-Overfull \hbox (128.71681pt too wide) detected at line 226
-[]
- []
-
-./Chapters/Chapter1/Section4/section4.tex:226: Extra }, or forgotten \endgroup.
-\endalign ->\math@cr \black@ \totwidth@ \egroup 
-                                                \ifingather@ \restorealignst...
-l.226     \end{align}
-                     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./Chapters/Chapter1/Section4/section4.tex:226: Missing $ inserted.
-<inserted text> 
-                $
-l.226     \end{align}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./Chapters/Chapter1/Section4/section4.tex:226: Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.226     \end{align}
-                     
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-./Chapters/Chapter1/Section4/section4.tex:233: LaTeX Error: Command \end{definition} invalid in math mode.
+./Chapters/Chapter1/Section1/section1.tex:70: LaTeX Error: Command \end{proof} invalid in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.233 \end{definition}
-                      
+l.70 \end{proof}
+                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapters/Chapter1/Section4/section4.tex:233: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapters/Chapter1/Section1/section1.tex:70: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.233 \end{definition}
-                      
+l.70 \end{proof}
+                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapters/Chapter1/Section4/section4.tex:233: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapters/Chapter1/Section1/section1.tex:70: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.233 \end{definition}
-                      
+l.70 \end{proof}
+                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./Chapters/Chapter1/Section4/section4.tex:233: Missing $ inserted.
+./Chapters/Chapter1/Section1/section1.tex:70: Missing $ inserted.
 <inserted text> 
                 $
-l.233 \end{definition}
-                      
+l.70 \end{proof}
+                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./Chapters/Chapter1/Section4/section4.tex:236: Missing } inserted.
-<inserted text> 
-                }
-l.236 ..., Y$ be sets and let  $f{X \rightarrow Y$
-                                                  . If  $\{E_{\alpha}\}_{\al...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[15]
-./Chapters/Chapter1/Section4/section4.tex:242: Misplaced alignment tab character &.
-l.242         f(\bigcap_{\alpha \in A} E_\alpha) &
-                                                  = \bigcap_{\alpha} f(E_\al...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./Chapters/Chapter1/Section4/section4.tex:258: Misplaced alignment tab character &.
-l.258 ...f^{-1}(\bigcap_{\alpha \in A} E_\alpha) &
-                                                  = \bigcap_{\alpha} f^{-1}(...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./Chapters/Chapter1/Section4/section4.tex:264: Undefined control sequence.
-l.264 , then  $f(E_1 \cap E_2)=\e
-                                 ,emptyset$; but  $f(E_1)=\{1\}$ and  $f(E_2...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)) (./Chapters/Chapter2/chapter2.tex [16]
-Chapter 2.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 5.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 5.
-
-(./Chapters/Chapter2/Section1/section1.tex
-
-./Chapters/Chapter2/Section1/section1.tex:26: LaTeX Error: Environment example  undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 \begin{example }
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./Chapters/Chapter2/Section1/section1.tex:28: LaTeX Error: \begin{document} ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 \end{example}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./Chapters/Chapter2/Section1/section1.tex:34: LaTeX Error: Environment example  undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 \begin{example }
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./Chapters/Chapter2/Section1/section1.tex:36: LaTeX Error: \begin{document} ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.36 \end{example}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapters/Chapter2/Section1/section1.tex:39: Undefined control sequence.
-<argument> \q 
-              
-l.39 ...$n \geq N$. Choose  $\epsilon=\frac{\q}{2}
-                                                  $. then for $n$ od we have
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[17
-
-]
-
-./Chapters/Chapter2/Section1/section1.tex:64: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 Recall that the sequence $\{\(
-                                   -1)^n\}$ does not converge, however, supp...
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) (./Chapters/Chapter2/Section2/section2.tex [18] [19]
-./Chapters/Chapter2/Section2/section2.tex:91: Misplaced alignment tab character &.
-l.91 ...           |\frac{x_n}{y_n}-\frac{x}{y}| &
-                                                  = |\frac{x_ny-xy_n}{yy_n}|...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-Overfull \hbox (4.29045pt too wide) in paragraph at lines 103--106
-\OT1/cmr/m/n/12 then we get that $[] \OML/cmm/m/it/12 < []$\OT1/cmr/m/n/12 ; hence $[]$. For $\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 ; [] ; N \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1$ let $\OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = [] + [] []$,
- []
-
-[20]
-./Chapters/Chapter2/Section2/section2.tex:155: Double subscript.
-l.155 ..._0>0$ abd for all $n \in \N$. Then  $x_y_
-                                                   \rightarrow  +\infty$ as ...
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-./Chapters/Chapter2/Section2/section2.tex:178: Undefined control sequence.
-l.178 ...w we have thay  $x_m>x-\epsilon>y+\epsion
-                                                  >y_n$, a contradiction. Th...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./Chapters/Chapter2/Section3/section3.tex [21]
-./Chapters/Chapter2/Section3/section3.tex:58: Undefined control sequence.
-l.58    \decreasing
-                    and bounded below, then  $x_n \rigntarrow \inf{\{x_n\}}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter2/Section3/section3.tex:58: Undefined control sequence.
-l.58 ... and bounded below, then  $x_n \rigntarrow
-                                                   \inf{\{x_n\}}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[22] [23]
-
-LaTeX Warning: Command \i invalid in math mode on input line 179.
-
-
-LaTeX Warning: Command \i invalid in math mode on input line 181.
-
-) (./Chapters/Chapter2/Section4/section4.tex [24]
-./Chapters/Chapter2/Section4/section4.tex:74: Undefined control sequence.
-l.74 ...d and divergent. However,  $\log{n+1}-\got
-                                                  {n}=\frac{log{n+1}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./Chapters/Chapter2/Section5/section5.tex
-Overfull \hbox (12.67168pt too wide) in paragraph at lines 7--17
-[]\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]; x[]; x[]; [] \OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . Cntin-u-ing, con-structs $\OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 = []\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]; x[]; x[]; [] \OMS/cmsy/m/n/12 g$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 = []\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]; x[]; x[]; [] \OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
- []
-
-
-Overfull \hbox (23.36084pt too wide) in paragraph at lines 7--17
-\OT1/cmr/m/n/12 Con-tin-u-ing al-long this line, we get the terms $\OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 = []\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]; x[]; [] \OMS/cmsy/m/n/12 g$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 = []\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]; x[]; dots\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
- []
-
-[25]
-./Chapters/Chapter2/Section5/section5.tex:62: Undefined control sequence.
-l.62     Suppose that $-\inft
-                             <t<\infty$, then  $t$ is not  $t_n \neq -\infty...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[26]
-./Chapters/Chapter2/Section5/section5.tex:161: Undefined control sequence.
-<recently read> \limsu 
-                       
-l.161 ...heorem of the limit, we will have $\limsu
-                                                  {x_n} \leq
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)) (./Chapters/Chapter3/chapter3.tex [27] [28
-
-]
-Chapter 3.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 5.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 5.
-
-(./Chapters/Chapter3/Section1/section1.tex
-./Chapters/Chapter3/Section1/section1.tex:53: Missing } inserted.
-<inserted text> 
-                }
-l.53         \end{equation*}
-                            
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[29]
-Overfull \hbox (5.89539pt too wide) in paragraph at lines 129--131
-[]\OT1/cmr/bx/n/12 Definition. []\OT1/cmr/m/n/12 A vec-tor space with \OT1/cmr/bx/n/12 vec-tor mul-ti-pli-ca-tion \OT1/cmr/m/n/12 de-fined over it is called an $[]$. 
- []
-
-[30]) (./Chapters/Chapter3/Section2/section2.tex
-./Chapters/Chapter3/Section2/section2.tex:15: Undefined control sequence.
-<recently read> \epsilin 
-                         
-l.15     every $\epsilin
-                        >0$, there is a $\delta(\epsilon)>0$ such taht $a+\d...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter3/Section2/section2.tex:25: Undefined control sequence.
-<recently read> \epsilin 
-                         
-l.25     every $\epsilin
-                        >0$, there is a $\delta(\epsilon)>0$ such taht $a+\d...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[31] [32]) (./Chapters/Chapter3/Section3/section3.tex [33] [34] [35]) (./Chapters/Chapter3/Section4/section4.tex [36])) (./Chapters/Chapter4/chapter4.tex [37] [38
-
-]
-Chapter 4.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 5.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 5.
-
-(./Chapters/Chapter4/Section1/section1.tex [39]) (./Chapters/Chapter4/Section2/section2.tex
-./Chapters/Chapter4/Section2/section2.tex:23: Undefined control sequence.
-l.23     thi\at
-                if $g(a) \neq 0$, then there is a  $\delta>0$ such that  $g(...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[40]) (./Chapters/Chapter4/Section3/section3.tex [41]
-<figures/meanValueTheorem.png, id=483, 1045.9878pt x 804.8469pt>
-File: figures/meanValueTheorem.png Graphic file (type png)
-<use figures/meanValueTheorem.png>
-Package pdftex.def Info: figures/meanValueTheorem.png  used on input line 54.
-(pdftex.def)             Requested size: 313.79875pt x 241.45593pt.
-
-./Chapters/Chapter4/Section3/section3.tex:71: Undefined control sequence.
-l.71    $(1+\delta)^{\alpha} \heq
-                                  1+\alpha\delta$, and if  $\alpha >1$ then ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter4/Section3/section3.tex:71: Undefined control sequence.
-l.71 ...$\alpha >1$ then $(1+\delta)^{\alpha} \heq
-                                                   1+\alpha\delta$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter4/Section3/section3.tex:77: Undefined control sequence.
-l.77     $I \blackslash
-                        \{a\}$, and that  $g(x), g'(x) \neq 0$ for all  $x \...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter4/Section3/section3.tex:77: Undefined control sequence.
-l.77 ...'(x) \neq 0$ for all  $x \in I \blackslash
-                                                   \{a\}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[42 <./figures/meanValueTheorem.png>])) [43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
- (./Advanced Calculus.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
-Package rerunfilecheck Info: File `"Advanced Calculus".out' has not changed.
-(rerunfilecheck)             Checksum: E599D64A933CC2BB147834590E4CFDBD;1358.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
+)) [4 <./Figures/regularPolyhedra.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
+ (./convexGeometry.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
+Package rerunfilecheck Info: File `convexGeometry.out' has not changed.
+(rerunfilecheck)             Checksum: 77184872A8929144AF1B743F9E709AB5;117.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 30240 strings out of 482854
- 706639 string characters out of 5956880
- 1060056 words of memory out of 5000000
- 44677 multiletter control sequences out of 15000+600000
- 549518 words of font info for 84 fonts, out of 8000000 for 9000
+ 29831 strings out of 482854
+ 700717 string characters out of 5956880
+ 1049248 words of memory out of 5000000
+ 44583 multiletter control sequences out of 15000+600000
+ 545156 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 68i,10n,98p,745b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Advanced Calculus.pdf" (43 pages, 554064 bytes).
+ 68i,9n,98p,740b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on convexGeometry.pdf (4 pages, 338813 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 550 compressed objects within 6 object streams
- 265 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 39 words of extra memory for PDF output out of 10000 (max. 10000000)
 
