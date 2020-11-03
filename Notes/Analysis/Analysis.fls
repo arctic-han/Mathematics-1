@@ -362,6 +362,13 @@ INPUT Chapters/Chapter2/chapter2.tex
 INPUT Chapters/Chapter2/chapter2.tex
 INPUT Chapters/Chapter2/Section1/section1.tex
 INPUT Chapters/Chapter2/Section1/section1.tex
+INPUT Figures/diagonalizationArray.png
+INPUT ./Figures/diagonalizationArray.png
+INPUT ./Figures/diagonalizationArray.png
+INPUT Chapters/Chapter2/Section2/section2.tex
+INPUT Chapters/Chapter2/Section2/section2.tex
+INPUT Chapters/Chapter2/Section3/section3.tex
+INPUT Chapters/Chapter2/Section3/section3.tex
 INPUT Analysis.aux
 INPUT ./Analysis.out
 INPUT ./Analysis.out

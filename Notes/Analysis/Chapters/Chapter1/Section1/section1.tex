@@ -77,10 +77,19 @@
 \end{definition}
 
 \begin{example}
-    The set of all rationals $\Q$ does not have the least upperbound property, nor the 
+    \begin{enumerate}[label=(\arabic*)]
+        \item The set of all rationals $\Q$ does not have the least upperbound property, nor the 
     greatest lowerbound property, take $A$,  $B$ as in the previous example. Letting  
     $E=\{1, \frac{1}{2}, \frac{1}{4}\} \subseteq \frac{1}{\Z^+}$, we see that $\frac{1}{\Z^+}$ 
     satisfies both properties, with $\sup{E}=1$, and  $\inf{E}=\frac{1}{4}$.
+
+        \item Let $A \subseteq \R$ be nonempty, and be bounded below. Then by the greatest 
+            lowerbound property,  $\alpha=\inf{A} \in \R$ exists; Then for all  $x \in A$, 
+             $\alpha \leq x$, and for all other lowerbounds  $\gamma$,  $\gamma \leq \alpha$. Then 
+              $-x \leq -\alpha$, and  $-\alpha \leq -\gamma$, then we see that  $-\gamma$ and  $-\alpha$ 
+              are upperounds of  $-A$, and that  $-\alpha$ is the least upperbound of $-A$
+    \end{enumerate}
+
 \end{example} 
 
 \begin{theorem}\label{1.1.2}
