@@ -45,16 +45,16 @@
 
 
 \begin{theorem}[The Sandwhich Theorem]\label{}
-
-    Consider real valued sequences $\{x_n\}$,  $\{y_n\}$, and  $\{w_n\}$. Suppose that $\lim{x_n}=\lim{y_n}=a$ and that there 
-    is an $N_0 \in \N$ sucht hat  $x_n \leq w_n \leq y_n$ for all  $n \geq N_0$. Then  $\lim_{n \rightarrow \infty}{w_n}=a$. 
+    Let $\{x_n\}$, $\{y_n\}$, and  $\{w_n\}$ be sequences in $\R$, and  Suppose that 
+    $\lim{x_n}=\lim{y_n}=a$ and that there is an $N \in \Z^+$ such hat  $x_n \leq 
+    w_n \leq y_n$ for all  $n \geq N$. Then  $\lim_{n \rightarrow \infty}{w_n}=a$. 
 \end{theorem}
 \begin{proof}
-    Let $\epsilon>0$ and let  $\{x_n\}$ and  $\{y_n\}$ both converge to  $a$. Then by definition there are  $N_1,N_2 \in \N$ 
-    such that $|x_n-a|<\epsilon$ and  $|y_n-a|<\epsilon$ for  $n \geq N_1,n_2$. Now choose $N=\max{N_0,N_1,N_2}$, if 
+    Let $\epsilon>0$ and let  $\{x_n\}$ and  $\{y_n\}$ both converge to  $a$. Then by definition there are  $N_1,N_2 \in \Z^+$ 
+    such that $|x_n-a|<\epsilon$ and  $|y_n-a|<\epsilon$ for  $n \geq N_1,N_2$. Now choose $N=\max\{N_0,N_1,N_2\}$, if 
     $n \geq N$, we have  $-\epsilon<x_n-a<\epsilon$, and we also have  $x_n-a<w_n-a<y_n-a$, thus we have that:
         \begin{equation*}
-            -\epsilon<x_n-a<w_n-s<y_n-a<\epsilon
+            -\epsilon<x_n-a<w_n-a<y_n-a<\epsilon
         \end{equation*}
     Thus we have that $|w_n-a|<\epsilon$.
 \end{proof}
@@ -64,8 +64,8 @@
     $n \rightarrow \infty$.
 \end{corollary}
 \begin{proof}
-    We have that $\{y_n\}$ is bounded, hence, there is $M>0$ such that  $|y_n|<M$ for all  $n \in \N$. And since $\{x_n\}$ 
-    converges to $0$ we have that for any $\epsilon$ there is an  $N \in \N$ such that for  $n \geq N$,  $|x_n-0|<\frac{\epsilon}{M}$.
+    We have that $\{y_n\}$ is bounded, hence, there is $M>0$ such that  $|y_n|<M$ for all  $n \in \Z^+$. And since $\{x_n\}$ 
+    converges to $0$ we have that for any $\epsilon$ there is an  $N \in \Z^+$ such that for  $n \geq N$,  $|x_n-0|<\frac{\epsilon}{M}$.
     For $|x_ny_n-0|=|x_ny_n|<M|x_n|<M\frac{\epsilon}{M}=\epsilon$. Therefore, $x_ny_n \rightarrow 0$ as  $n \rightarrow \infty$.
 \end{proof}
 
