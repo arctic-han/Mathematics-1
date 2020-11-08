@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1604797926 "Analysis.tex" "Analysis.pdf" "Analysis" 1604797926
+["pdflatex"] 1604798986 "Analysis.tex" "Analysis.pdf" "Analysis" 1604798986
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -220,9 +220,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1596975543 38841 5237427e4d3283e7b009b6a8b45dfdcd ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604064816 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604064823 1156109 3d7119fb332ffed2b4ab40dce9b9b203 ""
-  "Analysis.aux" 1604797462 9025 3dc95d31b15d996b58d5cc54ced5c0a8 "pdflatex"
-  "Analysis.out" 1604797462 1666 611f9f68493888b95889761d9e33aeb6 "pdflatex"
-  "Analysis.tex" 1604797924 2341 4b58e63f65caa7f84f448c6370ca919a ""
+  "Analysis.aux" 1604798889 9414 f6820b7c09913c38176c686cc864b693 "pdflatex"
+  "Analysis.out" 1604798889 1803 a25689708192ab626432e9d22ad4dede "pdflatex"
+  "Analysis.tex" 1604797937 2341 4b58e63f65caa7f84f448c6370ca919a ""
   "Chapters/Chapter1/Section1/section1.tex" 1604360659 5793 7a621893960f0a644e326e1bbd389d98 ""
   "Chapters/Chapter1/Section2/section2.tex" 1604281220 3131 5da965271068afed970c2d2dcb64983a ""
   "Chapters/Chapter1/Section3/section3.tex" 1604336065 4631 a4de1ebf15b2d49f2ed7bfd7c8022521 ""
@@ -231,7 +231,7 @@
   "Chapters/Chapter1/chapter1.tex" 1604338778 662 1c973ac59546ece58378cc6372d88ec7 ""
   "Chapters/Chapter2/Section1/section1.tex" 1604422059 4452 25ed24e23f28926fc4b3fd5f656d09d7 ""
   "Chapters/Chapter2/Section2/section2.tex" 1604456185 11046 03e4f9eaf554118b8733c01b4ca8980b ""
-  "Chapters/Chapter2/Section3/section3.tex" 1604459512 9233 44796d2ffb0015a46641b43ff7d564dc ""
+  "Chapters/Chapter2/Section3/section3.tex" 1604798979 9233 e8bc2d7c38d4597037054b7bcd8aba73 ""
   "Chapters/Chapter2/Section4/section4.tex" 1604461162 3499 a551070c9c589e47f0abbd0901bc5341 ""
   "Chapters/Chapter2/Section5/section5.tex" 1604461965 1474 49383b1d317da63f6c245972f8c64731 ""
   "Chapters/Chapter2/chapter2.tex" 1604461365 657 66a69c5418ebc93327cde33dac0712f6 ""
@@ -241,7 +241,7 @@
   "Chapters/Chapter3/Section4/section4.tex" 1604608874 2939 bc2bf36a26535e89a067c18731a54832 ""
   "Chapters/Chapter3/Section5/section5.tex" 1604609802 1715 470bde475c95c384b5a6ef8ed8aa72a2 ""
   "Chapters/Chapter3/chapter3.tex" 1604608957 494 8ac3076cc4c19800ea1fd71ed7da5e47 ""
-  "Chapters/Chapter5/Section1/section1.tex" 1604778305 5720 0ea7b2c552b4ce5a084b794756e0dd4b ""
+  "Chapters/Chapter5/Section1/section1.tex" 1604798616 5722 bbcf7eb79031e84acfafd41c4c3db9f8 ""
   "Chapters/Chapter5/Section2/section2.tex" 1604790586 4590 82828814c9f02acf68dda280eca2d052 ""
   "Chapters/Chapter5/Section3/section3.tex" 1604792926 5724 db72ad40702a8af817e040853590b6b4 ""
   "Chapters/Chapter5/Section4/section4.tex" 1604793499 1639 cb693d75d5165dfb9df7dcf82d8c5b78 ""
@@ -249,7 +249,7 @@
   "Chapters/Chapter5/Section6/section6.tex" 1604796855 3419 5f5338f7224ca63b784e7f4bc2ac4ef9 ""
   "Chapters/Chapter5/Section7/section7.tex" 1604797902 1770 14ee14c08b225e8ea29794ad5254293f ""
   "Chapters/Chapter5/chapter5.tex" 1604796927 591 1d59f071ec567bbb6bc08219897e695c ""
-  "Chapters/Chapter6/Section1/section1.tex" 1604797908 247 3e1984e0a9b57c8a381a39ba6da53fb8 ""
+  "Chapters/Chapter6/Section1/section1.tex" 1604798694 246 aba66728273ae28ca43931de0f450aec ""
   "Chapters/Chapter6/chapter6.tex" 1604797918 307 0fcee60493605b162d0dcd446125aa73 ""
   "Figures/diagonalizationArray.png" 1604419919 517787 c502feb5262eba15ca38712a280bddf2 ""
   "Library/Fonts/BlackboardBold.tex" 1598311731 744 e62bfb97c3b0ebe0a2353762b95933da ""
@@ -257,5 +257,5 @@
   (generated)
   "Analysis.aux"
   "Analysis.pdf"
-  "Analysis.out"
   "Analysis.log"
+  "Analysis.out"

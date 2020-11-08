@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  7 NOV 2020 21:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  7 NOV 2020 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,6 +588,15 @@ LaTeX Warning: Label `2.2.3' multiply defined.
 LaTeX Warning: Label `2.2.4' multiply defined.
 
 
+LaTeX Warning: Label `2.2.5' multiply defined.
+
+
+LaTeX Warning: Label `2.2.6' multiply defined.
+
+
+LaTeX Warning: Label `2.2.8' multiply defined.
+
+
 LaTeX Warning: Label `4.1.1' multiply defined.
 
 )
@@ -712,7 +721,7 @@ and I'll forget about whatever was undefined.
 ]
 Chapter 2.
 (./Chapters/Chapter2/Section1/section1.tex
-<Figures/diagonalizationArray.png, id=244, 2042.5911pt x 1577.4132pt>
+<Figures/diagonalizationArray.png, id=252, 2042.5911pt x 1577.4132pt>
 File: Figures/diagonalizationArray.png Graphic file (type png)
 <use Figures/diagonalizationArray.png>
 Package pdftex.def Info: Figures/diagonalizationArray.png  used on input line 55.
@@ -870,6 +879,9 @@ my insertion and my current dilemma will both disappear.
 
 
 LaTeX Warning: Reference `2.3.4' on page 17 undefined on input line 145.
+
+
+LaTeX Warning: Reference `2.3.6' on page 17 undefined on input line 146.
 
 [17]) (./Chapters/Chapter2/Section4/section4.tex
 ./Chapters/Chapter2/Section4/section4.tex:28: Undefined control sequence.
@@ -1043,44 +1055,6 @@ Chapter 4.
 (./Chapters/Chapter5/Section1/section1.tex [27
 
 ]
-./Chapters/Chapter5/Section1/section1.tex:72: Missing $ inserted.
-<inserted text> 
-                $
-l.72              \item \frac{f}{g}
-                                   (x)=\frac{f(x)}{g(x)}, provided that $g(x...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapters/Chapter5/Section1/section1.tex:72: Extra }, or forgotten $.
-\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
-                                                 
-l.72              \item \frac{f}{g}
-                                   (x)=\frac{f(x)}{g(x)}, provided that $g(x...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./Chapters/Chapter5/Section1/section1.tex:72: Missing $ inserted.
-<inserted text> 
-                $
-l.72 ...frac{f(x)}{g(x)}, provided that $g(x) \neq
-                                                   0$.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapters/Chapter5/Section1/section1.tex:73: Missing } inserted.
-<inserted text> 
-                }
-l.73         \end{enumerate}
-                            
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 ./Chapters/Chapter5/Section1/section1.tex:96: Missing $ inserted.
 <inserted text> 
                 $
@@ -1230,15 +1204,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./Analysis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package rerunfilecheck Info: File `Analysis.out' has not changed.
+(rerunfilecheck)             Checksum: A25689708192AB626432E9D22AD4DEDE;1803.
 
-
-Package rerunfilecheck Warning: File `Analysis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Analysis.out':
-(rerunfilecheck)             Before: 611F9F68493888B95889761D9E33AEB6;1666
-(rerunfilecheck)             After:  FF042A3EFA29B518B0B30376B03429AA;1804.
 
 LaTeX Warning: There were undefined references.
 
@@ -1248,20 +1216,20 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 29565 strings out of 482854
- 695202 string characters out of 5956880
- 1047442 words of memory out of 5000000
- 43982 multiletter control sequences out of 15000+600000
+ 29570 strings out of 482854
+ 695248 string characters out of 5956880
+ 1047385 words of memory out of 5000000
+ 43987 multiletter control sequences out of 15000+600000
  545777 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,10n,98p,734b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{theorem.3.3.2} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Analysis.pdf (35 pages, 751932 bytes).
+Output written on Analysis.pdf (35 pages, 750193 bytes).
 PDF statistics:
- 652 PDF objects out of 1000 (max. 8388607)
- 590 compressed objects within 6 object streams
+ 657 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
  296 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 
