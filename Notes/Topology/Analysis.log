@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  9 NOV 2020 21:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  10 NOV 2020 10:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -580,7 +580,11 @@ File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count311
 \l__pdf_internal_box=\box64
-) (./Analysis.aux)
+) (./Analysis.aux
+
+LaTeX Warning: Label `1.2.4' multiply defined.
+
+)
 \openout1 = `Analysis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -688,40 +692,54 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 Chapter 1.
 (./Chapters/Chapter1/Section1/section1.tex
-<Figures/Chapter1/topologiesOn3Points.png, id=33, 1020.6933pt x 484.209pt>
+<Figures/Chapter1/topologiesOn3Points.png, id=37, 1020.6933pt x 484.209pt>
 File: Figures/Chapter1/topologiesOn3Points.png Graphic file (type png)
 <use Figures/Chapter1/topologiesOn3Points.png>
 Package pdftex.def Info: Figures/Chapter1/topologiesOn3Points.png  used on input line 31.
 (pdftex.def)             Requested size: 306.21036pt x 145.26381pt.
  [3 <./Figures/Chapter1/topologiesOn3Points.png>]) (./Chapters/Chapter1/Section2/section2.tex
-<Figures/Chapter1/basesOfCircularRectangularRegions.png, id=51, 630.9171pt x 474.3321pt>
+<Figures/Chapter1/basesOfCircularRectangularRegions.png, id=55, 630.9171pt x 474.3321pt>
 File: Figures/Chapter1/basesOfCircularRectangularRegions.png Graphic file (type png)
 <use Figures/Chapter1/basesOfCircularRectangularRegions.png>
 Package pdftex.def Info: Figures/Chapter1/basesOfCircularRectangularRegions.png  used on input line 56.
 (pdftex.def)             Requested size: 189.27658pt x 142.30072pt.
- [4])) [5 <./Figures/Chapter1/basesOfCircularRectangularRegions.png>]
+ [4] [5 <./Figures/Chapter1/basesOfCircularRectangularRegions.png>]
+./Chapters/Chapter1/Section2/section2.tex:128: Undefined control sequence.
+l.128      $x \leq a$, thus  $\R \subsets
+                                          \R_l$; a similar argument holds fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (./Chapters/Chapter1/Section3/section3.tex)) [6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./Analysis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `Analysis.out' has not changed.
-(rerunfilecheck)             Checksum: 7804392CE76CC4A614863D30D7EAB431;228.
+(rerunfilecheck)             Checksum: D1AE624810BC8474D07449ECBDCD91CB;293.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 29084 strings out of 482854
- 688565 string characters out of 5956880
- 1038505 words of memory out of 5000000
- 43854 multiletter control sequences out of 15000+600000
+ 29099 strings out of 482854
+ 688822 string characters out of 5956880
+ 1038637 words of memory out of 5000000
+ 43859 multiletter control sequences out of 15000+600000
  545857 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,9n,98p,734b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Analysis.pdf (5 pages, 1033030 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Analysis.pdf (6 pages, 1056587 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 47 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 55 words of extra memory for PDF output out of 10000 (max. 10000000)
 
