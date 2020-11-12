@@ -86,12 +86,21 @@ For the following definitions, let $X$ be a metric space with metric $d$.
     of $E$, or a point of  $E$, or both.
 \end{definition}
 
+\begin{lemma}\label{2.2.2}
+    If $E \subseteq X$, then  $E$ is perfect in  $X$ if and only if  $\bar{E}=E$.
+\end{lemma}
+
+\begin{lemma}\label{2.2.3}
+    If $E \susbseteq X$ is dense in  $X$, then either  $E$ is perfect in $X$, or  
+    $X=E$, or both.
+\end{lemma}
+
 \begin{definition}
     We call  $E \subseteq X$ \textbf{bounded} if there is a real number  $M>0$, and a point 
     $y \in X$ such that $d(x,y)<M$ for all $x \in E$.
 \end{definition}
 
-\begin{theorem}\label{2.2.2}
+\begin{theorem}\label{2.2.3}
     Let $X$ be a metric space and  $x \in X$. Every neighborhood of  $x$ is open.
 \end{theorem}
 \begin{proof}
@@ -100,7 +109,7 @@ For the following definitions, let $X$ be a metric space with metric $d$.
     $d(x,s) \leq d(x,y)+d(y,s)<r-h+h=r$, thus $s \in E$, so $y$ is an interior point of $E$.
 \end{proof}
 
-\begin{theorem}\label{2.2.3}
+\begin{theorem}\label{2.2.4}
     If $x$ is a limit point of a set  $E$, then every neighborhood of  $x$ contains infinitely many 
     points of  $E$.
 \end{theorem}
@@ -115,7 +124,7 @@ For the following definitions, let $X$ be a metric space with metric $d$.
     A finite point set has no limit points.
 \end{corollary}
 \begin{proof}
-    By theorem \ref{2.2.3}, if $x$ is a limit point in the finite point set $E$, then 
+    By theorem \ref{2.2.4}, if $x$ is a limit point in the finite point set $E$, then 
     evry neoghborhood of contains infinitely many points of $E$; contradicting its finiteness.
 \end{proof}
 
@@ -138,7 +147,7 @@ For the following definitions, let $X$ be a metric space with metric $d$.
     \end{enumerate}		
 \end{example} 
 
-\begin{theorem}\label{2.2.4}
+\begin{theorem}\label{2.2.5}
     Let $X$ be a metric space, a set  $E \subseteq X$ is open if and only if  $\com{X}{E}$ is 
     closed.
 \end{theorem}
@@ -160,7 +169,7 @@ For the following definitions, let $X$ be a metric space with metric $d$.
     This is the converse of theorem \ref{2.2.4}.		
 \end{proof}
 
-\begin{theorem}\label{2.2.5}
+\begin{theorem}\label{2.2.6}
     Let $X$ be a metric space. The following are true:
         \begin{enumerate}[label=(\arabic*)]
             \item If $\{G_{\alpha}\}$ is a collection of  open sets, then $\bigcup{G_{\alpha}}$ is open.
@@ -188,7 +197,7 @@ For the following definitions, let $X$ be a metric space with metric $d$.
     limit points of $E$. We define the \textbf{closure} of $E$ to be the set $\bar{E}=E \cup E'$.
 \end{definition}
 
-\begin{theorem}\label{2.2.6}
+\begin{theorem}\label{2.2.7}
     If $X$ is a metric space, and  $E \subseteq X$, then the following hold
          \begin{enumerate}[label=(\arabic*)]
              \item $\bar{x}$ is closed.
@@ -208,7 +217,7 @@ For the following definitions, let $X$ be a metric space with metric $d$.
     $E' \subseteq F$, therfore  $\bar{E} \subseteq F$.
 \end{proof}
 
-\begin{theorem}\label{2.2.7}
+\begin{theorem}\label{2.2.8}
     Let $E \susbseteq \R$ be nonempty and bnounded above, let  $y\\sup{E}$, then  $y \in \bar{E}$, 
     hence  $y \in E$ if  $E$ is closed.
 \end{theorem}
