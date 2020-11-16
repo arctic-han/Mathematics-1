@@ -424,6 +424,8 @@ INPUT Chapters/Chapter4/Section3/section3.tex
 INPUT figures/meanValueTheorem.png
 INPUT ./figures/meanValueTheorem.png
 INPUT ./figures/meanValueTheorem.png
+INPUT Chapters/Chapter4/Section4/section4.tex
+INPUT Chapters/Chapter4/Section4/section4.tex
 INPUT Advanced Calculus.aux
 INPUT ./Advanced Calculus.out
 INPUT ./Advanced Calculus.out

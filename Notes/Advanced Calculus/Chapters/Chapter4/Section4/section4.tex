@@ -1,0 +1,78 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 4.3
+%----------------------------------------------------------------------------------------
+
+\section{Monotonic Functions and Inverse Functions.}
+
+\begin{definition}
+    Let $E \subseteq \R$ be nonempty, and let  $f:E \rightarrow \R$ be a realvalued function. 
+    We say that $f$ is \textbf{monotonically increasing} on $E$ if for $x<y$, $f(x) \leq f(y)$. 
+    Similarly, $f$ is \textbf{monotonically decreasing} if $f(y) \leq f(x)$. In either case, we call 
+    $f$ a \textbf{monotonic} function.
+\end{definition}
+
+\begin{example}
+    The function $f(x)=x^2$ is not monotonoic on  $I$, but it is monotonically increasing 
+    over $[0,\infty)$ and monotonically decreasing over $(-\infty, 0)$. 
+\end{example} 
+
+\begin{theorem}\label{4.4.1}
+    Suppose that $a, b \in \R$ , with  $a$ and  $b$ distinct, and let  $f$ be contiuous 
+    over  $[a,b]$ and differentiable over  $(a,b)$. Then:
+        \begin{enumerate}[label=(\arabic*)]
+            \item If $f' \geq 0$, for all  $x \in (a,b)$, then $f$ monotonically increasing 
+                on $[a,b]$; respectively, if  $f' \leq 0$,  $f$ is monotonically decreasing.
+
+            \item If $f'=0$, for all  $x \in (a,b)$, then $f$ is constant on  $[a,b]$
+        \end{enumerate}
+\end{theorem}
+\begin{proof}
+    Assume without loss of generality that $f' \leq 0$, then for any  $a<x_1<x_2<b$, then 
+    $f$ is continuous on  $[x_1,x_2]$ and differentiable on $(x_1,x_2)$, hence by the 
+    mean value theorem, then there is a $c \in (x_1,x_2)$ such that $f(x_2)f(x_1)=f'(c)(x_2-x_1)$, 
+    hence $f(x_2)-f(x_1) \leq 0$, hence $f$ is monotonically decreasing. The case is analogous 
+    for  $f'>0$.
+
+    Now suppose that  $f'=0$,  then again by the mean value theorem, there is a  $c \in (x_1,x_2)$ 
+    such that $f(x_2)-f(x_1)=f'(c)(x_2-x_1)$, then $f(x_2)-f(x_2)=0$, for $x_1, x_2 \in (a,b)$ 
+    arbitrary therefore, $f$ is constant.
+\end{proof}
+
+\begin{remark}
+    If $f$ and  $g$ are continuous on a nondegenerate inteval,  $[a,b]$, and differentiable 
+    on  $(a,b)$, and  $f'=g'$ for all  $x \in (a,b)$, then $f-g$ is constant.
+\end{remark}
+\begin{proof}
+    We repeat the proof for the constant case using the Cauchy mean value theorem; 
+    similarly, we can just apply the previous theorem to the function $f-g$.
+\end{proof}
+
+Suppose that $f$ is a realvalued function, who has an inverse function  $f^{-1}$. Then 
+the graph of  $f^{-1}$ is symmetric to the graph of  $f$ with respect to the line  $y=x$. Then 
+visually,  $f^{-1}$ is as smooth as  $f$. Algebraically, we can apply an operation to the graph 
+of $f$ to obtain the graph of  $f^{-1}$, and we can observe that smoothness is preserved, however 
+we would like to prove this rigorously.
+
+\begin{theorem}\label{4.4.2}
+    If $f$ is a  1-1 continuous function of the interval  $I$ onto $\R$, 
+    then  $f$ is strictly monotonic on  $I$, and  $f^{-1}$ is continuous and strictly 
+    monotonic on $f(I)$.
+\end{theorem}
+\begin{proof}
+    Let $[a,b] \subseteq I$. Since $f$ is  1-1, then $f(x)=f(y)$ implies $x=y$ whenever 
+    $x,y \in [a,b]$, hence either $f(x)<f(y)$ or $f(x)>f(y)$, for  $a<x<y<b$.
+
+    Now suppose that $f$ is strictly increasing. Since  $f$ is 1-1 onto  $\R$, then  $f^{-1}$ 
+    exists on $f(I)$, and since  $f(x)<f(y)$ whenever  $x<y$, $f^{-1}(f(x))=x<f^{-1}(f(y))=y$ 
+    implies  $f^{-1}(x)<f^{-1}(y)$, hence  $f^{-1}$ is also strictly increasing.
+
+    Now since $f$ is continous, we have for every  $\epsilon>0$, there is a $\delta>0$ such 
+    thay  $|f(x)-f(c)|<f(x)$ whenever  $0<|x-c|<\delta$, for some  $c \in I$. Now since  $f^{-1}$ 
+    is strictly monotone, we have that  $0<|f^{-1}(f(x))-f^{-1}(f(c))|=|x-c|<\epsilon$ implies 
+    that  $|f^{-1}(x)-f^{-1}(c)|<\delta$, where $f(c) \in f(I)$ therefore,  $f^{-1}$ is also 
+    continuous.
+\end{proof}
+
+\begin{remark}
+    Refer to the textbook for an alternative proof.
+\end{remark}
