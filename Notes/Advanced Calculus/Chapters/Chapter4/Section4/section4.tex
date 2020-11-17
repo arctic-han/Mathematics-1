@@ -59,20 +59,23 @@ we would like to prove this rigorously.
     monotonic on $f(I)$.
 \end{theorem}
 \begin{proof}
-    Let $[a,b] \subseteq I$. Since $f$ is  1-1, then $f(x)=f(y)$ implies $x=y$ whenever 
-    $x,y \in [a,b]$, hence either $f(x)<f(y)$ or $f(x)>f(y)$, for  $a<x<y<b$.
+    We have that since $f$ is 1-1, then  $f(x)=f(y)$ implies  $x=y$, hence if  $x<y$ 
+    are in $I$, then  either $f(x)<f(y)$ or  $f(x)>f(y)$, now if  $f$ is not strictly monotone, then 
+    for some $c \in I$, with  $x<c<y$, we have that either  $f(x)$ is inbetween $f(c)$ and  $f(b)$, 
+    or  $f(y)$ is between  $f(x)$ and  $f(c)$, hence, by the intermediate value theorem, there is an  $x_1 \in I$ 
+    such that $f(x_1)=f(x)$ or $f(x_1)=f(y)$. Then either $x_1=x$ or $x_2=y$ which contradicts the assumption.
 
-    Now suppose that $f$ is strictly increasing. Since  $f$ is 1-1 onto  $\R$, then  $f^{-1}$ 
-    exists on $f(I)$, and since  $f(x)<f(y)$ whenever  $x<y$, $f^{-1}(f(x))=x<f^{-1}(f(y))=y$ 
-    implies  $f^{-1}(x)<f^{-1}(y)$, hence  $f^{-1}$ is also strictly increasing.
+    Now suppos that $f$ is strictly increasing on  $I$, since  $f$ is 1-1 ont  $\R$, then 
+    $f^{-1}$ exists on  $f(I)$. Now suppose that there are  $y_1,y_2 \in f(I)$ such that 
+    $ y_1<y_2$ but $f^{-1}(y_1) \geq f^{-1}(y_2)$, and since $f$ is increasing, then  $f(x_1) \geq f(x_2)$, which 
+    is absurd. We also have that $f(I)$ is an interval for if  $I=[a,b]$, then  $f([a,b])=[f(a)f(b)]$ by 
+    the intermediate value theorem.
 
-    Now since $f$ is continous, we have for every  $\epsilon>0$, there is a $\delta>0$ such 
-    thay  $|f(x)-f(c)|<f(x)$ whenever  $0<|x-c|<\delta$, for some  $c \in I$. Now since  $f^{-1}$ 
-    is strictly monotone, we have that  $0<|f^{-1}(f(x))-f^{-1}(f(c))|=|x-c|<\epsilon$ implies 
-    that  $|f^{-1}(x)-f^{-1}(c)|<\delta$, where $f(c) \in f(I)$ therefore,  $f^{-1}$ is also 
-    continuous.
+    Now fix  $y_0 \in f(I)$, and let $\epsilon>0$, since $f^{-1}$ is strictly increasing, on $f(I)$ by 
+    the above assumption, if $y_0$ is not a right endpoint of $f(I)$, then  $f^{-1}(y_0)$ is not 
+    a  right endpoint of  $I$, then  there is an $0<\epsilon_0<\epsilon$ with $\epsilon+\epsilon_0 \in I$. Let  $\delta=f(x_0+\epsilon_0)-f(x_0)$, 
+    and suppose that $0<y-y_0<\delta$, then $y_0<y<y_0+\delta=f(x_0+\epsilon_0)$, then since $f^{-1}$ is strictly 
+    increasing, it follows that  $x_0<x<x+\epsilon_0$, hence we have that $0<f^{-1}(y)-f^{-1}(y_0)<\epsilon$, 
+    that is $f^{-1}(y_0+)$ exists, similatly, if $y_0$ is not a left endpoint of $I$, then  $f^{-1}(y_0-)$ 
+    exists. In both cases, we have that $f^{-1}(y_0\pm)=f(y_0)$. Therefore, $f^{-1}$ is contiuous.
 \end{proof}
-
-\begin{remark}
-    Refer to the textbook for an alternative proof.
-\end{remark}
