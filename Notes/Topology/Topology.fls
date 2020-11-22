@@ -373,6 +373,14 @@ INPUT ./Figures/Chapter1/projections.png
 INPUT ./Figures/Chapter1/projections.png
 INPUT Chapters/Chapter1/Section5/section5.tex
 INPUT Chapters/Chapter1/Section5/section5.tex
+INPUT Figures/Chapter1/convexSeAndNonConvexSet.png
+INPUT ./Figures/Chapter1/convexSeAndNonConvexSet.png
+INPUT ./Figures/Chapter1/convexSeAndNonConvexSet.png
+INPUT Figures/Chapter1/upperAndLowerBoundsOfDomains.png
+INPUT ./Figures/Chapter1/upperAndLowerBoundsOfDomains.png
+INPUT ./Figures/Chapter1/upperAndLowerBoundsOfDomains.png
+INPUT Chapters/Chapter1/Section6/section6.tex
+INPUT Chapters/Chapter1/Section6/section6.tex
 INPUT Topology.aux
 INPUT ./Topology.out
 INPUT ./Topology.out
