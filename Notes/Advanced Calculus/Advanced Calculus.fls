@@ -426,6 +426,19 @@ INPUT ./figures/meanValueTheorem.png
 INPUT ./figures/meanValueTheorem.png
 INPUT Chapters/Chapter4/Section4/section4.tex
 INPUT Chapters/Chapter4/Section4/section4.tex
+INPUT figures/meanValueDeriv.png
+INPUT ./figures/meanValueDeriv.png
+INPUT ./figures/meanValueDeriv.png
+INPUT Chapters/Chapter5/chapter5.tex
+INPUT Chapters/Chapter5/chapter5.tex
+INPUT Chapters/Chapter5/Section1/section1.tex
+INPUT Chapters/Chapter5/Section1/section1.tex
+INPUT figures/partitionOfAnInterval.png
+INPUT ./figures/partitionOfAnInterval.png
+INPUT ./figures/partitionOfAnInterval.png
+INPUT figures/partitionOfACurve.png
+INPUT ./figures/partitionOfACurve.png
+INPUT ./figures/partitionOfACurve.png
 INPUT Advanced Calculus.aux
 INPUT ./Advanced Calculus.out
 INPUT ./Advanced Calculus.out

@@ -144,3 +144,21 @@ we would like to prove this rigorously.
     continuing along this line, we get that $f(b)-f(a) \geq \frac{n}{j_0}$ for all $n \geq 1$, which 
     implies that  $f(b)-f(a)$ is infinite, which is a contradiction. Thus  $A_j$ must be finite.
 \end{proof}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale = 0.3]{figures/meanValueDeriv.png}
+    \caption{The intermediate value theorem for derviavtives.}
+    \label{fig_4.2}
+\end{figure}
+
+\begin{theorem}[The Intermediate Value Theorem for Derivatives]\label{4.4.5}
+    Suppose that $f$ is differentiable on a closed interval  $[a,b]$, where  $f'(a) \neq g('b)$. If  $y_0 \in \R$ such that $f'(a)<y_0<f'(b)$, then there is an $x_0 \in (a,b)$ such that $f'(x_0)=y_0$.
+\end{theorem}
+\begin{proof}
+    Suppose that $f'(a)<y_0<f'(b)$, now suppose without loss of generality that $f'(a)<f'(b)$. Now let $F(x)=f(x)-y_0x$, for $x \in [a,b]$. We have that $F$ is differentiable on  $(a,b)$, then by the extreme value theorem, $F$ has a local maximum, and a local minumum, let  $F(x_0)$ is a local minimum on $[a,b]$. We have that  $F'(a)=f'(a)-y_0<0$, which is decreasing, so for $h$ sufficiently small, we have  $F(a+h)-F(a)<0$, hence  $F(a)$ cannot be the minumum, hence  $x_0 \neq a$. Similarly,
+    $F'(b)=f'(b)-y_0>0$, which is increasing, by similar reasoning, we have that $F(b+h)-F(b)>0$ for  $h$ sufficiently small, hence $F(b)$ cannot be a local maximum, so  $x_0 \neq b$. Thus $x_0 \in (a,b)$. Now since $F(x_0)$ is a local minumum, then we have that $F'(x_0)=0$, hence $f'(x_0)=y_0$
+\end{proof}
+\begin{remark}
+    If in the proof we assume that $f'(a)>y_0>f'(b)$, then we consider $F(x_0)$ to be a local maximum.
+\end{remark}
