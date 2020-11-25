@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  24 NOV 2020 23:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  25 NOV 2020 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -571,12 +571,24 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) (./Library/Fonts/BlackboardBold.tex) (./Library/Fonts/MathCalligraphy.tex)
+
+./Topology.tex:29: LaTeX Error: Command \bbar undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \renewcommand{\bbar}
+                         [1]{\underline{#1}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 \c@theorem=\count306
 \c@axiom=\count307
 \c@postulate=\count308
 \c@conjecture=\count309
 \c@example=\count310
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count311
 \l__pdf_internal_box=\box64
@@ -587,22 +599,22 @@ LaTeX Warning: Label `1.2.4' multiply defined.
 )
 \openout1 = `Topology.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -660,7 +672,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.17} (current compat level: 1.12).
 
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 71.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -670,18 +682,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count318
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
  (./Topology.out) (./Topology.out)
 \@outlinefile=\write4
 \openout4 = `Topology.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -774,33 +786,167 @@ File: Figures/Chapter1/upperAndLowerBoundsOfDomains.png Graphic file (type png)
 <use Figures/Chapter1/upperAndLowerBoundsOfDomains.png>
 Package pdftex.def Info: Figures/Chapter1/upperAndLowerBoundsOfDomains.png  used on input line 132.
 (pdftex.def)             Requested size: 322.3185pt x 152.87242pt.
-) (./Chapters/Chapter1/Section6/section6.tex [11 <./Figures/Chapter1/convexSeAndNonConvexSet.png>] [12 <./Figures/Chapter1/upperAndLowerBoundsOfDomains.png>])) [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
- (./Topology.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
-Package rerunfilecheck Info: File `Topology.out' has not changed.
-(rerunfilecheck)             Checksum: 7A92ACE35E22F8B1E1209F0E477AF24A;503.
+) (./Chapters/Chapter1/Section6/section6.tex [11 <./Figures/Chapter1/convexSeAndNonConvexSet.png>] [12 <./Figures/Chapter1/upperAndLowerBoundsOfDomains.png>] [13]
+./Chapters/Chapter1/Section6/section6.tex:197: Argument of \com has an extra }.
+<inserted text> 
+                \par 
+l.197 ...      [0,1]=\bar{(0,1]}=\bar{\com{[0,1]}}
+                                                  {\{0\}}$, so $0$ is a limit
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+./Chapters/Chapter1/Section6/section6.tex:197: Paragraph ended before \com was complete.
+<to be read again> 
+                   \par 
+l.197 ...      [0,1]=\bar{(0,1]}=\bar{\com{[0,1]}}
+                                                  {\{0\}}$, so $0$ is a limit
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./Chapters/Chapter1/Section6/section6.tex:197: Missing $ inserted.
+<inserted text> 
+                $
+l.197 ...      [0,1]=\bar{(0,1]}=\bar{\com{[0,1]}}
+                                                  {\{0\}}$, so $0$ is a limit
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapters/Chapter1/Section6/section6.tex:197: Missing } inserted.
+<inserted text> 
+                }
+l.197 ...      [0,1]=\bar{(0,1]}=\bar{\com{[0,1]}}
+                                                  {\{0\}}$, so $0$ is a limit
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./Chapters/Chapter1/Section6/section6.tex:197: Missing } inserted.
+<inserted text> 
+                }
+l.197 ...      [0,1]=\bar{(0,1]}=\bar{\com{[0,1]}}
+                                                  {\{0\}}$, so $0$ is a limit
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./Chapters/Chapter1/Section6/section6.tex:197: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.197 ...      [0,1]=\bar{(0,1]}=\bar{\com{[0,1]}}
+                                                  {\{0\}}$, so $0$ is a limit
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapters/Chapter1/Section6/section6.tex:197: Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.197 ...      [0,1]=\bar{(0,1]}=\bar{\com{[0,1]}}
+                                                  {\{0\}}$, so $0$ is a limit
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 197.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 197.
+
+./Chapters/Chapter1/Section6/section6.tex:198: Missing $ inserted.
+<inserted text> 
+                $
+l.198 ...1]$, the same can be said for any  $x \in
+                                                   (0,1]$.		
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+<Figures/Chapter1/hausdorffSpace.png, id=196, 805.5696pt x 392.9079pt>
+File: Figures/Chapter1/hausdorffSpace.png Graphic file (type png)
+<use Figures/Chapter1/hausdorffSpace.png>
+Package pdftex.def Info: Figures/Chapter1/hausdorffSpace.png  used on input line 243.
+(pdftex.def)             Requested size: 402.78381pt x 196.45346pt.
+[14]
+
+LaTeX Warning: Reference `1.8' on page 15 undefined on input line 263.
+
+./Chapters/Chapter1/Section6/section6.tex:291: Undefined control sequence.
+l.291     \subsesubseteq
+                         X$. Then a point  $x$ is a limit point of  $A$ if a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[15 <./Figures/Chapter1/hausdorffSpace.png>]) (./Chapters/Chapter1/Section7/section7.tex)) [16]
+
+./Topology.tex:82: LaTeX Error: \begin{corollary} on input line 160 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+(./Topology.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+
+
+Package rerunfilecheck Warning: File `Topology.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Topology.out':
+(rerunfilecheck)             Before: 7A92ACE35E22F8B1E1209F0E477AF24A;503
+(rerunfilecheck)             After:  10788BF7E55F9B8D984664028E72C9E4;570.
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
- ) 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 160 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 29213 strings out of 482854
- 691134 string characters out of 5956880
- 1040409 words of memory out of 5000000
- 43908 multiletter control sequences out of 15000+600000
+ 29286 strings out of 482854
+ 692193 string characters out of 5956880
+ 1042826 words of memory out of 5000000
+ 43945 multiletter control sequences out of 15000+600000
  545857 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,9n,98p,734b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Topology.pdf (13 pages, 1815340 bytes).
+Output written on Topology.pdf (16 pages, 1924719 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 310 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
