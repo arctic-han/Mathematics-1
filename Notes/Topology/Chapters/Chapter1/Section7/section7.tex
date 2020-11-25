@@ -3,3 +3,55 @@
 %----------------------------------------------------------------------------------------
 
 \section{Continuous Functions.}
+
+\begin{definition}
+    Let $X$ and  $Y$ be topological spaces. We say that a mapping $f:X
+    \rightarrow Y$ is  \textbf{continuous} if for each open set $V$ in  $Y$,
+    $f^{-1}(V)$ is open in $X$.
+\end{definition}
+
+Now if $f:X \rightarrow Y$ is continuous, the for every open set  $V$ of  $Y$,
+$f^{-1}(V)$ is open in  $X$. Now suppose that  $\Bc$ is a basis of  $Y$, then
+$V=\bingcup{B_{\alpha}}$, hence
+$f^{-1}(\bingcup{B_{\alpha}})=\bingcup{f^{-1}{B_{\alpha}}}$, which is open in
+$X$, thus  $B_{\alpha}$ must also be open in  $X$. 
+
+Similarly, if $\Sc$ is a subbasis of  $Y$, then for any basis element  $B$ of
+$Y$,  $B=\bigcap_{i=1}^{n}{S_i}$, which then implies that
+$f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
+ $1 \leq i \leq n$.
+
+\begin{example}
+    \begin{enumerate}[label=(\arabic*)]
+        \item Let $f:\R \rightarrow \R$ be a continuous realvalued function.
+            THen for each open interval  $I \subseteq \R$,  $f^{-1}(I)$ is an
+            open interval in  $\R$, so take  $x_0 \in \R$ and $\epsilon>0$, and
+            let $I=(f(x_0)-\epsilon,f(x_0)+\epsilon)$, then since $ x_0 \in
+            f^{-1}(I)$, there is a basis $(a,b) \subseteq f^{-1}(I)$ about
+            $x_0$. Then take  $\delta=\min\{x_0-a,x_0-b\}$, then $x \in (a,b)$
+            whenever $0<|x-x_0|<\delta$, and we get that $f(x) \in I$, that is,
+            $|f(x)-f(x_0)|<\epsilon$. This is the definition of continuity
+            defined in the real analysis. We can prove that the converse holds
+            also.
+
+            If $f:\R \rightarrow \R$ is continuous at a point $x_0$, then for
+            every $\epsilon>0$, there is a  $\delta>0$ such that
+            $|f(x)-f(x_0)|<\epsilon$ whenever $0<|x-x_0|<\delta$. Then we notice
+            that $x$ and  $ x_0$ are distinct, furthermore, $x_0-\delta<x
+            <x_0+\delta$, hence $x \in (x_0-\delta,x_0+\delta)$ implies that
+            $f(x) \in (f(x_0)-\epsilon,f(x_0)+\epsilon)$. Letting
+            $V_{\delta}(x_0)=(x_0-\delta,x_0+\delta) $ and
+            $V_{\epsilon}(f(x_0))=(f(x_0)-\epsilon,f(x_0)+\epsilon)$, we have
+            that whenever  $x \in V_{\delta}(x_0)$, then $f(x) \in
+            V_{\epsilon}(f(x_0)) \subseteq f^{-1}(V_{\delta}(x_0))$. And so the
+            topological definition of continuity is equivialent to the real
+            analytic definition of continuity.
+
+        \item Let $f:\R \rightarrow \R_l$ be defined such that  $f(x)=x$ for all
+            $x \in \R$. Take  $[a,b) \subseteq \R_l$, we have that
+            $f^{-1}([a,b))=[a,b)$, which is not open in  $\R$  (under the
+            standard topology), hence $f$ is not continuous. However, the map
+            $g:\R_l \rightarrow \R$ defined the same way is continuous since
+            $g^{-1}((a,b))$ is open in  $\R_l$.
+    \end{enumerate}
+\end{example} 

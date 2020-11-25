@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1606317957 "Topology.tex" "Topology.pdf" "Topology" 1606317957
+["pdflatex"] 1606334874 "Topology.tex" "Topology.pdf" "Topology" 1606334874
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -226,7 +226,7 @@
   "Chapters/Chapter1/Section4/section4.tex" 1605039850 4252 d672998f1acb2249bb4a4c9b86a7bdc0 ""
   "Chapters/Chapter1/Section5/section5.tex" 1606006271 6807 4dd890350cfa785d838ebf474113b266 ""
   "Chapters/Chapter1/Section6/section6.tex" 1606317834 16440 c5bb7157bca36f2f85d4421cd0e31237 ""
-  "Chapters/Chapter1/Section7/section7.tex" 1606317908 227 584473fba6838a42d42952603225bc14 ""
+  "Chapters/Chapter1/Section7/section7.tex" 1606334873 3086 9d673823b4e572a0762815a498f5ccc4 ""
   "Chapters/Chapter1/chapter1.tex" 1606317953 774 60742b89f8cdd6afd41ba458d2076a98 ""
   "Figures/Chapter1/basesOfCircularRectangularRegions.png" 1604969067 825314 761ca474224a9dffd78304f018349b25 ""
   "Figures/Chapter1/convexSeAndNonConvexSet.png" 1606002298 331821 65f63bf9b203418c0376d3adc5c5e735 ""
@@ -238,11 +238,11 @@
   "Figures/Chapter1/upperAndLowerBoundsOfDomains.png" 1606003142 307312 cdab10a3dd96d9cc7da9a0df695a847a ""
   "Library/Fonts/BlackboardBold.tex" 1598311731 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1598311731 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "Topology.aux" 1606317768 5379 85a2ca23f450ec49fae235b01e093489 "pdflatex"
-  "Topology.out" 1606317768 503 7a92ace35e22f8b1e1209f0e477af24a "pdflatex"
-  "Topology.tex" 1606311167 2187 9592292089d920d07d2f194c43a9c6d1 ""
+  "Topology.aux" 1606334707 5502 e63bd2e88315e30b8a9717ed2660f208 "pdflatex"
+  "Topology.out" 1606334707 570 10788bf7e55f9b8d984664028e72c9e4 "pdflatex"
+  "Topology.tex" 1606317999 2187 9592292089d920d07d2f194c43a9c6d1 ""
   (generated)
+  "Topology.out"
   "Topology.log"
   "Topology.pdf"
-  "Topology.out"
   "Topology.aux"
