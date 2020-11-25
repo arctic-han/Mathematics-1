@@ -3,3 +3,95 @@
 %----------------------------------------------------------------------------------------
 
 \section{Closed Sets and Limit Points.}
+
+\begin{definition}
+    A subset $A$ of a topological space  $X$ is said to be  \textbf{closed} if
+    $\com{X}{A}$ is open.		
+\end{definition}
+
+\begin{example}
+    \begin{enumerate}[label=(\arabic*)]
+        \item Consider $[a,b] \subseteq \R$, we have that
+            $\com{\R}{[a,b]}=(-\infty,a) \cup (b, \infty)$ which is open in
+            $\R$. So  $[a,b]$ is closed.
+
+        \item In  $\R \times \R$, the set  $A=\{x \times y: x,y \geq 0\}$  (i.e
+            the first quadtant of the plane) is closed, for $\com{\R \times
+            \R}{A}=(- \infty,0) \times \R \cup \R \times (-\infty,0)$, which is
+            open in $\R \times \R$.
+
+        \item Consider the finite complement topology $\Tc_C$ on a set  $X$. We
+            have that  $\com{X}{X}=\emptyset \in \Tc$, so  $X$ is closed,
+            similarly,  $\emptyset$ is also closed. Likewise, if  $A \subseteq
+            X$ is a finite set, then  $\com{X}{A}$ is also finite, and hence $A$
+            is also closed. Thus, we have that all the closed sets of  $\Tc_C$
+            are those finite subsets of  $X$. As a consequence, this examle also
+            illustrates that sets can be both closed and open.
+
+        \item In the discrete topology  $2^X$, every open set is closed. This is
+            another example where open sets are also closed sets.
+
+        \item Consider  $[0,1] \cup (2,3)$ in the subspace topology on $\R$. We
+            have that  $[0,1]$ is open  ($[0,1]=[0,1] \cup (2,3) \cap
+            (-\frac{2}{3}),\frac{3}{2}$), similarly, $(2,3)$ is also open. Now
+            taking  $\com{[0,1] \cup (2,3)}{(2,3)}=[0,1]$, which is open, so
+            $[0,1]$ is closed in the subspace topology on  $\R$, bu the same
+            reasoning, so is  $(2,3)$.
+    \end{enumerate}		
+\end{example} 
+
+\begin{theorem}\label{1.6.1}
+    Let $X$ be a topological space. Then:
+         \begin{enumerate}[label=(\arabic*)]
+             \item $\emptyset$ and  $X$ are closed.
+
+             \item Arbitrary intersections of closed sets are closed.
+
+             \item Finite unions of closed sets are closed.
+        \end{enumerate}
+\end{theorem}
+\begin{proof}
+    We have that $\com{X}{\emptyset}=X$ and  $\com{X}{X}=\emptyset$, both of
+    which are open in  $X$, so they are also closed in  $X$. Now let
+    $\{U_{\alpha}\}$ be a collection of closed sets of  $X$. We have that:
+        \begin{equation*}
+            \com{X}{\bigcap_{\alpha}}{U_{\alpha}}=\bigcup_{\alpha}{\com{X}{U_{\alpha}}}.
+        \end{equation*}
+        Similarly, for $\{U_i\}_{i=1}^{n}$, we have
+        \begin{equation*}
+            \com{X}{\bigcup_{i=1}^{n}}{U_{i}}=\bigcap_{i=1}^{n}{\com{X}{U_{i}}}.
+        \end{equation*}
+    Both of which are open in $X$. This completes the proof.
+\end{proof}
+
+\begin{definition}
+    If $Y$ is a subspace of  $X$, we say that  $A$ is  \textbf{closed in $Y$} if
+    $A \subseteq Y$ and  $A$ is closed in the subspace topology of  $Y$.
+\end{definition}
+
+\begin{theorem}\label{1.6.2}
+    Let $Y$ be a subspace of  $X$. Then  $A$ is closed in  $Y$ if and only if
+    $A$ equals the intersection of a closed set of  $X$ with  $Y$.
+\end{theorem}
+\begin{proof}
+    Suppose that $A$ is closed in  $Y$, then  $\com{Y}{A}$ is open in  $Y$,
+    hence we have that  $\com{Y}{A}=U \cap Y$ for some open set $U$ of  $X$. Now
+    $\com{X}{U}$ is closed in  $X$, and with  $A \subseteq Y$, we have that
+    $A=Y \cap \com{X}{U}$.
+
+    Conversely, suppose that $A=C \cap Y$, with  $C$ closed in  $X$. Then
+    $\com{X}{C}$ is open in  $X$, hence  $\com{X}{C} \cap Y$ is open in  $Y$,
+    now since  $\com{X}{C} \cap Y=\com{Y}{A}$, which is open, we have that  $A$
+    is closed in  $Y$.
+\end{proof}
+
+\begin{theorem}\label{1.6.3}
+    Let $Y$ be a subspace of  $X$. If  $A$ is closed in  $Y$, and  $Y$ is closed
+    in  $X$, then  $A$ is closed in  $X$; that is, closure is transitive.
+\end{theorem}
+\begin{proof}
+    By theorem \ref{1.6.2}, if $A$ is closed in  $Y$, then  $A=C \cap Y$ with
+    $C$ closed in  $X$, now since  $Y$ is closed in  $X$, then  $Y=D \cap X$
+    with  $D$ closed in  $X$. Thus  $A=(C \cap D) \cap X$, therefore,  $A$ is
+    closed in  $X$.		
+\end{proof}

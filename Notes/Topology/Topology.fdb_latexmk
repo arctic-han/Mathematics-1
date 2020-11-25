@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1606182061 "Topology.tex" "Topology.pdf" "Topology" 1606182061
+["pdflatex"] 1606273907 "Topology.tex" "Topology.pdf" "Topology" 1606273907
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -224,8 +224,8 @@
   "Chapters/Chapter1/Section3/section3.tex" 1605031860 5037 4d6bd04a575760af02363922dba89f6b ""
   "Chapters/Chapter1/Section4/section4.tex" 1605039850 4252 d672998f1acb2249bb4a4c9b86a7bdc0 ""
   "Chapters/Chapter1/Section5/section5.tex" 1606006271 6807 4dd890350cfa785d838ebf474113b266 ""
-  "Chapters/Chapter1/Section6/section6.tex" 1606182061 235 0589ee921fd3aadc1c6efc6a55abe022 ""
-  "Chapters/Chapter1/chapter1.tex" 1606006500 726 078795c2698b8aa22c5d2661f40c8f2e ""
+  "Chapters/Chapter1/Section6/section6.tex" 1606273907 4401 c447e23fe252b218bee7e799b3b6cf9e ""
+  "Chapters/Chapter1/chapter1.tex" 1606272284 726 078795c2698b8aa22c5d2661f40c8f2e ""
   "Figures/Chapter1/basesOfCircularRectangularRegions.png" 1604969067 825314 761ca474224a9dffd78304f018349b25 ""
   "Figures/Chapter1/convexSeAndNonConvexSet.png" 1606002298 331821 65f63bf9b203418c0376d3adc5c5e735 ""
   "Figures/Chapter1/interiorOfRectangle.png" 1605033574 22984 061f61e406f8042fcd98ed2e7441f6a0 ""
@@ -235,8 +235,8 @@
   "Figures/Chapter1/upperAndLowerBoundsOfDomains.png" 1606003142 307312 cdab10a3dd96d9cc7da9a0df695a847a ""
   "Library/Fonts/BlackboardBold.tex" 1598311731 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1598311731 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "Topology.aux" 1606182047 4629 7290a73549eafa07c718382bc9a2cfca "pdflatex"
-  "Topology.out" 1606182047 503 7a92ace35e22f8b1e1209f0e477af24a "pdflatex"
+  "Topology.aux" 1606273806 4621 49c2d72e41bf3a00a5057db068a8c0cf "pdflatex"
+  "Topology.out" 1606273806 503 7a92ace35e22f8b1e1209f0e477af24a "pdflatex"
   "Topology.tex" 1606006508 2115 8d51fead496489138aa1d22a873f5bc7 ""
   (generated)
   "Topology.out"
